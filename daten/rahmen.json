@@ -7,5 +7,11 @@
     "Lehrplan erstellt",
     "aufbereitet",
     "gepusht"
-  ]
+  ],
+  "status_legende": {
+    "offen": "Der Prompt liegt vor, ein Lehrplan ist noch nicht erstellt.",
+    "Lehrplan erstellt": "Der Lehrplan ist erstellt und von mir geprüft. Er liegt in `lehrplaene/` und ist in der Spalte „Lehrplan“ verlinkt.",
+    "aufbereitet": "Aus dem Lehrplan ist Übungsmaterial ausgearbeitet, aber noch nicht veröffentlicht.",
+    "gepusht": "Das Übungsmaterial liegt in einem eigenen GitHub-Repository, das in der Spalte „Lehrplan“ verlinkt wird."
+  }
 }

@@ -2,7 +2,7 @@
 
 Copyright (c) 2026 AnsibleArtisan4711
 
-Die Texte dieses Repositories (siehe Geltungsbereich in der [README](README.md)) stehen unter der Lizenz
+Die Texte dieses Repositories (Prompts, Vorlage, Daten und die Lehrpläne in `lehrplaene/`; siehe auch die [README](README.md)) stehen unter der Lizenz
 **Creative Commons Namensnennung 4.0 International (CC BY 4.0)**.
 
 - Kurzfassung: <https://creativecommons.org/licenses/by/4.0/deed.de>

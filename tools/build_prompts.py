@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Erzeugt aus daten/kurse.json, daten/rahmen.json und rahmen/prompt-vorlage.txt
-alle Dateien in prompts/ sowie die Tabelle in README.md.
+alle Dateien in prompts/ sowie die Tabelle in README.md (mit Link auf lehrplaene/).
 
 Aufruf (im Repository-Ordner):  python tools/build_prompts.py
 Nur Standardbibliothek, Python 3.8 oder neuer.
@@ -51,12 +51,32 @@ def prompt_datei(kurs, rahmen, vorlage):
         prompt_text(kurs, rahmen, vorlage))
 
 
-def tabelle(kurse):
-    zeilen = ["| Nr | Prio | Themengebiet | Kurs | Status | Prompt |",
-              "|---|---|---|---|---|---|"]
+def lehrplan_datei(kurs):
+    return ROOT / "lehrplaene" / datei_name(kurs)
+
+
+def tabelle(kurse, rahmen):
+    zeilen = ["| Nr | Prio | Themengebiet | Kurs | Status | Prompt | Lehrplan |",
+              "|---|---|---|---|---|---|---|"]
     for i, k in enumerate(kurse, 1):
-        zeilen.append("| %d | %s | %s | %s | %s | [%s](prompts/%s) |" % (
-            i, k["prio"], k["gruppe"], k["titel"], k["status"], k["id"], datei_name(k)))
+        if lehrplan_datei(k).exists():
+            lehrplan = "[%s](lehrplaene/%s)" % (k["id"], datei_name(k))
+        else:
+            lehrplan = "–"
+        zeilen.append("| %d | %s | %s | %s | %s | [%s](prompts/%s) | %s |" % (
+            i, k["prio"], k["gruppe"], k["titel"], k["status"], k["id"], datei_name(k), lehrplan))
+    return "\n".join(zeilen)
+
+
+def uebersicht(kurse, rahmen):
+    """Zähler und Legende zu den Statuswerten, steht vor der Tabelle."""
+    zahlen = ", ".join("%d %s" % (sum(1 for k in kurse if k["status"] == s), s)
+                       for s in rahmen["status_werte"])
+    zeilen = ["Stand der %d Kurse: %s." % (len(kurse), zahlen), "",
+              "Bedeutung der Status:", ""]
+    for s in rahmen["status_werte"]:
+        zeilen.append("- **%s**: %s" % (s, rahmen["status_legende"][s]))
+    zeilen.append("")
     return "\n".join(zeilen)
 
 
@@ -71,6 +91,12 @@ def main():
     for k in kurse:
         if k["status"] not in rahmen["status_werte"]:
             sys.exit("Fehler: unbekannter Status %r bei %s" % (k["status"], k["id"]))
+    for k in kurse:
+        if k["status"] == "Lehrplan erstellt" and not lehrplan_datei(k).exists():
+            sys.exit("Fehler: Status 'Lehrplan erstellt', aber lehrplaene/%s fehlt" % datei_name(k))
+    for s in rahmen["status_werte"]:
+        if s not in rahmen.get("status_legende", {}):
+            sys.exit("Fehler: Legende fehlt für Status %r in daten/rahmen.json" % s)
 
     ordner = ROOT / "prompts"
     ordner.mkdir(exist_ok=True)
@@ -88,7 +114,7 @@ def main():
     muster = re.compile(re.escape(MARK_A) + r".*?" + re.escape(MARK_B), re.S)
     if not muster.search(text):
         sys.exit("Fehler: Markierungen %s und %s fehlen in README.md" % (MARK_A, MARK_B))
-    neu = MARK_A + "\n" + tabelle(kurse) + "\n" + MARK_B
+    neu = MARK_A + "\n" + uebersicht(kurse, rahmen) + "\n" + tabelle(kurse, rahmen) + "\n" + MARK_B
     readme.write_text(muster.sub(lambda m: neu, text), encoding="utf-8", newline="\n")
     print("%d Prompts und README-Tabelle erzeugt." % len(kurse))
 

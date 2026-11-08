@@ -1,5 +1,18 @@
 # Änderungen
 
+## 2026-11-08 (erste Lehrpläne im Repository)
+
+- Neu: Ordner `lehrplaene/` mit den 16 geprüften Lehrplänen (P01–P05, P10, P12, P16, P30, P40–P46), unverändert aus der jeweiligen „Finalen Version“ übernommen, einschließlich Prüfvermerk und offener Punkte. Dateiname wie die Prompt-Datei (`PNN-<slug>.md`).
+- Status von P41, P42, P43, P45 und P46 auf „Lehrplan erstellt“ gesetzt; damit stehen 16 von 52 Kursen auf „Lehrplan erstellt“.
+- `tools/build_prompts.py`: Neue Spalte „Lehrplan“ in der Tabelle (Link, wenn die Datei in `lehrplaene/` liegt); das Skript bricht ab, wenn ein Kurs auf „Lehrplan erstellt“ steht, aber die Datei fehlt.
+- `daten/rahmen.json`: Legende der Statuswerte angepasst. Ausarbeitungen zu Übungen kommen in eigene Repositories („aufbereitet“, „gepusht“).
+- Lizenz: Die Lehrpläne stehen wie die Prompts unter CC BY 4.0 (`LICENSE-DOCS.md`, README). Die Frage zur Schutzfähigkeit der KI-erzeugten Tabellen „Lerneinheiten laut Lehrplan“ ist damit nicht rechtlich geklärt, nur die Lizenz des Repositories festgelegt.
+- Hinweis: Befehle in den Lehrplänen, die als „nicht bestätigt“ markiert sind, wurden nicht ausgeführt. Das steht in den Prüfvermerken.
+
+## 2026-11-08 (Status in der README erklärt)
+
+- `tools/build_prompts.py` und `daten/rahmen.json`: Vor der Tabelle in der README stehen jetzt ein Zähler (Kurse je Status) und eine Legende zu den vier Statuswerten. Neu in `rahmen.json`: `status_legende`, das Skript bricht ab, wenn ein Statuswert keine Legende hat. Anlass: Aus der Tabelle ging nicht hervor, was „Lehrplan erstellt“ bedeutet und dass die fertigen Lehrpläne nicht im Repository liegen.
+
 ## 2026-11-08 (nach der Prüfung von P40 und P44)
 
 - Prüfvermerk der Grundanweisung: Zu jedem der neun Punkte sind die gefundenen und korrigierten Fehler (Modul und Art) zu nennen, oder „keine gefunden“ mit einer konkreten Stichprobe. Ein Punkt ohne beides gilt als nicht geprüft. Anlass: Auch mit Denkaufwand „Hoch“ bewertete die Gem P16, P40 und P44 mit „erfüllt“, obwohl unter anderem Quellen fehlten, Lernziele keine Aufgabe hatten und die Windows-Installation im Labor nirgends geplant war.

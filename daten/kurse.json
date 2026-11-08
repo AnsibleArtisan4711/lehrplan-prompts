@@ -611,7 +611,7 @@
     "themen": "Incident-Lebenszyklus; Priorisierung; Eskalation; Problem-Analyse (5-Why, Ishikawa); Change-Typen; Genehmigung und Rückfallplan; Wartungsfenster; Post-Incident-Review; Dokumentation und Kennzahlen",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; optional ein Open-Source-Ticketsystem"
   },
   {
@@ -626,7 +626,7 @@
     "themen": "Zweck und Aufbau; Open-Source-Ticketsystem (z. B. GLPI oder Zammad) installieren; Kategorien und Warteschlangen; Prioritäten und SLAs; Wissensdatenbank; Automatisierung; Berichte; Anbindung an Monitoring und E-Mail",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM mit Ticketsystem; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -641,7 +641,7 @@
     "themen": "Servicekatalog; SLA, OLA und Kennzahlen; Verfügbarkeitsberechnung; Bereitschaft; Betriebshandbuch und Runbooks; Übergabe; Qualität und Aktualität",
     "abgrenzung": "Technische Dokumentation ist ein vorhandener Kurs; hier Betriebsregelwerk",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
   },
   {
@@ -671,7 +671,7 @@
     "themen": "Installation und Bereitstellung; Konten und Rechte; Netzwerk und Domänenbeitritt; Sicherheit (BitLocker, Defender, Firewall); Updates; Sicherung und Wiederherstellung; Fernwartung; Fehlersuche; Leistung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Windows-11-Client-VM (Domäne beitretbar); 1x Windows-Server-VM (Domain Controller); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -686,7 +686,7 @@
     "themen": "Rollout-Konzepte; Abbilder und Treiber; Aufgabensequenzen; Bereitstellung per Netzwerk (PXE); Softwareverteilung; Alternativen (Autopilot, Intune); Wartung der Abbilder; Fehlersuche",
     "abgrenzung": "Intune und Autopilot sind ein eigener Kurs",
     "hinweis": "Prüfe den aktuellen Status von MDT und die Bezeichnung von Microsoft Configuration Manager mit Stand; kennzeichne Unsicherheit.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Deployment-Server-VM; 1x Domain Controller; 2 leere Client-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
