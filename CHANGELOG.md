@@ -1,5 +1,9 @@
 # Änderungen
 
+## 2026-11-08 (Bilder-Index)
+
+- Neu: `tools/bilder_index.py`. Es liest alle Markdown-Dateien eines Ordners (Standard: `Umsetzung` neben dem Repository) und schreibt `bilder-index.md` mit allen verlinkten Bildern (Ordner, Datei, Abschnitt, Beschreibung, Größe, Link). Es meldet Bilder ohne Verlinkung, Links auf fehlende Bilder und Bilder über 1 MB. Bilder werden nicht verändert.
+
 ## 2026-11-08 (Umsetzungsordner)
 
 - Neu: `tools/umsetzung_anlegen.py`. Es liest einen Lehrplan aus `lehrplaene/` und legt je Modul einen Ordner mit Checkliste (Voraussetzungen, Lerneinheiten, Praxisaufgaben, Lernziele, Kontrollfragen, Prüfpunkte), Protokollvorlage je Praxisaufgabe, Fehlerprotokoll und den Ablageordnern `screenshots/`, `notizen/`, `ausgaben/` an. Dazu eine Übersicht mit Fortschrittstabelle, `befehle-nicht-bestaetigt.md` (Stellen mit „nicht bestätigt“ in den Praxisaufgaben) und `99-abschluss/` mit Checkliste und Sammlung der Lehrplan-Korrekturen. Das Skript überschreibt nichts.

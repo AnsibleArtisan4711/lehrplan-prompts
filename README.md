@@ -106,6 +106,7 @@ Die Prompts und das Erzeugungsskript wurden gemeinsam mit Claude (Anthropic) ent
 | `gem/vorlage-variablen.md` | leere Vorlage für einen eigenen Kurs-Prompt |
 | `tools/build_prompts.py` | erzeugt `prompts/` und die Tabelle oben (Link auf `lehrplaene/`) |
 | `tools/umsetzung_anlegen.py` | legt aus einem Lehrplan einen Umsetzungsordner an (Checklisten, Protokolle, Ablage für Screenshots) |
+| `tools/bilder_index.py` | erzeugt `bilder-index.md` mit allen Bildern eines Umsetzungsordners; meldet unverlinkte, fehlende und große Bilder |
 | `CHANGELOG.md` | Änderungen am gemeinsamen Rahmen |
 | `LICENSE`, `LICENSE-DOCS.md` | MIT für das Skript, CC BY 4.0 für die Texte (Prompts, Vorlage, Daten, Lehrpläne) |
 
@@ -124,6 +125,7 @@ git push
 - **Gemeinsamen Rahmen ändern** (Umfang, Standard-Abgrenzung): `daten/rahmen.json` oder `rahmen/prompt-vorlage.txt` bearbeiten, Skript laufen lassen. Zielgruppe und Regeln stehen in `gem/grundanweisung.md` und müssen dort und in der Gem angepasst werden. Alles im `CHANGELOG.md` eintragen.
 - **Kurs ändern oder ergänzen:** Eintrag in `daten/kurse.json` bearbeiten oder am Ende anfügen (nächste freie ID, `slug` in Kleinbuchstaben ohne Umlaute), Skript laufen lassen.
 - **Umsetzung vorbereiten:** `python tools/umsetzung_anlegen.py P46` legt neben dem Repository den Ordner `Umsetzung/P46-<slug>/` an, mit einem Unterordner je Modul (`checkliste.md`, `protokoll.md`, `fehlerprotokoll.md`, `screenshots/`, `notizen/`, `ausgaben/`), einer Übersicht, einer Liste der Befehle mit „nicht bestätigt“ und einem Abschlussordner. Ein zweiter Parameter wählt einen anderen Zielordner. Vorhandene Dateien werden nicht überschrieben.
+- **Bilder indizieren:** `python tools/bilder_index.py` (Standard: `D:\Umsetzung`) oder mit Ordner als Parameter schreibt `bilder-index.md` in diesen Ordner: Tabelle aller verlinkten Bilder mit Modul, Abschnitt, Beschreibung, Größe und Link, dazu unverlinkte Bilder, Links auf fehlende Bilder und Bilder über 1 MB.
 - **Qualität:** Die Prompts verlangen Versions- und Lizenzstände mit Datum. Diese Angaben im fertigen Lehrplan stichprobenartig gegen die Herstellerdokumentation prüfen.
 
 ## Lizenz
