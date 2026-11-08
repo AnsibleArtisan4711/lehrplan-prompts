@@ -11,7 +11,7 @@
     "themen": "Namensauflösung und DNS-Hierarchie; Zonentypen (primär, sekundär, Stub, AD-integriert); Ressourceneinträge (A, AAAA, CNAME, MX, TXT, SRV, PTR); Forward- und Reverse-Zonen; Weiterleitungen und bedingte Weiterleitungen; Zonenübertragung; dynamische Updates; Windows-DNS und BIND 9; Split-Brain-DNS; Caching und TTL; Fehlersuche mit nslookup, dig und Resolve-DnsName",
     "abgrenzung": "DNSSEC und DHCP sind eigene vorhandene Lehrpläne und werden nur kurz verwiesen; AD-Integration nur soweit für DNS nötig",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -26,7 +26,7 @@
     "themen": "SMB-Freigaben; Freigabe- und NTFS-Berechtigungen; DFS-Namespaces und DFS-Replikation; FSRM (Kontingente, Dateiprüfung, Berichte); Schattenkopien und Vorgängerversionen; Offlinedateien; Druckserver (Treiber, Warteschlangen, Verteilung per GPO); Fehlersuche",
     "abgrenzung": "Gruppenrichtlinien-Grundlagen und Active Directory sind in eigenen vorhandenen Lehrplänen; hier nur Bezug",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Windows-Server-VM (Dateiserver); 1x Windows-Server-VM (zweiter Server für DFS); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -41,7 +41,7 @@
     "themen": "Update-Verwaltung im Unternehmen; WSUS installieren und konfigurieren; Computergruppen, Genehmigungen, Zeitpläne; Client-Steuerung per Gruppenrichtlinie; Berichte; Bereinigung; Datenbank und Speicher; Alternativen und Ausblick (Windows Update for Business, Intune, Azure Update Manager)",
     "abgrenzung": "",
     "hinweis": "Prüfe den aktuellen Support- und Lebenszyklusstatus von WSUS und nenne ihn mit Stand; kennzeichne Unsicherheit.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x WSUS-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -56,7 +56,7 @@
     "themen": "PKI-Grundlagen; zweistufige Hierarchie (Offline-Root und ausstellende CA); Zertifikatvorlagen; Autoenrollment per Gruppenrichtlinie; CRL und OCSP; Zertifikate für Webserver, Clients und 802.1X; Sperrung und Erneuerung; Sicherung und Wiederherstellung der CA; typische Konfigurationsfehler und ihre Sicherheitsfolgen in Grundzügen",
     "abgrenzung": "Kryptografie-Theorie gehört in den Kurs „Kryptografie, Zertifikate und TLS“; hier die Praxis mit AD CS",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Domain Controller; 1x Server-VM für die Zertifizierungsstelle; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -71,7 +71,7 @@
     "themen": "Installation; Generation 1 und 2; virtuelle Switches (extern, intern, privat); Speicher (VHDX, Differenzdatenträger); dynamischer Arbeitsspeicher; Checkpoints; Live-Migration; Hyper-V-Replika; Failover-Cluster-Grundlagen; Nested Virtualization; Verwaltung per PowerShell; Leistungsüberwachung",
     "abgrenzung": "Hyper-V dient in anderen Übungen (Veeam, USV, Homelab) nur als Umgebung; hier ist es der Lerngegenstand",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1 Hyper-V-Host (physisch oder verschachtelte Virtualisierung); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -146,7 +146,7 @@
     "themen": "VPN-Konzepte; WireGuard (Schlüssel, Peers, Routing); OpenVPN (Zertifikate, Server, Clients); Site-to-Site und Road-Warrior; IPsec in Grundzügen; Split Tunneling; Firewall-Regeln; Fehlersuche; Härtung und Betrieb",
     "abgrenzung": "OPNsense-Konfiguration nur soweit nötig; Zertifikatsgrundlagen im Kurs „Kryptografie, Zertifikate und TLS“",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x VPN-Server-VM; 1 Client-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -176,7 +176,7 @@
     "themen": "Schutzziele; Bedrohungen und Angriffsarten; Risikobewertung; Authentifizierung und Autorisierung; Netzwerk- und Endgerätesicherheit; Kryptografie im Überblick; Sicherheitsrichtlinien; Vorfallbehandlung; Awareness",
     "abgrenzung": "",
     "hinweis": "Orientiere dich sinngemäß an den aktuellen Prüfungszielen von CompTIA Security+ (Stand nennen). Keine Prüfungsfragen und keine geschützten Texte übernehmen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -236,7 +236,7 @@
     "themen": "Symmetrische und asymmetrische Verfahren; Hashes und Signaturen; Zertifikate und Vertrauenskette; TLS-Handshake; Schlüsselverwaltung; OpenSSL in der Praxis; Zertifikatsprüfung und Fehlersuche; Verschlüsselung ruhender Daten (BitLocker, LUKS); Passwörter und Hashing",
     "abgrenzung": "Die AD-CS-Praxis steht im Kurs „Zertifikatsdienste und PKI“",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -446,7 +446,7 @@
     "themen": "Relationale Modelle; Tabellen und Schlüssel; SELECT, INSERT, UPDATE, DELETE; Joins; Gruppierung und Aggregation; Unterabfragen; Indizes; Transaktionen; Sichten; Normalisierung; Übungen mit SQLite oder PostgreSQL",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM mit Datenbank; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
@@ -596,7 +596,7 @@
     "themen": "Service-Wertschöpfungssystem; Leitprinzipien; Praktiken; Servicemanagement im Betrieb; Rollen; Kennzahlen; Verbesserung; Bezug zum Alltag der Systemadministration",
     "abgrenzung": "",
     "hinweis": "Keine geschützten ITIL-Texte übernehmen; Inhalte sinngemäß und mit eigenen Beispielen; Version und Stand nennen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
   },
   {
@@ -656,7 +656,7 @@
     "themen": "Komponenten und Schnittstellen; Speicher und Netzwerkkarten; Firmware (BIOS/UEFI); Fehlersuche systematisch; Diagnosewerkzeuge; Peripherie und Drucker; Wartung; Sicherheit am Arbeitsplatz",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1 Windows-11-VM; 1 Linux-Live-Medium; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Hardwareübungen an Altgeräten oder anhand von Fallbeispielen"
   },
   {

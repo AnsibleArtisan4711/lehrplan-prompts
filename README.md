@@ -18,22 +18,22 @@ Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vert
 <!-- TABELLE-START -->
 | Nr | Prio | Themengebiet | Kurs | Status | Prompt |
 |---|---|---|---|---|---|
-| 1 | A | Windows-Server-Rollen | DNS-Grundlagen (Windows-DNS und BIND) | offen | [P01](prompts/P01-dns-grundlagen-windows-dns-und-bind.md) |
-| 2 | A | Windows-Server-Rollen | Dateidienste, DFS und Druckserver | offen | [P02](prompts/P02-dateidienste-dfs-und-druckserver.md) |
-| 3 | A | Windows-Server-Rollen | WSUS und Update-Verwaltung | offen | [P03](prompts/P03-wsus-und-update-verwaltung.md) |
-| 4 | A | Windows-Server-Rollen | Zertifikatsdienste und PKI (AD CS) | offen | [P04](prompts/P04-zertifikatsdienste-und-pki-ad-cs.md) |
-| 5 | A | Virtualisierung | Hyper-V Administration | offen | [P05](prompts/P05-hyper-v-administration.md) |
+| 1 | A | Windows-Server-Rollen | DNS-Grundlagen (Windows-DNS und BIND) | Lehrplan erstellt | [P01](prompts/P01-dns-grundlagen-windows-dns-und-bind.md) |
+| 2 | A | Windows-Server-Rollen | Dateidienste, DFS und Druckserver | Lehrplan erstellt | [P02](prompts/P02-dateidienste-dfs-und-druckserver.md) |
+| 3 | A | Windows-Server-Rollen | WSUS und Update-Verwaltung | Lehrplan erstellt | [P03](prompts/P03-wsus-und-update-verwaltung.md) |
+| 4 | A | Windows-Server-Rollen | Zertifikatsdienste und PKI (AD CS) | Lehrplan erstellt | [P04](prompts/P04-zertifikatsdienste-und-pki-ad-cs.md) |
+| 5 | A | Virtualisierung | Hyper-V Administration | Lehrplan erstellt | [P05](prompts/P05-hyper-v-administration.md) |
 | 6 | A | Virtualisierung | Proxmox VE | offen | [P06](prompts/P06-proxmox-ve.md) |
 | 7 | A | Virtualisierung | VMware vSphere und ESXi | offen | [P07](prompts/P07-vmware-vsphere-und-esxi.md) |
 | 8 | A | Netzwerkdienste und Firewall | Firewall mit OPNsense | offen | [P08](prompts/P08-firewall-mit-opnsense.md) |
 | 9 | A | Netzwerkdienste und Firewall | Linux-Firewall mit nftables und iptables | offen | [P09](prompts/P09-linux-firewall-mit-nftables-und-iptables.md) |
-| 10 | A | Netzwerkdienste und Firewall | VPN mit WireGuard und OpenVPN | offen | [P10](prompts/P10-vpn-mit-wireguard-und-openvpn.md) |
+| 10 | A | Netzwerkdienste und Firewall | VPN mit WireGuard und OpenVPN | Lehrplan erstellt | [P10](prompts/P10-vpn-mit-wireguard-und-openvpn.md) |
 | 11 | A | Netzwerkdienste und Firewall | Reverse Proxy, Lastverteilung und TLS | offen | [P11](prompts/P11-reverse-proxy-lastverteilung-und-tls.md) |
-| 12 | A | IT-Sicherheit | IT-Sicherheitsgrundlagen | offen | [P12](prompts/P12-it-sicherheitsgrundlagen.md) |
+| 12 | A | IT-Sicherheit | IT-Sicherheitsgrundlagen | Lehrplan erstellt | [P12](prompts/P12-it-sicherheitsgrundlagen.md) |
 | 13 | A | IT-Sicherheit | Windows-Server-Härtung | offen | [P13](prompts/P13-windows-server-haertung.md) |
 | 14 | A | IT-Sicherheit | Linux-Server-Härtung | offen | [P14](prompts/P14-linux-server-haertung.md) |
 | 15 | A | IT-Sicherheit | Schwachstellenmanagement | offen | [P15](prompts/P15-schwachstellenmanagement.md) |
-| 16 | A | IT-Sicherheit | Kryptografie, Zertifikate und TLS | offen | [P16](prompts/P16-kryptografie-zertifikate-und-tls.md) |
+| 16 | A | IT-Sicherheit | Kryptografie, Zertifikate und TLS | Lehrplan erstellt | [P16](prompts/P16-kryptografie-zertifikate-und-tls.md) |
 | 17 | A | Monitoring und Logging | Monitoring mit Zabbix | offen | [P17](prompts/P17-monitoring-mit-zabbix.md) |
 | 18 | A | Monitoring und Logging | Monitoring mit Prometheus und Grafana | offen | [P18](prompts/P18-monitoring-mit-prometheus-und-grafana.md) |
 | 19 | A | Monitoring und Logging | Zentrales Logging mit Graylog und Elastic Stack | offen | [P19](prompts/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) |
@@ -47,7 +47,7 @@ Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vert
 | 27 | B | Azure und Identität | Azure Administration | offen | [P27](prompts/P27-azure-administration.md) |
 | 28 | B | Azure und Identität | Entra ID und Hybrid-Identität | offen | [P28](prompts/P28-entra-id-und-hybrid-identitaet.md) |
 | 29 | B | Azure und Identität | Intune und Autopilot | offen | [P29](prompts/P29-intune-und-autopilot.md) |
-| 30 | B | Datenbanken | SQL-Grundlagen | offen | [P30](prompts/P30-sql-grundlagen.md) |
+| 30 | B | Datenbanken | SQL-Grundlagen | Lehrplan erstellt | [P30](prompts/P30-sql-grundlagen.md) |
 | 31 | B | Datenbanken | MariaDB und PostgreSQL Administration | offen | [P31](prompts/P31-mariadb-und-postgresql-administration.md) |
 | 32 | B | Datenbanken | SQL Server Administration | offen | [P32](prompts/P32-sql-server-administration.md) |
 | 33 | B | Storage | NAS, SAN, iSCSI und RAID | offen | [P33](prompts/P33-nas-san-iscsi-und-raid.md) |
@@ -57,11 +57,11 @@ Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vert
 | 37 | B | E-Mail | Exchange Online Administration | offen | [P37](prompts/P37-exchange-online-administration.md) |
 | 38 | B | E-Mail | E-Mail-Authentifizierung: SPF, DKIM und DMARC | offen | [P38](prompts/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) |
 | 39 | B | E-Mail | Mailserver mit Postfix und Dovecot | offen | [P39](prompts/P39-mailserver-mit-postfix-und-dovecot.md) |
-| 40 | C | IT-Betrieb und Prozesse | ITIL 4 Grundlagen | offen | [P40](prompts/P40-itil-4-grundlagen.md) |
+| 40 | C | IT-Betrieb und Prozesse | ITIL 4 Grundlagen | Lehrplan erstellt | [P40](prompts/P40-itil-4-grundlagen.md) |
 | 41 | C | IT-Betrieb und Prozesse | Incident-, Problem- und Change-Management | offen | [P41](prompts/P41-incident-problem-und-change-management.md) |
 | 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | offen | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) |
 | 43 | C | IT-Betrieb und Prozesse | SLA und Betriebshandbuch | offen | [P43](prompts/P43-sla-und-betriebshandbuch.md) |
-| 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | offen | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) |
+| 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | Lehrplan erstellt | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) |
 | 45 | C | Client und Hardware | Windows-11-Client-Administration | offen | [P45](prompts/P45-windows-11-client-administration.md) |
 | 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | offen | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) |
 | 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | offen | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) |
