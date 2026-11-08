@@ -25,7 +25,9 @@ def prompt_text(kurs, rahmen, vorlage):
     umfang = rahmen["umfang_klein"] if kurs["umfang"] == "klein" else rahmen["umfang_gross"]
     hinweis = kurs["hinweis"].strip()
     themen = kurs["themen"].strip().rstrip(".")
-    if "roubleshoot" not in themen and "Fehlersuche" not in themen:
+    # Kurse ohne technisches Labor bekommen das Thema nicht automatisch angehängt.
+    hat_labor = not kurs["labor"].startswith("kein technisches Labor")
+    if hat_labor and "roubleshoot" not in themen and "Fehlersuche" not in themen:
         themen += "; Troubleshooting und Diagnosewerkzeuge"
     return vorlage.format(
         titel=kurs["titel"],

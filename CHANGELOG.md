@@ -1,5 +1,11 @@
 # Änderungen
 
+## 2026-11-08 (nach der Prüfung von P40 und P44)
+
+- Prüfvermerk der Grundanweisung: Zu jedem der neun Punkte sind die gefundenen und korrigierten Fehler (Modul und Art) zu nennen, oder „keine gefunden“ mit einer konkreten Stichprobe. Ein Punkt ohne beides gilt als nicht geprüft. Anlass: Auch mit Denkaufwand „Hoch“ bewertete die Gem P16, P40 und P44 mit „erfüllt“, obwohl unter anderem Quellen fehlten, Lernziele keine Aufgabe hatten und die Windows-Installation im Labor nirgends geplant war.
+- `tools/build_prompts.py`: Das Thema „Troubleshooting und Diagnosewerkzeuge“ wird nur noch bei Kursen mit technischem Labor an die Kernthemen angehängt. Betroffen und neu erzeugt: P40, P41, P43, P47, P48, P49, P51, P52 (Kurse mit „kein technisches Labor nötig“).
+- ITIL bleibt bei Version 4 (P40).
+
 ## 2026-11-08 (nach den Prüfungen von P02, P03, P04 und P16)
 
 - Selbstprüfung der Grundanweisung von sieben auf neun Punkte erweitert und als nummerierte Liste gesetzt. Der Prüfvermerk verlangt zu jedem Punkt die konkret geprüften Module; Fehler sind vor der Ausgabe zu korrigieren und nicht nur im Prüfvermerk zu nennen.
