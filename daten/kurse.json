@@ -6,12 +6,13 @@
     "titel": "DNS-Grundlagen (Windows-DNS und BIND)",
     "slug": "dns-grundlagen-windows-dns-und-bind",
     "umfang": "gross",
+    "fokus": "Windows Server (DNS-Rolle), Debian/Ubuntu Linux mit BIND 9",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware; ein Windows-Server und eine Linux-VM (BIND)",
     "themen": "Namensauflösung und DNS-Hierarchie; Zonentypen (primär, sekundär, Stub, AD-integriert); Ressourceneinträge (A, AAAA, CNAME, MX, TXT, SRV, PTR); Forward- und Reverse-Zonen; Weiterleitungen und bedingte Weiterleitungen; Zonenübertragung; dynamische Updates; Windows-DNS und BIND 9; Split-Brain-DNS; Caching und TTL; Fehlersuche mit nslookup, dig und Resolve-DnsName",
     "abgrenzung": "DNSSEC und DHCP sind eigene vorhandene Lehrpläne und werden nur kurz verwiesen; AD-Integration nur soweit für DNS nötig",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P02",
@@ -20,12 +21,13 @@
     "titel": "Dateidienste, DFS und Druckserver",
     "slug": "dateidienste-dfs-und-druckserver",
     "umfang": "gross",
+    "fokus": "Windows Server (Dateiserver, DFS, Druckserver)",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Active-Directory-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "SMB-Freigaben; Freigabe- und NTFS-Berechtigungen; DFS-Namespaces und DFS-Replikation; FSRM (Kontingente, Dateiprüfung, Berichte); Schattenkopien und Vorgängerversionen; Offlinedateien; Druckserver (Treiber, Warteschlangen, Verteilung per GPO); Fehlersuche",
     "abgrenzung": "Gruppenrichtlinien-Grundlagen und Active Directory sind in eigenen vorhandenen Lehrplänen; hier nur Bezug",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM (Dateiserver); 1x Windows-Server-VM (zweiter Server für DFS); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P03",
@@ -34,12 +36,13 @@
     "titel": "WSUS und Update-Verwaltung",
     "slug": "wsus-und-update-verwaltung",
     "umfang": "gross",
+    "fokus": "Windows Server Update Services (WSUS), Windows Server und Windows 11",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Active-Directory-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Update-Verwaltung im Unternehmen; WSUS installieren und konfigurieren; Computergruppen, Genehmigungen, Zeitpläne; Client-Steuerung per Gruppenrichtlinie; Berichte; Bereinigung; Datenbank und Speicher; Alternativen und Ausblick (Windows Update for Business, Intune, Azure Update Manager)",
     "abgrenzung": "",
     "hinweis": "Prüfe den aktuellen Support- und Lebenszyklusstatus von WSUS und nenne ihn mit Stand; kennzeichne Unsicherheit.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x WSUS-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P04",
@@ -48,12 +51,13 @@
     "titel": "Zertifikatsdienste und PKI (AD CS)",
     "slug": "zertifikatsdienste-und-pki-ad-cs",
     "umfang": "gross",
+    "fokus": "Windows Server Active Directory Certificate Services (AD CS)",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Active-Directory-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "PKI-Grundlagen; zweistufige Hierarchie (Offline-Root und ausstellende CA); Zertifikatvorlagen; Autoenrollment per Gruppenrichtlinie; CRL und OCSP; Zertifikate für Webserver, Clients und 802.1X; Sperrung und Erneuerung; Sicherung und Wiederherstellung der CA; typische Konfigurationsfehler und ihre Sicherheitsfolgen in Grundzügen",
     "abgrenzung": "Kryptografie-Theorie gehört in den Kurs „Kryptografie, Zertifikate und TLS“; hier die Praxis mit AD CS",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Domain Controller; 1x Server-VM für die Zertifizierungsstelle; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P05",
@@ -62,12 +66,13 @@
     "titel": "Hyper-V Administration",
     "slug": "hyper-v-administration",
     "umfang": "gross",
+    "fokus": "Hyper-V unter Windows Server",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Windows-Server-Grundlagen",
-    "praxis": "Hyper-V auf Windows 11 Pro oder Windows Server (Evaluation)",
     "themen": "Installation; Generation 1 und 2; virtuelle Switches (extern, intern, privat); Speicher (VHDX, Differenzdatenträger); dynamischer Arbeitsspeicher; Checkpoints; Live-Migration; Hyper-V-Replika; Failover-Cluster-Grundlagen; Nested Virtualization; Verwaltung per PowerShell; Leistungsüberwachung",
     "abgrenzung": "Hyper-V dient in anderen Übungen (Veeam, USV, Homelab) nur als Umgebung; hier ist es der Lerngegenstand",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1 Hyper-V-Host (physisch oder verschachtelte Virtualisierung); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P06",
@@ -76,12 +81,13 @@
     "titel": "Proxmox VE",
     "slug": "proxmox-ve",
     "umfang": "gross",
+    "fokus": "Proxmox VE",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Proxmox VE als verschachtelte VM (Nested Virtualization) in Hyper-V",
     "themen": "Installation; Weboberfläche und Shell; virtuelle Maschinen und LXC-Container; Speicherarten (lokal, LVM, ZFS, NFS); virtuelle Netzwerke und Bridges; Vorlagen und Klone; Backup mit Proxmox Backup Server; Snapshots; Cluster-Grundlagen; Migration; Benutzer und Berechtigungen",
     "abgrenzung": "Allgemeine Linux-Kenntnisse werden vorausgesetzt (LPIC-Lehrpläne sind vorhanden)",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1 Proxmox-VE-Host (verschachtelt unter Hyper-V oder eigener Rechner); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P07",
@@ -90,12 +96,13 @@
     "titel": "VMware vSphere und ESXi",
     "slug": "vmware-vsphere-und-esxi",
     "umfang": "gross",
+    "fokus": "VMware vSphere / ESXi",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Virtualisierungsgrundlagen",
-    "praxis": "ESXi als verschachtelte VM in Hyper-V",
     "themen": "Architektur (ESXi, vCenter); Installation; virtuelle Maschinen und Hardware-Versionen; virtuelle Switches und Portgruppen; Datastores; Snapshots und Klone; vMotion, HA und DRS in Grundzügen; Ressourcenverwaltung; Verwaltung per PowerCLI; Sicherung; Migration von und nach Hyper-V",
     "abgrenzung": "",
     "hinweis": "Prüfe Lizenz- und Verfügbarkeitsstand der kostenlosen oder Evaluationsversionen und nenne ihn mit Stand; kennzeichne Unsicherheit.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1 ESXi-Host (verschachtelt, Evaluations- oder Testlizenz, Stand prüfen); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P08",
@@ -104,12 +111,13 @@
     "titel": "Firewall mit OPNsense",
     "slug": "firewall-mit-opnsense",
     "umfang": "gross",
+    "fokus": "OPNsense",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware; OPNsense als VM mit mehreren virtuellen Netzen",
     "themen": "Installation; Interfaces und VLANs; Aliase; Firewall-Regeln und Reihenfolge; NAT; DHCP und DNS auf der Firewall; VPN-Dienste; Zertifikate; IDS/IPS mit Suricata; Hochverfügbarkeit (CARP); Sicherung der Konfiguration; Plugins; Logging",
     "abgrenzung": "pfSense-Unterschiede nur kurz; VPN-Vertiefung im Kurs „VPN“",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x OPNsense-VM; 1 Client-VM im LAN; 1x Linux-Server-VM im zweiten Netz; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P09",
@@ -118,12 +126,13 @@
     "titel": "Linux-Firewall mit nftables und iptables",
     "slug": "linux-firewall-mit-nftables-und-iptables",
     "umfang": "gross",
+    "fokus": "Debian/Ubuntu Linux, nftables, iptables",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Netfilter-Architektur; Tabellen, Ketten, Regeln; Zustandsverfolgung; NAT; Rate Limiting und Protokollierung; Regelsätze sichern und laden; Migration von iptables zu nftables; Fehlersuche; Anbindung an firewalld und ufw in Grundzügen",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-Firewall-VM; 1 Client-VM; 1x Linux-Server-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P10",
@@ -132,12 +141,13 @@
     "titel": "VPN mit WireGuard und OpenVPN",
     "slug": "vpn-mit-wireguard-und-openvpn",
     "umfang": "gross",
+    "fokus": "WireGuard, OpenVPN, Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "VPN-Konzepte; WireGuard (Schlüssel, Peers, Routing); OpenVPN (Zertifikate, Server, Clients); Site-to-Site und Road-Warrior; IPsec in Grundzügen; Split Tunneling; Firewall-Regeln; Fehlersuche; Härtung und Betrieb",
     "abgrenzung": "OPNsense-Konfiguration nur soweit nötig; Zertifikatsgrundlagen im Kurs „Kryptografie, Zertifikate und TLS“",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x VPN-Server-VM; 1 Client-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P11",
@@ -146,12 +156,13 @@
     "titel": "Reverse Proxy, Lastverteilung und TLS",
     "slug": "reverse-proxy-lastverteilung-und-tls",
     "umfang": "gross",
+    "fokus": "nginx, HAProxy, Debian/Ubuntu Linux, TLS",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Reverse-Proxy-Konzept; Nginx und HAProxy als Proxy; TLS-Terminierung; Let’s Encrypt und ACME; Lastverteilung und Health Checks; Header und HSTS; WebSocket; Caching; Sicherheitsaspekte; Fehlersuche",
     "abgrenzung": "Der vorhandene Kurs „Webserver“ behandelt Apache und Nginx als Webserver; hier Fokus auf Proxy, Lastverteilung und TLS",
-    "hinweis": "",
-    "status": "offen"
+    "hinweis": "Zertifikate lokal mit einer internen CA oder einem lokalen ACME-Testserver (z. B. Pebble) ausstellen, keine öffentlichen Zertifizierungsstellen und keine echten Domänen.",
+    "status": "offen",
+    "labor": "1x Proxy-VM; 2x Web-Backend-VMs; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P12",
@@ -160,12 +171,13 @@
     "titel": "IT-Sicherheitsgrundlagen",
     "slug": "it-sicherheitsgrundlagen",
     "umfang": "gross",
+    "fokus": "Betriebssystem-unabhängige Sicherheitsgrundlagen, Windows und Linux als Beispiele",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Schutzziele; Bedrohungen und Angriffsarten; Risikobewertung; Authentifizierung und Autorisierung; Netzwerk- und Endgerätesicherheit; Kryptografie im Überblick; Sicherheitsrichtlinien; Vorfallbehandlung; Awareness",
     "abgrenzung": "",
     "hinweis": "Orientiere dich sinngemäß an den aktuellen Prüfungszielen von CompTIA Security+ (Stand nennen). Keine Prüfungsfragen und keine geschützten Texte übernehmen.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P13",
@@ -174,12 +186,13 @@
     "titel": "Windows-Server-Härtung",
     "slug": "windows-server-haertung",
     "umfang": "gross",
+    "fokus": "Windows Server, Gruppenrichtlinien, PowerShell",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Active-Directory- und Gruppenrichtlinien-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Sicherheitsbaselines (CIS und Microsoft); Tier-Modell; lokale Richtlinien und Gruppenrichtlinien; Dienste und Rollen reduzieren; Defender und Firewall; Anmeldeschutz (LAPS, Credential Guard in Grundzügen); Protokollierung und Überwachung; Patch-Management; Härtung prüfen und dokumentieren",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P14",
@@ -188,12 +201,13 @@
     "titel": "Linux-Server-Härtung",
     "slug": "linux-server-haertung",
     "umfang": "gross",
+    "fokus": "Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Sicherheitsbaselines (CIS); Benutzer, sudo und PAM; SSH-Härtung; Dienste und Pakete reduzieren; Dateirechte und ACLs; SELinux und AppArmor; Firewall; Protokollierung und auditd; automatische Updates; Härtung prüfen (z. B. Lynis)",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-Server-VM (frisch installiert); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P15",
@@ -202,12 +216,13 @@
     "titel": "Schwachstellenmanagement",
     "slug": "schwachstellenmanagement",
     "umfang": "gross",
+    "fokus": "OpenVAS/Greenbone oder Nessus Essentials, Windows und Linux als Ziele",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Prozess (Erfassen, Bewerten, Beheben, Prüfen); Schwachstellenscanner (Greenbone/OpenVAS) und Nmap; CVE und CVSS; Priorisierung; Patchen und Gegenmaßnahmen; Berichte; Ausnahmen dokumentieren; rechtliche und organisatorische Rahmenbedingungen; Scans nur gegen eigene Lab-Systeme",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Scanner-VM; 1x Windows-Ziel-VM; 1x Linux-Ziel-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Scans nur gegen eigene Lab-VMs"
   },
   {
     "id": "P16",
@@ -216,12 +231,13 @@
     "titel": "Kryptografie, Zertifikate und TLS",
     "slug": "kryptografie-zertifikate-und-tls",
     "umfang": "gross",
+    "fokus": "OpenSSL, TLS, Debian/Ubuntu Linux, Windows",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Symmetrische und asymmetrische Verfahren; Hashes und Signaturen; Zertifikate und Vertrauenskette; TLS-Handshake; Schlüsselverwaltung; OpenSSL in der Praxis; Zertifikatsprüfung und Fehlersuche; Verschlüsselung ruhender Daten (BitLocker, LUKS); Passwörter und Hashing",
     "abgrenzung": "Die AD-CS-Praxis steht im Kurs „Zertifikatsdienste und PKI“",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P17",
@@ -230,12 +246,13 @@
     "titel": "Monitoring mit Zabbix",
     "slug": "monitoring-mit-zabbix",
     "umfang": "gross",
+    "fokus": "Zabbix, Debian/Ubuntu Linux, Windows Server",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Architektur (Server, Proxy, Agent); Installation; Hosts, Items, Trigger; Vorlagen; SNMP und Agent; Auto-Discovery; Benachrichtigungen; Dashboards; Wartungsfenster; Leistung und Betrieb; Sicherung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Zabbix-Server-VM; 1x Windows-VM; 1x Linux-VM als überwachte Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P18",
@@ -244,12 +261,13 @@
     "titel": "Monitoring mit Prometheus und Grafana",
     "slug": "monitoring-mit-prometheus-und-grafana",
     "umfang": "gross",
+    "fokus": "Prometheus, Grafana, Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Metriken und Zeitreihen; Prometheus (Scraping, Exporter, PromQL); node_exporter und windows_exporter; Alertmanager; Grafana-Dashboards; Aufbewahrung und Speicher; Betrieb und Sicherung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Monitoring-VM; 1x Linux-VM; 1x Windows-VM als überwachte Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P19",
@@ -258,12 +276,13 @@
     "titel": "Zentrales Logging mit Graylog und Elastic Stack",
     "slug": "zentrales-logging-mit-graylog-und-elastic-stack",
     "umfang": "gross",
+    "fokus": "Graylog, Elastic Stack, Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Logquellen (syslog, Windows-Ereignisprotokoll); Erfassung und Weiterleitung; Graylog (Inputs, Streams, Pipelines); Elastic Stack im Überblick; Suchen und Auswertungen; Warnungen; Aufbewahrung und Datenschutz; Betrieb",
     "abgrenzung": "",
     "hinweis": "Lizenzmodelle und Versionsstände mit Stand nennen; kennzeichne Unsicherheit.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Log-Server-VM (ausreichend RAM); 1x Linux-VM; 1x Windows-VM als Logquellen; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P20",
@@ -272,12 +291,13 @@
     "titel": "Monitoring mit PRTG",
     "slug": "monitoring-mit-prtg",
     "umfang": "gross",
+    "fokus": "PRTG Network Monitor (Freeware- bzw. Testlizenz, Stand prüfen), Windows",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Aufbau und Installation; Sensoren und Geräte; WMI, SNMP, SSH; Benachrichtigungen; Karten und Berichte; Abhängigkeiten; eigene Sensoren (Skripte); Lizenzmodell der Gratisstufe; Betrieb",
     "abgrenzung": "Die Übung 02.1 im Repository „veeam-backup-uebung“ nutzt PRTG im Backup-Kontext; hier die Grundlagen",
     "hinweis": "Lizenzgrenzen der kostenlosen Stufe mit Stand nennen; Menünamen nicht erfinden, sondern als „nicht bestätigt“ kennzeichnen.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM mit PRTG; 1x Windows-VM; 1x Linux-VM als überwachte Geräte; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P21",
@@ -286,12 +306,13 @@
     "titel": "Konfigurationsmanagement mit Ansible",
     "slug": "konfigurationsmanagement-mit-ansible",
     "umfang": "gross",
+    "fokus": "Ansible, Debian/Ubuntu Linux, Windows Server",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen und SSH",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Konzept (agentenlos, idempotent); Inventare; Ad-hoc-Befehle; Playbooks; Variablen, Schleifen, Bedingungen; Rollen; Vorlagen (Jinja2); Handler; Ansible Vault; Windows-Hosts per WinRM; Tests und Fehlersuche",
     "abgrenzung": "Linux- und Bash-Grundlagen sind in vorhandenen Lehrplänen",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Control-Node-VM; 2x Linux-VMs; 1x Windows-VM als verwaltete Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P22",
@@ -300,12 +321,13 @@
     "titel": "Infrastructure as Code mit Terraform",
     "slug": "infrastructure-as-code-mit-terraform",
     "umfang": "gross",
+    "fokus": "Terraform, Hyper-V oder Proxmox bzw. lokaler Provider, Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Grundlagen einer Cloud- oder Virtualisierungsplattform",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Konzept; Provider; Ressourcen und Datenquellen; Variablen und Ausgaben; State und Remote State; Module; Pläne prüfen und anwenden; Importieren; Zusammenspiel mit Ansible und cloud-init; Sicherheit der Zugangsdaten",
     "abgrenzung": "",
     "hinweis": "Prüfe Lizenzstand und Fork-Situation (Terraform und OpenTofu) mit Stand.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1 Arbeitsplatz-VM mit Terraform; 1 lokaler Virtualisierungshost als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Cloud-Provider nur optional mit Test-Konto"
   },
   {
     "id": "P23",
@@ -314,12 +336,13 @@
     "titel": "cloud-init und VM-Vorlagen",
     "slug": "cloud-init-und-vm-vorlagen",
     "umfang": "gross",
+    "fokus": "cloud-init, Debian/Ubuntu Linux, Hyper-V oder Proxmox",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Konzept von Vorlagen (Golden Image); cloud-init (Benutzerdaten, Netzwerk, Pakete, Skripte); Vorlagen für Hyper-V, Proxmox und Cloud; Sysprep für Windows; Image-Bau mit Packer in Grundzügen; Wartung und Aktualisierung von Vorlagen",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1 Virtualisierungshost; 1 Linux-Cloud-Image; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P24",
@@ -328,12 +351,13 @@
     "titel": "PowerShell Desired State Configuration (DSC)",
     "slug": "powershell-desired-state-configuration-dsc",
     "umfang": "gross",
+    "fokus": "PowerShell DSC, Windows Server",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); PowerShell-Kenntnisse",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Konzept deklarativer Konfiguration; DSC-Konfigurationen und Ressourcen; Local Configuration Manager; Push und Pull; eigene Ressourcen; Prüfen auf Abweichungen; Einordnung gegenüber Ansible und Gruppenrichtlinien",
     "abgrenzung": "Die PowerShell-Grundlagen stehen im vorhandenen Kurs „PowerShell“",
     "hinweis": "Prüfe den aktuellen Stand der DSC-Versionen und ihre Zukunft mit Stand; kennzeichne Unsicherheit.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM (Pull-Server und Ziel); 1 weiterer Windows-Zielserver; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P25",
@@ -342,12 +366,13 @@
     "titel": "Docker und Docker Compose",
     "slug": "docker-und-docker-compose",
     "umfang": "gross",
+    "fokus": "Docker, Docker Compose, Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Container und Images; Dockerfile; Registries; Volumes und Netzwerke; Docker Compose (Mehrcontainer-Anwendungen); Ressourcenlimits; Sicherheit (Rootless, Rechte, Images prüfen); Aufräumen; Logging; Sicherung von Daten",
     "abgrenzung": "",
     "hinweis": "Lizenzbedingungen von Docker Desktop mit Stand nennen; als Alternative auf Docker Engine unter Linux eingehen.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-Server-VM mit Docker; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P26",
@@ -356,12 +381,13 @@
     "titel": "Kubernetes-Grundlagen",
     "slug": "kubernetes-grundlagen",
     "umfang": "gross",
+    "fokus": "Kubernetes (lokaler Cluster, z. B. kubeadm, k3s oder minikube), Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Docker-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Architektur; Pods, Deployments, Services; ConfigMaps und Secrets; Volumes; Ingress; Namespaces und Rechte (RBAC); Updates und Rollbacks; lokale Umgebung (z. B. k3s oder kind); Fehlersuche; Einordnung gegenüber Docker Compose",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "2 bis 3 Linux-VMs für den Cluster; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P27",
@@ -370,12 +396,13 @@
     "titel": "Azure Administration",
     "slug": "azure-administration",
     "umfang": "gross",
+    "fokus": "Microsoft Azure",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Abonnements und Verwaltungsgruppen; Ressourcengruppen; Identitäten und Rollen (RBAC); virtuelle Netzwerke; virtuelle Maschinen; Speicher; App Service und Container im Überblick; Sicherung und Wiederherstellung; Überwachung; Kosten und Richtlinien",
     "abgrenzung": "Der vorhandene Kurs „M365 Governance“ behandelt die Microsoft-365-Seite; AWS ist ein eigener Lehrplan",
     "hinweis": "Orientiere dich sinngemäß an den aktuellen Prüfungszielen von AZ-104 (Stand nennen). Keine Prüfungsfragen übernehmen; Portalmenüs nicht erfinden.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen; Kostenlimit und Budgetwarnung einrichten, Ressourcen nach jeder Übung löschen"
   },
   {
     "id": "P28",
@@ -384,12 +411,13 @@
     "titel": "Entra ID und Hybrid-Identität",
     "slug": "entra-id-und-hybrid-identitaet",
     "umfang": "gross",
+    "fokus": "Microsoft Entra ID, Entra Connect, Windows Server Active Directory",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Active-Directory-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Entra-ID-Aufbau; Benutzer, Gruppen, Geräte; Entra Connect (Passwort-Hash-Synchronisation, Pass-through, Federation im Überblick); Hybrid Join; Mehrfaktor-Authentifizierung; Bedingter Zugriff (Lizenzabhängigkeit beachten); Privileged Identity Management im Überblick; Anwendungsregistrierungen",
     "abgrenzung": "M365 Governance und Active Directory sind vorhandene Lehrpläne",
     "hinweis": "Lizenzabhängigkeiten (Free, Business, P1/P2) mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Domain Controller; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; zusätzlich Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen"
   },
   {
     "id": "P29",
@@ -398,12 +426,13 @@
     "titel": "Intune und Autopilot",
     "slug": "intune-und-autopilot",
     "umfang": "gross",
+    "fokus": "Microsoft Intune, Windows Autopilot, Windows 11",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Entra-ID-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Geräteverwaltung (MDM und MAM); Registrierung; Windows Autopilot; Konfigurationsprofile; Compliance-Richtlinien; App-Bereitstellung; Updates; Zuweisungen und Filter; Fehlersuche; Einordnung gegenüber Gruppenrichtlinien",
     "abgrenzung": "",
     "hinweis": "Lizenzabhängigkeiten mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1 Windows-11-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; zusätzlich Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen"
   },
   {
     "id": "P30",
@@ -412,12 +441,13 @@
     "titel": "SQL-Grundlagen",
     "slug": "sql-grundlagen",
     "umfang": "gross",
+    "fokus": "SQL (ANSI-Grundlagen), PostgreSQL oder MariaDB als Übungssystem",
     "vorkenntnisse": "IT-Grundlagen",
-    "praxis": "Lokale Installation von PostgreSQL oder SQLite (kostenlos)",
     "themen": "Relationale Modelle; Tabellen und Schlüssel; SELECT, INSERT, UPDATE, DELETE; Joins; Gruppierung und Aggregation; Unterabfragen; Indizes; Transaktionen; Sichten; Normalisierung; Übungen mit SQLite oder PostgreSQL",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-Server-VM mit Datenbank; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P31",
@@ -426,12 +456,13 @@
     "titel": "MariaDB und PostgreSQL Administration",
     "slug": "mariadb-und-postgresql-administration",
     "umfang": "gross",
+    "fokus": "MariaDB, PostgreSQL, Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); SQL-Grundlagen und Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Installation; Konfiguration; Benutzer und Rechte; Speicher und Wartung; Sicherung und Wiederherstellung; Replikation in Grundzügen; Leistungsanalyse; Sicherheit (TLS, Zugriffskontrolle); Updates; Überwachung",
     "abgrenzung": "SQL-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "2x Linux-Server-VMs (Replikation); 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P32",
@@ -440,12 +471,13 @@
     "titel": "SQL Server Administration",
     "slug": "sql-server-administration",
     "umfang": "gross",
+    "fokus": "Microsoft SQL Server (Developer- oder Evaluation-Edition), Windows Server",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); SQL-Grundlagen und Windows-Server-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Installation und Editionen; Instanzen und Datenbanken; Anmeldungen und Rechte; Sicherungsmodelle und Wiederherstellung; Wartungspläne; SQL Server Agent; Leistungsanalyse; Hochverfügbarkeit im Überblick; Sicherheit",
     "abgrenzung": "SQL-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "Lizenz- und Editionsstand (Express, Developer, Evaluation) mit Stand nennen.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM mit SQL Server; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P33",
@@ -454,12 +486,13 @@
     "titel": "NAS, SAN, iSCSI und RAID",
     "slug": "nas-san-iscsi-und-raid",
     "umfang": "gross",
+    "fokus": "Linux-Software-RAID, iSCSI (Target und Initiator), NAS-Grundlagen",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Speicherarten (DAS, NAS, SAN); RAID-Stufen und Wahl; Dateisysteme; NFS und SMB; iSCSI (Target und Initiator); Multipath im Überblick; Kapazitätsplanung; SMART und Überwachung; Ausfall und Wiederherstellung; Schreib-Cache und USV",
     "abgrenzung": "Das Homelab nutzt ein NAS; hier die allgemeine Theorie und Praxis",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-Server-VM mit mehreren virtuellen Platten; 1x Initiator-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P34",
@@ -468,12 +501,13 @@
     "titel": "Btrfs, ZFS und Snapshots",
     "slug": "btrfs-zfs-und-snapshots",
     "umfang": "gross",
+    "fokus": "Btrfs, ZFS, Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Copy-on-Write; Btrfs und ZFS im Vergleich; Pools, Subvolumes und Datasets; Snapshots und Klone; Replikation (send/receive); Prüfsummen und Scrub; Kompression; Speicherverwaltung und Quoten; Wiederherstellung; typische Fehler",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-Server-VM mit mehreren virtuellen Platten; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P35",
@@ -482,12 +516,13 @@
     "titel": "Backup-Konzept (3-2-1, RPO und RTO)",
     "slug": "backup-konzept-3-2-1-rpo-und-rto",
     "umfang": "gross",
+    "fokus": "Backup-Konzepte, Windows Server und Linux als Beispiele",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Zweck von Backup; 3-2-1-Regel; RPO und RTO; Sicherungsarten (voll, inkrementell, differenziell); Aufbewahrung; Unveränderlichkeit (Immutability) und Ransomware-Schutz; Verschlüsselung; Prüfung von Wiederherstellung; Dokumentation",
     "abgrenzung": "Die Veeam-Übung im Repository „veeam-backup-uebung“ ist eine Praxisübung; hier das Konzept und herstellerneutrale Praxis",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel (zweite VM oder Freigabe); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P36",
@@ -496,12 +531,13 @@
     "titel": "Notfallplanung und Disaster Recovery",
     "slug": "notfallplanung-und-disaster-recovery",
     "umfang": "gross",
+    "fokus": "Notfallplanung und Wiederherstellung, Windows Server und Linux als Beispiele",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Business-Impact-Analyse; Notfallplan und Alarmierung; Wiederanlaufreihenfolge; Standortausfall und Ausweichstandort; Wiederherstellungsübungen; Verantwortlichkeiten; Kommunikation; Dokumentation (Notfallhandbuch); Tests und Lehren",
     "abgrenzung": "Technische Dokumentation ist ein eigener vorhandener Kurs; hier Notfallplanung",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Wiederanlauf-Übungen nur in der Testumgebung"
   },
   {
     "id": "P37",
@@ -510,12 +546,13 @@
     "titel": "Exchange Online Administration",
     "slug": "exchange-online-administration",
     "umfang": "gross",
+    "fokus": "Exchange Online",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); M365-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Postfachtypen; Empfänger und Verteilerlisten; Mailfluss und Connectoren; Transportregeln; Schutz vor Spam und Schadsoftware (Exchange Online Protection); Migration und Hybrid im Überblick; Aufbewahrung; Verwaltung per PowerShell; Fehlersuche",
     "abgrenzung": "M365 Governance und Entra ID sind eigene Kurse; hier Exchange",
     "hinweis": "Lizenzabhängigkeiten mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen"
   },
   {
     "id": "P38",
@@ -524,12 +561,13 @@
     "titel": "E-Mail-Authentifizierung: SPF, DKIM und DMARC",
     "slug": "e-mail-authentifizierung-spf-dkim-und-dmarc",
     "umfang": "gross",
+    "fokus": "SPF, DKIM, DMARC, DNS, Exchange Online oder Postfix als Beispiel",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); DNS-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Funktionsweise von E-Mail (SMTP, MX); SPF, DKIM, DMARC; DNS-Einträge; Berichte auswerten; schrittweise Einführung; ARC und BIMI im Überblick; typische Fehler; Prüfwerkzeuge",
     "abgrenzung": "DNS-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-VM mit DNS; 1x Mailserver-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Übungsdomains nur mit example.com und Testdaten"
   },
   {
     "id": "P39",
@@ -538,12 +576,13 @@
     "titel": "Mailserver mit Postfix und Dovecot",
     "slug": "mailserver-mit-postfix-und-dovecot",
     "umfang": "gross",
+    "fokus": "Postfix, Dovecot, Debian/Ubuntu Linux",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux- und DNS-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Mail-Architektur (MTA, MDA, MUA); Postfix-Konfiguration; Dovecot (IMAP); Benutzer und Postfächer; TLS; Spam- und Virenschutz im Überblick; Relay und Warteschlange; Authentifizierung; Fehlersuche und Logs; Sicherung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Mailserver-VM; 1x DNS-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P40",
@@ -552,12 +591,13 @@
     "titel": "ITIL 4 Grundlagen",
     "slug": "itil-4-grundlagen",
     "umfang": "klein",
+    "fokus": "ITIL 4",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Service-Wertschöpfungssystem; Leitprinzipien; Praktiken; Servicemanagement im Betrieb; Rollen; Kennzahlen; Verbesserung; Bezug zum Alltag der Systemadministration",
     "abgrenzung": "",
     "hinweis": "Keine geschützten ITIL-Texte übernehmen; Inhalte sinngemäß und mit eigenen Beispielen; Version und Stand nennen.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
   },
   {
     "id": "P41",
@@ -566,12 +606,13 @@
     "titel": "Incident-, Problem- und Change-Management",
     "slug": "incident-problem-und-change-management",
     "umfang": "klein",
+    "fokus": "ITIL 4, Incident-, Problem- und Change-Management",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Incident-Lebenszyklus; Priorisierung; Eskalation; Problem-Analyse (5-Why, Ishikawa); Change-Typen; Genehmigung und Rückfallplan; Wartungsfenster; Post-Incident-Review; Dokumentation und Kennzahlen",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; optional ein Open-Source-Ticketsystem"
   },
   {
     "id": "P42",
@@ -580,12 +621,13 @@
     "titel": "Ticketsysteme in der Praxis",
     "slug": "ticketsysteme-in-der-praxis",
     "umfang": "klein",
+    "fokus": "Ticketsysteme (z. B. GLPI, Zammad oder OTOBO, Stand prüfen)",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Linux-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Zweck und Aufbau; Open-Source-Ticketsystem (z. B. GLPI oder Zammad) installieren; Kategorien und Warteschlangen; Prioritäten und SLAs; Wissensdatenbank; Automatisierung; Berichte; Anbindung an Monitoring und E-Mail",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Linux-Server-VM mit Ticketsystem; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P43",
@@ -594,12 +636,13 @@
     "titel": "SLA und Betriebshandbuch",
     "slug": "sla-und-betriebshandbuch",
     "umfang": "klein",
+    "fokus": "Service Level Agreements, Betriebshandbuch",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Servicekatalog; SLA, OLA und Kennzahlen; Verfügbarkeitsberechnung; Bereitschaft; Betriebshandbuch und Runbooks; Übergabe; Qualität und Aktualität",
     "abgrenzung": "Technische Dokumentation ist ein vorhandener Kurs; hier Betriebsregelwerk",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
   },
   {
     "id": "P44",
@@ -608,12 +651,13 @@
     "titel": "PC-Hardware und Fehlersuche",
     "slug": "pc-hardware-und-fehlersuche",
     "umfang": "klein",
+    "fokus": "PC-Hardware, Windows 11, Linux Live-System",
     "vorkenntnisse": "Keine",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Komponenten und Schnittstellen; Speicher und Netzwerkkarten; Firmware (BIOS/UEFI); Fehlersuche systematisch; Diagnosewerkzeuge; Peripherie und Drucker; Wartung; Sicherheit am Arbeitsplatz",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1 Windows-11-VM; 1 Linux-Live-Medium; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Hardwareübungen an Altgeräten oder anhand von Fallbeispielen"
   },
   {
     "id": "P45",
@@ -622,12 +666,13 @@
     "titel": "Windows-11-Client-Administration",
     "slug": "windows-11-client-administration",
     "umfang": "gross",
+    "fokus": "Windows 11",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Installation und Bereitstellung; Konten und Rechte; Netzwerk und Domänenbeitritt; Sicherheit (BitLocker, Defender, Firewall); Updates; Sicherung und Wiederherstellung; Fernwartung; Fehlersuche; Leistung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-11-Client-VM (Domäne beitretbar); 1x Windows-Server-VM (Domain Controller); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P46",
@@ -636,12 +681,13 @@
     "titel": "Betriebssystem-Rollout (MDT, MECM und Alternativen)",
     "slug": "betriebssystem-rollout-mdt-mecm-und-alternativen",
     "umfang": "gross",
+    "fokus": "MDT, Microsoft Configuration Manager, Alternativen wie FOG oder Windows Deployment Services (Stand der Produkte prüfen)",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); Windows-Server- und Active-Directory-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Rollout-Konzepte; Abbilder und Treiber; Aufgabensequenzen; Bereitstellung per Netzwerk (PXE); Softwareverteilung; Alternativen (Autopilot, Intune); Wartung der Abbilder; Fehlersuche",
     "abgrenzung": "Intune und Autopilot sind ein eigener Kurs",
     "hinweis": "Prüfe den aktuellen Status von MDT und die Bezeichnung von Microsoft Configuration Manager mit Stand; kennzeichne Unsicherheit.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Deployment-Server-VM; 1x Domain Controller; 2 leere Client-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
   },
   {
     "id": "P47",
@@ -650,12 +696,13 @@
     "titel": "Datenschutz (DSGVO) in der IT",
     "slug": "datenschutz-dsgvo-in-der-it",
     "umfang": "klein",
+    "fokus": "DSGVO, Datenschutz in der IT",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Grundbegriffe und Grundsätze; Rechtsgrundlagen; Betroffenenrechte; Verzeichnis der Verarbeitungstätigkeiten; Auftragsverarbeitung; technische und organisatorische Maßnahmen; Datenpannen und Meldung; Protokollierung und Aufbewahrung; Praxisfälle aus der Administration",
     "abgrenzung": "",
     "hinweis": "Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
   },
   {
     "id": "P48",
@@ -664,12 +711,13 @@
     "titel": "NIS2 für Administratoren",
     "slug": "nis2-fuer-administratoren",
     "umfang": "klein",
+    "fokus": "NIS2, Informationssicherheit",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Anwendungsbereich; Pflichten; Risikomanagementmaßnahmen; Meldepflichten; Lieferkette; Leitungsorgane; Umsetzung in Österreich (Stand prüfen); Bezug zu Härtung, Backup und Monitoring",
     "abgrenzung": "",
     "hinweis": "Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen. Prüfe den Umsetzungsstand in Österreich mit Datum.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
   },
   {
     "id": "P49",
@@ -678,12 +726,13 @@
     "titel": "ISO 27001 Grundlagen",
     "slug": "iso-27001-grundlagen",
     "umfang": "klein",
+    "fokus": "ISO/IEC 27001, Informationssicherheits-Managementsystem",
     "vorkenntnisse": "IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Aufbau eines Informationssicherheits-Managementsystems; Kontext und Risiko; Maßnahmen im Überblick; Dokumentation; interne Audits; Zertifizierung; Verbesserungsprozess; Bezug zum Betrieb",
     "abgrenzung": "",
     "hinweis": "Normtexte sind urheberrechtlich geschützt: nur sinngemäß und mit eigenen Beispielen; Ausgabe der Norm mit Stand nennen. Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen.",
-    "status": "offen"
+    "status": "offen",
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
   },
   {
     "id": "P50",
@@ -692,12 +741,13 @@
     "titel": "Troubleshooting-Methodik",
     "slug": "troubleshooting-methodik",
     "umfang": "klein",
+    "fokus": "Fehlersuche in Windows- und Linux-Umgebungen",
     "vorkenntnisse": "IT-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Systematisches Vorgehen; Informationen sammeln; Hypothesen; Eingrenzen; Werkzeuge (Ping, Traceroute, Protokolle, Ereignisanzeige); Dokumentieren; Kommunikation mit Anwendern; typische Fehlerbilder in Netzwerk, Server und Client; Übungsfälle",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Fehler werden vorab in der Testumgebung eingebaut"
   },
   {
     "id": "P51",
@@ -706,12 +756,13 @@
     "titel": "Projektmanagement für Administratoren",
     "slug": "projektmanagement-fuer-administratoren",
     "umfang": "klein",
+    "fokus": "Projektmanagement (klassisch und agil)",
     "vorkenntnisse": "IT-Grundlagen",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Projektphasen; Anforderungen; Planung und Aufwandsschätzung; Risiken; Kommunikation; agile und klassische Methoden im Überblick; Abnahme und Übergabe; Dokumentation; Fallbeispiele (Server-Migration, Rollout)",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
   },
   {
     "id": "P52",
@@ -720,11 +771,12 @@
     "titel": "IT-Englisch für Administratoren",
     "slug": "it-englisch-fuer-administratoren",
     "umfang": "klein",
+    "fokus": "Fachenglisch für die IT",
     "vorkenntnisse": "Schulenglisch",
-    "praxis": "Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware",
     "themen": "Fachwortschatz; Dokumentation und Fehlermeldungen lesen; E-Mails und Tickets auf Englisch; Telefon- und Support-Situationen; Berichte; Übungsdialoge; Glossar Deutsch–Englisch",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen"
+    "status": "offen",
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; Texte, Tickets und Dokumentation als Übungsmaterial"
   }
 ]

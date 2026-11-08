@@ -24,15 +24,18 @@ def lade(pfad):
 def prompt_text(kurs, rahmen, vorlage):
     umfang = rahmen["umfang_klein"] if kurs["umfang"] == "klein" else rahmen["umfang_gross"]
     hinweis = kurs["hinweis"].strip()
+    themen = kurs["themen"].strip().rstrip(".")
+    if "roubleshoot" not in themen and "Fehlersuche" not in themen:
+        themen += "; Troubleshooting und Diagnosewerkzeuge"
     return vorlage.format(
         titel=kurs["titel"],
-        zielgruppe=rahmen["zielgruppe"],
+        fokus=kurs["fokus"],
         vorkenntnisse=kurs["vorkenntnisse"],
         umfang=umfang,
-        themen=kurs["themen"],
+        themen=themen,
         abgrenzung=kurs["abgrenzung"].strip() or rahmen["abgrenzung_standard"],
-        praxis=kurs["praxis"],
-        hinweis_zeile=("Hinweis: " + hinweis + "\n") if hinweis else "",
+        labor=kurs["labor"],
+        hinweis_zeile=("Zusätzliche Hinweise: " + hinweis + "\n") if hinweis else "",
     ).rstrip("\n")
 
 

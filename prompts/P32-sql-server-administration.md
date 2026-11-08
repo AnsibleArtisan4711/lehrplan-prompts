@@ -3,16 +3,13 @@
 Priorität B, Datenbanken.
 
 ```text
-Erstelle einen vollständigen Lehrplan für den Kurs „SQL Server Administration“.
+Erstelle einen Lehrplan für den Kurs „SQL Server Administration“.
 
-Zielgruppe: Auszubildende, Quereinsteiger und angehende Systemadministratoren/Systemtechniker (Österreich/EU)
-Vorkenntnisse: IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); SQL-Grundlagen und Windows-Server-Grundlagen
-Umfang: etwa 12 Module (10 bis 14, je nach Stoffumfang), zusammen etwa 100 bis 120 Unterrichtsstunden. Gib pro Modul eine Priorität an (1 = Pflicht, 2 = Vertiefung).
-Kernthemen (decke sie vollständig ab, ordne sie sinnvoll auf die Module auf): Installation und Editionen; Instanzen und Datenbanken; Anmeldungen und Rechte; Sicherungsmodelle und Wiederherstellung; Wartungspläne; SQL Server Agent; Leistungsanalyse; Hochverfügbarkeit im Überblick; Sicherheit
-Abgrenzung: SQL-Grundlagen werden vorausgesetzt (eigener Kurs)
-Praxisumgebung: Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware
-Hinweis: Lizenz- und Editionsstand (Express, Developer, Evaluation) mit Stand nennen.
-Aufbau je Modul: Modultitel, Priorität, Stunden, überprüfbare Lernziele, Voraussetzungen, Tabelle „Lerneinheiten laut Lehrplan“ (Einheit, Inhalt, Stunden), Praxisaufgaben, Kontrollfragen.
-
-Regeln: Erfinde keine Fakten, Versionen, Befehle oder Menüpfade. Nenne Produktversionen nur mit Stand und kennzeichne Unsicheres als „nicht bestätigt“. Übernimm keine urheberrechtlich geschützten Texte oder Prüfungsfragen. Verwende eigene Szenarien und Namen sowie die Domänen example.com oder .example. Übungen laufen nur in isolierten Umgebungen und dürfen nie das Heimnetz beeinflussen. Halte dich beim Ausgabeformat an die Grundanweisung deiner Gem.
+Fokus-Technologien / Plattformen: Microsoft SQL Server (Developer- oder Evaluation-Edition), Windows Server
+Spezifische Vorkenntnisse: IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze); SQL-Grundlagen und Windows-Server-Grundlagen
+Umfang: etwa 12 Module (10 bis 14), zusammen etwa 100 bis 120 Unterrichtsstunden (UE)
+Kernthemen: Installation und Editionen; Instanzen und Datenbanken; Anmeldungen und Rechte; Sicherungsmodelle und Wiederherstellung; Wartungspläne; SQL Server Agent; Leistungsanalyse; Hochverfügbarkeit im Überblick; Sicherheit; Troubleshooting und Diagnosewerkzeuge
+Thematische Abgrenzung (Out of Scope): SQL-Grundlagen werden vorausgesetzt (eigener Kurs)
+Spezifische Labor-Ressourcen: 1x Windows-Server-VM mit SQL Server; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz
+Zusätzliche Hinweise: Lizenz- und Editionsstand (Express, Developer, Evaluation) mit Stand nennen.
 ```

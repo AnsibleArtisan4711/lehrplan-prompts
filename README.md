@@ -4,11 +4,12 @@ Fertige Prompts für den Lehrplan-Architekten (benutzerdefinierte Gem), ein Prom
 
 ## So benutzt du die Prompts
 
-1. In der Tabelle den Kurs suchen und die Datei unter `prompts/` öffnen.
-2. Den Text im Codeblock kopieren und in die Gem einfügen.
-3. Wenn der Lehrplan fertig ist, in `daten/kurse.json` den Status des Kurses ändern (`offen`, `Lehrplan erstellt`, `aufbereitet`, `gepusht`) und das Skript laufen lassen (siehe Pflege).
+1. Einmalig: den Text aus `gem/grundanweisung.md` (Abschnitt „Anweisung“) in das Feld „Anweisungen“ der Gem einfügen. Dort stehen die festen Regeln, der Aufbau des Lehrplans und die Selbstprüfung.
+2. In der Tabelle den Kurs suchen und die Datei unter `prompts/` öffnen.
+3. Den Text im Codeblock kopieren und in die Gem einfügen.
+4. Wenn der Lehrplan fertig ist, in `daten/kurse.json` den Status des Kurses ändern (`offen`, `Lehrplan erstellt`, `aufbereitet`, `gepusht`) und das Skript laufen lassen (siehe Pflege).
 
-Jeder Prompt ist in sich vollständig. Das Ausgabeformat überlässt er der Grundanweisung der Gem. Die Grundanweisung gehört in `gem/grundanweisung.md`, damit die Ergebnisse reproduzierbar bleiben.
+Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorkenntnisse, Umfang, Kernthemen, Abgrenzung, Labor-Ressourcen und bei Bedarf Zusätzliche Hinweise. Alles andere (Zielgruppe, Priorisierung, Aufbau, Quellenregeln, Ausgabeformat) steht in der Grundanweisung. Die leere Vorlage für eigene Kurse liegt in `gem/vorlage-variablen.md`.
 
 ## Kurse
 
@@ -88,10 +89,11 @@ Die Prompts und das Erzeugungsskript wurden gemeinsam mit Claude (Anthropic) ent
 | Pfad | Inhalt |
 |---|---|
 | `prompts/` | ein Prompt pro Kurs (erzeugt, nicht von Hand bearbeiten) |
-| `daten/kurse.json` | Quelle der Kurse: Titel, Themen, Abgrenzung, Vorkenntnisse, Praxisumgebung, Hinweis, Status |
-| `daten/rahmen.json` | gemeinsame Angaben: Zielgruppe, Umfang, Standard-Abgrenzung, erlaubte Status |
-| `rahmen/prompt-vorlage.txt` | gemeinsamer Text aller Prompts mit Platzhaltern |
+| `daten/kurse.json` | Quelle der Kurse: Titel, Themen, Abgrenzung, Fokus-Technologien, Vorkenntnisse, Labor-Ressourcen, Hinweis, Status |
+| `daten/rahmen.json` | gemeinsame Angaben: Umfang, Standard-Abgrenzung, erlaubte Status |
+| `rahmen/prompt-vorlage.txt` | Variablen-Vorlage aller Prompts mit Platzhaltern |
 | `gem/grundanweisung.md` | Grundanweisung der Gem (von Hand einzufügen) |
+| `gem/vorlage-variablen.md` | leere Vorlage für einen eigenen Kurs-Prompt |
 | `tools/build_prompts.py` | erzeugt `prompts/` und die Tabelle oben |
 | `CHANGELOG.md` | Änderungen am gemeinsamen Rahmen |
 | `LICENSE`, `LICENSE-DOCS.md` | MIT für das Skript, CC BY 4.0 für die Texte (Prompts, Vorlage, Daten) |
@@ -108,7 +110,7 @@ git commit -m "Prompts aktualisiert"
 git push
 ```
 
-- **Gemeinsamen Rahmen ändern** (Zielgruppe, Umfang, Regeln): `daten/rahmen.json` oder `rahmen/prompt-vorlage.txt` bearbeiten, Skript laufen lassen, im `CHANGELOG.md` eintragen.
+- **Gemeinsamen Rahmen ändern** (Umfang, Standard-Abgrenzung): `daten/rahmen.json` oder `rahmen/prompt-vorlage.txt` bearbeiten, Skript laufen lassen. Zielgruppe und Regeln stehen in `gem/grundanweisung.md` und müssen dort und in der Gem angepasst werden. Alles im `CHANGELOG.md` eintragen.
 - **Kurs ändern oder ergänzen:** Eintrag in `daten/kurse.json` bearbeiten oder am Ende anfügen (nächste freie ID, `slug` in Kleinbuchstaben ohne Umlaute), Skript laufen lassen.
 - **Qualität:** Die Prompts verlangen Versions- und Lizenzstände mit Datum. Diese Angaben im fertigen Lehrplan stichprobenartig gegen die Herstellerdokumentation prüfen.
 

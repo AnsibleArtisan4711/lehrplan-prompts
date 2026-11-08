@@ -3,15 +3,12 @@
 Priorität A, Netzwerkdienste und Firewall.
 
 ```text
-Erstelle einen vollständigen Lehrplan für den Kurs „VPN mit WireGuard und OpenVPN“.
+Erstelle einen Lehrplan für den Kurs „VPN mit WireGuard und OpenVPN“.
 
-Zielgruppe: Auszubildende, Quereinsteiger und angehende Systemadministratoren/Systemtechniker (Österreich/EU)
-Vorkenntnisse: IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)
-Umfang: etwa 12 Module (10 bis 14, je nach Stoffumfang), zusammen etwa 100 bis 120 Unterrichtsstunden. Gib pro Modul eine Priorität an (1 = Pflicht, 2 = Vertiefung).
-Kernthemen (decke sie vollständig ab, ordne sie sinnvoll auf die Module auf): VPN-Konzepte; WireGuard (Schlüssel, Peers, Routing); OpenVPN (Zertifikate, Server, Clients); Site-to-Site und Road-Warrior; IPsec in Grundzügen; Split Tunneling; Firewall-Regeln; Fehlersuche; Härtung und Betrieb
-Abgrenzung: OPNsense-Konfiguration nur soweit nötig; Zertifikatsgrundlagen im Kurs „Kryptografie, Zertifikate und TLS“
-Praxisumgebung: Isolierte Testumgebung in Hyper-V (private Switches, keine Verbindung zum Heimnetz), nur kostenlose oder Evaluationssoftware
-Aufbau je Modul: Modultitel, Priorität, Stunden, überprüfbare Lernziele, Voraussetzungen, Tabelle „Lerneinheiten laut Lehrplan“ (Einheit, Inhalt, Stunden), Praxisaufgaben, Kontrollfragen.
-
-Regeln: Erfinde keine Fakten, Versionen, Befehle oder Menüpfade. Nenne Produktversionen nur mit Stand und kennzeichne Unsicheres als „nicht bestätigt“. Übernimm keine urheberrechtlich geschützten Texte oder Prüfungsfragen. Verwende eigene Szenarien und Namen sowie die Domänen example.com oder .example. Übungen laufen nur in isolierten Umgebungen und dürfen nie das Heimnetz beeinflussen. Halte dich beim Ausgabeformat an die Grundanweisung deiner Gem.
+Fokus-Technologien / Plattformen: WireGuard, OpenVPN, Debian/Ubuntu Linux
+Spezifische Vorkenntnisse: IT-Grundlagen und Grundkenntnisse in Netzwerken (IP-Adressen, Subnetze)
+Umfang: etwa 12 Module (10 bis 14), zusammen etwa 100 bis 120 Unterrichtsstunden (UE)
+Kernthemen: VPN-Konzepte; WireGuard (Schlüssel, Peers, Routing); OpenVPN (Zertifikate, Server, Clients); Site-to-Site und Road-Warrior; IPsec in Grundzügen; Split Tunneling; Firewall-Regeln; Fehlersuche; Härtung und Betrieb
+Thematische Abgrenzung (Out of Scope): OPNsense-Konfiguration nur soweit nötig; Zertifikatsgrundlagen im Kurs „Kryptografie, Zertifikate und TLS“
+Spezifische Labor-Ressourcen: 1x VPN-Server-VM; 1 Client-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz
 ```

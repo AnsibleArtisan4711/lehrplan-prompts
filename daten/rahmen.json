@@ -1,7 +1,6 @@
 {
-  "zielgruppe": "Auszubildende, Quereinsteiger und angehende Systemadministratoren/Systemtechniker (Österreich/EU)",
-  "umfang_gross": "etwa 12 Module (10 bis 14, je nach Stoffumfang), zusammen etwa 100 bis 120 Unterrichtsstunden.",
-  "umfang_klein": "etwa 8 Module (6 bis 10, je nach Stoffumfang), zusammen etwa 40 bis 60 Unterrichtsstunden.",
+  "umfang_gross": "etwa 12 Module (10 bis 14), zusammen etwa 100 bis 120 Unterrichtsstunden (UE)",
+  "umfang_klein": "etwa 8 Module (6 bis 10), zusammen etwa 40 bis 60 Unterrichtsstunden (UE)",
   "abgrenzung_standard": "Keine Überschneidung mit vorhandenen Lehrplänen; Verweise auf vorhandene Lehrpläne nur kurz.",
   "status_werte": [
     "offen",
