@@ -1,5 +1,11 @@
 # Änderungen
 
+## 2026-11-09 (Kurse P53–P70, Einordnung in die Profil-README)
+
+- Neu: 18 Kurse in `daten/kurse.json` (P53 bis P70) mit Prompts in `prompts/`: Container (P53), Storage unter Linux (P54, P55), Cloud-Plattformen und Azure (P56 bis P58), Windows-Server und Virtualisierung (P59 bis P61), IT-Sicherheit (P62 bis P64), Automatisierung und Logging (P65, P66), Datenbanken (P67, P68), IT-Betrieb (P69, P70). Status aller neuen Kurse: offen. Die Kurse sind ein Vorschlag des Autors zusammen mit Claude, die Inhalte der Prompts sind nicht aus einer Quelle belegt.
+- Neu: Abschnitt „Einordnung in die Profil-README“ in der README (von Hand gepflegt): Zuordnung der Kurse zu den Gruppen 2, 5, 7 und den neuen Gruppen 9 bis 13.
+- Die Kurse P01 bis P52 sind unverändert.
+
 ## 2026-11-09 (Übungsreihen E01–E06)
 
 - Neu: `daten/uebungen.json` mit den sechs eigenen Übungsreihen E01–E06, in der Reihenfolge der Fächerübersicht: E01 `multi-site-hybrid-cloud-ai-sec-lab`, E02 `netzwerk-uebungen-packet-tracer`, E03 `ad-uebungen-benutzerverwaltung`, E04 `wlan-gaeste-netz-uebung`, E05 `veeam-backup-uebung`, E06 `usv-shutdown-uebung`. Handgepflegt sind Titel, Thema, Repository und der lokale Ordner; der Aufbau (Module, Einheiten, Teile, Schritte, Lernziele, Kontrollfragen, Skripte, Stellen mit „nicht bestätigt“ oder „sinngemäß“) wird aus den Dateien der Repositories gelesen.

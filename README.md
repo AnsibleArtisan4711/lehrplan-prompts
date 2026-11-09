@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 52 Kurse: 36 offen, 16 Lehrplan erstellt, 0 aufbereitet, 0 gepusht.
+Stand der 70 Kurse: 54 offen, 16 Lehrplan erstellt, 0 aufbereitet, 0 gepusht.
 
 Bedeutung der Status:
 
@@ -79,6 +79,24 @@ Bedeutung der Status:
 | 50 | C | Zusatz | Troubleshooting-Methodik | offen | [P50](prompts/P50-troubleshooting-methodik.md) | – |
 | 51 | C | Zusatz | Projektmanagement für Administratoren | offen | [P51](prompts/P51-projektmanagement-fuer-administratoren.md) | – |
 | 52 | C | Zusatz | IT-Englisch für Administratoren | offen | [P52](prompts/P52-it-englisch-fuer-administratoren.md) | – |
+| 53 | B | Container | Podman und Container-Sicherheit | offen | [P53](prompts/P53-podman-und-container-sicherheit.md) | – |
+| 54 | B | Storage | LVM und Dateisysteme unter Linux | offen | [P54](prompts/P54-lvm-und-dateisysteme-unter-linux.md) | – |
+| 55 | B | Storage | Dateidienste unter Linux mit Samba und NFS | offen | [P55](prompts/P55-dateidienste-unter-linux-mit-samba-und-nfs.md) | – |
+| 56 | B | Cloud-Plattformen | AWS Administration (SysOps) | offen | [P56](prompts/P56-aws-administration-sysops.md) | – |
+| 57 | B | Azure und Identität | Azure-Netzwerk und Azure-Sicherheit | offen | [P57](prompts/P57-azure-netzwerk-und-azure-sicherheit.md) | – |
+| 58 | C | Cloud-Plattformen | Google Cloud Grundlagen | offen | [P58](prompts/P58-google-cloud-grundlagen.md) | – |
+| 59 | B | Windows-Server-Rollen | Remotedesktopdienste (RDS) | offen | [P59](prompts/P59-remotedesktopdienste-rds.md) | – |
+| 60 | B | Virtualisierung | Failover-Clustering und Hochverfügbarkeit | offen | [P60](prompts/P60-failover-clustering-und-hochverfuegbarkeit.md) | – |
+| 61 | C | Windows-Server-Rollen | Windows Admin Center | offen | [P61](prompts/P61-windows-admin-center.md) | – |
+| 62 | B | IT-Sicherheit | IDS und IPS mit Suricata | offen | [P62](prompts/P62-ids-und-ips-mit-suricata.md) | – |
+| 63 | B | IT-Sicherheit | Passwort- und Secrets-Verwaltung | offen | [P63](prompts/P63-passwort-und-secrets-verwaltung.md) | – |
+| 64 | B | IT-Sicherheit | Penetrationstest-Grundlagen | offen | [P64](prompts/P64-penetrationstest-grundlagen.md) | – |
+| 65 | B | Automatisierung | CI/CD mit GitLab und Jenkins | offen | [P65](prompts/P65-ci-cd-mit-gitlab-und-jenkins.md) | – |
+| 66 | C | Monitoring und Logging | Windows Event Forwarding und Ereignisprotokolle | offen | [P66](prompts/P66-windows-event-forwarding-und-ereignisprotokolle.md) | – |
+| 67 | C | Datenbanken | NoSQL-Datenbanken und Redis | offen | [P67](prompts/P67-nosql-datenbanken-und-redis.md) | – |
+| 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – |
+| 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | offen | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | – |
+| 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | offen | [P70](prompts/P70-lizenzmanagement.md) | – |
 <!-- TABELLE-ENDE -->
 
 ## Die 16 Fächer (K01–K16)
@@ -130,6 +148,23 @@ Eigene Übungsreihen, die nicht aus einem Lehrplan-Skript stammen: Homelab, Netz
 3. Priorität C nach Bedarf.
 
 Schon vorhanden und deshalb nicht in der Liste: Active Directory, Gruppenrichtlinien, Microsoft 365, PowerShell, Bash, Python, Linux-Grundlagen, LPIC 1 bis 3, DHCP, DNSSEC, Netzwerktechnik, Webserver, Webdesign, Git, technische Dokumentation, Cloud-Grundlagen, IT-Grundlagen, Microsoft Office, Unternehmensgründung.
+
+## Einordnung in die Profil-README
+
+Wenn aus einem Kurs ein eigenes Repository wird, kommt es in der Profil-README (`AnsibleArtisan4711/README.md`) in eine dieser Gruppen. Die Gruppen 1 bis 8 gibt es dort schon, die Gruppen 9 bis 13 sind neu und werden angelegt, sobald das erste Repository dazu da ist. Die Tabelle „Kurse“ oben ist nach Themengebieten geordnet, die Gruppen hier nach der Profil-README.
+
+| Gruppe in der Profil-README | Kurse |
+|---|---|
+| 2 Netzwerk (vorhanden) | P08 OPNsense, P09 nftables und iptables, P10 WireGuard und OpenVPN, P11 Reverse Proxy und TLS |
+| 5 Linux, Shell und Programmieren (vorhanden) | P25 Docker, P26 Kubernetes, P53 Podman und Container-Sicherheit, P54 LVM und Dateisysteme, P55 Samba und NFS |
+| 7 Cloud und IT-Grundlagen (vorhanden) | P27 Azure, P28 Entra ID, P29 Intune und Autopilot, P56 AWS Administration, P57 Azure-Netzwerk und -Sicherheit, P58 Google Cloud |
+| 9 Server und Virtualisierung (neu) | P01 bis P04 Windows-Server-Rollen, P05 bis P07 Virtualisierung, P37 bis P39 E-Mail, P44 bis P46 Client und Hardware, P59 Remotedesktopdienste, P60 Failover-Clustering, P61 Windows Admin Center |
+| 10 IT-Sicherheit (neu) | P12 bis P16, P62 IDS und IPS mit Suricata, P63 Passwort- und Secrets-Verwaltung, P64 Penetrationstest-Grundlagen |
+| 11 Monitoring und Automatisierung (neu) | P17 bis P20 Monitoring und Logging, P21 bis P24 Automatisierung, P65 CI/CD, P66 Windows Event Forwarding |
+| 12 Datenbanken und Storage (neu) | P30 bis P32 Datenbanken, P33 und P34 Storage, P35 und P36 Backup und Notfall, P67 NoSQL und Redis, P68 Datenbank-Backup |
+| 13 IT-Betrieb und Compliance (neu) | P40 bis P43 IT-Betrieb und Prozesse, P47 bis P49 Recht und Compliance, P50 bis P52 Zusatz, P69 Asset-Verwaltung und CMDB, P70 Lizenzmanagement |
+
+Die Zuordnung ist ein Vorschlag. P53 bis P70 sind die zusätzlichen Kurse für diese Gruppen (Stand 2026-11-09). Offen sind vor allem Randfälle: P54 und P55 sind Storage-Kurse unter Linux (hier Gruppe 5), P09 und P14 sind Linux-Kurse (hier Netzwerk bzw. IT-Sicherheit), E-Mail und Client und Hardware sind ohne eigene Gruppe unter Server und Virtualisierung eingeordnet, und P50 bis P52 passen auch zu Gruppe 8 (Arbeitsweise und Wirtschaft).
 
 ## Entstehung
 
