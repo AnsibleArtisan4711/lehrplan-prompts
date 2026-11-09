@@ -1,0 +1,1903 @@
+[
+  {
+    "id": "E01",
+    "titel": "Multi-Site Hybrid Cloud & AI-Sec Operations",
+    "slug": "multi-site-hybrid-cloud-ai-sec-lab",
+    "thema": "Homelab und Betrieb",
+    "repo": "multi-site-hybrid-cloud-ai-sec-lab",
+    "art": "steps",
+    "lokal": "D:\\Multi Site Hybrid Cloud AI Sec Lab\\github",
+    "module": [
+      {
+        "nr": 0,
+        "ordner": "00-mission-control",
+        "titel": "Mission Control (Strategie & Architektur)",
+        "beschreibung": "Bevor die erste VM startet, muss der Bauplan stehen. Dies ist dein architektonisches Fundament.",
+        "einheiten": [
+          {
+            "nr": "0.1",
+            "titel": "Topologie-Design",
+            "datei": "0.1-topologie-design.md",
+            "skripte": []
+          },
+          {
+            "nr": "0.2",
+            "titel": "Namenskonvention",
+            "datei": "0.2-namenskonvention.md",
+            "skripte": []
+          },
+          {
+            "nr": "0.3",
+            "titel": "Ressourcen-Planung (RAM Allocation)",
+            "datei": "0.3-ressourcen-planung-ram-allocation.md",
+            "skripte": []
+          },
+          {
+            "nr": "0.4",
+            "titel": "Domain-Strategie",
+            "datei": "0.4-domain-strategie.md",
+            "skripte": []
+          },
+          {
+            "nr": "0.5",
+            "titel": "Lizenz-Management",
+            "datei": "0.5-lizenz-management.md",
+            "skripte": []
+          },
+          {
+            "nr": "0.6",
+            "titel": "Phasen-Definition (Meilensteine)",
+            "datei": "0.6-phasen-definition-meilensteine.md",
+            "skripte": []
+          },
+          {
+            "nr": "0.7",
+            "titel": "Sicherheitskonzept (AD Tier-Modell)",
+            "datei": "0.7-sicherheitskonzept-ad-tier-modell.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 1,
+        "ordner": "01-virtualisierung-storage",
+        "titel": "Virtualisierung & Storage-Meisterschaft",
+        "beschreibung": "Das physische Fundament und dein massiver Datenspeicher werden vorbereitet.",
+        "einheiten": [
+          {
+            "nr": "1.1",
+            "titel": "Hyper-V Setup & vSwitch Konfiguration",
+            "datei": "1.1-hyper-v-setup-vswitch-konfiguration.md",
+            "skripte": []
+          },
+          {
+            "nr": "1.2",
+            "titel": "NAS Storage Architektur (UGreen DXP4800)",
+            "datei": "1.2-nas-storage-architektur-ugreen-dxp4800.md",
+            "skripte": []
+          },
+          {
+            "nr": "1.3",
+            "titel": "Storage Tiering & NVMe-Caching (UGreen DXP4800)",
+            "datei": "1.3-storage-tiering-nvme-caching-ugreen-dxp4800.md",
+            "skripte": []
+          },
+          {
+            "nr": "1.4",
+            "titel": "Netzwerk-Speicher (iSCSI & SMB) Bereitstellung",
+            "datei": "1.4-netzwerk-speicher-iscsi-smb-bereitstellung.md",
+            "skripte": []
+          },
+          {
+            "nr": "1.5",
+            "titel": "SD-Card Nutzung & NAS Virtualisierung",
+            "datei": "1.5-sd-card-nutzung-nas-virtualisierung.md",
+            "skripte": []
+          },
+          {
+            "nr": "1.6",
+            "titel": "VM-Provisioning (Gen2 & Secure Boot)",
+            "datei": "1.6-vm-provisioning-gen2-secure-boot.md",
+            "skripte": []
+          },
+          {
+            "nr": "1.7",
+            "titel": "Dynamischer RAM (Dynamic Memory Tuning)",
+            "datei": "1.7-dynamischer-ram-dynamic-memory-tuning.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 2,
+        "ordner": "02-standortvernetzung-routing",
+        "titel": "Standortvernetzung & Routing (OPNsense)",
+        "beschreibung": "Die zwei isolierten Rechner werden zu einem logischen Unternehmensnetzwerk verbunden.",
+        "einheiten": [
+          {
+            "nr": "2.1",
+            "titel": "Firewall Installation (OPNsense)",
+            "datei": "2.1-firewall-installation-opnsense.md",
+            "skripte": []
+          },
+          {
+            "nr": "2.2",
+            "titel": "Interface-Konfiguration (WAN, LAN, DMZ)",
+            "datei": "2.2-interface-konfiguration-wan-lan-dmz.md",
+            "skripte": []
+          },
+          {
+            "nr": "2.3",
+            "titel": "Site-to-Site VPN (WireGuard)",
+            "datei": "2.3-site-to-site-vpn-wireguard.md",
+            "skripte": []
+          },
+          {
+            "nr": "2.4",
+            "titel": "Routing-Test & Tunnel-Verifizierung",
+            "datei": "2.4-routing-test-tunnel-verifizierung.md",
+            "skripte": []
+          },
+          {
+            "nr": "2.5",
+            "titel": "DMZ-Konfiguration & Isolation",
+            "datei": "2.5-dmz-konfiguration-isolation.md",
+            "skripte": []
+          },
+          {
+            "nr": "2.6",
+            "titel": "Firewall-Regelwerk & Basisschutz",
+            "datei": "2.6-firewall-regelwerk-basisschutz.md",
+            "skripte": []
+          },
+          {
+            "nr": "2.7",
+            "titel": "NAT/Port-Forwarding & Webserver-Zugriff",
+            "datei": "2.7-nat-port-forwarding-webserver-zugriff.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 3,
+        "ordner": "03-multi-site-active-directory",
+        "titel": "Multi-Site Active Directory",
+        "beschreibung": "Das Herzstück der Authentifizierung wird über beide Standorte repliziert.",
+        "einheiten": [
+          {
+            "nr": "3.1",
+            "titel": "PDC Promotion (Forest Setup)",
+            "datei": "3.1-pdc-promotion-forest-setup.md",
+            "skripte": []
+          },
+          {
+            "nr": "3.2",
+            "titel": "SDC Promotion (Site Replication)",
+            "datei": "3.2-sdc-promotion-site-replication.md",
+            "skripte": []
+          },
+          {
+            "nr": "3.3",
+            "titel": "Active Directory Sites & Services",
+            "datei": "3.3-active-directory-sites-services.md",
+            "skripte": []
+          },
+          {
+            "nr": "3.4",
+            "titel": "Replikations-Tuning & Site-Link Konfiguration",
+            "datei": "3.4-replikations-tuning-site-link-konfiguration.md",
+            "skripte": []
+          },
+          {
+            "nr": "3.5",
+            "titel": "DNS Split-Brain Konfiguration",
+            "datei": "3.5-dns-split-brain-konfiguration.md",
+            "skripte": []
+          },
+          {
+            "nr": "3.6",
+            "titel": "FSMO-Rollen & Verifizierung",
+            "datei": "3.6-fsmo-rollen-verifizierung.md",
+            "skripte": []
+          },
+          {
+            "nr": "3.7",
+            "titel": "Global Catalog (GC) Konfiguration",
+            "datei": "3.7-global-catalog-gc-konfiguration.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 4,
+        "ordner": "04-dmz-web-hosting",
+        "titel": "Die virtuelle DMZ & Web-Hosting",
+        "beschreibung": "Dein Test-Webserver wird sicher vom restlichen Firmennetz isoliert.",
+        "einheiten": [
+          {
+            "nr": "4.1",
+            "titel": "Ubuntu Server Setup (DMZ)",
+            "datei": "4.1-ubuntu-server-setup-dmz.md",
+            "skripte": []
+          },
+          {
+            "nr": "4.2",
+            "titel": "Apache Webserver & Test-Website",
+            "datei": "4.2-apache-webserver-test-website.md",
+            "skripte": []
+          },
+          {
+            "nr": "4.3",
+            "titel": "DMZ Hardening & Netzwerk-Isolation",
+            "datei": "4.3-dmz-hardening-netzwerk-isolation.md",
+            "skripte": []
+          },
+          {
+            "nr": "4.4",
+            "titel": "Zertifikate (Let’s Encrypt) & SSL-Verschlüsselung",
+            "datei": "4.4-zertifikate-let-s-encrypt-ssl-verschluesselung.md",
+            "skripte": []
+          },
+          {
+            "nr": "4.5",
+            "titel": "Management-Zugriff, Whitelisting & Reverse Proxy",
+            "datei": "4.5-management-zugriff-whitelisting-reverse-proxy.md",
+            "skripte": []
+          },
+          {
+            "nr": "4.6",
+            "titel": "Deployment-Prozess (Updates & Web-Content)",
+            "datei": "4.6-deployment-prozess-updates-web-content.md",
+            "skripte": []
+          },
+          {
+            "nr": "4.7",
+            "titel": "Live-Test & Split-Brain DNS Verifizierung",
+            "datei": "4.7-live-test-split-brain-dns-verifizierung.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 5,
+        "ordner": "05-client-integration",
+        "titel": "Windows & Linux Client Integration",
+        "beschreibung": "Endgeräte werden in die Domäne aufgenommen und zentral verwaltet.",
+        "einheiten": [
+          {
+            "nr": "5.1",
+            "titel": "Windows 11 AD-Join (HQ Client)",
+            "datei": "5.1-windows-11-ad-join-hq-client.md",
+            "skripte": []
+          },
+          {
+            "nr": "5.2",
+            "titel": "Edubuntu (Linux) AD-Join",
+            "datei": "5.2-edubuntu-linux-ad-join.md",
+            "skripte": []
+          },
+          {
+            "nr": "5.3",
+            "titel": "GPO: Basis-Security (Kennwort & Bildschirmsperre)",
+            "datei": "5.3-gpo-basis-security-kennwort-bildschirmsperre.md",
+            "skripte": []
+          },
+          {
+            "nr": "5.4",
+            "titel": "GPO: File Shares (Automatische Netzlaufwerke)",
+            "datei": "5.4-gpo-file-shares-automatische-netzlaufwerke.md",
+            "skripte": []
+          },
+          {
+            "nr": "5.5",
+            "titel": "LAPS Implementierung (Local Administrator Password Solution)",
+            "datei": "5.5-laps-implementierung-local-administrator.md",
+            "skripte": []
+          },
+          {
+            "nr": "5.6",
+            "titel": "Linux AD-Logins (Test & Verifizierung)",
+            "datei": "5.6-linux-ad-logins-test-verifizierung.md",
+            "skripte": []
+          },
+          {
+            "nr": "5.7",
+            "titel": "Sudo-Rechte via AD (Gruppenbasierte Vergabe)",
+            "datei": "5.7-sudo-rechte-via-ad-gruppenbasierte-vergabe.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 6,
+        "ordner": "06-hybrid-identity-m365",
+        "titel": "Hybrid Identity & Microsoft 365",
+        "beschreibung": "Die Brücke zwischen lokaler Kontrolle und der Cloud wird gebaut.",
+        "einheiten": [
+          {
+            "nr": "6.1",
+            "titel": "UPN-Suffix Config & Tenant-Schutzkonzept",
+            "datei": "6.1-upn-suffix-config-tenant-schutzkonzept.md",
+            "skripte": []
+          },
+          {
+            "nr": "6.2",
+            "titel": "Entra Connect Setup (Dedizierter Sync-Server)",
+            "datei": "6.2-entra-connect-setup-dedizierter-sync-server.md",
+            "skripte": []
+          },
+          {
+            "nr": "6.3",
+            "titel": "Password Hash Sync (PHS) & Seamless SSO",
+            "datei": "6.3-password-hash-sync-phs-seamless-sso.md",
+            "skripte": []
+          },
+          {
+            "nr": "6.4",
+            "titel": "Selektiver Sync (Organisationseinheiten-Filterung)",
+            "datei": "6.4-selektiver-sync-organisationseinheiten-filterung.md",
+            "skripte": []
+          },
+          {
+            "nr": "6.5",
+            "titel": "Microsoft 365 Lizenz-Zuweisung",
+            "datei": "6.5-microsoft-365-lizenz-zuweisung.md",
+            "skripte": []
+          },
+          {
+            "nr": "6.6",
+            "titel": "Exchange Online Postfach-Test (End-to-End)",
+            "datei": "6.6-exchange-online-postfach-test-end-to-end.md",
+            "skripte": []
+          },
+          {
+            "nr": "6.7",
+            "titel": "SharePoint Online & Team-Site Zugriff",
+            "datei": "6.7-sharepoint-online-team-site-zugriff.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 7,
+        "ordner": "07-log-aggregation",
+        "titel": "Log-Aggregation & Event Management",
+        "beschreibung": "Vorbereitung für die KI: Alle Systemdaten an einem zentralen Ort sammeln.",
+        "einheiten": [
+          {
+            "nr": "7.1",
+            "titel": "Windows Event Forwarding (Staging auf DC-01)",
+            "datei": "7.1-windows-event-forwarding-staging-auf-dc-01.md",
+            "skripte": []
+          },
+          {
+            "nr": "7.2",
+            "titel": "Syslog auf OPNsense (Export zum Kali-Hub)",
+            "datei": "7.2-syslog-auf-opnsense-export-zum-kali-hub.md",
+            "skripte": []
+          },
+          {
+            "nr": "7.3",
+            "titel": "Linux Log Export (rsyslog zum Kali-Hub)",
+            "datei": "7.3-linux-log-export-rsyslog-zum-kali-hub.md",
+            "skripte": []
+          },
+          {
+            "nr": "7.4",
+            "titel": "Zentraler Speicherort (Kali-SIEM & Share-Setup)",
+            "datei": "7.4-zentraler-speicherort-kali-siem-share-setup.md",
+            "skripte": []
+          },
+          {
+            "nr": "7.5",
+            "titel": "Log-Formatierung (KI-Readiness & Strukturierung)",
+            "datei": "7.5-log-formatierung-ki-readiness-strukturierung.md",
+            "skripte": [
+              "scripts/07-log-aggregation/7.5-powershell-evtx-to-json-push.ps1"
+            ]
+          },
+          {
+            "nr": "7.6",
+            "titel": "Erweiterte Überwachungsrichtlinien (Audit Policies)",
+            "datei": "7.6-erweiterte-ueberwachungsrichtlinien-audit.md",
+            "skripte": []
+          },
+          {
+            "nr": "7.7",
+            "titel": "Datenbereinigung (Noise-Filtering & AI-Ready Data)",
+            "datei": "7.7-datenbereinigung-noise-filtering-ai-ready-data.md",
+            "skripte": [
+              "scripts/07-log-aggregation/7.7-optimiertes-powershell-export-skript.ps1",
+              "scripts/07-log-aggregation/7.7-python-log-deduplizierung-cleaning.py"
+            ]
+          }
+        ]
+      },
+      {
+        "nr": 8,
+        "ordner": "08-ai-ops-ollama",
+        "titel": "AI Ops – Log-Analyse mit Ollama (Highlight)",
+        "beschreibung": "Einsatz von lokaler KI zur Erkennung von Sicherheitsvorfällen.",
+        "einheiten": [
+          {
+            "nr": "8.1",
+            "titel": "Kali Linux Setup (KI-Plattform & SIEM-Hub)",
+            "datei": "8.1-kali-linux-setup-ki-plattform-siem-hub.md",
+            "skripte": []
+          },
+          {
+            "nr": "8.2",
+            "titel": "Ollama Installation & Modell-Management",
+            "datei": "8.2-ollama-installation-modell-management.md",
+            "skripte": []
+          },
+          {
+            "nr": "8.3",
+            "titel": "Python API-Anbindung (Automatisierte Analyse)",
+            "datei": "8.3-python-api-anbindung-automatisierte-analyse.md",
+            "skripte": [
+              "scripts/08-ai-ops-ollama/ai_log_analyzer.py"
+            ]
+          },
+          {
+            "nr": "8.4",
+            "titel": "Prompt Engineering (Bedrohungserkennung mit LLMs)",
+            "datei": "8.4-prompt-engineering-bedrohungserkennung-mit-llms.md",
+            "skripte": []
+          },
+          {
+            "nr": "8.5",
+            "titel": "Automatisierter Feed (Echtzeit-KI-Analyse)",
+            "datei": "8.5-automatisierter-feed-echtzeit-ki-analyse.md",
+            "skripte": [
+              "scripts/08-ai-ops-ollama/ki_siem_daemon.py"
+            ]
+          },
+          {
+            "nr": "8.6",
+            "titel": "Alarmierung & Benachrichtigung (Incident Response)",
+            "datei": "8.6-alarmierung-benachrichtigung-incident-response.md",
+            "skripte": []
+          },
+          {
+            "nr": "8.7",
+            "titel": "Simulation & Verifizierung (KI-Attack-Test)",
+            "datei": "8.7-simulation-verifizierung-ki-attack-test.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 9,
+        "ordner": "09-security-audits-pentesting",
+        "titel": "Security Audits & Penetration Testing",
+        "beschreibung": "Das System auf Herz und Nieren prüfen – \"Hack yourself first\".",
+        "einheiten": [
+          {
+            "nr": "9.1",
+            "titel": "Vulnerability Scanning (OpenVAS / GVM)",
+            "datei": "9.1-vulnerability-scanning-openvas-gvm.md",
+            "skripte": []
+          },
+          {
+            "nr": "9.2",
+            "titel": "Vulnerability Audits: Nmap Sweeps & Port-Scans",
+            "datei": "9.2-vulnerability-audits-nmap-sweeps-port-scans.md",
+            "skripte": []
+          },
+          {
+            "nr": "9.3",
+            "titel": "AD Enumeration & Rechte-Analyse (BloodHound)",
+            "datei": "9.3-ad-enumeration-rechte-analyse-bloodhound.md",
+            "skripte": []
+          },
+          {
+            "nr": "9.4",
+            "titel": "Passwort-Tests (Brute-Force & Offline Cracking)",
+            "datei": "9.4-passwort-tests-brute-force-offline-cracking.md",
+            "skripte": []
+          },
+          {
+            "nr": "9.5",
+            "titel": "Web-App Security (Apache & DMZ Audit)",
+            "datei": "9.5-web-app-security-apache-dmz-audit.md",
+            "skripte": []
+          },
+          {
+            "nr": "9.6",
+            "titel": "Intrusion Detection & Prevention (Suricata)",
+            "datei": "9.6-intrusion-detection-prevention-suricata.md",
+            "skripte": []
+          },
+          {
+            "nr": "9.7",
+            "titel": "Blue Team vs. Red Team (Purple Teaming & KI-Audit)",
+            "datei": "9.7-blue-team-vs-red-team-purple-teaming-ki-audit.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 10,
+        "ordner": "10-backup-disaster-recovery",
+        "titel": "Backup & Disaster Recovery (3-2-1-0)",
+        "beschreibung": "Der Rettungsschirm für das gesamte Unternehmen.",
+        "einheiten": [
+          {
+            "nr": "10.1",
+            "titel": "Veeam Backup & Replication (Installation & Setup)",
+            "datei": "10.1-veeam-backup-replication-installation-setup.md",
+            "skripte": []
+          },
+          {
+            "nr": "10.2",
+            "titel": "NAS als Primary Repository & Erster Backup-Job",
+            "datei": "10.2-nas-als-primary-repository-erster-backup-job.md",
+            "skripte": []
+          },
+          {
+            "nr": "10.3",
+            "titel": "Backup-Jobs (Tägliche inkrementelle Sicherung)",
+            "datei": "10.3-backup-jobs-taegliche-inkrementelle-sicherung.md",
+            "skripte": []
+          },
+          {
+            "nr": "10.4",
+            "titel": "Sekundär-Speicher (A:) & Cloud-Gateway (Google Drive)",
+            "datei": "10.4-sekundaer-speicher-a-cloud-gateway-google-drive.md",
+            "skripte": [
+              "scripts/10-backup-disaster-recovery/10.4-powershell-offsite-sync-skript.ps1"
+            ]
+          },
+          {
+            "nr": "10.5",
+            "titel": "Backup Copy Job & Cloud-Verschlüsselung",
+            "datei": "10.5-backup-copy-job-cloud-verschluesselung.md",
+            "skripte": [
+              "scripts/10-backup-disaster-recovery/10.5-angepasstes-offsite-sync-skript.ps1"
+            ]
+          },
+          {
+            "nr": "10.6",
+            "titel": "Disaster Recovery Test (Instant VM Recovery)",
+            "datei": "10.6-disaster-recovery-test-instant-vm-recovery.md",
+            "skripte": []
+          },
+          {
+            "nr": "10.7",
+            "titel": "Active Directory Item-Level Recovery (Veeam Explorer)",
+            "datei": "10.7-active-directory-item-level-recovery-veeam.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 11,
+        "ordner": "11-m365-deep-dive",
+        "titel": "M365 Business Basic Deep Dive",
+        "beschreibung": "Ausreizen der Cloud-Features für die tägliche Administration.",
+        "einheiten": [
+          {
+            "nr": "11.1",
+            "titel": "Exchange Online Admin (Shared Mailboxes)",
+            "datei": "11.1-exchange-online-admin-shared-mailboxes.md",
+            "skripte": []
+          },
+          {
+            "nr": "11.2",
+            "titel": "Microsoft Teams Governance (Erstellung & Gäste)",
+            "datei": "11.2-microsoft-teams-governance-erstellung-gaeste.md",
+            "skripte": [
+              "scripts/11-m365-deep-dive/11.2-powershell-m365-gruppenerstellung.ps1"
+            ]
+          },
+          {
+            "nr": "11.3",
+            "titel": "SharePoint Berechtigungen (Abgleich mit lokalen Shares)",
+            "datei": "11.3-sharepoint-berechtigungen-abgleich-mit-lokalen.md",
+            "skripte": []
+          },
+          {
+            "nr": "11.4",
+            "titel": "Basic Mobility & Security (Mobile Device Management)",
+            "datei": "11.4-basic-mobility-security-mobile-device-management.md",
+            "skripte": []
+          },
+          {
+            "nr": "11.5",
+            "titel": "Security Defaults & MFA (Überprüfung der Anmeldesicherheit)",
+            "datei": "11.5-security-defaults-mfa-ueberpruefung-der.md",
+            "skripte": []
+          },
+          {
+            "nr": "11.6",
+            "titel": "PowerShell für M365 (MS Graph Automatisierung)",
+            "datei": "11.6-powershell-fuer-m365-ms-graph-automatisierung.md",
+            "skripte": [
+              "scripts/11-m365-deep-dive/11.6-massen-update-von-benutzerattributen.ps1"
+            ]
+          },
+          {
+            "nr": "11.7",
+            "titel": "Spam- & Phishing-Filter (Defender Basiseinstellungen)",
+            "datei": "11.7-spam-phishing-filter-defender-basiseinstellungen.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": 12,
+        "ordner": "12-dokumentation-uebergabe",
+        "titel": "Dokumentation, Lifecycle & Übergabe",
+        "beschreibung": "Der Abschluss eines jeden IT-Projekts: Was nicht dokumentiert ist, existiert nicht.",
+        "einheiten": [
+          {
+            "nr": "12.1",
+            "titel": "Executive Summary & Projekt-Tabellen",
+            "datei": "12.1-executive-summary-projekt-tabellen.md",
+            "skripte": []
+          },
+          {
+            "nr": "12.2",
+            "titel": "Systemhandbuch: AD, GPOs & Backup-Dokumentation",
+            "datei": "12.2-systemhandbuch-ad-gpos-backup-dokumentation.md",
+            "skripte": []
+          },
+          {
+            "nr": "12.3",
+            "titel": "AI-Projektbericht (Ollama SIEM & Analyse-Ergebnisse)",
+            "datei": "12.3-ai-projektbericht-ollama-siem-analyse-ergebnisse.md",
+            "skripte": []
+          },
+          {
+            "nr": "12.4",
+            "titel": "Notfall-Plan (Disaster Recovery Runbook)",
+            "datei": "12.4-notfall-plan-disaster-recovery-runbook.md",
+            "skripte": []
+          },
+          {
+            "nr": "12.5",
+            "titel": "Lizenz-Übersicht & IT-Kostenrechnung (TCO)",
+            "datei": "12.5-lizenz-uebersicht-it-kostenrechnung-tco.md",
+            "skripte": []
+          },
+          {
+            "nr": "12.6",
+            "titel": "Übergabe-Protokoll (Cleanup & Dauer-Admins)",
+            "datei": "12.6-uebergabe-protokoll-cleanup-dauer-admins.md",
+            "skripte": []
+          },
+          {
+            "nr": "12.7",
+            "titel": "Lessons Learned & Kritische Selbstreflexion",
+            "datei": "12.7-lessons-learned-kritische-selbstreflexion.md",
+            "skripte": []
+          }
+        ]
+      },
+      {
+        "nr": null,
+        "ordner": "anhang",
+        "titel": "Anhang: Exkurs – Windows Server Remote Management & Admin-Tools",
+        "beschreibung": "",
+        "einheiten": [
+          {
+            "nr": "A",
+            "titel": "Anhang: Exkurs – Windows Server Remote Management & Admin-Tools",
+            "datei": "anhang-remote-management.md",
+            "skripte": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "E02",
+    "titel": "Netzwerktechnik mit Cisco Packet Tracer",
+    "slug": "netzwerk-packet-tracer",
+    "thema": "Netzwerk",
+    "repo": "netzwerk-uebungen-packet-tracer",
+    "art": "uebungen",
+    "lokal": "D:\\Netzwerktechnik\\github",
+    "module": [
+      {
+        "nr": 1,
+        "ordner": "01-grundlagen",
+        "titel": "Grundlagen",
+        "beschreibung": "",
+        "einheiten": [
+          {
+            "datei": "01.1-erstes-netzwerk.md",
+            "titel": "Das erste Netzwerk – zwei PCs und ein Switch",
+            "stufe": "Grundlage",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was ein Netzwerk, ein Endgerät (Host) und ein Switch sind,",
+              "erklären, was eine IP-Adresse und eine Subnetzmaske sind und woran zwei Geräte erkennen, dass sie im *gleichen* Netz liegen,",
+              "in Packet Tracer ein Netzwerk mit zwei PCs und einem Switch aufbauen und verkabeln,",
+              "statische IP-Adressen an PCs vergeben, dem Switch mit `ip address` eine Verwaltungsadresse geben und die Verbindung mit `ping` testen,",
+              "beschreiben, was im Netzwerk passiert, wenn ein `ping` gesendet wird (ARP, ICMP, MAC-Adresstabelle)."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Geräte platzieren"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Link-Status prüfen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "IP-Adressen an den PCs vergeben"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Dem Switch eine Verwaltungsadresse geben"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Konfiguration prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "MAC-Adresstabelle des Switches anzeigen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Projekt speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Woran erkennt PC0, dass PC1 im selben Netz liegt?",
+              "Warum wird für diese Übung kein Router gebraucht?",
+              "Was ist der Unterschied zwischen IP-Adresse und MAC-Adresse?",
+              "Welchen Befehl benutzt du auf einem Cisco-Switch oder -Router, um einem Interface eine IP-Adresse zu geben, und warum gilt das nicht für die PCs in Packet Tracer?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **CLI:** Die PCs laufen nicht mit IOS, daher gibt es hier **kein** `ip address`. Die Eingabeaufforderung (*Desktop* → *Command Prompt*) kennt laut Packet-Tracer-Hilfe u. a. `ipconfig`, `ping`, `arp` und `tracert`. Ob…"
+              },
+              {
+                "teil": "",
+                "text": "**Link-Status (Schritt 4):** GUI: Nach einigen Sekunden sind beide Link-Punkte grün. CLI (Switch, sinngemäß, nicht bestätigt):"
+              },
+              {
+                "teil": "",
+                "text": "Default Gateway bleibt leer. GUI: *Desktop* → *IP Configuration* → *Static*, Werte eintragen. CLI: Die PCs haben kein IOS und damit kein `ip address`. Verlässlich ist der GUI-Weg. Ob `ipconfig <IP> <Maske>` an der PC-Ei…"
+              },
+              {
+                "teil": "",
+                "text": "Nach `no shutdown` meldet der Switch sinngemäß, dass das Line Protocol von `Vlan1` auf `up` gewechselt ist (sobald mindestens ein Port am Netz hängt und aktiv ist)."
+              },
+              {
+                "teil": "",
+                "text": "**Konfiguration prüfen (Schritt 7, sinngemäß, nicht bestätigt):** GUI: PC: *Desktop* → *IP Configuration*, Switch: *Config* → *VLAN1*. CLI am PC0:"
+              },
+              {
+                "teil": "",
+                "text": "**Ping (Schritt 8, sinngemäß, nicht bestätigt):** GUI: Mit *Add Simple PDU* von PC0 zu PC1, von PC0 zum Switch und vom Switch zu PC0: Status jeweils *Successful* (der erste Versuch kann wegen ARP verloren gehen). CLI vo…"
+              }
+            ],
+            "nr": "01.1"
+          }
+        ],
+        "skripte": [],
+        "geplant": "Zwei Netze und ein Router, Subnetting von Hand (ein /24 in vier Netze)."
+      },
+      {
+        "nr": 2,
+        "ordner": "02-switching",
+        "titel": "Switching",
+        "beschreibung": "",
+        "einheiten": [],
+        "skripte": [],
+        "geplant": "VLANs, Trunks, STP, EtherChannel."
+      },
+      {
+        "nr": 3,
+        "ordner": "03-routing",
+        "titel": "Routing",
+        "beschreibung": "",
+        "einheiten": [],
+        "skripte": [],
+        "geplant": "statisches Routing, Inter-VLAN-Routing, OSPF."
+      },
+      {
+        "nr": 4,
+        "ordner": "04-netzdienste",
+        "titel": "Netzdienste",
+        "beschreibung": "",
+        "einheiten": [],
+        "skripte": [],
+        "geplant": "DHCP, DNS, NAT."
+      },
+      {
+        "nr": 5,
+        "ordner": "05-sicherheit",
+        "titel": "Sicherheit",
+        "beschreibung": "",
+        "einheiten": [],
+        "skripte": [],
+        "geplant": "SSH, Port Security, ACLs."
+      },
+      {
+        "nr": 6,
+        "ordner": "06-wan-vpn",
+        "titel": "WAN und VPN",
+        "beschreibung": "",
+        "einheiten": [],
+        "skripte": [],
+        "geplant": "Standortkopplung, VPN."
+      },
+      {
+        "nr": 7,
+        "ordner": "07-ipv6",
+        "titel": "IPv6",
+        "beschreibung": "",
+        "einheiten": [],
+        "skripte": [],
+        "geplant": ""
+      },
+      {
+        "nr": 8,
+        "ordner": "08-fehlersuche",
+        "titel": "Fehlersuche",
+        "beschreibung": "",
+        "einheiten": [],
+        "skripte": [],
+        "geplant": ""
+      }
+    ]
+  },
+  {
+    "id": "E03",
+    "titel": "Benutzerverwaltung im Active Directory",
+    "slug": "benutzerverwaltung-active-directory",
+    "thema": "Windows und Active Directory",
+    "repo": "ad-uebungen-benutzerverwaltung",
+    "art": "uebungen",
+    "lokal": "D:\\Benutzerverwaltung im Active Directory\\github",
+    "module": [
+      {
+        "nr": 1,
+        "ordner": "01-benutzerverwaltung",
+        "titel": "Benutzerverwaltung",
+        "beschreibung": "",
+        "einheiten": [
+          {
+            "datei": "01.1-benutzerverwaltung-im-active-directory.md",
+            "titel": "Benutzerverwaltung im Active Directory",
+            "stufe": "Aufbau",
+            "zeit": "6 bis 8 Stunden (Schätzung), auf mehrere Tage verteilbar",
+            "werkzeuge": "Hyper-V, Windows Server mit AD DS, Windows 11 Pro, PowerShell 5.1",
+            "voraussetzungen": [
+              "Ein Hyper-V-Host mit genug Platz für zwei VMs (je 2 bis 4 GB RAM reichen für die Übung).",
+              "ISO-Dateien für einen Windows Server mit Desktopdarstellung und für Windows 11 Pro (eigene Lizenzen oder Testversionen).",
+              "Grundkenntnisse in PowerShell (Befehl, Parameter, Pipeline).",
+              "**Wichtig:** Die Übung läuft in einer **eigenen Test-Domäne** auf einem **privaten Hyper-V-Switch ohne Verbindung nach außen**. Sie berührt weder ein bestehendes Active Directory noch das Heimnetz."
+            ],
+            "lernziele": [
+              "eine Organisationsstruktur im Active Directory planen und anlegen,",
+              "Benutzer einzeln und per CSV-Datei anlegen, ohne Duplikate und ohne Klartextkennwörter im Skript,",
+              "typische Alltagsaufgaben erledigen: Kennwort zurücksetzen, Konto entsperren, Austritt, Namensänderung, inaktive Konten finden,",
+              "einer Helpdesk-Gruppe genau die Rechte geben, die sie braucht, und nicht mehr,",
+              "Zugriffsrechte über Gruppen vergeben (A-G-DL-P) und prüfen, wer was sieht,",
+              "in der Ereignisanzeige nachvollziehen, wer wann was geändert hat."
+            ],
+            "teile": [
+              {
+                "nr": 0,
+                "titel": "Testumgebung aufbauen",
+                "schritte": [
+                  {
+                    "nr": "0.1",
+                    "titel": "Privaten Switch anlegen und die VMs anschließen"
+                  },
+                  {
+                    "nr": "0.2",
+                    "titel": "Feste Adressen vergeben"
+                  },
+                  {
+                    "nr": "0.3",
+                    "titel": "Domänencontroller einrichten (DC01)"
+                  },
+                  {
+                    "nr": "0.4",
+                    "titel": "Client in die Domäne aufnehmen (CL01)"
+                  },
+                  {
+                    "nr": "0.5",
+                    "titel": "Verwaltungstools auf CL01 installieren"
+                  },
+                  {
+                    "nr": "0.6",
+                    "titel": "Übungsdateien auf DC01 bereitstellen"
+                  }
+                ]
+              },
+              {
+                "nr": 1,
+                "titel": "Benutzer anlegen",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "OU-Struktur planen und anlegen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Einen Benutzer von Hand anlegen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Viele Benutzer per CSV anlegen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Zweiter Lauf und Fehler beheben"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Ergebnis prüfen und im Ereignisprotokoll nachsehen"
+                  }
+                ]
+              },
+              {
+                "nr": 2,
+                "titel": "Alltag",
+                "schritte": [
+                  {
+                    "nr": "6",
+                    "titel": "Sperrrichtlinie für die Übung einstellen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Helpdesk-Gruppe anlegen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Dem Helpdesk das Zurücksetzen von Kennwörtern erlauben"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Als Helpdesk anmelden und Kennwort zurücksetzen (Alltagsfall A)"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Konto sperren und entsperren (Alltagsfall B)"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Austritt eines Mitarbeiters (Alltagsfall C)"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Namensänderung (Alltagsfall D)"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Inaktive Konten finden (Alltagsfall E)"
+                  }
+                ]
+              },
+              {
+                "nr": 3,
+                "titel": "Rechte über Gruppen vergeben (A-G-DL-P)",
+                "schritte": [
+                  {
+                    "nr": "14",
+                    "titel": "Gruppen anlegen"
+                  },
+                  {
+                    "nr": "15",
+                    "titel": "Mitarbeiter in die Rollengruppen aufnehmen"
+                  },
+                  {
+                    "nr": "16",
+                    "titel": "Gruppen verschachteln"
+                  },
+                  {
+                    "nr": "17",
+                    "titel": "Ordner, Rechte und Freigabe auf CL01 anlegen"
+                  },
+                  {
+                    "nr": "18",
+                    "titel": "Prüfen, wer was sieht"
+                  },
+                  {
+                    "nr": "19",
+                    "titel": "Mitarbeiterwechsel (Alltagsfall F)"
+                  },
+                  {
+                    "nr": "20",
+                    "titel": "Aufräumen"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum nutzt das Skript die Personalnummer und nicht den Anmeldenamen, um zu erkennen, ob jemand schon existiert?",
+              "Wodurch unterscheiden sich *gesperrt*, *deaktiviert* und *abgelaufen*? Wann setzt du was ein?",
+              "Warum kann der Helpdesk in Schritt 9 Kennwörter zurücksetzen, aber keine Benutzer anlegen?",
+              "Wie genau ist `LastLogonDate`, und was folgt daraus für die Suche nach inaktiven Konten?",
+              "Warum muss sich Mehmet nach dem Gruppenwechsel neu anmelden?",
+              "Warum steht die Freigabe auf *Jeder: Vollzugriff*, und wo wird dann eingeschränkt?",
+              "Was sieht `tobias.fischer` in `\\\\CL01\\Daten`, und warum nicht den Ordner `Produktion`?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "Teil 1: Benutzer anlegen",
+                "text": "Ist `PasswordLastSet` leer, muss das Kennwort bei der nächsten Anmeldung geändert werden (sinngemäß, nicht bestätigt)."
+              },
+              {
+                "teil": "Teil 1: Benutzer anlegen",
+                "text": "Der zweite Aufruf fragt einmal nach einem Startkennwort für alle Konten (wieder eines, das die Regeln erfüllt). Erwartetes Ergebnis (sinngemäß): 11 Konten angelegt, 2 Fehler (Zeile 12: OU `Marketing` fehlt, Zeile 13: Na…"
+              },
+              {
+                "teil": "Teil 2: Alltag",
+                "text": "- **PowerShell:** (*nicht bestätigt*, Syntax von `dsacls` für dieses Recht nicht in der Dokumentation nachgeprüft)"
+              },
+              {
+                "teil": "Teil 2: Alltag",
+                "text": "Erwartung (*nicht bestätigt*): Das Entsperren **scheitert** mit einem Zugriffsfehler, weil in Schritt 8 nur das Zurücksetzen von Kennwörtern übertragen wurde. Beheben:"
+              },
+              {
+                "teil": "Teil 2: Alltag",
+                "text": "In einer frisch aufgebauten Test-Domäne ist die Liste wenig aussagekräftig, weil sich kaum jemand angemeldet hat. Notiere, welche Konten erscheinen und welche nicht (Ausgabe *nicht bestätigt*), und lies im Hintergrund n…"
+              },
+              {
+                "teil": "Teil 3: Rechte über Gruppen vergeben (A-G-DL-P)",
+                "text": "- **GUI:** Ordner `C:\\Freigaben\\Daten` mit den Unterordnern `Vertrieb`, `Produktion`, `IT` anlegen. Je Ordner: Eigenschaften → *Sicherheit* → *Erweitert* → *Vererbung deaktivieren* (vererbte Rechte in explizite umwandel…"
+              },
+              {
+                "teil": "Teil 2 im Überblick",
+                "text": "Delegierung: Zuerst nur *Benutzerkennwörter zurücksetzen…* auf der OU `Benutzer` für `GG_Helpdesk`. Erwartet wird, dass das Entsperren danach noch fehlschlägt (*nicht bestätigt*). Mit einer benutzerdefinierten Aufgabe f…"
+              }
+            ],
+            "nr": "01.1"
+          }
+        ],
+        "skripte": [
+          {
+            "datei": "01.1-ou-struktur-anlegen.ps1",
+            "zweck": "Legt die OU-Struktur an (idempotent, `-WhatIf`)"
+          },
+          {
+            "datei": "01.1-benutzer-anlegen.ps1",
+            "zweck": "Legt Benutzer aus der CSV an (Schlüssel: Personalnummer, Protokoll ohne Kennwörter)"
+          },
+          {
+            "datei": "01.1-mitarbeiter.csv",
+            "zweck": "Übungsdaten, 13 Zeilen, zwei davon absichtlich fehlerhaft"
+          },
+          {
+            "datei": "01.1-aufraeumen.ps1",
+            "zweck": "Setzt die Test-Domäne zurück (Schutz: nur `alpenwerk.example`)"
+          }
+        ],
+        "geplant": ""
+      }
+    ]
+  },
+  {
+    "id": "E04",
+    "titel": "WLAN und Gästenetz",
+    "slug": "wlan-gaestenetz",
+    "thema": "Netzwerk",
+    "repo": "wlan-gaeste-netz-uebung",
+    "art": "uebungen",
+    "lokal": "D:\\WLAN Gästenetzübung\\github",
+    "module": [
+      {
+        "nr": 1,
+        "ordner": "01-packet-tracer",
+        "titel": "Packet Tracer",
+        "beschreibung": "",
+        "einheiten": [
+          {
+            "datei": "01.1-wlan-firma-und-gast-in-packet-tracer.md",
+            "titel": "WLAN für Firma und Gäste in Packet Tracer",
+            "stufe": "Aufbau",
+            "zeit": "2 bis 3 Stunden (Schätzung)",
+            "werkzeuge": "Cisco Packet Tracer (Router, Switch, Wireless LAN Controller, Lightweight Access Point, Server, Laptops)",
+            "voraussetzungen": [
+              "Packet Tracer mit Wireless-Geräten (WLC und Lightweight AP). Die Gerätenamen unterscheiden sich je nach Version. Gesucht sind ein **Wireless LAN Controller** und ein **Lightweight Access Point**.",
+              "Du kennst die IOS-Befehle für VLANs, Trunks und Subinterfaces (Übungen in Modul 2 und 3 der Netzwerk-Reihe oder vergleichbar).",
+              "Du baust die `.pkt`-Datei selbst. Dieses Dokument beschreibt Topologie und Schritte."
+            ],
+            "lernziele": [
+              "erklären, warum ein Firmen-WLAN und ein Gäste-WLAN auf getrennten VLANs liegen müssen und nicht nur zwei Namen auf einem Netz sind,",
+              "einen Switchport zum Access Point und zum Controller als Trunk einrichten,",
+              "am WLC zwei WLANs anlegen: eines mit Anmeldung über Benutzername und Kennwort (WPA2-Enterprise, RADIUS), eines mit gemeinsamem Kennwort (WPA2-PSK) für Gäste,",
+              "auf dem Router mit einer erweiterten ACL festlegen, was das Gäste-VLAN erreichen darf,",
+              "mit Tests nachweisen, dass Gäste das Firmennetz nicht erreichen,",
+              "erklären, was Packet Tracer an dieser Stelle **nicht** nachbilden kann (Client-Isolation, Bandbreitenbegrenzung, Anmeldeportal)."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Das Kabelnetz",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Geräte platzieren und verkabeln"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "VLANs und Verwaltungsadresse am Switch"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Trunks und Access-Port"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Router: Subinterfaces für drei VLANs und zwei Anschlüsse"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "DHCP für die Clients und den Access Point"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Server einrichten"
+                  }
+                ]
+              },
+              {
+                "nr": 2,
+                "titel": "Controller und Access Point",
+                "schritte": [
+                  {
+                    "nr": "7",
+                    "titel": "Erste Anmeldung am WLC"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Schnittstellen für die beiden VLANs am WLC anlegen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Access Point beim Controller anmelden"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "RADIUS-Server am WLC eintragen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "WLAN „Firma-Intern“ (WPA2-Enterprise)"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "WLAN „Firma-Gast“ (WPA2-PSK)"
+                  }
+                ]
+              },
+              {
+                "nr": 3,
+                "titel": "Clients und Regeln für Gäste",
+                "schritte": [
+                  {
+                    "nr": "13",
+                    "titel": "Laptops mit WLAN-Karte ausstatten und verbinden"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Verbindung vor den Regeln prüfen"
+                  },
+                  {
+                    "nr": "15",
+                    "titel": "Gäste-Regeln auf dem Router"
+                  },
+                  {
+                    "nr": "16",
+                    "titel": "Tests nach den Regeln"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum reicht es nicht, zwei SSIDs auf demselben Netz auszustrahlen?",
+              "Wozu braucht der WLC eine Schnittstelle je VLAN?",
+              "Warum steht die DHCP-Regel ganz oben in der ACL?",
+              "Warum ist der Ping von Firma nach Gast nicht gleich dem von Gast nach Firma?",
+              "Was bringt 802.1X gegenüber einem gemeinsamen Kennwort für die Firma?",
+              "Welche Gäste-Schutzfunktionen kann Packet Tracer nicht nachbilden?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "Teil 1: Das Kabelnetz",
+                "text": "Wenn der LAP nicht startet (keine Leuchte, kein Link): Prüfe, ob er in deiner Version Strom über den Switch bekommt oder ein Netzteil braucht (*nicht bestätigt*)."
+              },
+              {
+                "teil": "Teil 1: Das Kabelnetz",
+                "text": "- **GUI:** Für Gi0/1, Fa0/1, Fa0/2 jeweils *Config* → Interface → *Trunk* wählen. Die Einschränkung der erlaubten VLANs und das native VLAN lassen sich in der GUI nicht einstellen (*nicht bestätigt*), dafür bitte die CL…"
+              },
+              {
+                "teil": "Teil 1: Das Kabelnetz",
+                "text": "- **GUI:** Router → *Config* → Interface *GigabitEthernet0/0*: *Port Status* *On*. Subinterfaces lassen sich in der GUI anlegen (*VLAN-Config*-Bereich je nach Version, *nicht bestätigt*), mit der CLI geht es verlässlich…"
+              },
+              {
+                "teil": "Teil 1: Das Kabelnetz",
+                "text": "Die Adressen bis `.30` und `.254` sind ausgenommen: `.254` gehört dem WLC, die unteren Adressen sind für feste Geräte reserviert. Ob Packet Tracer die Option 150 für den LAP auswertet, ist *nicht bestätigt*. Alternative…"
+              },
+              {
+                "teil": "Teil 2: Controller und Access Point",
+                "text": "- **GUI:** Schalte den LAP ein und warte, bis der Link am Switchport grün ist (Zeit vorspulen: *Fast Forward Time*). Am WLC unter *Wireless* → *Access Points* → *All APs* sollte `LAP-1` erscheinen. Wenn nicht: *nicht be…"
+              },
+              {
+                "teil": "Teil 2: Controller und Access Point",
+                "text": "- **GUI:** *WLANs* → *Create New* → *Go*: Profilname `Firma-Gast`, SSID `Firma-Gast`, ID `20`. *Status* *Enabled*, *Interface* `wlan-20`, *FlexConnect Local Switching* an. *Security* → *Layer 2*: `WPA+WPA2`, *WPA2 Polic…"
+              },
+              {
+                "teil": "Teil 3: Clients und Regeln für Gäste",
+                "text": "Erwartet (sinngemäß): Die ersten drei Pings scheitern, der Ping zum Web-Server auch (ICMP ist nicht erlaubt), die **Webseite** lädt. Vom **Laptop-Firma** aus müssen alle Ziele bis auf Gäste-Geräte erreichbar bleiben. Am…"
+              },
+              {
+                "teil": "Teil 3: Clients und Regeln für Gäste",
+                "text": "- **Client-Isolation:** Gäste-Geräte im selben WLAN sollen einander nicht erreichen können. In Cisco-Controllern heißt die Funktion *Peer-to-Peer Blocking*. Ob Packet Tracer sie anbietet, ist *nicht bestätigt*. Prüfe es…"
+              },
+              {
+                "teil": "Teil 3: Clients und Regeln für Gäste",
+                "text": "6. Bandbreitenbegrenzung pro Gast und Anmeldeportal mit Gutscheinen. Client-Isolation nur, falls der Controller *Peer-to-Peer Blocking* nicht anbietet (*nicht bestätigt*)."
+              }
+            ],
+            "nr": "01.1"
+          }
+        ],
+        "skripte": [],
+        "geplant": ""
+      },
+      {
+        "nr": 2,
+        "ordner": "02-hyper-v-opnsense-nps",
+        "titel": "Hyper-V, OPNsense, NPS",
+        "beschreibung": "",
+        "einheiten": [
+          {
+            "datei": "02.1-wlan-und-gaestenetz-mit-hyper-v.md",
+            "titel": "WLAN und Gästenetz mit Hyper-V, OPNsense und NPS",
+            "stufe": "Aufbau bis Vertiefung",
+            "zeit": "4 bis 6 Stunden (Schätzung)",
+            "werkzeuge": "Hyper-V, OPNsense, Windows Server (NPS), Windows-Client, Linux mit eapol_test, PowerShell",
+            "voraussetzungen": [
+              "Ein Windows-PC oder -Server mit Hyper-V und etwa 16 GB Arbeitsspeicher. Fünf bis sechs VMs laufen mit je 1 bis 2 GB.",
+              "Installationsmedien: OPNsense (kostenlos), Windows Server (Testversion), Windows-Client, ein Linux (zum Beispiel Debian).",
+              "Alles läuft auf **privaten Switches**. Es gibt keinen Zugang zum Heimnetz.",
+              "Du hast Übung 01.1 gemacht oder kennst die Begriffe VLAN, Trunk, ACL."
+            ],
+            "lernziele": [
+              "ein Firmen- und ein Gästenetz auf Hyper-V mit VLANs und einer Firewall trennen,",
+              "Firewallregeln für Gäste so schreiben, dass nur Internet und Namensauflösung erreichbar sind,",
+              "einen NPS als RADIUS-Server für 802.1X (PEAP-MSCHAPv2) einrichten,",
+              "eine Anmeldung ohne Funkgerät mit `eapol_test` auslösen und im Ereignisprotokoll nachvollziehen,",
+              "mit einem Skript belegen, was ein Gast erreicht und was nicht, und erklären, warum der Test erst nach einem Vergleichslauf aussagekräftig ist,",
+              "benennen, was in dieser Umgebung unbewiesen bleibt (Client-Isolation im Funk)."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Das Netz trennen",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Switches und VMs anlegen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "VLANs an den VM-Adaptern setzen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "OPNsense installieren und Schnittstellen zuweisen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Zunächst alles erlauben und die Grundverbindung prüfen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Vergleichslauf: Was ist offen, solange die Firewall offen ist?"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Gästeregeln in OPNsense"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Test nach den Regeln"
+                  }
+                ]
+              },
+              {
+                "nr": 2,
+                "titel": "Anmeldung mit 802.1X und NPS",
+                "schritte": [
+                  {
+                    "nr": "8",
+                    "titel": "Windows Server vorbereiten"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Netzwerkrichtlinie in der NPS-Konsole"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "eapol_test auf WL-AP"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Gegenprobe: Was steht im Protokoll?"
+                  }
+                ]
+              },
+              {
+                "nr": 3,
+                "titel": "Prüfen und Betrieb",
+                "schritte": [
+                  {
+                    "nr": "12",
+                    "titel": "Drei Fehlerfälle gezielt auslösen"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Verwaltung absichern"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Betriebsregeln für ein echtes Gäste-WLAN (Diskussion)"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum läuft der Vergleichslauf mit offener Firewall vor dem eigentlichen Test?",
+              "Warum steht die DNS-Regel vor der Regel „alles außer privaten Adressen“?",
+              "Wer kennt das Kennwort des Benutzers: Access Point, RADIUS-Server oder beide?",
+              "Wozu dient das gemeinsame Geheimnis zwischen Access Point und NPS?",
+              "Welche Sicherheitslücke entsteht, wenn der Client das Zertifikat des Servers nicht prüft?",
+              "Was kann diese Umgebung über Client-Isolation nicht aussagen?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "Teil 1: Das Netz trennen",
+                "text": "- **GUI:** VM-Einstellungen → Netzwerkadapter → *Virtual-LAN-Kennung aktivieren* (nur ein VLAN je Adapter). Ein **Trunk** ist in der GUI nicht einstellbar (*nicht bestätigt*). Dafür das Skript oder den Befehl nehmen."
+              },
+              {
+                "teil": "Teil 1: Das Netz trennen",
+                "text": "Erwartet (sinngemäß): WL-FW im Modus *Trunk* mit erlaubten VLANs `10,20`, WL-NPS und WL-AP und WL-CL-FIRMA im Modus *Access* mit VLAN 10, WL-CL-GAST mit VLAN 20."
+              },
+              {
+                "teil": "Teil 1: Das Netz trennen",
+                "text": "- **GUI:** OPNsense-Installer starten, mit dem Konsolen-Konto installieren. In der Konsole: *Assign interfaces*. Der Adapter am `sw-wlan-wan` wird WAN. Der Trunk-Adapter wird LAN-Basis (Name im Gast zum Beispiel `hn1`,…"
+              },
+              {
+                "teil": "Teil 1: Das Netz trennen",
+                "text": "- *Interfaces* → *Other Types* → *VLAN*: VLAN-Tag 10 und 20 auf der Trunk-Schnittstelle (*nicht bestätigt*, Menüname)."
+              },
+              {
+                "teil": "Teil 1: Das Netz trennen",
+                "text": "- WAN: statisch 203.0.113.1/24. Für diese Übung bei WAN *Block private networks* und *Block bogon networks* ausschalten (*nicht bestätigt*, ob nötig). Das ist **nur** in dieser Laborumgebung vertretbar."
+              },
+              {
+                "teil": "Teil 1: Das Netz trennen",
+                "text": "Falls der Gast-Client keine Adresse mehr bekommt: DHCP-Anfragen brauchen unter Umständen eine eigene Regel (UDP 68 nach 67). Ob OPNsense sie selbst zulässt, ist *nicht bestätigt*."
+              },
+              {
+                "teil": "Teil 2: Anmeldung mit 802.1X und NPS",
+                "text": "Die Richtlinie lässt sich nicht per Skript anlegen (in dieser Übung nicht abgedeckt, *nicht bestätigt*, ob es dafür Cmdlets gibt)."
+              },
+              {
+                "teil": "Teil 2: Anmeldung mit 802.1X und NPS",
+                "text": "Die Menünamen stammen aus der Windows-Server-Praxis (deutsche Oberfläche) und sind *nicht bestätigt*."
+              },
+              {
+                "teil": "Teil 2: Anmeldung mit 802.1X und NPS",
+                "text": "`eapol_test` gehört zu `wpa_supplicant`. In Debian gibt es dafür ein eigenes Paket `eapoltest` (*nicht bestätigt*), sonst wird es aus den Quellen von `hostap` mit `CONFIG_EAPOL_TEST=y` gebaut. Kopiere `02.1-eapol-test.c…"
+              },
+              {
+                "teil": "Teil 2: Anmeldung mit 802.1X und NPS",
+                "text": "Erwartet (sinngemäß): Am Ende steht `SUCCESS`. Bei falschem Kennwort steht `FAILURE`."
+              },
+              {
+                "teil": "Teil 3: Prüfen und Betrieb",
+                "text": "| Fall | So auslösen | Erwartung (sinngemäß) |"
+              },
+              {
+                "teil": "Teil 3: Prüfen und Betrieb",
+                "text": "| Falsches Geheimnis | `-s` in `eapol_test` ändern | Keine Antwort, die Anfrage wird stillschweigend verworfen. Im NPS-Protokoll steht eventuell ein Ereignis zu einer ungültigen Nachricht (*nicht bestätigt*). |"
+              },
+              {
+                "teil": "Teil 3: Prüfen und Betrieb",
+                "text": "- *System* → *Settings* → *Administration*: Zugriff auf die Weboberfläche nur auf der Schnittstelle `FIRMA` (*nicht bestätigt*, Menüname)."
+              },
+              {
+                "teil": "Teil 3: Prüfen und Betrieb",
+                "text": "- **Client-Isolation** (Gäste-Geräte sehen einander nicht): Das ist eine Funktion des Access Points im Funknetz. In Hyper-V gibt es für VMs auf demselben Switch die Möglichkeit privater VLANs (`Set-VMNetworkAdapterVlan…"
+              },
+              {
+                "teil": "Teil 3: Prüfen und Betrieb",
+                "text": "- Wenn `eapol_test` nichts ausgibt: Die Windows-Firewall auf WL-NPS muss UDP 1812 zulassen (die NPS-Installation richtet das laut Praxis selbst ein, *nicht bestätigt*), und die OPNsense-Regeln auf `FIRMA` dürfen den Ver…"
+              },
+              {
+                "teil": "Teil 3: Prüfen und Betrieb",
+                "text": "- Traffic Shaping je Gast in OPNsense (*Firewall* → *Shaper*: Pipe mit Bandbreite, Maske „Destination“ bzw. „Source“ für eine Begrenzung je Adresse, *nicht bestätigt*) und Messung mit `iperf3`."
+              },
+              {
+                "teil": "Teil 3: Prüfen und Betrieb",
+                "text": "- Captive Portal mit Gutscheinen (*Services* → *Captive Portal*, Zone für `GAST`, Authentifizierung über Gutscheine, *nicht bestätigt*)."
+              }
+            ],
+            "nr": "02.1"
+          }
+        ],
+        "skripte": [
+          {
+            "datei": "02.1-hyperv-netz.ps1",
+            "zweck": "Privaten Switch anlegen, VLANs an den VM-Adaptern setzen (auf dem Hyper-V-Host, `-WhatIf` möglich)"
+          },
+          {
+            "datei": "02.1-nps-einrichten.ps1",
+            "zweck": "NPS-Rolle, selbstsigniertes Zertifikat, Testkonto, RADIUS-Client (auf dem NPS-Server)"
+          },
+          {
+            "datei": "02.1-eapol-test.conf",
+            "zweck": "Konfiguration für `eapol_test` (simuliert Access Point und Client)"
+          },
+          {
+            "datei": "02.1-isolationstest.ps1",
+            "zweck": "Prüft vom Gäste-Client aus, was erreichbar ist (Rückgabewert 0/1)"
+          }
+        ],
+        "geplant": ""
+      }
+    ]
+  },
+  {
+    "id": "E05",
+    "titel": "Backup auf NAS mit Veeam",
+    "slug": "backup-nas-veeam",
+    "thema": "Homelab und Betrieb",
+    "repo": "veeam-backup-uebung",
+    "art": "uebungen",
+    "lokal": "D:\\Backup auf NAS mit Veeam\\github",
+    "module": [
+      {
+        "nr": 1,
+        "ordner": "01-backup-und-restore",
+        "titel": "Backup und Restore",
+        "beschreibung": "",
+        "einheiten": [
+          {
+            "datei": "01.1-backup-auf-nas-mit-veeam.md",
+            "titel": "Backup auf NAS mit Veeam",
+            "stufe": "Aufbau",
+            "zeit": "8 bis 10 Stunden (Schätzung), auf mehrere Tage verteilbar",
+            "werkzeuge": "Hyper-V, Windows Server (AD DS, Dateiserver), Veeam Backup & Replication Community Edition, Debian mit Samba, PowerShell 5.1",
+            "voraussetzungen": [
+              "Ein Hyper-V-Host mit rund **16 GB freiem RAM** und etwa **200 GB freiem Speicher** (Schätzung, siehe Tabelle unten).",
+              "ISO-Dateien für Windows Server mit Desktopdarstellung (eigene Lizenz oder Testversion) und für Debian.",
+              "Ein kostenloses Konto bei Veeam, um die Software herunterzuladen. Die **Community Edition** ist nach Angaben von Veeam für bis zu 10 Workloads kostenlos und auch für den produktiven Einsatz erlaubt (siehe Quellen). Ohne…",
+              "PowerShell-Grundkenntnisse.",
+              "**Wichtig:** Die Übung läuft in einem **privaten Hyper-V-Switch ohne Verbindung nach außen**. Sie berührt weder ein bestehendes Active Directory noch ein echtes NAS oder das Heimnetz. Den Download der Veeam-Software mac…"
+            ],
+            "lernziele": [
+              "ein Backup-Ziel auf einem NAS-Nachbau einrichten, der bewusst **nicht** in der Domäne ist,",
+              "zwei Windows-Server mit Veeam sichern, einen Dateiserver und einen Domänencontroller, mit anwendungskonsistenter Sicherung,",
+              "eine einzelne Datei und ein gelöschtes Active-Directory-Objekt aus dem Backup zurückholen und das Ergebnis **nachweisen**, statt es nur zu glauben,",
+              "die Konfiguration von Veeam selbst sichern und die Sicherungen täglich per Bericht kontrollieren,",
+              "eine zweite Kopie außerhalb des NAS anlegen, ohne dass sie sich mit laufenden Sicherungen überschneidet,",
+              "erklären, was die 3-2-1-Regel verlangt und was in dieser Übung davon nur nachgebildet ist."
+            ],
+            "teile": [
+              {
+                "nr": 0,
+                "titel": "Testumgebung aufbauen",
+                "schritte": [
+                  {
+                    "nr": "0.1",
+                    "titel": "Privaten Switch anlegen und VMs anschließen"
+                  },
+                  {
+                    "nr": "0.2",
+                    "titel": "Domänencontroller einrichten (DC01)"
+                  },
+                  {
+                    "nr": "0.3",
+                    "titel": "FS01 und VBR01 einrichten und in die Domäne aufnehmen"
+                  },
+                  {
+                    "nr": "0.4",
+                    "titel": "NAS01 einrichten (Debian mit Samba)"
+                  },
+                  {
+                    "nr": "0.5",
+                    "titel": "Dienstkonto für Veeam anlegen (auf DC01)"
+                  },
+                  {
+                    "nr": "0.6",
+                    "titel": "Übungsdateien bereitstellen"
+                  }
+                ]
+              },
+              {
+                "nr": 1,
+                "titel": "Backup einrichten",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Testdaten anlegen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Isolation des Backup-Ziels prüfen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Veeam auf VBR01 installieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Backup-Repository hinzufügen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Computer in eine Protection Group aufnehmen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Sicherungsaufträge (Jobs) anlegen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Jobs starten und Ergebnis prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Jobs verketten"
+                  }
+                ]
+              },
+              {
+                "nr": 2,
+                "titel": "Wiederherstellung",
+                "schritte": [
+                  {
+                    "nr": "9",
+                    "titel": "Einzelne Datei zurückholen (File-Level Recovery)"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Gelöschte OU zurückholen (Active Directory Object Recovery)"
+                  }
+                ]
+              },
+              {
+                "nr": 3,
+                "titel": "Betrieb",
+                "schritte": [
+                  {
+                    "nr": "11",
+                    "titel": "Die Konfiguration von Veeam selbst sichern"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Täglichen Bericht einrichten (VBR01)"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Offsite-Kopie auf das zweite Laufwerk (NAS01)"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Aufräumen"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum steht das NAS nicht in der Domäne, und wie hast du das in Schritt 2 gezeigt?",
+              "Was ist der Unterschied zwischen einer `.vbk`- und einer `.vib`-Datei, und was bedeutet das für den Restore?",
+              "Warum braucht der Explorer for Active Directory das Application-aware Processing?",
+              "Warum reicht es nicht, ein gelöschtes Konto einfach neu anzulegen?",
+              "Warum ist ein Restore-Test mit Prüfsummen besser als „die Datei ist wieder da“?",
+              "Warum läuft die Offsite-Kopie ohne `--delete`, und was ist die Folge?",
+              "Was geht verloren, wenn du die Konfigurationssicherung nicht verschlüsselst, und was, wenn du das Kennwort dazu auf VBR01 ablegst?",
+              "Welche Teile der 3-2-1-Regel sind in dieser Übung nur nachgebildet?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "Teil 1: Backup einrichten",
+                "text": "Erwartet (sinngemäß): 12 Dateien unter `C:\\Daten` in vier Ordnern, eine Pruefliste `C:\\Uebung\\pruefliste.csv` mit einer SHA-256-Pruefsumme je Datei, bei `Pruefen` überall `OK`."
+              },
+              {
+                "teil": "Teil 1: Backup einrichten",
+                "text": "Der erste Befehl muss `TcpTestSucceeded : True` zeigen. Der zweite Befehl (mit dem Domänenadministrator) soll **scheitern** (sinngemäß „Zugriff verweigert“ oder „Anmeldung fehlgeschlagen“). Der dritte (lokales NAS-Konto…"
+              },
+              {
+                "teil": "Teil 1: Backup einrichten",
+                "text": "- Eine Lizenzdatei brauchst du nicht. Ohne Lizenz läuft Veeam nach meiner Kenntnis als Community Edition (*nicht bestätigt*, prüfe unter *Help → License Information*, was angezeigt wird)."
+              },
+              {
+                "teil": "Teil 1: Backup einrichten",
+                "text": "Wenn die Verteilung scheitert: Prüfe die Namensauflösung (`nslookup fs01.alpenwerk.example` auf VBR01), die Windows-Firewall auf den Zielen und ob das Dienstkonto dort Administrator ist (*nicht bestätigt*, welche Firewa…"
+              },
+              {
+                "teil": "Teil 1: Backup einrichten",
+                "text": "Erwartet (sinngemäß): je Job ein Unterordner mit einer `.vbk`-Datei (Vollsicherung) und einer `.vbm`-Datei (Metadaten). *Nicht bestätigt*: genaue Namen und Ordner."
+              },
+              {
+                "teil": "Teil 1: Backup einrichten",
+                "text": "Nach meiner Kenntnis ist das die Kettung in Veeam (*nicht bestätigt* für Agent-Jobs). Wenn die Option fehlt, lege stattdessen zwei Uhrzeiten mit genug Abstand fest."
+              },
+              {
+                "teil": "Teil 2: Wiederherstellung",
+                "text": "5. Navigiere zur OU `Testbereich`, Rechtsklick → *Restore* (nach meiner Kenntnis stellt Veeam dabei zuerst den Container und dann die Objekte darin wieder her, *nicht bestätigt*). Das Menü kann bei anderer Version ander…"
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "- Starte die Sicherung manuell (*Backup Now*) und sieh auf NAS01 nach, ob eine neue Datei entstanden ist (Endung vermutlich `.bco`, *nicht bestätigt*)."
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "Erwartet (sinngemäß): eine Zeile je Sitzung mit Ergebnis, Job, Startzeit und Dauer in Minuten, am Ende `Ergebnis: Alles in Ordnung. (Rueckgabewert 0)`. Die CSV-Datei liegt in `C:\\Uebung\\veeam-bericht.csv`."
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "Wenn das Skript einen Fehler wegen fehlender Eigenschaften oder des Moduls meldet: Der Modulname und die Eigenschaftsnamen sind *nicht bestätigt*. Prüfe mit `Get-Module -ListAvailable *Veeam*` und `Get-VBRBackupSession…"
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "Ob das Konto `SYSTEM` in Veeam lesen darf, ist *nicht bestätigt*. Bleibt der Bericht leer, hinterlege in der Aufgabe das Konto, mit dem du dich an der Veeam-Konsole anmeldest."
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "Das Skript muss dafür unter `/root/` liegen. Prüfe die Schutzfunktion: Starte einen Veeam-Job und rufe das Skript währenddessen auf. Es soll mit „ABBRUCH“ und Rückgabewert 2 enden (*nicht bestätigt* für Samba, siehe Hin…"
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "Die erste Sicherung ist vollständig, die folgenden enthalten nur Änderungen. Beim Wiederherstellen setzt Veeam den Stand aus der Vollsicherung und den Inkrementen bis zum gewünschten Punkt zusammen. Das schont das NAS b…"
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "Die kostenlose Edition ist laut Veeam auf 10 Workloads begrenzt, mit dem Hinweis, dass ein Server mit Agent mehrere Instanzen zählt. Wichtige Funktionen für diese Übung (Application-aware Processing, Explorer for Active…"
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "- Wenn die Agentenverteilung scheitert, prüfe Namensauflösung, Windows-Firewall (Datei- und Druckerfreigabe sowie Fernverwaltung sind typische Kandidaten, *nicht bestätigt*) und die Rechte des Dienstkontos."
+              },
+              {
+                "teil": "Teil 3: Betrieb",
+                "text": "- **Unveränderliche Sicherungen:** Ein Linux-Repository mit Unveränderlichkeit (Hardened Repository). Anforderungen und Einrichtung hängen von der Version ab, siehe Veeam-Dokumentation (*nicht bestätigt*)."
+              }
+            ],
+            "nr": "01.1"
+          }
+        ],
+        "skripte": [
+          {
+            "datei": "01.1-nas-einrichten.sh",
+            "zweck": "Samba-Freigabe als NAS-Nachbau (nicht in der Domäne, lokales Konto)"
+          },
+          {
+            "datei": "01.1-testdaten-fileserver.ps1",
+            "zweck": "Testdateien anlegen, Ausfall simulieren, Wiederherstellung per Prüfsumme prüfen"
+          },
+          {
+            "datei": "01.1-testdaten-ad.ps1",
+            "zweck": "OU und Testbenutzer anlegen, Zustand sichern, löschen, vergleichen"
+          },
+          {
+            "datei": "01.1-backup-bericht.ps1",
+            "zweck": "Täglicher Bericht über die Veeam-Sitzungen (Rückgabewert 0/1/2)"
+          },
+          {
+            "datei": "01.1-offsite-kopie.sh",
+            "zweck": "Kopie auf ein zweites Laufwerk, mit Schutz vor falschem Ziel und laufenden Backups"
+          }
+        ],
+        "geplant": ""
+      }
+    ]
+  },
+  {
+    "id": "E06",
+    "titel": "Geordnetes Herunterfahren ohne USV",
+    "slug": "geordnetes-herunterfahren-ohne-usv",
+    "thema": "Homelab und Betrieb",
+    "repo": "usv-shutdown-uebung",
+    "art": "uebungen",
+    "lokal": "D:\\Geordnetes Herunterfahren ohne USV\\github",
+    "module": [
+      {
+        "nr": 1,
+        "ordner": "01-geordnetes-herunterfahren",
+        "titel": "Geordnetes Herunterfahren",
+        "beschreibung": "",
+        "einheiten": [
+          {
+            "datei": "01.1-geordnetes-herunterfahren-ohne-usv.md",
+            "titel": "Geordnetes Herunterfahren ohne USV",
+            "stufe": "Aufbau bis Vertiefung",
+            "zeit": "3 bis 4 Stunden (Schätzung)",
+            "werkzeuge": "Hyper-V, Debian oder Ubuntu (NUT), PowerShell, Bash",
+            "voraussetzungen": [
+              "Ein Windows-PC oder -Server mit Hyper-V und etwa 8 GB freiem Arbeitsspeicher.",
+              "Zwei Linux-VMs (Debian oder Ubuntu) mit je 1 GB Arbeitsspeicher: `USV-SIM` (NUT-Server) und `APP01` (NUT-Client).",
+              "Mindestens eine weitere Test-VM (beliebiges Betriebssystem) für die Messung der Herunterfahrdauer. Sie wird dabei heruntergefahren und wieder gestartet, also keine VM mit wichtigen Daten.",
+              "Alles läuft in einem **privaten Switch** (`vSwitch-USV-Uebung`, 192.168.50.0/24). NUT sendet unverschlüsselt, das gehört nicht in ein Produktivnetz."
+            ],
+            "lernziele": [
+              "erklären, warum eine USV nicht Betrieb, sondern **Zeit für ein geordnetes Herunterfahren** liefert,",
+              "auf einem Hyper-V-Host Stopp- und Startaktion der VMs prüfen, setzen und die Herunterfahrdauer messen,",
+              "eine USV mit NUT **simulieren** und die Kette „Stromausfall → Wartezeit → Herunterfahren“ mit einem Server und einem Client nachvollziehen,",
+              "eine Verzögerung für kurze Ausfälle („Flackern“) einrichten und belegen, dass sie wirkt,",
+              "mit gemessenen Zeiten **rechnen**, ob die Batterielaufzeit reicht,",
+              "die Teile benennen, die ohne echte USV nicht prüfbar sind."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Den Hyper-V-Host vorbereiten",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Bestandsaufnahme"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Stopp- und Startaktion setzen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Herunterfahrdauer messen"
+                  }
+                ]
+              },
+              {
+                "nr": 2,
+                "titel": "Eine USV simulieren",
+                "schritte": [
+                  {
+                    "nr": "4",
+                    "titel": "NUT-Server auf USV-SIM"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "NUT-Client auf APP01"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Kurzer Ausfall (Flackern): nichts darf passieren"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Langer Ausfall: Herunterfahren wird ausgelöst"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Batterie schwach: sofort"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Optional: Wirklich herunterfahren"
+                  }
+                ]
+              },
+              {
+                "nr": 3,
+                "titel": "Rechnen, Wiederanlauf, Betrieb",
+                "schritte": [
+                  {
+                    "nr": "10",
+                    "titel": "Zeitbudget"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Wiederanlauf planen"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Prüfplan für eine echte USV (Theorie)"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum ist die Stoppaktion `Save` für eine VM mit Datenbank ungeeignet?",
+              "Was bewirkt die Verzögerung, und welcher Test hat sie belegt?",
+              "Wer fährt zuerst herunter, `primary` oder `secondary`, und warum?",
+              "Warum muss die Restlaufzeit für die tatsächliche Last gelten?",
+              "Warum ist das Zeitbudget nach einem Update oder einer neuen VM neu zu rechnen?",
+              "Was kann diese Übung über eine echte USV nicht aussagen?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "Teil 1: Den Hyper-V-Host vorbereiten",
+                "text": "Der Integrationsdienst wird über seine Kennung gefunden, weil sein Anzeigename je nach Windows-Sprache anders heißt (*nicht bestätigt*, ob die verwendete Kennung stimmt, das Skript fällt sonst auf die Namen `Shutdown` u…"
+              },
+              {
+                "teil": "Teil 2: Eine USV simulieren",
+                "text": "Erwartet (sinngemäß): Eine Liste mit `ups.status: OL`, `battery.charge: 100`, `battery.runtime: 1800`, `ups.model: Dummy-USV Uebung`."
+              },
+              {
+                "teil": "Teil 2: Eine USV simulieren",
+                "text": "Erwartet (sinngemäß, in meiner Testumgebung gemessen mit 15 Sekunden Verzögerung):"
+              },
+              {
+                "teil": "Teil 3: Rechnen, Wiederanlauf, Betrieb",
+                "text": "Erwartet (sinngemäß, bei dem Beispiel): Benötigt etwa 11,9 Minuten, Reserve etwa 0,1 Minuten, Urteil „Laufzeit reicht“, größte zulässige Verzögerung etwa 3,1 Minuten."
+              },
+              {
+                "teil": "Teil 3: Rechnen, Wiederanlauf, Betrieb",
+                "text": "- Mit `-Gleichzeitig` rechnen: Die Reserve steigt. Ob Hyper-V VMs gleichzeitig oder nacheinander herunterfährt, ist *nicht bestätigt*. Rechne im Zweifel mit der Summe."
+              },
+              {
+                "teil": "Teil 3: Rechnen, Wiederanlauf, Betrieb",
+                "text": "- **Lastgruppen:** Was hängt an der USV (Server, Storage, Netzwerk), was nicht (Laserdrucker mit hohem Einschaltstrom, Monitore)? Die Angabe zu Laserdruckern stammt aus der Praxis, nicht aus einer Quelle (*nicht bestäti…"
+              },
+              {
+                "teil": "Teil 3: Rechnen, Wiederanlauf, Betrieb",
+                "text": "Ein Netzflackern von Sekunden soll keinen Neustart auslösen, der Minuten dauert. NUT bringt dafür das Hilfsprogramm `upssched` mit: Beim Wechsel auf Batterie startet ein Zeitgeber, beim Wechsel zurück auf Netz wird er g…"
+              },
+              {
+                "teil": "Teil 3: Rechnen, Wiederanlauf, Betrieb",
+                "text": "- **Der Hyper-V-Host wird nicht von NUT gesteuert.** Hyper-V-Hosts laufen unter Windows. NUT hat dafür eine Windows-Variante (*nicht bestätigt*, Verfügbarkeit und Version prüfen). Die Übung beschränkt sich auf die Vorbe…"
+              }
+            ],
+            "nr": "01.1"
+          }
+        ],
+        "skripte": [
+          {
+            "datei": "01.1-hyperv-stoppaktion.ps1",
+            "zweck": "Stopp- und Startaktion der VMs berichten oder setzen, gestaffelter Start (`-WhatIf` möglich)"
+          },
+          {
+            "datei": "01.1-hyperv-herunterfahr-messung.ps1",
+            "zweck": "Herunterfahrdauer von Test-VMs messen (fährt VMs herunter und startet sie wieder)"
+          },
+          {
+            "datei": "01.1-zeitbudget.ps1",
+            "zweck": "Rechnet, ob die Batterielaufzeit für Verzögerung, VMs und Host reicht (Rückgabewert 0/1)"
+          },
+          {
+            "datei": "01.1-nut-server.sh",
+            "zweck": "NUT-Server mit simulierter USV, `upsmon` (primary), Verzögerung über `upssched`"
+          },
+          {
+            "datei": "01.1-nut-client.sh",
+            "zweck": "NUT-Client (secondary) auf einer zweiten VM"
+          },
+          {
+            "datei": "01.1-usv-zustand.sh",
+            "zweck": "Zustand der simulierten USV umschalten (`netz`, `ausfall`, `schwach`)"
+          }
+        ],
+        "geplant": ""
+      }
+    ]
+  }
+]

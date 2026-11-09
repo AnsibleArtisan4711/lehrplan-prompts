@@ -1,5 +1,22 @@
 # Änderungen
 
+## 2026-11-09 (Übungsreihen E01–E06)
+
+- Neu: `daten/uebungen.json` mit den sechs eigenen Übungsreihen E01–E06, in der Reihenfolge der Fächerübersicht: E01 `multi-site-hybrid-cloud-ai-sec-lab`, E02 `netzwerk-uebungen-packet-tracer`, E03 `ad-uebungen-benutzerverwaltung`, E04 `wlan-gaeste-netz-uebung`, E05 `veeam-backup-uebung`, E06 `usv-shutdown-uebung`. Handgepflegt sind Titel, Thema, Repository und der lokale Ordner; der Aufbau (Module, Einheiten, Teile, Schritte, Lernziele, Kontrollfragen, Skripte, Stellen mit „nicht bestätigt“ oder „sinngemäß“) wird aus den Dateien der Repositories gelesen.
+- Neu: `tools/uebungen_einlesen.py` liest diesen Aufbau aus den lokalen Repository-Ordnern (Feld `lokal`, überschreibbar mit `--pfad E03=Ordner`) und schreibt ihn in `daten/uebungen.json`. Nach neuen Übungen in einem der Repositories: einlesen, dann `build_prompts.py`.
+- Neu: Ordner `uebungen/` mit einer Seite je Reihe (erzeugt) und die dritte Tabelle „Die 6 Übungsreihen“ in der README.
+- `tools/umsetzung_anlegen.py`: akzeptiert `E01`–`E06`. Die Modulordner heißen wie im Repository. Bei E02–E06 enthält die Checkliste Voraussetzungen, Teile mit Schritten, Skripte, Prüfbefehle, Lernziele, Kontrollfragen und Erweiterungen; das Protokoll hat einen Block je Teil; `befehle-nicht-bestaetigt.md` listet die Stellen mit „nicht bestätigt“ oder „sinngemäß“. Bei E01 (Steps statt Übungen) gibt es je Step einen Protokollblock mit dem Feld „Tatsächlich umgesetzt: ja / teilweise / nur dokumentiert“, damit im Lebenslauf nur Realisiertes als umgesetzt erscheint.
+- Stand der Quellen beim Einlesen (2026-11-09): E01 14 Module mit 92 Einheiten (13 Module mit je 7 Steps und der Anhang); E02 nur Modul 1 mit Übung 01.1, die Module 2 bis 8 sind in den Modul-READMEs als geplant geführt; E03, E05, E06 je eine Übung, E04 zwei Übungen. Die Übungen E03–E06 stehen in ihren READMEs als „Entwurf“, ihre Befehle sind teils „nicht bestätigt“.
+
+## 2026-11-09 (Fächer K01–K16)
+
+- Neu: `daten/faecher.json` mit den 16 Fächern K01–K16 (Linux Essentials bis Unternehmensgründung) aus der Fächerübersicht (Excel) des Autors: Typ (Kern/Erweiterung), Bereich, Voraussetzung, Gesamtstunden, Module mit ca. Stunden und Feld `repository` (`repo`). Die Nummerierung folgt der Reihenfolge in der Excel-Datei. Die 16 Repository-Namen stammen aus der Fächerübersicht (alle auf GitHub gepusht) und sind als Links in der README-Tabelle und auf den Fach-Seiten eingetragen; `ad-uebungen-benutzerverwaltung` ist eine eigene Übungsreihe und nicht das Repository von K06.
+- Neu: Ordner `faecher/` mit einer Modulübersicht je Fach (erzeugt). Die README zeigt eine zweite Tabelle „Die 16 Fächer“ (Zähler, Module, Stunden, Voraussetzung, Repository).
+- `tools/build_prompts.py`: erzeugt `faecher/` und die zweite Tabelle (Markierungen `FAECHER-START`/`FAECHER-ENDE`); bricht ab bei doppelten IDs oder Modulnummern mit Lücken.
+- `tools/umsetzung_anlegen.py`: akzeptiert jetzt auch `K01`–`K16`. Da für diese Fächer nur Modultitel und Stunden vorliegen, sind Checklisten und Protokolle schlanker (Skriptkapitel, Übungen, Lernziele, Kontrollfragen als Abhakpunkte ohne Einzelaufgaben); `befehle-nicht-bestaetigt.md` entfällt.
+- Kennzeichnung der Änderung am Rohmaterial: In der Excel-Datei stehen die Modultitel ohne Umlaute („Pruefung“, „Qualitaet“). Sie wurden über eine feste Wortliste ergänzt (24 Wörter, z. B. Prüfung, Qualität, Gründung, Geräte, für, Verträge); „Vertrage“ in K16 Modul 11 wurde als „Verträge“ gelesen. Fachnamen und Stunden sind unverändert. Die Modulstunden sind in der Quelle gleichmäßig verteilt und gerundet; ihre Summe weicht bei einigen Fächern um unter eine Stunde von der Gesamtdauer ab (K02: 294 statt 294,5).
+- Die Fächer K01–K16 haben keinen Status wie die Kurse P01–P52; ihr Fortschritt steht weiter im Excel-Stundenplan.
+
 ## 2026-11-08 (Bilder-Index)
 
 - Neu: `tools/bilder_index.py`. Es liest alle Markdown-Dateien eines Ordners (Standard: `Umsetzung` neben dem Repository) und schreibt `bilder-index.md` mit allen verlinkten Bildern (Ordner, Datei, Abschnitt, Beschreibung, Größe, Link). Es meldet Bilder ohne Verlinkung, Links auf fehlende Bilder und Bilder über 1 MB. Bilder werden nicht verändert.

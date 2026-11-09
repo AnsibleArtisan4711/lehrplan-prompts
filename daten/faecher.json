@@ -1,0 +1,1239 @@
+[
+  {
+    "id": "K01",
+    "titel": "Linux Essentials",
+    "slug": "linux-essentials",
+    "typ": "Kern",
+    "bereich": "Fundament",
+    "voraussetzung": "",
+    "stunden": 96,
+    "repo": "linux-essentials-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Linux und Open-Source-Grundlagen",
+        "stunden": 8
+      },
+      {
+        "nr": 2,
+        "titel": "Installation, Bootprozess und erste Orientierung",
+        "stunden": 8
+      },
+      {
+        "nr": 3,
+        "titel": "Command Line Grundlagen",
+        "stunden": 8
+      },
+      {
+        "nr": 4,
+        "titel": "Dateisysteme, Dateien und Verzeichnisse",
+        "stunden": 8
+      },
+      {
+        "nr": 5,
+        "titel": "Benutzer, Gruppen und Rechte",
+        "stunden": 8
+      },
+      {
+        "nr": 6,
+        "titel": "Textverarbeitung und Datenströme",
+        "stunden": 8
+      },
+      {
+        "nr": 7,
+        "titel": "Softwareverwaltung und Paketmanagement",
+        "stunden": 8
+      },
+      {
+        "nr": 8,
+        "titel": "Prozesse, Services und Systembetrieb",
+        "stunden": 8
+      },
+      {
+        "nr": 9,
+        "titel": "Netzwerkgrundlagen unter Linux",
+        "stunden": 8
+      },
+      {
+        "nr": 10,
+        "titel": "Security, Hardening und Compliance-Basics",
+        "stunden": 8
+      },
+      {
+        "nr": 11,
+        "titel": "Shell-Scripting und Automation Grundlagen",
+        "stunden": 8
+      },
+      {
+        "nr": 12,
+        "titel": "Troubleshooting, Backup, Migration und Prüfungsvorbereitung",
+        "stunden": 8
+      }
+    ]
+  },
+  {
+    "id": "K02",
+    "titel": "Webdesign (HTML, CSS, responsives Design)",
+    "slug": "webdesign",
+    "typ": "Kern",
+    "bereich": "Web",
+    "voraussetzung": "",
+    "stunden": 294.5,
+    "repo": "webdesign-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Webdesign Grundlagen und Web-Standards",
+        "stunden": 14
+      },
+      {
+        "nr": 2,
+        "titel": "HTML, Semantik und Informationsarchitektur",
+        "stunden": 14
+      },
+      {
+        "nr": 3,
+        "titel": "Selektoren, Cascade und Specificity",
+        "stunden": 14
+      },
+      {
+        "nr": 4,
+        "titel": "Box Model, Sizing und visuelles Formatting",
+        "stunden": 14
+      },
+      {
+        "nr": 5,
+        "titel": "CSS Grundlagen, Layout und Designsysteme",
+        "stunden": 14
+      },
+      {
+        "nr": 6,
+        "titel": "Formulare, Eingaben und Validierung",
+        "stunden": 14
+      },
+      {
+        "nr": 7,
+        "titel": "Responsive Design und Mobile First",
+        "stunden": 14
+      },
+      {
+        "nr": 8,
+        "titel": "UX/UI Design, Wireframes und Prototyping",
+        "stunden": 14
+      },
+      {
+        "nr": 9,
+        "titel": "Tabellen, strukturierte Inhalte und Datenpräsentation",
+        "stunden": 14
+      },
+      {
+        "nr": 10,
+        "titel": "Flexbox und eindimensionale Layouts",
+        "stunden": 14
+      },
+      {
+        "nr": 11,
+        "titel": "CSS Grid und zweidimensionale Layouts",
+        "stunden": 14
+      },
+      {
+        "nr": 12,
+        "titel": "JavaScript für interaktive Webseiten",
+        "stunden": 14
+      },
+      {
+        "nr": 13,
+        "titel": "SEO, Content-Strategie und technische Qualität",
+        "stunden": 14
+      },
+      {
+        "nr": 14,
+        "titel": "Accessibility und inklusives Design",
+        "stunden": 14
+      },
+      {
+        "nr": 15,
+        "titel": "Animationen, Transitions und Interaktionsstates",
+        "stunden": 14
+      },
+      {
+        "nr": 16,
+        "titel": "Performance, Core Web Vitals und Medienoptimierung",
+        "stunden": 14
+      },
+      {
+        "nr": 17,
+        "titel": "Architektur, Methodik und Designsysteme",
+        "stunden": 14
+      },
+      {
+        "nr": 18,
+        "titel": "Security, Datenschutz und Compliance im Webdesign",
+        "stunden": 14
+      },
+      {
+        "nr": 19,
+        "titel": "Tooling, Deployment und Wartung",
+        "stunden": 14
+      },
+      {
+        "nr": 20,
+        "titel": "Qualitätssicherung, Validierung und Wartbarkeit",
+        "stunden": 14
+      },
+      {
+        "nr": 21,
+        "titel": "Kosten, Migration, Governance und BCDR",
+        "stunden": 14
+      }
+    ]
+  },
+  {
+    "id": "K03",
+    "titel": "Microsoft Excel Expert",
+    "slug": "microsoft-excel-expert",
+    "typ": "Kern",
+    "bereich": "Daten & Office",
+    "voraussetzung": "Empfehlung: Office-Grundlagen (MOS, Erweiterung)",
+    "stunden": 105,
+    "repo": "microsoft-excel-expert-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Excel Expert M365 Apps Grundlagen und MO-211 Roadmap",
+        "stunden": 8.8
+      },
+      {
+        "nr": 2,
+        "titel": "Workbook Options and Settings",
+        "stunden": 8.8
+      },
+      {
+        "nr": 3,
+        "titel": "Protection and Collaboration Readiness",
+        "stunden": 8.8
+      },
+      {
+        "nr": 4,
+        "titel": "Advanced Data Fill, Cleanup and Validation",
+        "stunden": 8.8
+      },
+      {
+        "nr": 5,
+        "titel": "Advanced Formatting, Grouping and Conditional Formatting",
+        "stunden": 8.8
+      },
+      {
+        "nr": 6,
+        "titel": "Advanced Logical and Conditional Formulas",
+        "stunden": 8.8
+      },
+      {
+        "nr": 7,
+        "titel": "Lookup, Reference, Date and Time Functions",
+        "stunden": 8.8
+      },
+      {
+        "nr": 8,
+        "titel": "Data Analysis, What-if Analysis and Financial Formulas",
+        "stunden": 8.8
+      },
+      {
+        "nr": 9,
+        "titel": "Formula Auditing, Error Checking and Simple Macros",
+        "stunden": 8.8
+      },
+      {
+        "nr": 10,
+        "titel": "Advanced Charts and Visual Analytics",
+        "stunden": 8.8
+      },
+      {
+        "nr": 11,
+        "titel": "PivotTables, PivotCharts and Interactive Reporting",
+        "stunden": 8.8
+      },
+      {
+        "nr": 12,
+        "titel": "MO-211 Exam Readiness und Abschluss-Lab",
+        "stunden": 8.8
+      }
+    ]
+  },
+  {
+    "id": "K04",
+    "titel": "Bash",
+    "slug": "bash",
+    "typ": "Kern",
+    "bereich": "Scripting & Automatisierung",
+    "voraussetzung": "Linux Essentials",
+    "stunden": 124,
+    "repo": "bash-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Bash Grundlagen und Shell-Architektur",
+        "stunden": 10.3
+      },
+      {
+        "nr": 2,
+        "titel": "Dateisystem, Navigation und Textwerkzeuge",
+        "stunden": 10.3
+      },
+      {
+        "nr": 3,
+        "titel": "Bash-Syntax, Variablen und Kontrollstrukturen",
+        "stunden": 10.3
+      },
+      {
+        "nr": 4,
+        "titel": "Pipelines, Redirection und Prozesssteuerung",
+        "stunden": 10.3
+      },
+      {
+        "nr": 5,
+        "titel": "Textverarbeitung mit grep, sed, awk und jq",
+        "stunden": 10.3
+      },
+      {
+        "nr": 6,
+        "titel": "Robuste Skripte, Fehlerbehandlung und Debugging",
+        "stunden": 10.3
+      },
+      {
+        "nr": 7,
+        "titel": "Systemadministration mit Bash",
+        "stunden": 10.3
+      },
+      {
+        "nr": 8,
+        "titel": "Security, Hardening und sichere Skriptpraxis",
+        "stunden": 10.3
+      },
+      {
+        "nr": 9,
+        "titel": "Monitoring, Logging und Troubleshooting",
+        "stunden": 10.3
+      },
+      {
+        "nr": 10,
+        "titel": "Automation, Scheduling und CI/CD",
+        "stunden": 10.3
+      },
+      {
+        "nr": 11,
+        "titel": "Infrastructure as Code, Cloud und Container-Integration",
+        "stunden": 10.3
+      },
+      {
+        "nr": 12,
+        "titel": "Migration, Kosten, Skalierung und BCDR",
+        "stunden": 10.3
+      }
+    ]
+  },
+  {
+    "id": "K05",
+    "titel": "Technische Dokumentation & Dokumentations-Governance",
+    "slug": "technische-dokumentation",
+    "typ": "Kern",
+    "bereich": "Cloud, Doku & Business",
+    "voraussetzung": "",
+    "stunden": 191.75,
+    "repo": "technische-dokumentation-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Grundlagen, Zweck und Zielbild technischer Dokumentation",
+        "stunden": 11.3
+      },
+      {
+        "nr": 2,
+        "titel": "Dokumentationsstrategie und Zielbild",
+        "stunden": 11.3
+      },
+      {
+        "nr": 3,
+        "titel": "Strukturierung, Gliederung und Informationsdesign",
+        "stunden": 11.3
+      },
+      {
+        "nr": 4,
+        "titel": "Technische Schreibweise und Stilregeln",
+        "stunden": 11.3
+      },
+      {
+        "nr": 5,
+        "titel": "System-, Betriebs- und Administrationsdokumentation",
+        "stunden": 11.3
+      },
+      {
+        "nr": 6,
+        "titel": "Prozess-, Arbeits- und Verfahrensdokumentation",
+        "stunden": 11.3
+      },
+      {
+        "nr": 7,
+        "titel": "Standards, Templates und Qualitätskriterien",
+        "stunden": 11.3
+      },
+      {
+        "nr": 8,
+        "titel": "API-, Software- und Entwicklerdokumentation",
+        "stunden": 11.3
+      },
+      {
+        "nr": 9,
+        "titel": "Diagramme, Modelle und Visualisierung",
+        "stunden": 11.3
+      },
+      {
+        "nr": 10,
+        "titel": "Versionierung, Review und Qualitätssicherung",
+        "stunden": 11.3
+      },
+      {
+        "nr": 11,
+        "titel": "Tools, Formate und Publishing-Prozesse",
+        "stunden": 11.3
+      },
+      {
+        "nr": 12,
+        "titel": "Tooling, Plattformen und Ablageorte",
+        "stunden": 11.3
+      },
+      {
+        "nr": 13,
+        "titel": "Security, Datenschutz und Compliance in Dokumenten",
+        "stunden": 11.3
+      },
+      {
+        "nr": 14,
+        "titel": "Review, Aktualität und Lifecycle Management",
+        "stunden": 11.3
+      },
+      {
+        "nr": 15,
+        "titel": "Betrieb, Pflege und Wissensmanagement",
+        "stunden": 11.3
+      },
+      {
+        "nr": 16,
+        "titel": "Kennzahlen, Audits und kontinuierliche Verbesserung",
+        "stunden": 11.3
+      },
+      {
+        "nr": 17,
+        "titel": "Migration, Kosten, Resilienz und Roadmap",
+        "stunden": 11.3
+      }
+    ]
+  },
+  {
+    "id": "K06",
+    "titel": "Active Directory",
+    "slug": "active-directory",
+    "typ": "Kern",
+    "bereich": "Windows & Microsoft",
+    "voraussetzung": "",
+    "stunden": 134,
+    "repo": "active-directory-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Active Directory Grundlagen und Architektur",
+        "stunden": 11.2
+      },
+      {
+        "nr": 2,
+        "titel": "AD DS Installation und Domain Controller Deployment",
+        "stunden": 11.2
+      },
+      {
+        "nr": 3,
+        "titel": "Forest-, Domain- und OU-Design",
+        "stunden": 11.2
+      },
+      {
+        "nr": 4,
+        "titel": "Benutzer, Gruppen, Computer und Objektverwaltung",
+        "stunden": 11.2
+      },
+      {
+        "nr": 5,
+        "titel": "DNS, Sites, Subnetze und Replikation",
+        "stunden": 11.2
+      },
+      {
+        "nr": 6,
+        "titel": "FSMO-Rollen, Global Catalog und Domain Controller Betrieb",
+        "stunden": 11.2
+      },
+      {
+        "nr": 7,
+        "titel": "Gruppenrichtlinien und zentrale Konfiguration",
+        "stunden": 11.2
+      },
+      {
+        "nr": 8,
+        "titel": "Authentifizierung, Autorisierung und Zugriffsschutz",
+        "stunden": 11.2
+      },
+      {
+        "nr": 9,
+        "titel": "AD Security, Hardening und Tiering",
+        "stunden": 11.2
+      },
+      {
+        "nr": 10,
+        "titel": "Backup, Restore und Disaster Recovery",
+        "stunden": 11.2
+      },
+      {
+        "nr": 11,
+        "titel": "Monitoring, Troubleshooting und Betrieb",
+        "stunden": 11.2
+      },
+      {
+        "nr": 12,
+        "titel": "Hybrid Identity, Migration und Governance",
+        "stunden": 11.2
+      }
+    ]
+  },
+  {
+    "id": "K07",
+    "titel": "Python (Automatisierung unter Linux)",
+    "slug": "python-automatisierung",
+    "typ": "Kern",
+    "bereich": "Scripting & Automatisierung",
+    "voraussetzung": "Bash",
+    "stunden": 150,
+    "repo": "python-automatisierung-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Variablen, Strings und Ausgabe",
+        "stunden": 10
+      },
+      {
+        "nr": 2,
+        "titel": "Bedingungen, Schleifen und Listen",
+        "stunden": 10
+      },
+      {
+        "nr": 3,
+        "titel": "Dicts, Funktionen und Tracebacks",
+        "stunden": 10
+      },
+      {
+        "nr": 4,
+        "titel": "pathlib und Dateien",
+        "stunden": 10
+      },
+      {
+        "nr": 5,
+        "titel": "subprocess und argparse",
+        "stunden": 10
+      },
+      {
+        "nr": 6,
+        "titel": "Exceptions und logging",
+        "stunden": 10
+      },
+      {
+        "nr": 7,
+        "titel": "Module, venv, JSON/YAML/CSV",
+        "stunden": 10
+      },
+      {
+        "nr": 8,
+        "titel": "Regex und datetime",
+        "stunden": 10
+      },
+      {
+        "nr": 9,
+        "titel": "cron, systemd und Locking",
+        "stunden": 10
+      },
+      {
+        "nr": 10,
+        "titel": "requests, REST und Secrets",
+        "stunden": 10
+      },
+      {
+        "nr": 11,
+        "titel": "psutil und SSH",
+        "stunden": 10
+      },
+      {
+        "nr": 12,
+        "titel": "Alerting per Mail und Webhook",
+        "stunden": 10
+      },
+      {
+        "nr": 13,
+        "titel": "Git und Projektstruktur",
+        "stunden": 10
+      },
+      {
+        "nr": 14,
+        "titel": "Tests und Typen",
+        "stunden": 10
+      },
+      {
+        "nr": 15,
+        "titel": "Abschlussprojekt",
+        "stunden": 10
+      }
+    ]
+  },
+  {
+    "id": "K08",
+    "titel": "Git & Versionskontrolle",
+    "slug": "git-versionskontrolle",
+    "typ": "Kern",
+    "bereich": "Scripting & Automatisierung",
+    "voraussetzung": "Bash",
+    "stunden": 126,
+    "repo": "git-versionskontrolle-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Git Grundlagen und Versionskontrollarchitektur",
+        "stunden": 10.5
+      },
+      {
+        "nr": 2,
+        "titel": "Repositories, Commits und Arbeitsbereiche",
+        "stunden": 10.5
+      },
+      {
+        "nr": 3,
+        "titel": "Branching, Merging und Konfliktlösung",
+        "stunden": 10.5
+      },
+      {
+        "nr": 4,
+        "titel": "Remote Repositories und Kollaboration",
+        "stunden": 10.5
+      },
+      {
+        "nr": 5,
+        "titel": "Git Workflows und Repository-Standards",
+        "stunden": 10.5
+      },
+      {
+        "nr": 6,
+        "titel": "Historie, Rewriting und Recovery",
+        "stunden": 10.5
+      },
+      {
+        "nr": 7,
+        "titel": "Tags, Releases und Semantic Versioning",
+        "stunden": 10.5
+      },
+      {
+        "nr": 8,
+        "titel": "Security, Secrets und Supply Chain",
+        "stunden": 10.5
+      },
+      {
+        "nr": 9,
+        "titel": "Git in CI/CD und Automation",
+        "stunden": 10.5
+      },
+      {
+        "nr": 10,
+        "titel": "Betrieb, Monitoring und Troubleshooting",
+        "stunden": 10.5
+      },
+      {
+        "nr": 11,
+        "titel": "Enterprise Git, Plattformen und Governance",
+        "stunden": 10.5
+      },
+      {
+        "nr": 12,
+        "titel": "Migration, Kosten, Skalierung und BCDR",
+        "stunden": 10.5
+      }
+    ]
+  },
+  {
+    "id": "K09",
+    "titel": "PowerShell",
+    "slug": "powershell",
+    "typ": "Kern",
+    "bereich": "Windows & Microsoft",
+    "voraussetzung": "Bash",
+    "stunden": 126,
+    "repo": "powershell-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "PowerShell Grundlagen und Architektur",
+        "stunden": 10.5
+      },
+      {
+        "nr": 2,
+        "titel": "Cmdlets, Hilfe, Module und Provider",
+        "stunden": 10.5
+      },
+      {
+        "nr": 3,
+        "titel": "Objekte, Pipeline und Datenverarbeitung",
+        "stunden": 10.5
+      },
+      {
+        "nr": 4,
+        "titel": "Skripting, Variablen und Kontrollstrukturen",
+        "stunden": 10.5
+      },
+      {
+        "nr": 5,
+        "titel": "Fehlerbehandlung, Debugging und robuste Skripte",
+        "stunden": 10.5
+      },
+      {
+        "nr": 6,
+        "titel": "Dateisystem, Registry und Systemadministration",
+        "stunden": 10.5
+      },
+      {
+        "nr": 7,
+        "titel": "Remoting, Jobs und Skalierung",
+        "stunden": 10.5
+      },
+      {
+        "nr": 8,
+        "titel": "Security, Hardening und Secret Management",
+        "stunden": 10.5
+      },
+      {
+        "nr": 9,
+        "titel": "Monitoring, Logging und Troubleshooting",
+        "stunden": 10.5
+      },
+      {
+        "nr": 10,
+        "titel": "Cloud, Microsoft 365 und Azure Automation",
+        "stunden": 10.5
+      },
+      {
+        "nr": 11,
+        "titel": "Automation, CI/CD und Infrastructure as Code",
+        "stunden": 10.5
+      },
+      {
+        "nr": 12,
+        "titel": "Migration, Kosten, Governance und BCDR",
+        "stunden": 10.5
+      }
+    ]
+  },
+  {
+    "id": "K10",
+    "titel": "Microsoft Office Specialist Associate",
+    "slug": "microsoft-office-specialist-associate",
+    "typ": "Erweiterung",
+    "bereich": "Fundament",
+    "voraussetzung": "",
+    "stunden": 100,
+    "repo": "microsoft-office-specialist-associate-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "MOS Associate M365 Apps Grundlagen und Zertifizierungspfad",
+        "stunden": 8.3
+      },
+      {
+        "nr": 2,
+        "titel": "Microsoft Word Associate – Dokumente verwalten",
+        "stunden": 8.3
+      },
+      {
+        "nr": 3,
+        "titel": "Microsoft Word Associate – Text, Tabellen, Referenzen und Grafiken",
+        "stunden": 8.3
+      },
+      {
+        "nr": 4,
+        "titel": "Microsoft Excel Associate – Workbook und Worksheet Management",
+        "stunden": 8.3
+      },
+      {
+        "nr": 5,
+        "titel": "Microsoft Excel Associate – Daten, Tabellen und Formatierung",
+        "stunden": 8.3
+      },
+      {
+        "nr": 6,
+        "titel": "Microsoft Excel Associate – Formeln, Funktionen, Charts und Analyse",
+        "stunden": 8.3
+      },
+      {
+        "nr": 7,
+        "titel": "Microsoft PowerPoint Associate – Präsentationen verwalten",
+        "stunden": 8.3
+      },
+      {
+        "nr": 8,
+        "titel": "Microsoft PowerPoint Associate – Inhalte, Medien und Slide Shows",
+        "stunden": 8.3
+      },
+      {
+        "nr": 9,
+        "titel": "Microsoft Outlook Associate – Mail, Kalender und Kontakte",
+        "stunden": 8.3
+      },
+      {
+        "nr": 10,
+        "titel": "Microsoft 365 Collaboration und Produktivitäts-Workflows",
+        "stunden": 8.3
+      },
+      {
+        "nr": 11,
+        "titel": "MOS Praxisprojekte und Prüfungssimulation",
+        "stunden": 8.3
+      },
+      {
+        "nr": 12,
+        "titel": "MOS Associate Abschluss-Lab und Angebotsdesign",
+        "stunden": 8.3
+      }
+    ]
+  },
+  {
+    "id": "K11",
+    "titel": "CompTIA Tech+ / ITF+",
+    "slug": "comptia-tech-itf",
+    "typ": "Erweiterung",
+    "bereich": "Fundament",
+    "voraussetzung": "",
+    "stunden": 87,
+    "repo": "comptia-tech-itf-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "IT-Grundlagen, Terminologie und Prüfungslandkarte",
+        "stunden": 7.2
+      },
+      {
+        "nr": 2,
+        "titel": "Hardware, Komponenten und Peripherie",
+        "stunden": 7.2
+      },
+      {
+        "nr": 3,
+        "titel": "Betriebssysteme, Dateisysteme und lokale Verwaltung",
+        "stunden": 7.2
+      },
+      {
+        "nr": 4,
+        "titel": "Netzwerkgrundlagen und Konnektivität",
+        "stunden": 7.2
+      },
+      {
+        "nr": 5,
+        "titel": "Anwendungen, Web, Konten und Produktivität",
+        "stunden": 7.2
+      },
+      {
+        "nr": 6,
+        "titel": "Daten, Datenbanken und Analytik-Grundlagen",
+        "stunden": 7.2
+      },
+      {
+        "nr": 7,
+        "titel": "Softwareentwicklung, Logik und Scripting-Grundlagen",
+        "stunden": 7.2
+      },
+      {
+        "nr": 8,
+        "titel": "Cloud, Virtualisierung und moderne Plattformen",
+        "stunden": 7.2
+      },
+      {
+        "nr": 9,
+        "titel": "Betrieb, Monitoring, Logging und Supportprozesse",
+        "stunden": 7.2
+      },
+      {
+        "nr": 10,
+        "titel": "Security, Hardening und Secure-by-Design",
+        "stunden": 7.2
+      },
+      {
+        "nr": 11,
+        "titel": "Governance, Datenschutz, Compliance und Standards",
+        "stunden": 7.2
+      },
+      {
+        "nr": 12,
+        "titel": "Automation, Kosten, Migration und BCDR-Grundlagen",
+        "stunden": 7.2
+      }
+    ]
+  },
+  {
+    "id": "K12",
+    "titel": "AWS Cloud Practitioner",
+    "slug": "aws-cloud-practitioner",
+    "typ": "Erweiterung",
+    "bereich": "Cloud, Doku & Business",
+    "voraussetzung": "",
+    "stunden": 106,
+    "repo": "aws-cloud-practitioner-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Cloud-Grundlagen und AWS Architektur",
+        "stunden": 8.8
+      },
+      {
+        "nr": 2,
+        "titel": "Globale Infrastruktur und Bereitstellungsmodelle",
+        "stunden": 8.8
+      },
+      {
+        "nr": 3,
+        "titel": "Identität, Zugriff und Account-Struktur",
+        "stunden": 8.8
+      },
+      {
+        "nr": 4,
+        "titel": "Compute und Serverless Grundlagen",
+        "stunden": 8.8
+      },
+      {
+        "nr": 5,
+        "titel": "Storage, Datenbanken und Datenplattformen",
+        "stunden": 8.8
+      },
+      {
+        "nr": 6,
+        "titel": "Netzwerk, Connectivity und Content Delivery",
+        "stunden": 8.8
+      },
+      {
+        "nr": 7,
+        "titel": "Betrieb, Monitoring und Troubleshooting",
+        "stunden": 8.8
+      },
+      {
+        "nr": 8,
+        "titel": "Security, Compliance und Governance",
+        "stunden": 8.8
+      },
+      {
+        "nr": 9,
+        "titel": "Architekturprinzipien und Well-Architected",
+        "stunden": 8.8
+      },
+      {
+        "nr": 10,
+        "titel": "Automation, Deployment und IaC Grundlagen",
+        "stunden": 8.8
+      },
+      {
+        "nr": 11,
+        "titel": "Kosten, Billing und FinOps",
+        "stunden": 8.8
+      },
+      {
+        "nr": 12,
+        "titel": "Migration, BCDR und Prüfungsvorbereitung",
+        "stunden": 8.8
+      }
+    ]
+  },
+  {
+    "id": "K13",
+    "titel": "Webserver (Apache HTTP Server & Nginx)",
+    "slug": "webserver-apache-nginx",
+    "typ": "Erweiterung",
+    "bereich": "Web",
+    "voraussetzung": "Webdesign, Linux Essentials",
+    "stunden": 165.5,
+    "repo": "webserver-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Apache HTTP Server Grundlagen und Architektur",
+        "stunden": 11.8
+      },
+      {
+        "nr": 2,
+        "titel": "Installation, Betriebssystemintegration und Verzeichnisstruktur",
+        "stunden": 11.8
+      },
+      {
+        "nr": 3,
+        "titel": "Grundkonfiguration, Virtual Hosts und .htaccess",
+        "stunden": 11.8
+      },
+      {
+        "nr": 4,
+        "titel": "Module, MPMs und dynamische Inhalte",
+        "stunden": 11.8
+      },
+      {
+        "nr": 5,
+        "titel": "Statische Inhalte, MIME, Compression und Caching",
+        "stunden": 11.8
+      },
+      {
+        "nr": 6,
+        "titel": "TLS, HTTP/2 und sichere Transportkonfiguration",
+        "stunden": 11.8
+      },
+      {
+        "nr": 7,
+        "titel": "Reverse Proxy, Load Balancing und Backend-Integration",
+        "stunden": 11.8
+      },
+      {
+        "nr": 8,
+        "titel": "Load Balancing, Hochverfügbarkeit und Traffic Steering",
+        "stunden": 11.8
+      },
+      {
+        "nr": 9,
+        "titel": "Logging, Monitoring und Troubleshooting",
+        "stunden": 11.8
+      },
+      {
+        "nr": 10,
+        "titel": "Security Hardening und Zugriffsschutz",
+        "stunden": 11.8
+      },
+      {
+        "nr": 11,
+        "titel": "Performance, Caching und Skalierung",
+        "stunden": 11.8
+      },
+      {
+        "nr": 12,
+        "titel": "Automation, CI/CD und Infrastructure as Code",
+        "stunden": 11.8
+      },
+      {
+        "nr": 13,
+        "titel": "Migration, Upgrades und Kompatibilität",
+        "stunden": 11.8
+      },
+      {
+        "nr": 14,
+        "titel": "Kosten, Governance, Backup und BCDR",
+        "stunden": 11.8
+      }
+    ]
+  },
+  {
+    "id": "K14",
+    "titel": "100 Gruppenrichtlinien",
+    "slug": "100-gruppenrichtlinien",
+    "typ": "Erweiterung",
+    "bereich": "Windows & Microsoft",
+    "voraussetzung": "Active Directory",
+    "stunden": 100,
+    "repo": "100-gruppenrichtlinien-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Security Baseline",
+        "stunden": 10
+      },
+      {
+        "nr": 2,
+        "titel": "Defender und ASR",
+        "stunden": 10
+      },
+      {
+        "nr": 3,
+        "titel": "BitLocker und Geräteschutz",
+        "stunden": 10
+      },
+      {
+        "nr": 4,
+        "titel": "Windows Firewall und Netzwerk",
+        "stunden": 10
+      },
+      {
+        "nr": 5,
+        "titel": "Update und Servicing",
+        "stunden": 10
+      },
+      {
+        "nr": 6,
+        "titel": "Anwendungssteuerung und Browser",
+        "stunden": 10
+      },
+      {
+        "nr": 7,
+        "titel": "Benutzererlebnis und Datenschutz",
+        "stunden": 10
+      },
+      {
+        "nr": 8,
+        "titel": "Konten, LAPS und Rechte",
+        "stunden": 10
+      },
+      {
+        "nr": 9,
+        "titel": "Audit, Logging und Forensik",
+        "stunden": 10
+      },
+      {
+        "nr": 10,
+        "titel": "Geräte, USB und Druck",
+        "stunden": 10
+      }
+    ]
+  },
+  {
+    "id": "K15",
+    "titel": "M365 Governance",
+    "slug": "m365-governance",
+    "typ": "Erweiterung",
+    "bereich": "Windows & Microsoft",
+    "voraussetzung": "Active Directory (empfohlen)",
+    "stunden": 109,
+    "repo": "m365-governance-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "Grundlagen, Governance-Modell und Zielarchitektur",
+        "stunden": 9.1
+      },
+      {
+        "nr": 2,
+        "titel": "Identity Governance und Zugriffskontrolle",
+        "stunden": 9.1
+      },
+      {
+        "nr": 3,
+        "titel": "Teams Governance und Collaboration Lifecycle",
+        "stunden": 9.1
+      },
+      {
+        "nr": 4,
+        "titel": "SharePoint und OneDrive Governance",
+        "stunden": 9.1
+      },
+      {
+        "nr": 5,
+        "titel": "Exchange und Kommunikations-Governance",
+        "stunden": 9.1
+      },
+      {
+        "nr": 6,
+        "titel": "Information Protection und Data Governance",
+        "stunden": 9.1
+      },
+      {
+        "nr": 7,
+        "titel": "Compliance, Audit und Risk Management",
+        "stunden": 9.1
+      },
+      {
+        "nr": 8,
+        "titel": "Security Governance und Secure-by-Design",
+        "stunden": 9.1
+      },
+      {
+        "nr": 9,
+        "titel": "Monitoring, Reporting und Service Operations",
+        "stunden": 9.1
+      },
+      {
+        "nr": 10,
+        "titel": "Provisioning, Standards und Lifecycle Automation",
+        "stunden": 9.1
+      },
+      {
+        "nr": 11,
+        "titel": "Automation, Graph API und Policy-as-Code",
+        "stunden": 9.1
+      },
+      {
+        "nr": 12,
+        "titel": "Migration, Kosten, Adoption und BCDR",
+        "stunden": 9.1
+      }
+    ]
+  },
+  {
+    "id": "K16",
+    "titel": "Unternehmensgründung",
+    "slug": "unternehmensgruendung",
+    "typ": "Erweiterung",
+    "bereich": "Cloud, Doku & Business",
+    "voraussetzung": "",
+    "stunden": 110,
+    "repo": "unternehmensgruendung-uebungen",
+    "module": [
+      {
+        "nr": 1,
+        "titel": "EU-Tech-Gründung, Strategie und Marktvalidierung",
+        "stunden": 9.2
+      },
+      {
+        "nr": 2,
+        "titel": "Rechtsform, Standortwahl und EU-Gründungsverfahren",
+        "stunden": 9.2
+      },
+      {
+        "nr": 3,
+        "titel": "Geschäftsmodell, Pricing und Go-to-Market",
+        "stunden": 9.2
+      },
+      {
+        "nr": 4,
+        "titel": "Produktmanagement, MVP und Technologiearchitektur",
+        "stunden": 9.2
+      },
+      {
+        "nr": 5,
+        "titel": "Software Engineering, DevOps und Plattformbetrieb",
+        "stunden": 9.2
+      },
+      {
+        "nr": 6,
+        "titel": "Datenschutz, Cybersecurity und AI/Tech-Regulierung",
+        "stunden": 9.2
+      },
+      {
+        "nr": 7,
+        "titel": "Finanzen, Buchhaltung, Steuern und Controlling",
+        "stunden": 9.2
+      },
+      {
+        "nr": 8,
+        "titel": "Funding, Grants, Investor Readiness und Cap Table",
+        "stunden": 9.2
+      },
+      {
+        "nr": 9,
+        "titel": "Vertrieb, Marketing, Customer Success und Wachstum",
+        "stunden": 9.2
+      },
+      {
+        "nr": 10,
+        "titel": "People, Organisation und Founder Operations",
+        "stunden": 9.2
+      },
+      {
+        "nr": 11,
+        "titel": "Legal Operations, IP, Verträge und Risikomanagement",
+        "stunden": 9.2
+      },
+      {
+        "nr": 12,
+        "titel": "Skalierung, Internationalisierung, Exit und Resilienz",
+        "stunden": 9.2
+      }
+    ]
+  }
+]
