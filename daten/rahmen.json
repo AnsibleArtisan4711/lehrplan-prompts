@@ -12,6 +12,6 @@
     "offen": "Der Prompt liegt vor, ein Lehrplan ist noch nicht erstellt.",
     "Lehrplan erstellt": "Der Lehrplan ist erstellt und von mir geprüft. Er liegt in `lehrplaene/` und ist in der Spalte „Lehrplan“ verlinkt.",
     "aufbereitet": "Aus dem Lehrplan ist Übungsmaterial ausgearbeitet, aber noch nicht veröffentlicht.",
-    "gepusht": "Das Übungsmaterial liegt in einem eigenen GitHub-Repository, das in der Spalte „Lehrplan“ verlinkt wird."
+    "gepusht": "Das Übungsmaterial liegt als Kursordner in einem Themen-Repository auf GitHub, das in der Spalte „Repository“ verlinkt wird."
   }
 }

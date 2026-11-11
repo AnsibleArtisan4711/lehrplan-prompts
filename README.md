@@ -16,87 +16,89 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 70 Kurse: 54 offen, 16 Lehrplan erstellt, 0 aufbereitet, 0 gepusht.
+Stand der 70 Kurse: 54 offen, 14 Lehrplan erstellt, 0 aufbereitet, 2 gepusht.
 
 Bedeutung der Status:
 
 - **offen**: Der Prompt liegt vor, ein Lehrplan ist noch nicht erstellt.
 - **Lehrplan erstellt**: Der Lehrplan ist erstellt und von mir geprüft. Er liegt in `lehrplaene/` und ist in der Spalte „Lehrplan“ verlinkt.
 - **aufbereitet**: Aus dem Lehrplan ist Übungsmaterial ausgearbeitet, aber noch nicht veröffentlicht.
-- **gepusht**: Das Übungsmaterial liegt in einem eigenen GitHub-Repository, das in der Spalte „Lehrplan“ verlinkt wird.
+- **gepusht**: Das Übungsmaterial liegt als Kursordner in einem Themen-Repository auf GitHub, das in der Spalte „Repository“ verlinkt wird.
 
-| Nr | Prio | Themengebiet | Kurs | Status | Prompt | Lehrplan |
-|---|---|---|---|---|---|---|
-| 1 | A | Windows-Server-Rollen | DNS-Grundlagen (Windows-DNS und BIND) | Lehrplan erstellt | [P01](prompts/P01-dns-grundlagen-windows-dns-und-bind.md) | [P01](lehrplaene/P01-dns-grundlagen-windows-dns-und-bind.md) |
-| 2 | A | Windows-Server-Rollen | Dateidienste, DFS und Druckserver | Lehrplan erstellt | [P02](prompts/P02-dateidienste-dfs-und-druckserver.md) | [P02](lehrplaene/P02-dateidienste-dfs-und-druckserver.md) |
-| 3 | A | Windows-Server-Rollen | WSUS und Update-Verwaltung | Lehrplan erstellt | [P03](prompts/P03-wsus-und-update-verwaltung.md) | [P03](lehrplaene/P03-wsus-und-update-verwaltung.md) |
-| 4 | A | Windows-Server-Rollen | Zertifikatsdienste und PKI (AD CS) | Lehrplan erstellt | [P04](prompts/P04-zertifikatsdienste-und-pki-ad-cs.md) | [P04](lehrplaene/P04-zertifikatsdienste-und-pki-ad-cs.md) |
-| 5 | A | Virtualisierung | Hyper-V Administration | Lehrplan erstellt | [P05](prompts/P05-hyper-v-administration.md) | [P05](lehrplaene/P05-hyper-v-administration.md) |
-| 6 | A | Virtualisierung | Proxmox VE | offen | [P06](prompts/P06-proxmox-ve.md) | – |
-| 7 | A | Virtualisierung | VMware vSphere und ESXi | offen | [P07](prompts/P07-vmware-vsphere-und-esxi.md) | – |
-| 8 | A | Netzwerkdienste und Firewall | Firewall mit OPNsense | offen | [P08](prompts/P08-firewall-mit-opnsense.md) | – |
-| 9 | A | Netzwerkdienste und Firewall | Linux-Firewall mit nftables und iptables | offen | [P09](prompts/P09-linux-firewall-mit-nftables-und-iptables.md) | – |
-| 10 | A | Netzwerkdienste und Firewall | VPN mit WireGuard und OpenVPN | Lehrplan erstellt | [P10](prompts/P10-vpn-mit-wireguard-und-openvpn.md) | [P10](lehrplaene/P10-vpn-mit-wireguard-und-openvpn.md) |
-| 11 | A | Netzwerkdienste und Firewall | Reverse Proxy, Lastverteilung und TLS | offen | [P11](prompts/P11-reverse-proxy-lastverteilung-und-tls.md) | – |
-| 12 | A | IT-Sicherheit | IT-Sicherheitsgrundlagen | Lehrplan erstellt | [P12](prompts/P12-it-sicherheitsgrundlagen.md) | [P12](lehrplaene/P12-it-sicherheitsgrundlagen.md) |
-| 13 | A | IT-Sicherheit | Windows-Server-Härtung | offen | [P13](prompts/P13-windows-server-haertung.md) | – |
-| 14 | A | IT-Sicherheit | Linux-Server-Härtung | offen | [P14](prompts/P14-linux-server-haertung.md) | – |
-| 15 | A | IT-Sicherheit | Schwachstellenmanagement | offen | [P15](prompts/P15-schwachstellenmanagement.md) | – |
-| 16 | A | IT-Sicherheit | Kryptografie, Zertifikate und TLS | Lehrplan erstellt | [P16](prompts/P16-kryptografie-zertifikate-und-tls.md) | [P16](lehrplaene/P16-kryptografie-zertifikate-und-tls.md) |
-| 17 | A | Monitoring und Logging | Monitoring mit Zabbix | offen | [P17](prompts/P17-monitoring-mit-zabbix.md) | – |
-| 18 | A | Monitoring und Logging | Monitoring mit Prometheus und Grafana | offen | [P18](prompts/P18-monitoring-mit-prometheus-und-grafana.md) | – |
-| 19 | A | Monitoring und Logging | Zentrales Logging mit Graylog und Elastic Stack | offen | [P19](prompts/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) | – |
-| 20 | A | Monitoring und Logging | Monitoring mit PRTG | offen | [P20](prompts/P20-monitoring-mit-prtg.md) | – |
-| 21 | B | Automatisierung | Konfigurationsmanagement mit Ansible | offen | [P21](prompts/P21-konfigurationsmanagement-mit-ansible.md) | – |
-| 22 | B | Automatisierung | Infrastructure as Code mit Terraform | offen | [P22](prompts/P22-infrastructure-as-code-mit-terraform.md) | – |
-| 23 | B | Automatisierung | cloud-init und VM-Vorlagen | offen | [P23](prompts/P23-cloud-init-und-vm-vorlagen.md) | – |
-| 24 | B | Automatisierung | PowerShell Desired State Configuration (DSC) | offen | [P24](prompts/P24-powershell-desired-state-configuration-dsc.md) | – |
-| 25 | B | Container | Docker und Docker Compose | offen | [P25](prompts/P25-docker-und-docker-compose.md) | – |
-| 26 | B | Container | Kubernetes-Grundlagen | offen | [P26](prompts/P26-kubernetes-grundlagen.md) | – |
-| 27 | B | Azure und Identität | Azure Administration | offen | [P27](prompts/P27-azure-administration.md) | – |
-| 28 | B | Azure und Identität | Entra ID und Hybrid-Identität | offen | [P28](prompts/P28-entra-id-und-hybrid-identitaet.md) | – |
-| 29 | B | Azure und Identität | Intune und Autopilot | offen | [P29](prompts/P29-intune-und-autopilot.md) | – |
-| 30 | B | Datenbanken | SQL-Grundlagen | Lehrplan erstellt | [P30](prompts/P30-sql-grundlagen.md) | [P30](lehrplaene/P30-sql-grundlagen.md) |
-| 31 | B | Datenbanken | MariaDB und PostgreSQL Administration | offen | [P31](prompts/P31-mariadb-und-postgresql-administration.md) | – |
-| 32 | B | Datenbanken | SQL Server Administration | offen | [P32](prompts/P32-sql-server-administration.md) | – |
-| 33 | B | Storage | NAS, SAN, iSCSI und RAID | offen | [P33](prompts/P33-nas-san-iscsi-und-raid.md) | – |
-| 34 | B | Storage | Btrfs, ZFS und Snapshots | offen | [P34](prompts/P34-btrfs-zfs-und-snapshots.md) | – |
-| 35 | B | Backup und Notfall | Backup-Konzept (3-2-1, RPO und RTO) | offen | [P35](prompts/P35-backup-konzept-3-2-1-rpo-und-rto.md) | – |
-| 36 | B | Backup und Notfall | Notfallplanung und Disaster Recovery | offen | [P36](prompts/P36-notfallplanung-und-disaster-recovery.md) | – |
-| 37 | B | E-Mail | Exchange Online Administration | offen | [P37](prompts/P37-exchange-online-administration.md) | – |
-| 38 | B | E-Mail | E-Mail-Authentifizierung: SPF, DKIM und DMARC | offen | [P38](prompts/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) | – |
-| 39 | B | E-Mail | Mailserver mit Postfix und Dovecot | offen | [P39](prompts/P39-mailserver-mit-postfix-und-dovecot.md) | – |
-| 40 | C | IT-Betrieb und Prozesse | ITIL 4 Grundlagen | Lehrplan erstellt | [P40](prompts/P40-itil-4-grundlagen.md) | [P40](lehrplaene/P40-itil-4-grundlagen.md) |
-| 41 | C | IT-Betrieb und Prozesse | Incident-, Problem- und Change-Management | Lehrplan erstellt | [P41](prompts/P41-incident-problem-und-change-management.md) | [P41](lehrplaene/P41-incident-problem-und-change-management.md) |
-| 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | Lehrplan erstellt | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) | [P42](lehrplaene/P42-ticketsysteme-in-der-praxis.md) |
-| 43 | C | IT-Betrieb und Prozesse | SLA und Betriebshandbuch | Lehrplan erstellt | [P43](prompts/P43-sla-und-betriebshandbuch.md) | [P43](lehrplaene/P43-sla-und-betriebshandbuch.md) |
-| 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | Lehrplan erstellt | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) | [P44](lehrplaene/P44-pc-hardware-und-fehlersuche.md) |
-| 45 | C | Client und Hardware | Windows-11-Client-Administration | Lehrplan erstellt | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) |
-| 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | Lehrplan erstellt | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [P46](lehrplaene/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) |
-| 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | offen | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) | – |
-| 48 | C | Recht und Compliance | NIS2 für Administratoren | offen | [P48](prompts/P48-nis2-fuer-administratoren.md) | – |
-| 49 | C | Recht und Compliance | ISO 27001 Grundlagen | offen | [P49](prompts/P49-iso-27001-grundlagen.md) | – |
-| 50 | C | Zusatz | Troubleshooting-Methodik | offen | [P50](prompts/P50-troubleshooting-methodik.md) | – |
-| 51 | C | Zusatz | Projektmanagement für Administratoren | offen | [P51](prompts/P51-projektmanagement-fuer-administratoren.md) | – |
-| 52 | C | Zusatz | IT-Englisch für Administratoren | offen | [P52](prompts/P52-it-englisch-fuer-administratoren.md) | – |
-| 53 | B | Container | Podman und Container-Sicherheit | offen | [P53](prompts/P53-podman-und-container-sicherheit.md) | – |
-| 54 | B | Storage | LVM und Dateisysteme unter Linux | offen | [P54](prompts/P54-lvm-und-dateisysteme-unter-linux.md) | – |
-| 55 | B | Storage | Dateidienste unter Linux mit Samba und NFS | offen | [P55](prompts/P55-dateidienste-unter-linux-mit-samba-und-nfs.md) | – |
-| 56 | B | Cloud-Plattformen | AWS Administration (SysOps) | offen | [P56](prompts/P56-aws-administration-sysops.md) | – |
-| 57 | B | Azure und Identität | Azure-Netzwerk und Azure-Sicherheit | offen | [P57](prompts/P57-azure-netzwerk-und-azure-sicherheit.md) | – |
-| 58 | C | Cloud-Plattformen | Google Cloud Grundlagen | offen | [P58](prompts/P58-google-cloud-grundlagen.md) | – |
-| 59 | B | Windows-Server-Rollen | Remotedesktopdienste (RDS) | offen | [P59](prompts/P59-remotedesktopdienste-rds.md) | – |
-| 60 | B | Virtualisierung | Failover-Clustering und Hochverfügbarkeit | offen | [P60](prompts/P60-failover-clustering-und-hochverfuegbarkeit.md) | – |
-| 61 | C | Windows-Server-Rollen | Windows Admin Center | offen | [P61](prompts/P61-windows-admin-center.md) | – |
-| 62 | B | IT-Sicherheit | IDS und IPS mit Suricata | offen | [P62](prompts/P62-ids-und-ips-mit-suricata.md) | – |
-| 63 | B | IT-Sicherheit | Passwort- und Secrets-Verwaltung | offen | [P63](prompts/P63-passwort-und-secrets-verwaltung.md) | – |
-| 64 | B | IT-Sicherheit | Penetrationstest-Grundlagen | offen | [P64](prompts/P64-penetrationstest-grundlagen.md) | – |
-| 65 | B | Automatisierung | CI/CD mit GitLab und Jenkins | offen | [P65](prompts/P65-ci-cd-mit-gitlab-und-jenkins.md) | – |
-| 66 | C | Monitoring und Logging | Windows Event Forwarding und Ereignisprotokolle | offen | [P66](prompts/P66-windows-event-forwarding-und-ereignisprotokolle.md) | – |
-| 67 | C | Datenbanken | NoSQL-Datenbanken und Redis | offen | [P67](prompts/P67-nosql-datenbanken-und-redis.md) | – |
-| 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – |
-| 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | offen | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | – |
-| 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | offen | [P70](prompts/P70-lizenzmanagement.md) | – |
+Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das geplante Themen-Repository (Feld `repo` in `daten/kurse.json`).
+
+| Nr | Prio | Themengebiet | Kurs | Status | Prompt | Lehrplan | Repository |
+|---|---|---|---|---|---|---|---|
+| 1 | A | Windows-Server-Rollen | DNS-Grundlagen (Windows-DNS und BIND) | gepusht | [P01](prompts/P01-dns-grundlagen-windows-dns-und-bind.md) | [P01](lehrplaene/P01-dns-grundlagen-windows-dns-und-bind.md) | [netzwerkdienste-uebungen/dns-grundlagen](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dns-grundlagen) |
+| 2 | A | Windows-Server-Rollen | Dateidienste, DFS und Druckserver | gepusht | [P02](prompts/P02-dateidienste-dfs-und-druckserver.md) | [P02](lehrplaene/P02-dateidienste-dfs-und-druckserver.md) | [windows-server-uebungen/dateidienste-dfs-druckserver](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/dateidienste-dfs-druckserver) |
+| 3 | A | Windows-Server-Rollen | WSUS und Update-Verwaltung | Lehrplan erstellt | [P03](prompts/P03-wsus-und-update-verwaltung.md) | [P03](lehrplaene/P03-wsus-und-update-verwaltung.md) | `windows-server-uebungen` (geplant) |
+| 4 | A | Windows-Server-Rollen | Zertifikatsdienste und PKI (AD CS) | Lehrplan erstellt | [P04](prompts/P04-zertifikatsdienste-und-pki-ad-cs.md) | [P04](lehrplaene/P04-zertifikatsdienste-und-pki-ad-cs.md) | `windows-server-uebungen` (geplant) |
+| 5 | A | Virtualisierung | Hyper-V Administration | Lehrplan erstellt | [P05](prompts/P05-hyper-v-administration.md) | [P05](lehrplaene/P05-hyper-v-administration.md) | `virtualisierung-uebungen` (geplant) |
+| 6 | A | Virtualisierung | Proxmox VE | offen | [P06](prompts/P06-proxmox-ve.md) | – | `virtualisierung-uebungen` (geplant) |
+| 7 | A | Virtualisierung | VMware vSphere und ESXi | offen | [P07](prompts/P07-vmware-vsphere-und-esxi.md) | – | `virtualisierung-uebungen` (geplant) |
+| 8 | A | Netzwerkdienste und Firewall | Firewall mit OPNsense | offen | [P08](prompts/P08-firewall-mit-opnsense.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 9 | A | Netzwerkdienste und Firewall | Linux-Firewall mit nftables und iptables | offen | [P09](prompts/P09-linux-firewall-mit-nftables-und-iptables.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 10 | A | Netzwerkdienste und Firewall | VPN mit WireGuard und OpenVPN | Lehrplan erstellt | [P10](prompts/P10-vpn-mit-wireguard-und-openvpn.md) | [P10](lehrplaene/P10-vpn-mit-wireguard-und-openvpn.md) | `netzwerk-und-firewall-uebungen` (geplant) |
+| 11 | A | Netzwerkdienste und Firewall | Reverse Proxy, Lastverteilung und TLS | offen | [P11](prompts/P11-reverse-proxy-lastverteilung-und-tls.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 12 | A | IT-Sicherheit | IT-Sicherheitsgrundlagen | Lehrplan erstellt | [P12](prompts/P12-it-sicherheitsgrundlagen.md) | [P12](lehrplaene/P12-it-sicherheitsgrundlagen.md) | `it-sicherheit-uebungen` (geplant) |
+| 13 | A | IT-Sicherheit | Windows-Server-Härtung | offen | [P13](prompts/P13-windows-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 14 | A | IT-Sicherheit | Linux-Server-Härtung | offen | [P14](prompts/P14-linux-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 15 | A | IT-Sicherheit | Schwachstellenmanagement | offen | [P15](prompts/P15-schwachstellenmanagement.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 16 | A | IT-Sicherheit | Kryptografie, Zertifikate und TLS | Lehrplan erstellt | [P16](prompts/P16-kryptografie-zertifikate-und-tls.md) | [P16](lehrplaene/P16-kryptografie-zertifikate-und-tls.md) | `it-sicherheit-uebungen` (geplant) |
+| 17 | A | Monitoring und Logging | Monitoring mit Zabbix | offen | [P17](prompts/P17-monitoring-mit-zabbix.md) | – | `monitoring-logging-uebungen` (geplant) |
+| 18 | A | Monitoring und Logging | Monitoring mit Prometheus und Grafana | offen | [P18](prompts/P18-monitoring-mit-prometheus-und-grafana.md) | – | `monitoring-logging-uebungen` (geplant) |
+| 19 | A | Monitoring und Logging | Zentrales Logging mit Graylog und Elastic Stack | offen | [P19](prompts/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) | – | `monitoring-logging-uebungen` (geplant) |
+| 20 | A | Monitoring und Logging | Monitoring mit PRTG | offen | [P20](prompts/P20-monitoring-mit-prtg.md) | – | `monitoring-logging-uebungen` (geplant) |
+| 21 | B | Automatisierung | Konfigurationsmanagement mit Ansible | offen | [P21](prompts/P21-konfigurationsmanagement-mit-ansible.md) | – | `automatisierung-uebungen` (geplant) |
+| 22 | B | Automatisierung | Infrastructure as Code mit Terraform | offen | [P22](prompts/P22-infrastructure-as-code-mit-terraform.md) | – | `automatisierung-uebungen` (geplant) |
+| 23 | B | Automatisierung | cloud-init und VM-Vorlagen | offen | [P23](prompts/P23-cloud-init-und-vm-vorlagen.md) | – | `automatisierung-uebungen` (geplant) |
+| 24 | B | Automatisierung | PowerShell Desired State Configuration (DSC) | offen | [P24](prompts/P24-powershell-desired-state-configuration-dsc.md) | – | `automatisierung-uebungen` (geplant) |
+| 25 | B | Container | Docker und Docker Compose | offen | [P25](prompts/P25-docker-und-docker-compose.md) | – | `container-uebungen` (geplant) |
+| 26 | B | Container | Kubernetes-Grundlagen | offen | [P26](prompts/P26-kubernetes-grundlagen.md) | – | `container-uebungen` (geplant) |
+| 27 | B | Azure und Identität | Azure Administration | offen | [P27](prompts/P27-azure-administration.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 28 | B | Azure und Identität | Entra ID und Hybrid-Identität | offen | [P28](prompts/P28-entra-id-und-hybrid-identitaet.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 29 | B | Azure und Identität | Intune und Autopilot | offen | [P29](prompts/P29-intune-und-autopilot.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 30 | B | Datenbanken | SQL-Grundlagen | Lehrplan erstellt | [P30](prompts/P30-sql-grundlagen.md) | [P30](lehrplaene/P30-sql-grundlagen.md) | `datenbanken-uebungen` (geplant) |
+| 31 | B | Datenbanken | MariaDB und PostgreSQL Administration | offen | [P31](prompts/P31-mariadb-und-postgresql-administration.md) | – | `datenbanken-uebungen` (geplant) |
+| 32 | B | Datenbanken | SQL Server Administration | offen | [P32](prompts/P32-sql-server-administration.md) | – | `datenbanken-uebungen` (geplant) |
+| 33 | B | Storage | NAS, SAN, iSCSI und RAID | offen | [P33](prompts/P33-nas-san-iscsi-und-raid.md) | – | `storage-backup-uebungen` (geplant) |
+| 34 | B | Storage | Btrfs, ZFS und Snapshots | offen | [P34](prompts/P34-btrfs-zfs-und-snapshots.md) | – | `storage-backup-uebungen` (geplant) |
+| 35 | B | Backup und Notfall | Backup-Konzept (3-2-1, RPO und RTO) | offen | [P35](prompts/P35-backup-konzept-3-2-1-rpo-und-rto.md) | – | `storage-backup-uebungen` (geplant) |
+| 36 | B | Backup und Notfall | Notfallplanung und Disaster Recovery | offen | [P36](prompts/P36-notfallplanung-und-disaster-recovery.md) | – | `storage-backup-uebungen` (geplant) |
+| 37 | B | E-Mail | Exchange Online Administration | offen | [P37](prompts/P37-exchange-online-administration.md) | – | `e-mail-uebungen` (geplant) |
+| 38 | B | E-Mail | E-Mail-Authentifizierung: SPF, DKIM und DMARC | offen | [P38](prompts/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) | – | `e-mail-uebungen` (geplant) |
+| 39 | B | E-Mail | Mailserver mit Postfix und Dovecot | offen | [P39](prompts/P39-mailserver-mit-postfix-und-dovecot.md) | – | `e-mail-uebungen` (geplant) |
+| 40 | C | IT-Betrieb und Prozesse | ITIL 4 Grundlagen | Lehrplan erstellt | [P40](prompts/P40-itil-4-grundlagen.md) | [P40](lehrplaene/P40-itil-4-grundlagen.md) | `it-betrieb-uebungen` (geplant) |
+| 41 | C | IT-Betrieb und Prozesse | Incident-, Problem- und Change-Management | Lehrplan erstellt | [P41](prompts/P41-incident-problem-und-change-management.md) | [P41](lehrplaene/P41-incident-problem-und-change-management.md) | `it-betrieb-uebungen` (geplant) |
+| 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | Lehrplan erstellt | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) | [P42](lehrplaene/P42-ticketsysteme-in-der-praxis.md) | `it-betrieb-uebungen` (geplant) |
+| 43 | C | IT-Betrieb und Prozesse | SLA und Betriebshandbuch | Lehrplan erstellt | [P43](prompts/P43-sla-und-betriebshandbuch.md) | [P43](lehrplaene/P43-sla-und-betriebshandbuch.md) | `it-betrieb-uebungen` (geplant) |
+| 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | Lehrplan erstellt | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) | [P44](lehrplaene/P44-pc-hardware-und-fehlersuche.md) | `client-hardware-uebungen` (geplant) |
+| 45 | C | Client und Hardware | Windows-11-Client-Administration | Lehrplan erstellt | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | `client-hardware-uebungen` (geplant) |
+| 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | Lehrplan erstellt | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [P46](lehrplaene/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | `client-hardware-uebungen` (geplant) |
+| 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | offen | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) | – | `it-betrieb-uebungen` (geplant) |
+| 48 | C | Recht und Compliance | NIS2 für Administratoren | offen | [P48](prompts/P48-nis2-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
+| 49 | C | Recht und Compliance | ISO 27001 Grundlagen | offen | [P49](prompts/P49-iso-27001-grundlagen.md) | – | `it-betrieb-uebungen` (geplant) |
+| 50 | C | Zusatz | Troubleshooting-Methodik | offen | [P50](prompts/P50-troubleshooting-methodik.md) | – | `it-betrieb-uebungen` (geplant) |
+| 51 | C | Zusatz | Projektmanagement für Administratoren | offen | [P51](prompts/P51-projektmanagement-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
+| 52 | C | Zusatz | IT-Englisch für Administratoren | offen | [P52](prompts/P52-it-englisch-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
+| 53 | B | Container | Podman und Container-Sicherheit | offen | [P53](prompts/P53-podman-und-container-sicherheit.md) | – | `container-uebungen` (geplant) |
+| 54 | B | Storage | LVM und Dateisysteme unter Linux | offen | [P54](prompts/P54-lvm-und-dateisysteme-unter-linux.md) | – | `storage-backup-uebungen` (geplant) |
+| 55 | B | Storage | Dateidienste unter Linux mit Samba und NFS | offen | [P55](prompts/P55-dateidienste-unter-linux-mit-samba-und-nfs.md) | – | `storage-backup-uebungen` (geplant) |
+| 56 | B | Cloud-Plattformen | AWS Administration (SysOps) | offen | [P56](prompts/P56-aws-administration-sysops.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 57 | B | Azure und Identität | Azure-Netzwerk und Azure-Sicherheit | offen | [P57](prompts/P57-azure-netzwerk-und-azure-sicherheit.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 58 | C | Cloud-Plattformen | Google Cloud Grundlagen | offen | [P58](prompts/P58-google-cloud-grundlagen.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 59 | B | Windows-Server-Rollen | Remotedesktopdienste (RDS) | offen | [P59](prompts/P59-remotedesktopdienste-rds.md) | – | `windows-server-uebungen` (geplant) |
+| 60 | B | Virtualisierung | Failover-Clustering und Hochverfügbarkeit | offen | [P60](prompts/P60-failover-clustering-und-hochverfuegbarkeit.md) | – | `virtualisierung-uebungen` (geplant) |
+| 61 | C | Windows-Server-Rollen | Windows Admin Center | offen | [P61](prompts/P61-windows-admin-center.md) | – | `windows-server-uebungen` (geplant) |
+| 62 | B | IT-Sicherheit | IDS und IPS mit Suricata | offen | [P62](prompts/P62-ids-und-ips-mit-suricata.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 63 | B | IT-Sicherheit | Passwort- und Secrets-Verwaltung | offen | [P63](prompts/P63-passwort-und-secrets-verwaltung.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 64 | B | IT-Sicherheit | Penetrationstest-Grundlagen | offen | [P64](prompts/P64-penetrationstest-grundlagen.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 65 | B | Automatisierung | CI/CD mit GitLab und Jenkins | offen | [P65](prompts/P65-ci-cd-mit-gitlab-und-jenkins.md) | – | `automatisierung-uebungen` (geplant) |
+| 66 | C | Monitoring und Logging | Windows Event Forwarding und Ereignisprotokolle | offen | [P66](prompts/P66-windows-event-forwarding-und-ereignisprotokolle.md) | – | `monitoring-logging-uebungen` (geplant) |
+| 67 | C | Datenbanken | NoSQL-Datenbanken und Redis | offen | [P67](prompts/P67-nosql-datenbanken-und-redis.md) | – | `datenbanken-uebungen` (geplant) |
+| 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – | `datenbanken-uebungen` (geplant) |
+| 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | offen | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | – | `it-betrieb-uebungen` (geplant) |
+| 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | offen | [P70](prompts/P70-lizenzmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
 <!-- TABELLE-ENDE -->
 
 ## Die 16 Fächer (K01–K16)
@@ -149,22 +151,30 @@ Eigene Übungsreihen, die nicht aus einem Lehrplan-Skript stammen: Homelab, Netz
 
 Schon vorhanden und deshalb nicht in der Liste: Active Directory, Gruppenrichtlinien, Microsoft 365, PowerShell, Bash, Python, Linux-Grundlagen, LPIC 1 bis 3, DHCP, DNSSEC, Netzwerktechnik, Webserver, Webdesign, Git, technische Dokumentation, Cloud-Grundlagen, IT-Grundlagen, Microsoft Office, Unternehmensgründung.
 
-## Einordnung in die Profil-README
+## Zuordnung zu den Themen-Repositories
 
-Wenn aus einem Kurs ein eigenes Repository wird, kommt es in der Profil-README (`AnsibleArtisan4711/README.md`) in eine dieser Gruppen. Die Gruppen 1 bis 8 gibt es dort schon, die Gruppen 9 bis 13 sind neu und werden angelegt, sobald das erste Repository dazu da ist. Die Tabelle „Kurse“ oben ist nach Themengebieten geordnet, die Gruppen hier nach der Profil-README.
+Die Ausarbeitungen der Lehrpläne kommen in ein Repository je Themenbereich, je Kurs ein Ordner (Entscheidung vom 2026-11-11). Ein Repository entsteht mit dem ersten fertigen Kurs. Die Tabelle wird aus den Feldern `repo` und `ordner` in `daten/kurse.json` erzeugt; nicht von Hand ändern. Die Fächer K01–K16 und die Übungsreihen E01–E06 liegen in denselben Repositories, ihr Ordner steht in der Spalte „Repository“ der beiden anderen Tabellen.
 
-| Gruppe in der Profil-README | Kurse |
+Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Compliance (P47 bis P49) liegen vorläufig in `it-betrieb-uebungen`, Firewall und VPN (P08 bis P11) in `netzwerk-und-firewall-uebungen`, P54 und P55 (Linux-Dateidienste und LVM) in `storage-backup-uebungen`.
+
+<!-- REPOS-START -->
+| Repository | Kurse |
 |---|---|
-| 2 Netzwerk (vorhanden) | P08 OPNsense, P09 nftables und iptables, P10 WireGuard und OpenVPN, P11 Reverse Proxy und TLS |
-| 5 Linux, Shell und Programmieren (vorhanden) | P25 Docker, P26 Kubernetes, P53 Podman und Container-Sicherheit, P54 LVM und Dateisysteme, P55 Samba und NFS |
-| 7 Cloud und IT-Grundlagen (vorhanden) | P27 Azure, P28 Entra ID, P29 Intune und Autopilot, P56 AWS Administration, P57 Azure-Netzwerk und -Sicherheit, P58 Google Cloud |
-| 9 Server und Virtualisierung (neu) | P01 bis P04 Windows-Server-Rollen, P05 bis P07 Virtualisierung, P37 bis P39 E-Mail, P44 bis P46 Client und Hardware, P59 Remotedesktopdienste, P60 Failover-Clustering, P61 Windows Admin Center |
-| 10 IT-Sicherheit (neu) | P12 bis P16, P62 IDS und IPS mit Suricata, P63 Passwort- und Secrets-Verwaltung, P64 Penetrationstest-Grundlagen |
-| 11 Monitoring und Automatisierung (neu) | P17 bis P20 Monitoring und Logging, P21 bis P24 Automatisierung, P65 CI/CD, P66 Windows Event Forwarding |
-| 12 Datenbanken und Storage (neu) | P30 bis P32 Datenbanken, P33 und P34 Storage, P35 und P36 Backup und Notfall, P67 NoSQL und Redis, P68 Datenbank-Backup |
-| 13 IT-Betrieb und Compliance (neu) | P40 bis P43 IT-Betrieb und Prozesse, P47 bis P49 Recht und Compliance, P50 bis P52 Zusatz, P69 Asset-Verwaltung und CMDB, P70 Lizenzmanagement |
-
-Die Zuordnung ist ein Vorschlag. P53 bis P70 sind die zusätzlichen Kurse für diese Gruppen (Stand 2026-11-09). Offen sind vor allem Randfälle: P54 und P55 sind Storage-Kurse unter Linux (hier Gruppe 5), P09 und P14 sind Linux-Kurse (hier Netzwerk bzw. IT-Sicherheit), E-Mail und Client und Hardware sind ohne eigene Gruppe unter Server und Virtualisierung eingeordnet, und P50 bis P52 passen auch zu Gruppe 8 (Arbeitsweise und Wirtschaft).
+| [netzwerkdienste-uebungen](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen) | P01 DNS-Grundlagen (Windows-DNS und BIND) (gepusht) |
+| [windows-server-uebungen](https://github.com/AnsibleArtisan4711/windows-server-uebungen) | P02 Dateidienste, DFS und Druckserver (gepusht); P03 WSUS und Update-Verwaltung; P04 Zertifikatsdienste und PKI (AD CS); P59 Remotedesktopdienste (RDS); P61 Windows Admin Center |
+| `virtualisierung-uebungen` (noch nicht angelegt) | P05 Hyper-V Administration; P06 Proxmox VE; P07 VMware vSphere und ESXi; P60 Failover-Clustering und Hochverfügbarkeit |
+| [netzwerk-und-firewall-uebungen](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen) | P08 Firewall mit OPNsense; P09 Linux-Firewall mit nftables und iptables; P10 VPN mit WireGuard und OpenVPN; P11 Reverse Proxy, Lastverteilung und TLS |
+| `it-sicherheit-uebungen` (noch nicht angelegt) | P12 IT-Sicherheitsgrundlagen; P13 Windows-Server-Härtung; P14 Linux-Server-Härtung; P15 Schwachstellenmanagement; P16 Kryptografie, Zertifikate und TLS; P62 IDS und IPS mit Suricata; P63 Passwort- und Secrets-Verwaltung; P64 Penetrationstest-Grundlagen |
+| `monitoring-logging-uebungen` (noch nicht angelegt) | P17 Monitoring mit Zabbix; P18 Monitoring mit Prometheus und Grafana; P19 Zentrales Logging mit Graylog und Elastic Stack; P20 Monitoring mit PRTG; P66 Windows Event Forwarding und Ereignisprotokolle |
+| [automatisierung-uebungen](https://github.com/AnsibleArtisan4711/automatisierung-uebungen) | P21 Konfigurationsmanagement mit Ansible; P22 Infrastructure as Code mit Terraform; P23 cloud-init und VM-Vorlagen; P24 PowerShell Desired State Configuration (DSC); P65 CI/CD mit GitLab und Jenkins |
+| `container-uebungen` (noch nicht angelegt) | P25 Docker und Docker Compose; P26 Kubernetes-Grundlagen; P53 Podman und Container-Sicherheit |
+| [cloud-identitaet-uebungen](https://github.com/AnsibleArtisan4711/cloud-identitaet-uebungen) | P27 Azure Administration; P28 Entra ID und Hybrid-Identität; P29 Intune und Autopilot; P56 AWS Administration (SysOps); P57 Azure-Netzwerk und Azure-Sicherheit; P58 Google Cloud Grundlagen |
+| `datenbanken-uebungen` (noch nicht angelegt) | P30 SQL-Grundlagen; P31 MariaDB und PostgreSQL Administration; P32 SQL Server Administration; P67 NoSQL-Datenbanken und Redis; P68 Datenbank-Backup und -Wiederherstellung |
+| [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO); P36 Notfallplanung und Disaster Recovery; P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS |
+| `e-mail-uebungen` (noch nicht angelegt) | P37 Exchange Online Administration; P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC; P39 Mailserver mit Postfix und Dovecot |
+| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen; P41 Incident-, Problem- und Change-Management; P42 Ticketsysteme in der Praxis; P43 SLA und Betriebshandbuch; P47 Datenschutz (DSGVO) in der IT; P48 NIS2 für Administratoren; P49 ISO 27001 Grundlagen; P50 Troubleshooting-Methodik; P51 Projektmanagement für Administratoren; P52 IT-Englisch für Administratoren; P69 Asset-Verwaltung und CMDB; P70 Lizenzmanagement |
+| [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche; P45 Windows-11-Client-Administration; P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) |
+<!-- REPOS-ENDE -->
 
 ## Entstehung
 
@@ -178,14 +188,14 @@ Die Prompts und das Erzeugungsskript wurden gemeinsam mit Claude (Anthropic) ent
 | `uebungen/` | Aufbau je Übungsreihe E01–E06 (erzeugt, nicht von Hand bearbeiten) |
 | `faecher/` | Modulübersicht je Fach K01–K16 (erzeugt, nicht von Hand bearbeiten) |
 | `lehrplaene/` | die fertigen, geprüften Lehrpläne (Markdown, mit Prüfvermerk am Ende); Ausarbeitungen zu Übungen liegen in eigenen Repositories |
-| `daten/kurse.json` | Quelle der Kurse: Titel, Themen, Abgrenzung, Fokus-Technologien, Vorkenntnisse, Labor-Ressourcen, Hinweis, Status |
+| `daten/kurse.json` | Quelle der Kurse: Titel, Themen, Abgrenzung, Fokus-Technologien, Vorkenntnisse, Labor-Ressourcen, Hinweis, Status, Themen-Repository (`repo`) und Kursordner (`ordner`, sobald gepusht) |
 | `daten/uebungen.json` | Quelle der 6 Übungsreihen E01–E06: Titel, Thema, Repository, lokaler Ordner und der aus den Repositories gelesene Aufbau |
 | `daten/faecher.json` | Quelle der 16 Fächer K01–K16: Typ, Bereich, Voraussetzung, Stunden, Module mit Stunden, Repository |
 | `daten/rahmen.json` | gemeinsame Angaben: Umfang, Standard-Abgrenzung, erlaubte Status |
 | `rahmen/prompt-vorlage.txt` | Variablen-Vorlage aller Prompts mit Platzhaltern |
 | `gem/grundanweisung.md` | Grundanweisung der Gem (von Hand einzufügen) |
 | `gem/vorlage-variablen.md` | leere Vorlage für einen eigenen Kurs-Prompt |
-| `tools/build_prompts.py` | erzeugt `prompts/`, `faecher/`, `uebungen/` und die drei Tabellen |
+| `tools/build_prompts.py` | erzeugt `prompts/`, `faecher/`, `uebungen/` und die vier Tabellen (Kurse, Fächer, Übungsreihen, Zuordnung zu den Repositories) |
 | `tools/uebungen_einlesen.py` | liest den Aufbau der Übungsreihen E01–E06 aus ihren lokalen Repository-Ordnern in `daten/uebungen.json` |
 | `tools/umsetzung_anlegen.py` | legt aus einem Lehrplan einen Umsetzungsordner an (Checklisten, Protokolle, Ablage für Screenshots) |
 | `tools/bilder_index.py` | erzeugt `bilder-index.md` mit allen Bildern eines Umsetzungsordners; meldet unverlinkte, fehlende und große Bilder |
@@ -205,7 +215,7 @@ git push
 ```
 
 - **Gemeinsamen Rahmen ändern** (Umfang, Standard-Abgrenzung): `daten/rahmen.json` oder `rahmen/prompt-vorlage.txt` bearbeiten, Skript laufen lassen. Zielgruppe und Regeln stehen in `gem/grundanweisung.md` und müssen dort und in der Gem angepasst werden. Alles im `CHANGELOG.md` eintragen.
-- **Kurs ändern oder ergänzen:** Eintrag in `daten/kurse.json` bearbeiten oder am Ende anfügen (nächste freie ID, `slug` in Kleinbuchstaben ohne Umlaute), Skript laufen lassen.
+- **Kurs ändern oder ergänzen:** Eintrag in `daten/kurse.json` bearbeiten oder am Ende anfügen (nächste freie ID, `slug` in Kleinbuchstaben ohne Umlaute), `repo` ist Pflicht (Themen-Repository, siehe Zuordnung oben). Ist ein Kurs gepusht, `status` auf „gepusht“ setzen und `ordner` (Kursordner im Repository) eintragen, dann Skript laufen lassen.
 - **Fach ändern oder ergänzen:** Eintrag in `daten/faecher.json` bearbeiten (Repository-Name in `repo` eintragen, sobald das Repository existiert), Skript laufen lassen.
 - **Übungsreihe ändern oder ergänzen:** Eintrag in `daten/uebungen.json` anpassen (Feld `lokal` = Ordner des Repositories), dann `python tools/uebungen_einlesen.py` und `python tools/build_prompts.py`.
 - **Umsetzung vorbereiten:** `python tools/umsetzung_anlegen.py P46` (oder `K01`, `E03`) legt neben dem Repository den Ordner `Umsetzung/P46-<slug>/` an, mit einem Unterordner je Modul (`checkliste.md`, `protokoll.md`, `fehlerprotokoll.md`, `screenshots/`, `notizen/`, `ausgaben/`), einer Übersicht, einer Liste der Befehle mit „nicht bestätigt“ und einem Abschlussordner. Ein zweiter Parameter wählt einen anderen Zielordner. Vorhandene Dateien werden nicht überschrieben.

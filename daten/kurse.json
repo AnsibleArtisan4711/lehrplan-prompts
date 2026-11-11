@@ -11,8 +11,10 @@
     "themen": "Namensauflösung und DNS-Hierarchie; Zonentypen (primär, sekundär, Stub, AD-integriert); Ressourceneinträge (A, AAAA, CNAME, MX, TXT, SRV, PTR); Forward- und Reverse-Zonen; Weiterleitungen und bedingte Weiterleitungen; Zonenübertragung; dynamische Updates; Windows-DNS und BIND 9; Split-Brain-DNS; Caching und TTL; Fehlersuche mit nslookup, dig und Resolve-DnsName",
     "abgrenzung": "DNSSEC und DHCP sind eigene vorhandene Lehrpläne und werden nur kurz verwiesen; AD-Integration nur soweit für DNS nötig",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
-    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "status": "gepusht",
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "netzwerkdienste-uebungen",
+    "ordner": "dns-grundlagen"
   },
   {
     "id": "P02",
@@ -26,8 +28,10 @@
     "themen": "SMB-Freigaben; Freigabe- und NTFS-Berechtigungen; DFS-Namespaces und DFS-Replikation; FSRM (Kontingente, Dateiprüfung, Berichte); Schattenkopien und Vorgängerversionen; Offlinedateien; Druckserver (Treiber, Warteschlangen, Verteilung per GPO); Fehlersuche",
     "abgrenzung": "Gruppenrichtlinien-Grundlagen und Active Directory sind in eigenen vorhandenen Lehrplänen; hier nur Bezug",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
-    "labor": "1x Windows-Server-VM (Dateiserver); 1x Windows-Server-VM (zweiter Server für DFS); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "status": "gepusht",
+    "labor": "1x Windows-Server-VM (Dateiserver); 1x Windows-Server-VM (zweiter Server für DFS); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "windows-server-uebungen",
+    "ordner": "dateidienste-dfs-druckserver"
   },
   {
     "id": "P03",
@@ -42,7 +46,8 @@
     "abgrenzung": "",
     "hinweis": "Prüfe den aktuellen Support- und Lebenszyklusstatus von WSUS und nenne ihn mit Stand; kennzeichne Unsicherheit.",
     "status": "Lehrplan erstellt",
-    "labor": "1x WSUS-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x WSUS-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "windows-server-uebungen"
   },
   {
     "id": "P04",
@@ -57,7 +62,8 @@
     "abgrenzung": "Kryptografie-Theorie gehört in den Kurs „Kryptografie, Zertifikate und TLS“; hier die Praxis mit AD CS",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "1x Domain Controller; 1x Server-VM für die Zertifizierungsstelle; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Domain Controller; 1x Server-VM für die Zertifizierungsstelle; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "windows-server-uebungen"
   },
   {
     "id": "P05",
@@ -72,7 +78,8 @@
     "abgrenzung": "Hyper-V dient in anderen Übungen (Veeam, USV, Homelab) nur als Umgebung; hier ist es der Lerngegenstand",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "1 Hyper-V-Host (physisch oder verschachtelte Virtualisierung); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1 Hyper-V-Host (physisch oder verschachtelte Virtualisierung); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "virtualisierung-uebungen"
   },
   {
     "id": "P06",
@@ -87,7 +94,8 @@
     "abgrenzung": "Allgemeine Linux-Kenntnisse werden vorausgesetzt (LPIC-Lehrpläne sind vorhanden)",
     "hinweis": "",
     "status": "offen",
-    "labor": "1 Proxmox-VE-Host (verschachtelt unter Hyper-V oder eigener Rechner); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1 Proxmox-VE-Host (verschachtelt unter Hyper-V oder eigener Rechner); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "virtualisierung-uebungen"
   },
   {
     "id": "P07",
@@ -102,7 +110,8 @@
     "abgrenzung": "",
     "hinweis": "Prüfe Lizenz- und Verfügbarkeitsstand der kostenlosen oder Evaluationsversionen und nenne ihn mit Stand; kennzeichne Unsicherheit.",
     "status": "offen",
-    "labor": "1 ESXi-Host (verschachtelt, Evaluations- oder Testlizenz, Stand prüfen); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1 ESXi-Host (verschachtelt, Evaluations- oder Testlizenz, Stand prüfen); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "virtualisierung-uebungen"
   },
   {
     "id": "P08",
@@ -117,7 +126,8 @@
     "abgrenzung": "pfSense-Unterschiede nur kurz; VPN-Vertiefung im Kurs „VPN“",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x OPNsense-VM; 1 Client-VM im LAN; 1x Linux-Server-VM im zweiten Netz; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x OPNsense-VM; 1 Client-VM im LAN; 1x Linux-Server-VM im zweiten Netz; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "netzwerk-und-firewall-uebungen"
   },
   {
     "id": "P09",
@@ -132,7 +142,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Linux-Firewall-VM; 1 Client-VM; 1x Linux-Server-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Firewall-VM; 1 Client-VM; 1x Linux-Server-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "netzwerk-und-firewall-uebungen"
   },
   {
     "id": "P10",
@@ -147,7 +158,8 @@
     "abgrenzung": "OPNsense-Konfiguration nur soweit nötig; Zertifikatsgrundlagen im Kurs „Kryptografie, Zertifikate und TLS“",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "1x VPN-Server-VM; 1 Client-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x VPN-Server-VM; 1 Client-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "netzwerk-und-firewall-uebungen"
   },
   {
     "id": "P11",
@@ -162,7 +174,8 @@
     "abgrenzung": "Der vorhandene Kurs „Webserver“ behandelt Apache und Nginx als Webserver; hier Fokus auf Proxy, Lastverteilung und TLS",
     "hinweis": "Zertifikate lokal mit einer internen CA oder einem lokalen ACME-Testserver (z. B. Pebble) ausstellen, keine öffentlichen Zertifizierungsstellen und keine echten Domänen.",
     "status": "offen",
-    "labor": "1x Proxy-VM; 2x Web-Backend-VMs; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Proxy-VM; 2x Web-Backend-VMs; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "netzwerk-und-firewall-uebungen"
   },
   {
     "id": "P12",
@@ -177,7 +190,8 @@
     "abgrenzung": "",
     "hinweis": "Orientiere dich sinngemäß an den aktuellen Prüfungszielen von CompTIA Security+ (Stand nennen). Keine Prüfungsfragen und keine geschützten Texte übernehmen.",
     "status": "Lehrplan erstellt",
-    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-sicherheit-uebungen"
   },
   {
     "id": "P13",
@@ -192,7 +206,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Windows-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-sicherheit-uebungen"
   },
   {
     "id": "P14",
@@ -207,7 +222,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Linux-Server-VM (frisch installiert); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM (frisch installiert); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-sicherheit-uebungen"
   },
   {
     "id": "P15",
@@ -222,7 +238,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Scanner-VM; 1x Windows-Ziel-VM; 1x Linux-Ziel-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Scans nur gegen eigene Lab-VMs"
+    "labor": "1x Scanner-VM; 1x Windows-Ziel-VM; 1x Linux-Ziel-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Scans nur gegen eigene Lab-VMs",
+    "repo": "it-sicherheit-uebungen"
   },
   {
     "id": "P16",
@@ -237,7 +254,8 @@
     "abgrenzung": "Die AD-CS-Praxis steht im Kurs „Zertifikatsdienste und PKI“",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-sicherheit-uebungen"
   },
   {
     "id": "P17",
@@ -252,7 +270,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Zabbix-Server-VM; 1x Windows-VM; 1x Linux-VM als überwachte Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Zabbix-Server-VM; 1x Windows-VM; 1x Linux-VM als überwachte Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "monitoring-logging-uebungen"
   },
   {
     "id": "P18",
@@ -267,7 +286,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Monitoring-VM; 1x Linux-VM; 1x Windows-VM als überwachte Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Monitoring-VM; 1x Linux-VM; 1x Windows-VM als überwachte Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "monitoring-logging-uebungen"
   },
   {
     "id": "P19",
@@ -282,7 +302,8 @@
     "abgrenzung": "",
     "hinweis": "Lizenzmodelle und Versionsstände mit Stand nennen; kennzeichne Unsicherheit.",
     "status": "offen",
-    "labor": "1x Log-Server-VM (ausreichend RAM); 1x Linux-VM; 1x Windows-VM als Logquellen; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Log-Server-VM (ausreichend RAM); 1x Linux-VM; 1x Windows-VM als Logquellen; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "monitoring-logging-uebungen"
   },
   {
     "id": "P20",
@@ -297,7 +318,8 @@
     "abgrenzung": "Die Übung 02.1 im Repository „veeam-backup-uebung“ nutzt PRTG im Backup-Kontext; hier die Grundlagen",
     "hinweis": "Lizenzgrenzen der kostenlosen Stufe mit Stand nennen; Menünamen nicht erfinden, sondern als „nicht bestätigt“ kennzeichnen.",
     "status": "offen",
-    "labor": "1x Windows-Server-VM mit PRTG; 1x Windows-VM; 1x Linux-VM als überwachte Geräte; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM mit PRTG; 1x Windows-VM; 1x Linux-VM als überwachte Geräte; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "monitoring-logging-uebungen"
   },
   {
     "id": "P21",
@@ -312,7 +334,8 @@
     "abgrenzung": "Linux- und Bash-Grundlagen sind in vorhandenen Lehrplänen",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Control-Node-VM; 2x Linux-VMs; 1x Windows-VM als verwaltete Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Control-Node-VM; 2x Linux-VMs; 1x Windows-VM als verwaltete Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "automatisierung-uebungen"
   },
   {
     "id": "P22",
@@ -327,7 +350,8 @@
     "abgrenzung": "",
     "hinweis": "Prüfe Lizenzstand und Fork-Situation (Terraform und OpenTofu) mit Stand.",
     "status": "offen",
-    "labor": "1 Arbeitsplatz-VM mit Terraform; 1 lokaler Virtualisierungshost als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Cloud-Provider nur optional mit Test-Konto"
+    "labor": "1 Arbeitsplatz-VM mit Terraform; 1 lokaler Virtualisierungshost als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Cloud-Provider nur optional mit Test-Konto",
+    "repo": "automatisierung-uebungen"
   },
   {
     "id": "P23",
@@ -342,7 +366,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1 Virtualisierungshost; 1 Linux-Cloud-Image; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1 Virtualisierungshost; 1 Linux-Cloud-Image; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "automatisierung-uebungen"
   },
   {
     "id": "P24",
@@ -357,7 +382,8 @@
     "abgrenzung": "Die PowerShell-Grundlagen stehen im vorhandenen Kurs „PowerShell“",
     "hinweis": "Prüfe den aktuellen Stand der DSC-Versionen und ihre Zukunft mit Stand; kennzeichne Unsicherheit.",
     "status": "offen",
-    "labor": "1x Windows-Server-VM (Pull-Server und Ziel); 1 weiterer Windows-Zielserver; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM (Pull-Server und Ziel); 1 weiterer Windows-Zielserver; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "automatisierung-uebungen"
   },
   {
     "id": "P25",
@@ -372,7 +398,8 @@
     "abgrenzung": "",
     "hinweis": "Lizenzbedingungen von Docker Desktop mit Stand nennen; als Alternative auf Docker Engine unter Linux eingehen.",
     "status": "offen",
-    "labor": "1x Linux-Server-VM mit Docker; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit Docker; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "container-uebungen"
   },
   {
     "id": "P26",
@@ -387,7 +414,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "2 bis 3 Linux-VMs für den Cluster; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "2 bis 3 Linux-VMs für den Cluster; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "container-uebungen"
   },
   {
     "id": "P27",
@@ -402,7 +430,8 @@
     "abgrenzung": "Der vorhandene Kurs „M365 Governance“ behandelt die Microsoft-365-Seite; AWS ist ein eigener Lehrplan",
     "hinweis": "Orientiere dich sinngemäß an den aktuellen Prüfungszielen von AZ-104 (Stand nennen). Keine Prüfungsfragen übernehmen; Portalmenüs nicht erfinden.",
     "status": "offen",
-    "labor": "Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen; Kostenlimit und Budgetwarnung einrichten, Ressourcen nach jeder Übung löschen"
+    "labor": "Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen; Kostenlimit und Budgetwarnung einrichten, Ressourcen nach jeder Übung löschen",
+    "repo": "cloud-identitaet-uebungen"
   },
   {
     "id": "P28",
@@ -417,7 +446,8 @@
     "abgrenzung": "M365 Governance und Active Directory sind vorhandene Lehrpläne",
     "hinweis": "Lizenzabhängigkeiten (Free, Business, P1/P2) mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
     "status": "offen",
-    "labor": "1x Domain Controller; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; zusätzlich Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen"
+    "labor": "1x Domain Controller; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; zusätzlich Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen",
+    "repo": "cloud-identitaet-uebungen"
   },
   {
     "id": "P29",
@@ -432,7 +462,8 @@
     "abgrenzung": "",
     "hinweis": "Lizenzabhängigkeiten mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
     "status": "offen",
-    "labor": "1 Windows-11-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; zusätzlich Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen"
+    "labor": "1 Windows-11-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; zusätzlich Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen",
+    "repo": "cloud-identitaet-uebungen"
   },
   {
     "id": "P30",
@@ -447,7 +478,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "1x Linux-Server-VM mit Datenbank; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit Datenbank; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "datenbanken-uebungen"
   },
   {
     "id": "P31",
@@ -462,7 +494,8 @@
     "abgrenzung": "SQL-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "",
     "status": "offen",
-    "labor": "2x Linux-Server-VMs (Replikation); 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "2x Linux-Server-VMs (Replikation); 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "datenbanken-uebungen"
   },
   {
     "id": "P32",
@@ -477,7 +510,8 @@
     "abgrenzung": "SQL-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "Lizenz- und Editionsstand (Express, Developer, Evaluation) mit Stand nennen.",
     "status": "offen",
-    "labor": "1x Windows-Server-VM mit SQL Server; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM mit SQL Server; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "datenbanken-uebungen"
   },
   {
     "id": "P33",
@@ -492,7 +526,8 @@
     "abgrenzung": "Das Homelab nutzt ein NAS; hier die allgemeine Theorie und Praxis",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Linux-Server-VM mit mehreren virtuellen Platten; 1x Initiator-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit mehreren virtuellen Platten; 1x Initiator-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "storage-backup-uebungen"
   },
   {
     "id": "P34",
@@ -507,7 +542,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Linux-Server-VM mit mehreren virtuellen Platten; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit mehreren virtuellen Platten; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "storage-backup-uebungen"
   },
   {
     "id": "P35",
@@ -522,7 +558,8 @@
     "abgrenzung": "Die Veeam-Übung im Repository „veeam-backup-uebung“ ist eine Praxisübung; hier das Konzept und herstellerneutrale Praxis",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel (zweite VM oder Freigabe); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel (zweite VM oder Freigabe); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "storage-backup-uebungen"
   },
   {
     "id": "P36",
@@ -537,7 +574,8 @@
     "abgrenzung": "Technische Dokumentation ist ein eigener vorhandener Kurs; hier Notfallplanung",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Wiederanlauf-Übungen nur in der Testumgebung"
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Wiederanlauf-Übungen nur in der Testumgebung",
+    "repo": "storage-backup-uebungen"
   },
   {
     "id": "P37",
@@ -552,7 +590,8 @@
     "abgrenzung": "M365 Governance und Entra ID sind eigene Kurse; hier Exchange",
     "hinweis": "Lizenzabhängigkeiten mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
     "status": "offen",
-    "labor": "Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen"
+    "labor": "Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen",
+    "repo": "e-mail-uebungen"
   },
   {
     "id": "P38",
@@ -567,7 +606,8 @@
     "abgrenzung": "DNS-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Linux-VM mit DNS; 1x Mailserver-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Übungsdomains nur mit example.com und Testdaten"
+    "labor": "1x Linux-VM mit DNS; 1x Mailserver-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Übungsdomains nur mit example.com und Testdaten",
+    "repo": "e-mail-uebungen"
   },
   {
     "id": "P39",
@@ -582,7 +622,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Mailserver-VM; 1x DNS-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Mailserver-VM; 1x DNS-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "e-mail-uebungen"
   },
   {
     "id": "P40",
@@ -597,7 +638,8 @@
     "abgrenzung": "",
     "hinweis": "Keine geschützten ITIL-Texte übernehmen; Inhalte sinngemäß und mit eigenen Beispielen; Version und Stand nennen.",
     "status": "Lehrplan erstellt",
-    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P41",
@@ -612,7 +654,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; optional ein Open-Source-Ticketsystem"
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; optional ein Open-Source-Ticketsystem",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P42",
@@ -627,7 +670,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "1x Linux-Server-VM mit Ticketsystem; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit Ticketsystem; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P43",
@@ -642,7 +686,8 @@
     "abgrenzung": "Technische Dokumentation ist ein vorhandener Kurs; hier Betriebsregelwerk",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P44",
@@ -657,7 +702,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "1 Windows-11-VM; 1 Linux-Live-Medium; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Hardwareübungen an Altgeräten oder anhand von Fallbeispielen"
+    "labor": "1 Windows-11-VM; 1 Linux-Live-Medium; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Hardwareübungen an Altgeräten oder anhand von Fallbeispielen",
+    "repo": "client-hardware-uebungen"
   },
   {
     "id": "P45",
@@ -672,7 +718,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "Lehrplan erstellt",
-    "labor": "1x Windows-11-Client-VM (Domäne beitretbar); 1x Windows-Server-VM (Domain Controller); privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-11-Client-VM (Domäne beitretbar); 1x Windows-Server-VM (Domain Controller); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "client-hardware-uebungen"
   },
   {
     "id": "P46",
@@ -687,7 +734,8 @@
     "abgrenzung": "Intune und Autopilot sind ein eigener Kurs",
     "hinweis": "Prüfe den aktuellen Status von MDT und die Bezeichnung von Microsoft Configuration Manager mit Stand; kennzeichne Unsicherheit.",
     "status": "Lehrplan erstellt",
-    "labor": "1x Deployment-Server-VM; 1x Domain Controller; 2 leere Client-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Deployment-Server-VM; 1x Domain Controller; 2 leere Client-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "client-hardware-uebungen"
   },
   {
     "id": "P47",
@@ -702,7 +750,8 @@
     "abgrenzung": "",
     "hinweis": "Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen.",
     "status": "offen",
-    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P48",
@@ -717,7 +766,8 @@
     "abgrenzung": "",
     "hinweis": "Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen. Prüfe den Umsetzungsstand in Österreich mit Datum.",
     "status": "offen",
-    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P49",
@@ -732,7 +782,8 @@
     "abgrenzung": "",
     "hinweis": "Normtexte sind urheberrechtlich geschützt: nur sinngemäß und mit eigenen Beispielen; Ausgabe der Norm mit Stand nennen. Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen.",
     "status": "offen",
-    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P50",
@@ -747,7 +798,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Fehler werden vorab in der Testumgebung eingebaut"
+    "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Fehler werden vorab in der Testumgebung eingebaut",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P51",
@@ -762,7 +814,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen"
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P52",
@@ -777,7 +830,8 @@
     "abgrenzung": "",
     "hinweis": "",
     "status": "offen",
-    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; Texte, Tickets und Dokumentation als Übungsmaterial"
+    "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; Texte, Tickets und Dokumentation als Übungsmaterial",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P53",
@@ -792,7 +846,8 @@
     "abgrenzung": "Docker und Docker Compose sind ein eigener Kurs; Kubernetes nur als Ausblick",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
     "status": "offen",
-    "labor": "1x Linux-Server-VM mit Podman; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit Podman; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "container-uebungen"
   },
   {
     "id": "P54",
@@ -807,7 +862,8 @@
     "abgrenzung": "Btrfs, ZFS und Snapshots sind ein eigener Kurs; NAS, SAN und iSCSI ebenfalls",
     "hinweis": "",
     "status": "offen",
-    "labor": "1x Linux-Server-VM mit mehreren virtuellen Datenträgern; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit mehreren virtuellen Datenträgern; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "storage-backup-uebungen"
   },
   {
     "id": "P55",
@@ -822,7 +878,8 @@
     "abgrenzung": "Windows-Dateidienste und DFS sind ein eigener Kurs; Active Directory nur soweit für den Domänenbeitritt nötig",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
     "status": "offen",
-    "labor": "1x Linux-Server-VM; 1x Windows-11-Client-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM; 1x Windows-11-Client-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "storage-backup-uebungen"
   },
   {
     "id": "P56",
@@ -837,7 +894,8 @@
     "abgrenzung": "AWS Cloud Practitioner ist ein eigener vorhandener Lehrplan; Terraform ist ein eigener Kurs",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Kosten und Gratis-Kontingente mit Stand nennen.",
     "status": "offen",
-    "labor": "kostenloses oder budgetbegrenztes AWS-Konto mit Budgetwarnung; 1x Linux-Client mit AWS CLI"
+    "labor": "kostenloses oder budgetbegrenztes AWS-Konto mit Budgetwarnung; 1x Linux-Client mit AWS CLI",
+    "repo": "cloud-identitaet-uebungen"
   },
   {
     "id": "P57",
@@ -852,7 +910,8 @@
     "abgrenzung": "Azure Administration und Entra ID sind eigene Kurse; Zertifikatsgrundlagen im Kurs „Kryptografie, Zertifikate und TLS“",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Preise und Gratis-Kontingente mit Stand nennen.",
     "status": "offen",
-    "labor": "Azure-Abonnement (Testkonto oder Visual-Studio-Guthaben) mit Budgetwarnung; 1x Windows-11-Client mit Azure CLI und PowerShell"
+    "labor": "Azure-Abonnement (Testkonto oder Visual-Studio-Guthaben) mit Budgetwarnung; 1x Windows-11-Client mit Azure CLI und PowerShell",
+    "repo": "cloud-identitaet-uebungen"
   },
   {
     "id": "P58",
@@ -867,7 +926,8 @@
     "abgrenzung": "AWS und Azure sind eigene Kurse; keine Spezialdienste (BigQuery, KI) außer als Ausblick",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Kosten und Gratis-Kontingente mit Stand nennen.",
     "status": "offen",
-    "labor": "Google-Cloud-Testkonto mit Budgetwarnung; 1x Linux-Client mit gcloud CLI"
+    "labor": "Google-Cloud-Testkonto mit Budgetwarnung; 1x Linux-Client mit gcloud CLI",
+    "repo": "cloud-identitaet-uebungen"
   },
   {
     "id": "P59",
@@ -882,7 +942,8 @@
     "abgrenzung": "Gruppenrichtlinien-Grundlagen und Active Directory sind eigene vorhandene Lehrpläne; Dateidienste im Kurs „Dateidienste, DFS und Druckserver“",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Lizenzmodell und Testzeitraum mit Stand nennen.",
     "status": "offen",
-    "labor": "1x Windows-Server-VM (DC); 1x Windows-Server-VM (RDS); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM (DC); 1x Windows-Server-VM (RDS); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "windows-server-uebungen"
   },
   {
     "id": "P60",
@@ -897,7 +958,8 @@
     "abgrenzung": "Hyper-V Administration ist ein eigener Kurs; Backup und Notfallplanung sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Hardware- und RAM-Bedarf für geschachtelte Virtualisierung nennen.",
     "status": "offen",
-    "labor": "2x Hyper-V-Host (geschachtelt oder physisch); 1x Windows-Server-VM (DC); 1x Speicher-VM oder iSCSI-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "2x Hyper-V-Host (geschachtelt oder physisch); 1x Windows-Server-VM (DC); 1x Speicher-VM oder iSCSI-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "virtualisierung-uebungen"
   },
   {
     "id": "P61",
@@ -912,7 +974,8 @@
     "abgrenzung": "Hyper-V, Failover-Clustering und PowerShell sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Support- und Lebenszyklusstatus nennen.",
     "status": "offen",
-    "labor": "1x Windows-Server-VM mit Windows Admin Center; 1x Windows-Server-VM als Verwaltungsziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM mit Windows Admin Center; 1x Windows-Server-VM als Verwaltungsziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "windows-server-uebungen"
   },
   {
     "id": "P62",
@@ -927,7 +990,8 @@
     "abgrenzung": "OPNsense-Konfiguration nur soweit nötig; zentrales Logging im Kurs „Zentrales Logging mit Graylog und Elastic Stack“",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Nur im isolierten Labor, keine Tests gegen fremde Systeme.",
     "status": "offen",
-    "labor": "1x Linux-Sensor-VM; 1x Linux-Angreifer-VM; 1x Linux-Server-VM als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Sensor-VM; 1x Linux-Angreifer-VM; 1x Linux-Server-VM als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-sicherheit-uebungen"
   },
   {
     "id": "P63",
@@ -942,7 +1006,8 @@
     "abgrenzung": "Kryptografie und PKI sind eigene Kurse; Active-Directory-Kennwortrichtlinien nur kurz",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Lizenzmodelle (HashiCorp/OpenBao) mit Stand nennen.",
     "status": "offen",
-    "labor": "1x Linux-Server-VM; 1x Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM; 1x Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-sicherheit-uebungen"
   },
   {
     "id": "P64",
@@ -957,7 +1022,8 @@
     "abgrenzung": "Schwachstellenmanagement, Windows- und Linux-Härtung sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Nur im isolierten Labor und mit eigenen Systemen; rechtliche Hinweise ausdrücklich nennen, keine Anleitungen gegen fremde Systeme.",
     "status": "offen",
-    "labor": "1x Kali-Linux-VM; 2 bis 3 absichtlich verwundbare Ziel-VMs; 1x Windows-Server-VM mit Active Directory; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Kali-Linux-VM; 2 bis 3 absichtlich verwundbare Ziel-VMs; 1x Windows-Server-VM mit Active Directory; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-sicherheit-uebungen"
   },
   {
     "id": "P65",
@@ -972,7 +1038,8 @@
     "abgrenzung": "Git und Versionskontrolle sind ein eigener vorhandener Lehrplan; Docker, Ansible und Terraform sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
     "status": "offen",
-    "labor": "1x Linux-Server-VM (GitLab); 1x Linux-Server-VM (Runner und Jenkins); 1x Linux-Server-VM als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM (GitLab); 1x Linux-Server-VM (Runner und Jenkins); 1x Linux-Server-VM als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "automatisierung-uebungen"
   },
   {
     "id": "P66",
@@ -987,7 +1054,8 @@
     "abgrenzung": "Zentrales Logging mit Graylog und Elastic Stack ist ein eigener Kurs; PowerShell ist ein eigener vorhandener Lehrplan",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
     "status": "offen",
-    "labor": "1x Windows-Server-VM (DC); 1x Windows-Server-VM (Collector); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Windows-Server-VM (DC); 1x Windows-Server-VM (Collector); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "monitoring-logging-uebungen"
   },
   {
     "id": "P67",
@@ -1002,7 +1070,8 @@
     "abgrenzung": "SQL-Grundlagen und die Administration von MariaDB, PostgreSQL und SQL Server sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Lizenzmodelle (z. B. Redis, MongoDB) mit Stand nennen.",
     "status": "offen",
-    "labor": "1x Linux-Server-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "datenbanken-uebungen"
   },
   {
     "id": "P68",
@@ -1017,7 +1086,8 @@
     "abgrenzung": "Backup-Konzept, Notfallplanung und Datenbankadministration sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
     "status": "offen",
-    "labor": "1x Linux-Server-VM mit MariaDB und PostgreSQL; 1x Windows-Server-VM mit SQL Server (Evaluation oder Developer); 1x Backup-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit MariaDB und PostgreSQL; 1x Windows-Server-VM mit SQL Server (Evaluation oder Developer); 1x Backup-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "datenbanken-uebungen"
   },
   {
     "id": "P69",
@@ -1032,7 +1102,8 @@
     "abgrenzung": "ITIL, Ticketsysteme und Lizenzmanagement sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Lizenzmodelle der Werkzeuge mit Stand nennen.",
     "status": "offen",
-    "labor": "1x Linux-Server-VM mit einem Asset-Werkzeug; 1x Windows-11-Client-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz"
+    "labor": "1x Linux-Server-VM mit einem Asset-Werkzeug; 1x Windows-11-Client-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+    "repo": "it-betrieb-uebungen"
   },
   {
     "id": "P70",
@@ -1047,6 +1118,7 @@
     "abgrenzung": "Asset-Verwaltung ist ein eigener Kurs; keine Rechtsberatung",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Bei rechtlichen Aussagen auf die Pflicht zur Prüfung durch Fachleute hinweisen; keine Preise ohne Stand.",
     "status": "offen",
-    "labor": "kein technisches Labor; Tabellenkalkulation und Beispielunterlagen"
+    "labor": "kein technisches Labor; Tabellenkalkulation und Beispielunterlagen",
+    "repo": "it-betrieb-uebungen"
   }
 ]

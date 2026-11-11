@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Legt aus einem Lehrplan in lehrplaene/ (P01-P52) oder einem Fach aus daten/faecher.json
+"""Legt aus einem Lehrplan in lehrplaene/ (P01-P70) oder einem Fach aus daten/faecher.json
 (K01-K16) oder einer Uebungsreihe aus daten/uebungen.json (E01-E06) einen Umsetzungsordner an: je Modul ein Unterordner
 mit Checkliste, Protokollvorlage, Fehlerprotokoll und Ablageordnern fuer Screenshots, Notizen
 und Ausgaben. Dazu eine Uebersicht, eine Liste der als "nicht bestaetigt" markierten Befehle

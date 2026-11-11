@@ -1,5 +1,13 @@
 # Änderungen
 
+## 2026-11-11 (Themen-Repositories für die Kurse)
+
+- Neu: Felder `repo` (Themen-Repository, bei allen 70 Kursen) und `ordner` (Kursordner, nur bei gepushten Kursen) in `daten/kurse.json`. Die Zuordnung folgt dem Plan mit 14 Themen-Repositories; offen sind P47 bis P49 (vorläufig `it-betrieb-uebungen`) und die Trennung von Firewall und VPN.
+- `status` von P01 (`netzwerkdienste-uebungen/dns-grundlagen`) und P02 (`windows-server-uebungen/dateidienste-dfs-druckserver`) auf „gepusht“. Beide sind ausgearbeitet und liegen auf GitHub; Windows-Befehle sind nicht im Labor ausgeführt (siehe Prüfvermerke in den Repositories).
+- `tools/build_prompts.py`: neue Spalte „Repository“ in der Kurstabelle (gepusht = Link auf den Kursordner, sonst das geplante Repository), neue Tabelle „Zuordnung zu den Themen-Repositories“ (Markierungen `REPOS-START`/`REPOS-ENDE`), Prüfung, dass `repo` gesetzt ist und bei „gepusht“ auch `ordner`.
+- README: Der von Hand gepflegte Abschnitt „Einordnung in die Profil-README“ (Gruppen 9 bis 13) ist ersetzt durch den erzeugten Abschnitt „Zuordnung zu den Themen-Repositories“. Die Gruppen 9 bis 13 sind damit hinfällig.
+- `daten/rahmen.json`: Legende des Status „gepusht“ angepasst. `tools/umsetzung_anlegen.py`: Docstring P01-P52 auf P01-P70.
+
 ## 2026-11-09 (Kurse P53–P70, Einordnung in die Profil-README)
 
 - Neu: 18 Kurse in `daten/kurse.json` (P53 bis P70) mit Prompts in `prompts/`: Container (P53), Storage unter Linux (P54, P55), Cloud-Plattformen und Azure (P56 bis P58), Windows-Server und Virtualisierung (P59 bis P61), IT-Sicherheit (P62 bis P64), Automatisierung und Logging (P65, P66), Datenbanken (P67, P68), IT-Betrieb (P69, P70). Status aller neuen Kurse: offen. Die Kurse sind ein Vorschlag des Autors zusammen mit Claude, die Inhalte der Prompts sind nicht aus einer Quelle belegt.

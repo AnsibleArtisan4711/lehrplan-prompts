@@ -4,7 +4,9 @@
 alle Dateien in prompts/ sowie die Tabelle in README.md (mit Link auf lehrplaene/).
 Aus daten/faecher.json entstehen die Modulübersichten in faecher/ (K01-K16) und die
 zweite Tabelle in README.md; aus daten/uebungen.json (E01-E06, erzeugt von
-tools/uebungen_einlesen.py) die Seiten in uebungen/ und die dritte Tabelle.
+tools/uebungen_einlesen.py) die Seiten in uebungen/ und die dritte Tabelle. Aus den Feldern
+"repo" und "ordner" in daten/kurse.json entstehen die Spalte "Repository" und die
+Zuordnung Kurse -> Themen-Repositories.
 
 Aufruf (im Repository-Ordner):  python tools/build_prompts.py
 Nur Standardbibliothek, Python 3.8 oder neuer.
@@ -32,6 +34,8 @@ def repo_url(x):
     return GITHUB + x["repo"] + ("/tree/main/" + x["ordner"] if x.get("ordner") else "")
 UMARK_A = "<!-- UEBUNGEN-START -->"
 UMARK_B = "<!-- UEBUNGEN-ENDE -->"
+RMARK_A = "<!-- REPOS-START -->"
+RMARK_B = "<!-- REPOS-ENDE -->"
 
 
 def lade(pfad):
@@ -73,16 +77,45 @@ def lehrplan_datei(kurs):
     return ROOT / "lehrplaene" / datei_name(kurs)
 
 
+def repo_zelle(k):
+    """Gepusht: Link auf den Kursordner. Sonst: das geplante Themen-Repository."""
+    if k["status"] == "gepusht":
+        return "[%s](%s)" % (repo_name(k), repo_url(k))
+    return "`%s` (geplant)" % k["repo"]
+
+
 def tabelle(kurse, rahmen):
-    zeilen = ["| Nr | Prio | Themengebiet | Kurs | Status | Prompt | Lehrplan |",
-              "|---|---|---|---|---|---|---|"]
+    zeilen = ["| Nr | Prio | Themengebiet | Kurs | Status | Prompt | Lehrplan | Repository |",
+              "|---|---|---|---|---|---|---|---|"]
     for i, k in enumerate(kurse, 1):
         if lehrplan_datei(k).exists():
             lehrplan = "[%s](lehrplaene/%s)" % (k["id"], datei_name(k))
         else:
             lehrplan = "–"
-        zeilen.append("| %d | %s | %s | %s | %s | [%s](prompts/%s) | %s |" % (
-            i, k["prio"], k["gruppe"], k["titel"], k["status"], k["id"], datei_name(k), lehrplan))
+        zeilen.append("| %d | %s | %s | %s | %s | [%s](prompts/%s) | %s | %s |" % (
+            i, k["prio"], k["gruppe"], k["titel"], k["status"], k["id"], datei_name(k), lehrplan,
+            repo_zelle(k)))
+    return "\n".join(zeilen)
+
+
+def repo_tabelle(kurse, vorhanden):
+    """Zuordnung Kurse -> Themen-Repository, in der Reihenfolge des ersten Auftretens."""
+    reihe = []
+    for k in kurse:
+        if k["repo"] not in reihe:
+            reihe.append(k["repo"])
+    zeilen = ["| Repository | Kurse |", "|---|---|"]
+    for r in reihe:
+        eintraege = []
+        for k in kurse:
+            if k["repo"] != r:
+                continue
+            e = "%s %s" % (k["id"], k["titel"])
+            if k["status"] == "gepusht":
+                e += " (gepusht)"
+            eintraege.append(e)
+        name = "[%s](%s)" % (r, GITHUB + r) if r in vorhanden else "`%s` (noch nicht angelegt)" % r
+        zeilen.append("| %s | %s |" % (name, "; ".join(eintraege)))
     return "\n".join(zeilen)
 
 
@@ -94,6 +127,9 @@ def uebersicht(kurse, rahmen):
               "Bedeutung der Status:", ""]
     for s in rahmen["status_werte"]:
         zeilen.append("- **%s**: %s" % (s, rahmen["status_legende"][s]))
+    zeilen.append("")
+    zeilen.append("Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das geplante "
+                  "Themen-Repository (Feld `repo` in `daten/kurse.json`).")
     zeilen.append("")
     return "\n".join(zeilen)
 
@@ -200,6 +236,11 @@ def main():
     for k in kurse:
         if k["status"] == "Lehrplan erstellt" and not lehrplan_datei(k).exists():
             sys.exit("Fehler: Status 'Lehrplan erstellt', aber lehrplaene/%s fehlt" % datei_name(k))
+    for k in kurse:
+        if not k.get("repo"):
+            sys.exit("Fehler: Feld 'repo' fehlt bei %s" % k["id"])
+        if k["status"] == "gepusht" and not k.get("ordner"):
+            sys.exit("Fehler: Status 'gepusht', aber Feld 'ordner' fehlt bei %s" % k["id"])
     for s in rahmen["status_werte"]:
         if s not in rahmen.get("status_legende", {}):
             sys.exit("Fehler: Legende fehlt für Status %r in daten/rahmen.json" % s)
@@ -263,6 +304,15 @@ def main():
         sys.exit("Fehler: Markierungen %s und %s fehlen in README.md" % (UMARK_A, UMARK_B))
     uneu = UMARK_A + "\n" + uebungen_tabelle(uebungen) + "\n" + UMARK_B
     readme.write_text(um.sub(lambda m: uneu, text), encoding="utf-8", newline="\n")
+    # Zuordnung Kurse -> Themen-Repositories
+    vorhanden = ({f["repo"] for f in faecher if f["repo"]} | {u["repo"] for u in uebungen}
+                 | {k["repo"] for k in kurse if k["status"] == "gepusht"})
+    rm = re.compile(re.escape(RMARK_A) + r".*?" + re.escape(RMARK_B), re.S)
+    text = readme.read_text(encoding="utf-8")
+    if not rm.search(text):
+        sys.exit("Fehler: Markierungen %s und %s fehlen in README.md" % (RMARK_A, RMARK_B))
+    rneu = RMARK_A + "\n" + repo_tabelle(kurse, vorhanden) + "\n" + RMARK_B
+    readme.write_text(rm.sub(lambda m: rneu, text), encoding="utf-8", newline="\n")
     print("%d Prompts, %d Fächer, %d Übungsreihen und README-Tabellen erzeugt." % (len(kurse), len(faecher), len(uebungen)))
 
 
