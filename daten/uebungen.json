@@ -803,62 +803,3537 @@
               }
             ],
             "nr": "01.1"
+          },
+          {
+            "datei": "01.2-zwei-netze-und-ein-router.md",
+            "titel": "Zwei Netze und ein Router",
+            "stufe": "Grundlage",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum zwei Geräte in verschiedenen Netzen nicht ohne Router miteinander sprechen können,",
+              "erklären, was ein Router und ein Default Gateway sind und warum jeder PC ein Gateway braucht, um andere Netze zu erreichen,",
+              "in Packet Tracer zwei Netze mit je einem Switch und einem PC über einen Router verbinden,",
+              "einem Router-Interface mit `ip address` und `no shutdown` eine Adresse geben und sie mit `show ip interface brief` prüfen,",
+              "die Routingtabelle mit `show ip route` lesen und die Einträge `C` (connected) und `L` (local) unterscheiden,",
+              "beschreiben, was im Netzwerk passiert, wenn ein Ping von einem Netz ins andere geht (Default Gateway, ARP, Routing, TTL)."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Geräte platzieren"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Den Router konfigurieren"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "IP-Adressen und Default Gateway an den PCs vergeben"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Konfiguration prüfen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Den Weg des Pakets verfolgen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gegenprobe: Was passiert ohne Gateway?"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Woran erkennt PC0, dass PC1 nicht im selben Netz liegt?",
+              "An welche Adresse schickt PC0 ein Paket für `192.168.20.11`, und warum nicht direkt an PC1?",
+              "Warum braucht jeder der beiden PCs ein Default Gateway, und welche Adresse trägst du jeweils ein?",
+              "Was bedeutet `C 192.168.10.0/24 is directly connected, GigabitEthernet0/0` in der Routingtabelle, und was bedeutet dagegen die Zeile mit `L`?",
+              "Welche Adressen bleiben auf dem Weg von PC0 zu PC1 gleich, welche ändern sich, und warum?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- Das Kabel zwischen Switch und Router ist in dieser Übung *Copper Straight-Through* (nicht bestätigt, siehe Stand der Prüfung). Bleibt der Link rot, obwohl das Interface `up` sein sollte, prüfe zuerst den Port, dann de…"
+              },
+              {
+                "teil": "",
+                "text": "- **Router-ARP-Tabelle:** Am Router `show ip arp` ausführen und die Zuordnungen zu den beiden PCs und zum Gegenstück ansehen (Befehl nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Nach `no shutdown` meldet der Router sinngemäß (nicht bestätigt), dass das Interface und sein Line Protocol auf `up` gewechselt sind:"
+              },
+              {
+                "teil": "",
+                "text": "**Konfiguration prüfen (Schritt 6, sinngemäß, nicht bestätigt):** CLI am PC0:"
+              },
+              {
+                "teil": "",
+                "text": "`C` steht für das angeschlossene **Netz**, `L` für die **Adresse des Interfaces** selbst (`/32`). Die Zeile „Gateway of last resort is not set“ heißt: Es gibt noch keine Standardroute. Die Codes `L` erscheinen laut Tuto…"
+              },
+              {
+                "teil": "",
+                "text": "**Ping (Schritt 7, sinngemäß, nicht bestätigt):** GUI: Mit *Add Simple PDU* PC0 → R1, PC0 → PC1 und PC1 → PC0: Status jeweils *Successful* (der erste Versuch kann wegen ARP verloren gehen). CLI von PC0 an PC1:"
+              },
+              {
+                "teil": "",
+                "text": "**Weg des Pakets (Schritt 8, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Gegenprobe (Schritt 9):** Ohne Default Gateway an PC0 funktioniert der Ping an `192.168.10.1` weiterhin, weil der Router im selben Netz liegt. Der Ping an `192.168.20.11` schlägt fehl, weil PC0 nicht weiß, an wen er d…"
+              }
+            ],
+            "nr": "01.2"
+          },
+          {
+            "datei": "01.3-subnetting-von-hand.md",
+            "titel": "Subnetting von Hand – ein /24 in vier Netze",
+            "stufe": "Grundlage",
+            "zeit": "ca. 75–90 Minuten (Teil A Rechnen ca. 40 Minuten, Teil B Packet Tracer ca. 40 Minuten)",
+            "werkzeuge": "Papier und Stift, Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "eine IPv4-Adresse und eine Subnetzmaske in Binärschreibweise umrechnen und die Präfixschreibweise (`/26`) lesen,",
+              "aus Adresse und Maske die **Netzadresse**, die **Broadcast-Adresse**, den **Bereich der Geräteadressen** und die **Anzahl der Geräte** bestimmen,",
+              "ein `/24`-Netz von Hand in vier gleich große Subnetze teilen,",
+              "entscheiden, ob zwei Geräte im selben Subnetz liegen,",
+              "zwei Subnetze in Packet Tracer mit einem Router verbinden und mit `show ip route` prüfen,",
+              "erklären, was passiert, wenn eine Subnetzmaske falsch eingetragen ist."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Binär umrechnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Eigenschaften von 192.168.30.0/24 und /26"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Das /24 in vier Subnetze teilen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Zu welchem Subnetz gehört eine Adresse?"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Liegen zwei Geräte im selben Netz?"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Welche Größe reicht?"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Den Router konfigurieren"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Prüfen"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Gegenprobe: falsche Maske"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Wie viele Geräteadressen hat ein `/26`, und wie rechnet man das aus?",
+              "Welche Netzadresse und welche Broadcast-Adresse hat das Subnetz, zu dem `192.168.30.100/26` gehört?",
+              "Warum liegen `192.168.30.60` und `192.168.30.70` bei `/26` in verschiedenen Netzen, bei `/24` aber im selben?",
+              "Warum ist die erste nutzbare Adresse eines Subnetzes nicht die Netzadresse selbst?",
+              "Was passiert, wenn an PC0 die Maske `255.255.255.0` statt `255.255.255.192` eingetragen ist und PC0 `192.168.30.70` anpingt?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- Prüfe Adressen selbst gegen deine Tabelle aus Teil A. Ob Packet Tracer die Eingabe einer Netz- oder Broadcast-Adresse als Geräteadresse verhindert, ist nicht bestätigt."
+              },
+              {
+                "teil": "",
+                "text": "- Ein Router-Interface kann nur ein Subnetz anbinden. Zwei Interfaces mit Adressen aus **demselben** Subnetz akzeptiert IOS nicht (Meldung: `% 192.168.30.0 overlaps with GigabitEthernet0/0`, sinngemäß, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Prüfen (Schritt 11, sinngemäß, nicht bestätigt):** `show ip interface brief` zeigt beide Interfaces `up` / `up`. `show ip route` (gekürzt):"
+              },
+              {
+                "teil": "",
+                "text": "Die Kopfzeile nennt das klassische `/24` des Adressblocks, darunter stehen die vier Einträge (zwei Netze, zwei Interface-Adressen). Die genaue Darstellung in Packet Tracer ist nicht bestätigt."
+              },
+              {
+                "teil": "",
+                "text": "**Ping (Schritt 12, sinngemäß, nicht bestätigt):** `ping 192.168.30.1` und `ping 192.168.30.65` gehen durch (die Adresse `.65` liegt im anderen Subnetz, PC0 erreicht sie über sein Gateway). `ping 192.168.30.70` gelingt…"
+              },
+              {
+                "teil": "",
+                "text": "**Gegenprobe (Schritt 13):** Mit der falschen Maske `255.255.255.0` hält PC0 das Ziel `192.168.30.70` für **lokal** (`192.168.30` ist gleich), sendet direkt einen ARP-Request für `192.168.30.70` und erhält keine Antwort…"
+              }
+            ],
+            "nr": "01.3"
           }
         ],
         "skripte": [],
-        "geplant": "Zwei Netze und ein Router, Subnetting von Hand (ein /24 in vier Netze)."
+        "geplant": ""
       },
       {
         "nr": 2,
         "ordner": "02-switching",
         "titel": "Switching",
         "beschreibung": "",
-        "einheiten": [],
+        "einheiten": [
+          {
+            "datei": "02.1-vlans-anlegen-und-ports-zuweisen.md",
+            "titel": "VLANs anlegen und Ports zuweisen",
+            "stufe": "Grundlage",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was ein VLAN ist und warum man ein Netz damit in getrennte Bereiche teilt,",
+              "auf einem Switch VLANs anlegen und benennen,",
+              "Switch-Ports einem VLAN zuweisen (Access-Ports),",
+              "mit `show vlan brief` prüfen, welcher Port in welchem VLAN liegt,",
+              "beschreiben, warum Geräte in verschiedenen VLANs sich ohne Router nicht erreichen, obwohl sie am selben Switch hängen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Den Ausgangszustand ansehen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Hostnamen vergeben und VLANs anlegen und benennen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Ports den VLANs zuweisen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gegenprobe: Ein PC im falschen VLAN"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Was ist ein VLAN, und was ist der Nutzen?",
+              "In welchem VLAN liegen alle Ports eines neuen Switches?",
+              "Warum erreicht PC0 (VLAN 10) den PC2 (VLAN 20) nicht, obwohl beide am selben Switch hängen?",
+              "Was bewirkt `switchport mode access`, und warum setzt man es für Ports zu PCs?",
+              "Was macht der Befehl `switchport access vlan 20` auf `Fa0/2`?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- Wird einem Port ein VLAN zugewiesen, das noch nicht existiert, legt IOS es je nach Version automatisch an. Lege VLANs trotzdem immer vorher selbst an (nicht bestätigt in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "- **VLAN löschen:** Mit `no vlan 20` das VLAN löschen. Was zeigt `show vlan brief` danach für `Fa0/3` und `Fa0/4`, und was zeigt `show interfaces status`? (Verhalten nicht bestätigt, bitte notieren.)"
+              },
+              {
+                "teil": "",
+                "text": "**Ausgangszustand (Schritt 4, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Prüfen (Schritt 7, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Ping (Schritt 8, sinngemäß, nicht bestätigt):** PC0 → PC1 und PC2 → PC3 klappen (der erste Versuch kann wegen ARP verloren gehen). PC0 → PC2 und PC2 → PC0 schlagen fehl. Die genaue Ausgabe in Packet Tracer ist nicht b…"
+              },
+              {
+                "teil": "",
+                "text": "- Der Befehl `name` und `show vlan brief` mit Ausgabeformat: Standard-IOS, in den genannten Quellen nur teilweise gezeigt, deshalb als nicht bestätigt markiert."
+              }
+            ],
+            "nr": "02.1"
+          },
+          {
+            "datei": "02.2-trunks-zwischen-switches.md",
+            "titel": "Trunks zwischen Switches",
+            "stufe": "Grundlage",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum man zwischen zwei Switches einen Trunk braucht, wenn VLANs über beide Switches reichen sollen,",
+              "einen Trunk-Port mit `switchport mode trunk` einrichten,",
+              "erklären, was 802.1Q-Tagging ist und was das Native VLAN bedeutet,",
+              "die erlaubten VLANs eines Trunks einschränken,",
+              "einen Trunk mit `show interfaces trunk` prüfen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "VLANs und Access-Ports auf beiden Switches einrichten"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Vorher testen: Verbindung ohne Trunk"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Den Trunk einrichten"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Trunk prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Erlaubte VLANs einschränken"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum geht der Ping von PC0 zu PC1 nicht, solange der Link zwischen den Switches ein Access-Port ist?",
+              "Was macht ein Switch mit einem Frame, den er über den Trunk sendet?",
+              "Welche Aufgabe hat das Native VLAN, und warum muss es auf beiden Seiten gleich sein?",
+              "Was ist der Unterschied zwischen `switchport trunk allowed vlan 10` und `switchport trunk allowed vlan add 20`?",
+              "Warum taucht der Trunk-Port in `show vlan brief` nicht bei den VLANs 10 und 20 auf?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Entfällt, für die Einschränkung gibt es in der GUI keinen direkten Weg (nicht bestätigt). Nutze die CLI."
+              },
+              {
+                "teil": "",
+                "text": "- Bleibt der Link rot oder orange, prüfe zuerst das Kabel (Cross-Over zwischen Switches, nicht bestätigt) und danach, ob der Port eingeschaltet ist."
+              },
+              {
+                "teil": "",
+                "text": "- **Native VLAN ändern:** `switchport trunk native vlan 99` nur auf SW0 setzen. Was meldet Packet Tracer? Das Ergebnis ist hier nicht bestätigt, bitte notieren. Danach auf SW1 angleichen."
+              },
+              {
+                "teil": "",
+                "text": "**Aufbau (Schritte 1–2, nur GUI):** Zwei Switches 2960 und vier PCs platzieren. PCs mit *Copper Straight-Through* an die Access-Ports, die Switches untereinander mit *Copper Cross-Over* an `Gi0/1` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Prüfen (Schritt 7, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Ping (Schritt 8, sinngemäß, nicht bestätigt):** PC0 → PC1 und PC2 → PC3 klappen (der erste Versuch kann wegen ARP verloren gehen). PC0 → PC3 schlägt fehl (VLAN 10 gegen VLAN 20, verschiedene IP-Netze, kein Router)."
+              },
+              {
+                "teil": "",
+                "text": "- `switchport trunk native vlan` und `switchport trunk allowed vlan add`: Standard-IOS, in den genannten Quellen nicht gezeigt, daher nicht bestätigt."
+              }
+            ],
+            "nr": "02.2"
+          },
+          {
+            "datei": "02.3-spanning-tree-beobachten.md",
+            "titel": "Spanning Tree beobachten",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum eine Schleife zwischen Switches ein Netz lahmlegen kann,",
+              "erklären, was das Spanning Tree Protocol (STP) tut und was ein BPDU ist,",
+              "die Root Bridge bestimmen und begründen, warum sie gewählt wurde,",
+              "die Port-Rollen (Root, Designated, Alternate) und Port-Zustände (Forwarding, Blocking) mit `show spanning-tree` ablesen,",
+              "beschreiben, wie das Netz auf den Ausfall einer Verbindung reagiert."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Zuerst nur eine Kette verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Ping testen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Die Schleife schließen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Spanning Tree auf jedem Switch anzeigen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Die Root Bridge bestimmen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Port-Rollen und Zustände eintragen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Den Weg des Pings nachvollziehen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Ausfall simulieren und beobachten"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Projekt speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum entsteht in einem Netz mit einer Schleife aus Switches ein Broadcast-Sturm?",
+              "Wie wird die Root Bridge gewählt?",
+              "Was ist der Unterschied zwischen Root Port, Designated Port und Alternate Port?",
+              "Warum blockiert STP einen Port, statt alle Verbindungen zu nutzen?",
+              "Was passiert, wenn ein Kabel im aktiven Baum ausfällt?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Alle Ports liegen im Standard-VLAN 1, es werden keine VLANs konfiguriert. Alle Switch-Verbindungen sind *Copper Cross-Over* (nicht bestätigt, siehe Übung 2.2)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Entfällt, für STP gibt es keine eigene Ansicht (nicht bestätigt). Nutze die CLI."
+              },
+              {
+                "teil": "",
+                "text": "- Die Port-ID `128.25` ist Priorität und Portnummer. `Gi0/1` hat beim 2960 üblicherweise die Nummer 25 (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "| `show spanning-tree summary` | Betriebsart und Zusammenfassung (nicht bestätigt) | – |"
+              },
+              {
+                "teil": "",
+                "text": "**Beispielausgabe (sinngemäß, nicht bestätigt):** Angenommen, SW0 hat die niedrigste MAC-Adresse und ist Root."
+              }
+            ],
+            "nr": "02.3"
+          },
+          {
+            "datei": "02.4-spanning-tree-gezielt-steuern.md",
+            "titel": "Spanning Tree gezielt steuern",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "die Root Bridge gezielt festlegen, statt sie dem Zufall (MAC-Adresse) zu überlassen,",
+              "eine zweite Root Bridge als Ersatz vorbereiten,",
+              "erklären, was PortFast tut und für welche Ports es gedacht ist,",
+              "BPDU Guard einrichten und seinen Zweck erklären,",
+              "die Wirkung der Änderungen mit `show spanning-tree` überprüfen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Projekt aus Übung 2.3 öffnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Hostnamen setzen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Ausgangslage notieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "SW1 zur Root Bridge machen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "SW2 zum Ersatz-Root machen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Wirkung prüfen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "PortFast auf den Ports zu den PCs"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "BPDU Guard auf demselben Port"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "BPDU Guard testen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Port wiederherstellen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum ist es sinnvoll, die Root Bridge selbst festzulegen?",
+              "Warum muss die Priorität ein Vielfaches von 4096 sein, und warum steht in der Ausgabe `4097` statt `4096`?",
+              "Was bewirkt PortFast, und für welche Ports ist es gedacht?",
+              "Was passiert, wenn an einem Port mit BPDU Guard ein BPDU ankommt?",
+              "Wie nimmt man einen `err-disabled`-Port wieder in Betrieb?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Entfällt, für PortFast gibt es keine GUI-Einstellung (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Je nach IOS-Version erscheint eine Warnung, dass PortFast nur an Ports mit einem einzelnen Endgerät aktiviert werden soll (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Vierten Switch (SW3, *2960*) hinzufügen und mit *Copper Cross-Over* an `Fa0/2` von SW0 anschließen (Switch zu Switch, nicht bestätigt, siehe Übung 2.2). Auf SW0 für diesen Port vorher PortFast und BPDU Guard…"
+              },
+              {
+                "teil": "",
+                "text": "Wenn Packet Tracer BPDU Guard umsetzt, steht `Fa0/2` auf `err-disabled`, und der Link-Punkt ist rot. **Ob das in Packet Tracer so funktioniert, ist nicht bestätigt**; notiere, was du siehst. Es ist ein Ergebnis dieser Ü…"
+              },
+              {
+                "teil": "",
+                "text": "| `show spanning-tree interface fastethernet 0/1 detail` | Details eines Ports, auch ob PortFast aktiv ist (nicht bestätigt) | – |"
+              },
+              {
+                "teil": "",
+                "text": "- **Rapid PVST+:** Mit `spanning-tree mode rapid-pvst` auf allen Switches die schnellere STP-Variante einschalten und die Umschaltzeit bei einem Kabelausfall vergleichen (Befehl laut Cisco-Lab belegt, Ausgabe in Packet…"
+              },
+              {
+                "teil": "",
+                "text": "- **PortFast global:** `spanning-tree portfast default` im globalen Konfigurationsmodus (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Wirkung (Schritt 6):** Das Ergebnis ist hier unabhängig von den MAC-Adressen, weil die Prioritäten eindeutig sind (SW1: 4096, SW2: 8192, SW0: 32768). Erwartet (sinngemäß, nicht bestätigt):"
+              },
+              {
+                "teil": "",
+                "text": "Ausgabe auf SW1 (sinngemäß):"
+              },
+              {
+                "teil": "",
+                "text": "**BPDU-Guard-Test (Schritt 9):** Wenn Packet Tracer BPDU Guard umsetzt, schaltet SW0 den Port `Fa0/2` ab, sobald SW3 BPDUs sendet. `show interfaces status` zeigt dann `err-disabled`. Das Ergebnis ist nicht bestätigt; bi…"
+              },
+              {
+                "teil": "",
+                "text": "- `spanning-tree vlan <ID> priority <Wert>`, die Schrittweite 4096 und die System-ID-Extension: Standard-IOS bzw. IEEE-802.1D/-Wissen, in den genannten Quellen nicht gezeigt, daher nicht bestätigt."
+              }
+            ],
+            "nr": "02.4"
+          },
+          {
+            "datei": "02.5-etherchannel.md",
+            "titel": "EtherChannel – mehrere Leitungen bündeln",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum zwei parallele Leitungen zwischen Switches ohne EtherChannel nur eine nutzbar ist (STP blockiert die andere),",
+              "mehrere physische Ports mit `channel-group` zu einem logischen Port-Channel bündeln,",
+              "den Unterschied zwischen LACP und PAgP und die Modi `active`, `passive`, `desirable` und `auto` erklären,",
+              "den Port-Channel mit `show etherchannel summary` und `show interfaces trunk` prüfen,",
+              "beschreiben, was bei Ausfall einer Leitung des Bündels passiert."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "VLANs und Access-Ports auf beiden Switches einrichten"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Zwei Trunks ohne EtherChannel einrichten und das Problem beobachten"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "EtherChannel einrichten (LACP)"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Port-Channel prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verbindung testen und einen Ausfall simulieren"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gegenprobe: zwei passive Seiten"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum nutzt man bei zwei parallelen Leitungen ohne EtherChannel nur eine?",
+              "Was sieht STP, wenn zwei Leitungen zu einem Port-Channel gebündelt sind?",
+              "Was ist der Unterschied zwischen LACP und PAgP?",
+              "Welche Kombinationen der Modi bilden ein Bündel, welche nicht?",
+              "Was passiert mit dem Datenverkehr, wenn eine Leitung des Bündels ausfällt?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Entfällt, für EtherChannel gibt es in Packet Tracer keine GUI-Einstellung (nicht bestätigt). Nutze die CLI."
+              },
+              {
+                "teil": "",
+                "text": "Das `shutdown` vor dem Bündeln empfiehlt das Cisco-Lab, damit die Ports nicht mit uneinheitlicher Konfiguration eingeschaltet sind. `no switchport mode trunk` setzt den Port auf die Standardbetriebsart zurück. Ob IOS di…"
+              },
+              {
+                "teil": "",
+                "text": "Beide Seiten sind jetzt `passive`: Keiner beginnt die Verhandlung, das Bündel kommt nicht zustande. Notiere, was `show etherchannel summary` anzeigt (nicht bestätigt). Danach wieder `mode active` auf SW0 einstellen."
+              },
+              {
+                "teil": "",
+                "text": "**Zwei Trunks ohne EtherChannel (Schritt 5, sinngemäß, nicht bestätigt):** Die STP-Ausgabe zeigt auf einem der beiden Switches einen blockierten Port:"
+              },
+              {
+                "teil": "",
+                "text": "**Prüfen (Schritt 7, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Ausfall (Schritt 8):** Beim Ziehen von `Fa0/24` bleibt `Po1` bestehen. `show etherchannel summary` zeigt dann nur noch `Fa0/23(P)`, und der Ping klappt weiter, eventuell mit einem verlorenen Paket. Nach dem Wiederansc…"
+              },
+              {
+                "teil": "",
+                "text": "**Gegenprobe (Schritt 9):** Mit `passive` auf beiden Seiten beginnt keine Seite die LACP-Verhandlung. Das Bündel kommt nicht zustande. Die genaue Anzeige (z. B. Flags `I` oder `s`, `Po1(SD)`) ist in Packet Tracer nicht…"
+              }
+            ],
+            "nr": "02.5"
+          }
+        ],
         "skripte": [],
-        "geplant": "VLANs, Trunks, STP, EtherChannel."
+        "geplant": ""
       },
       {
         "nr": 3,
         "ordner": "03-routing",
         "titel": "Routing",
         "beschreibung": "",
-        "einheiten": [],
+        "einheiten": [
+          {
+            "datei": "03.1-statisches-routing-mit-zwei-routern.md",
+            "titel": "Statisches Routing mit zwei Routern",
+            "stufe": "Grundlage",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum zwei Router ohne zusätzliche Information nur ihre **direkt angeschlossenen** Netze kennen,",
+              "mit `ip route` eine statische Route mit Next Hop einrichten,",
+              "die Routingtabelle lesen und die Einträge `C`, `L` und `S` unterscheiden,",
+              "begründen, warum bei einer Verbindung Hin- **und** Rückweg einen Eintrag brauchen,",
+              "einen Ping mit fehlender Rückroute erkennen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Router R1 konfigurieren"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Router R2 konfigurieren"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Vorher testen: Was geht, was nicht?"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Statische Route auf R1: LAN B über R2"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Zwischentest: Nur eine Seite kennt den Weg"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Statische Route auf R2: LAN A über R1"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Verbindung testen und den Weg verfolgen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum kennt R1 anfangs das Netz `192.168.2.0/24` nicht?",
+              "Was bedeutet der Next Hop in `ip route 192.168.2.0 255.255.255.0 10.0.12.2`?",
+              "Warum klappt der Ping nach Schritt 7 noch nicht?",
+              "Wofür steht `S` in der Routingtabelle, und was bedeutet `[1/0]`?",
+              "Was ist der Nachteil statischer Routen bei vielen Routern oder Netzen?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- Bleibt ein Link rot, prüfe zuerst `no shutdown` und den Kabeltyp (Cross-Over zwischen den Routern, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Erweiterter Ping:** `ping` ohne Ziel auf dem Router eingeben und die Quelladresse (`192.168.1.1`) vorgeben (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Aufbau (Schritte 1–2, nur GUI):** Zwei Router, zwei Switches und zwei PCs platzieren. PCs und Switches mit Routern über *Copper Straight-Through*, die Router untereinander mit *Copper Cross-Over* (`Gi0/1` ↔ `Gi0/1`, n…"
+              },
+              {
+                "teil": "",
+                "text": "**Ausgangszustand (Schritt 6, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "`ping 192.168.2.10` von PC0 schlägt fehl. Die Antwort kommt von R1 (`192.168.1.1`) und lautet sinngemäß `Destination host unreachable` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "GUI: *Config* → *ROUTING* → *Static*, mit *Network*, *Mask*, *Next Hop* (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Routingtabelle R1 nach Schritt 7 (sinngemäß, nicht bestätigt):** Zu den `C`- und `L`-Zeilen kommt eine Zeile für das neue Zielnetz:"
+              },
+              {
+                "teil": "",
+                "text": "**Test (Schritt 10, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "03.1"
+          },
+          {
+            "datei": "03.2-default-route-und-zusammenfassung.md",
+            "titel": "Default-Route und Zusammenfassung",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was eine Default-Route ist und wann sie sinnvoll ist,",
+              "mit `ip route 0.0.0.0 0.0.0.0 <Next Hop>` eine Default-Route einrichten und in `show ip route` als `S*` erkennen,",
+              "zwei benachbarte Netze von Hand zu einer Zusammenfassung (Summary Route) zusammenfassen,",
+              "eine Zusammenfassung als statische Route eintragen,",
+              "Router als „Stub“ (Randrouter mit nur einem Ausgang) und als Mitte unterscheiden."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Netze zusammenfassen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Interfaces der drei Router konfigurieren"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Default-Route auf den Randroutern"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Auf R2 die Zusammenfassung und die Route nach links"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Longest Prefix Match beobachten"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Wann wird die Default-Route benutzt?",
+              "Warum genügt auf R1 und R3 eine Default-Route, auf R2 aber nicht?",
+              "Welche Maske hat die Zusammenfassung von `192.168.2.0/24` und `192.168.3.0/24`, und warum?",
+              "Was bedeutet *Longest Prefix Match*?",
+              "Warum lassen sich `192.168.2.0/24` und `192.168.4.0/24` nicht zu einer Route zusammenfassen?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "`show ip route <Adresse>` (nicht bestätigt in Packet Tracer) zeigt die Route, die der Router für diese Adresse benutzt. Überlege auch, was passiert, wenn du auf R2 zusätzlich `ip route 192.168.3.0 255.255.255.0 10.0.12.…"
+              },
+              {
+                "teil": "",
+                "text": "- `S*` bedeutet statisch **und** als Default markiert. In der Tabelle steht sie als `S* 0.0.0.0/0 [1/0] via 10.0.12.2` (sinngemäß)."
+              },
+              {
+                "teil": "",
+                "text": "**Aufbau (Schritte 2–3, nur GUI):** Drei Router, zwei Switches, zwei PCs. PCs und Switches mit Routern über *Copper Straight-Through*, die Router untereinander mit *Copper Cross-Over* (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Routingtabelle R1 (sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Routingtabelle R2 (Auszug, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Test (Schritt 8, sinngemäß, nicht bestätigt):** PC0 → PC1 und PC0 → `192.168.3.1` klappen. Die TTL der Antworten von PC1 ist um 3 kleiner als der Startwert (drei Router auf dem Weg). Der Wert bei der Loopback hängt vo…"
+              }
+            ],
+            "nr": "03.2"
+          },
+          {
+            "datei": "03.3-inter-vlan-routing-router-on-a-stick.md",
+            "titel": "Inter-VLAN-Routing mit Router-on-a-Stick",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum zwei VLANs einen Router brauchen, um miteinander zu sprechen,",
+              "erklären, wie *Router-on-a-Stick* mit nur **einer** Leitung zwischen Switch und Router funktioniert,",
+              "am Router **Subinterfaces** mit `encapsulation dot1Q` einrichten und jedem VLAN ein Gateway geben,",
+              "am Switch den Port zum Router als Trunk konfigurieren,",
+              "mit `show ip interface brief` und `show ip route` prüfen, dass die Subinterfaces aktiv sind und die Netze in der Routingtabelle stehen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "VLANs und Access-Ports am Switch einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Vorher testen: ohne Router"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Den Trunk am Switch einrichten"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Subinterfaces am Router einrichten"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Router prüfen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Gegenprobe: Was, wenn das physische Interface aus ist?"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum können zwei PCs in verschiedenen VLANs ohne Router nicht miteinander sprechen?",
+              "Welche Aufgabe haben die Subinterfaces am Router?",
+              "Was bewirkt `encapsulation dot1Q 20`?",
+              "Warum bekommt das physische Interface `Gi0/0` keine IP-Adresse, und was passiert, wenn es heruntergefahren wird?",
+              "Warum ist Router-on-a-Stick bei viel Verkehr zwischen den VLANs ein Engpass?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config* → *GigabitEthernet0/0*: *Port Status* *On* (keine IP-Adresse). Für die Subinterfaces gibt es in der GUI keinen direkten Weg (nicht bestätigt). Nutze die CLI."
+              },
+              {
+                "teil": "",
+                "text": "**Prüfen (Schritt 8, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Test (Schritt 9, sinngemäß, nicht bestätigt):** `ping 192.168.10.1` und `ping 192.168.20.10` von PC0 klappen (der erste Versuch kann verloren gehen). `tracert 192.168.20.10` zeigt `192.168.10.1` und danach `192.168.20…"
+              }
+            ],
+            "nr": "03.3"
+          },
+          {
+            "datei": "03.4-inter-vlan-routing-mit-layer-3-switch.md",
+            "titel": "Inter-VLAN-Routing mit Layer-3-Switch",
+            "stufe": "Aufbau",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was ein Layer-3-Switch (Multilayer-Switch) ist und worin er sich von einem Layer-2-Switch unterscheidet,",
+              "mit `ip routing` die Routingfunktion einschalten,",
+              "für jedes VLAN ein **SVI** (*Switch Virtual Interface*, `interface vlan <ID>`) mit Adresse einrichten und als Gateway nutzen,",
+              "mit `show ip route` prüfen, dass die VLAN-Netze als `C` in der Routingtabelle stehen,",
+              "Router-on-a-Stick und Layer-3-Switch vergleichen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "VLANs anlegen und Ports zuweisen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Vorher testen: ohne Routing"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Die SVIs einrichten und Routing einschalten"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gegenprobe: Routing ausschalten"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Was unterscheidet einen Layer-3-Switch von einem Layer-2-Switch?",
+              "Was ist ein SVI, und welche Rolle hat es für die PCs?",
+              "Was bewirkt `ip routing`?",
+              "Warum bleibt ein SVI `down`, wenn das VLAN keinen aktiven Port hat?",
+              "Welchen Vorteil hat der Layer-3-Switch gegenüber Router-on-a-Stick, und wann braucht man trotzdem einen Router?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Entfällt, für SVIs gibt es in der GUI keinen direkten Weg (nicht bestätigt). Nutze die CLI."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Werkzeug *Inspect* → Switch → *Routing Table* (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Teste `ping 192.168.20.11` von PC0 und `show ip route` auf dem Switch. Notiere, was passiert (nicht bestätigt). Danach wieder `ip routing` einschalten."
+              },
+              {
+                "teil": "",
+                "text": "- `ip routing` ist bei Layer-3-Switches ab Werk **aus**, ob das in Packet Tracer ebenso ist, ist nicht bestätigt. Setze den Befehl in jedem Fall."
+              },
+              {
+                "teil": "",
+                "text": "- Ein Layer-3-Switch kann auch einzelne Ports als Router-Port betreiben (`no switchport`). Das ist hier nicht nötig und nicht bestätigt in Packet Tracer."
+              },
+              {
+                "teil": "",
+                "text": "| `show ip interface brief` | Adresse und Status der SVIs (`Vlan10`, `Vlan20`) | *Config* → Interface (nicht bestätigt) |"
+              },
+              {
+                "teil": "",
+                "text": "- **Zweiter Switch über Trunk:** Einen 2960 mit PCs in VLAN 10 und 20 über einen Trunk anbinden (am 3560 vorher `switchport trunk encapsulation dot1q`, danach `switchport mode trunk`, nicht in den Quellen gezeigt und ni…"
+              },
+              {
+                "teil": "",
+                "text": "**Prüfen (Schritt 7, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Test (Schritt 8, sinngemäß, nicht bestätigt):** Alle Pings zwischen den VLANs klappen (der erste Versuch kann wegen ARP verloren gehen). `tracert 192.168.20.11` zeigt `192.168.10.1` und danach `192.168.20.11`."
+              },
+              {
+                "teil": "",
+                "text": "**Gegenprobe (Schritt 9):** Ohne `ip routing` leitet der Switch nicht zwischen den VLANs weiter. Der Ping zwischen den VLANs schlägt fehl; die Routingtabelle wird nicht mehr gepflegt bzw. zeigt keine Routen. Die genaue…"
+              }
+            ],
+            "nr": "03.4"
+          },
+          {
+            "datei": "03.5-ospf-mit-einer-area.md",
+            "titel": "OSPF mit einer Area",
+            "stufe": "Aufbau",
+            "zeit": "ca. 75–90 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was ein dynamisches Routingprotokoll ist und was OSPF tut,",
+              "OSPF mit `router ospf` und `network`-Anweisungen (mit Wildcard-Maske) einrichten,",
+              "die Wildcard-Maske aus der Subnetzmaske ableiten,",
+              "mit `show ip ospf neighbor`, `show ip route` und `show ip protocols` prüfen, ob die Nachbarschaften stehen und welche Routen gelernt wurden,",
+              "eine OSPF-Route (`O`) lesen und die Metrik (Kosten) nachvollziehen,",
+              "beobachten, wie OSPF auf den Ausfall einer Verbindung reagiert."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Wildcard-Maske aus Subnetzmaske ableiten"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "PCs und Interfaces konfigurieren"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Vorher testen: nur direkte Nachbarn"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "OSPF auf R1 einrichten"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "OSPF auf R2 und R3 einrichten"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Nachbarschaften prüfen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gelernte Routen ansehen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Protokolle und Interfaces prüfen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Verbindung testen und den Weg verfolgen"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Ausfall simulieren"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Gegenprobe: eine network-Anweisung fehlt"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Was ist der Unterschied zwischen statischem und dynamischem Routing?",
+              "Welche Wildcard-Maske gehört zur Subnetzmaske `255.255.255.252`?",
+              "Was bewirkt `network 10.0.12.0 0.0.0.3 area 0`?",
+              "Muss die Prozess-ID auf allen Routern gleich sein? Muss es die Area?",
+              "Wie setzt sich die Metrik `[110/3]` zusammen, und wofür steht `110`?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config* → *ROUTING* → *OSPF* (nicht bestätigt, die Einstellmöglichkeiten sind eingeschränkt). Nutze die CLI."
+              },
+              {
+                "teil": "",
+                "text": "Beim Einrichten erscheinen auf den Routern Meldungen zur Nachbarschaft (`%OSPF-5-ADJCHG ... Loading to Full`, nicht bestätigt). Warte einige Sekunden (*Fast Forward Time*)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Werkzeug *Inspect* → Router → *Routing Table* (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "`show ip protocols` nennt Prozess-ID, Router-ID und die beworbenen Netze. `show ip ospf interface brief` listet die OSPF-Interfaces mit Kosten und Status (der Befehl ist laut Cisco-Lab belegt, die Ausgabe in Packet Trac…"
+              },
+              {
+                "teil": "",
+                "text": "6. **Kosten:** Jedes Interface hat Kosten, aus der Bandbreite berechnet. Bei der Standard-Referenzbandbreite von 100 Mbit/s kosten Fast Ethernet 1, Gigabit-Interfaces ebenfalls 1 (Werte unter 1 werden auf 1 gerundet, si…"
+              },
+              {
+                "teil": "",
+                "text": "- Der Aufbau der Nachbarschaft kann einige Sekunden bis zu etwa 40 Sekunden dauern (Hello 10 s, Dead 40 s bei Ethernet, nicht bestätigt in Packet Tracer). Nutze *Fast Forward Time*."
+              },
+              {
+                "teil": "",
+                "text": "- **Hello-Intervall beobachten:** `show ip ospf interface gigabitethernet 0/1` auf R1 anzeigen (nicht bestätigt) und die Intervalle ablesen."
+              },
+              {
+                "teil": "",
+                "text": "**Aufbau (Schritte 2–4):** Drei Router, zwei Switches, zwei PCs; PCs und Switches mit *Copper Straight-Through*, Router untereinander mit *Copper Cross-Over* (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Nachbarn (Schritt 8, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Routen (Schritt 9, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Protokolle (Schritt 10, Auszug, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "03.5"
+          },
+          {
+            "datei": "03.6-ospf-feinjustieren.md",
+            "titel": "OSPF feinjustieren",
+            "stufe": "Fortgeschritten",
+            "zeit": "ca. 90–120 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "die Router-ID bestimmen, ablesen und fest vorgeben,",
+              "erklären, wie DR und BDR gewählt werden, und die Wahl mit der Priorität beeinflussen,",
+              "LAN-Interfaces mit `passive-interface` aus OSPF herausnehmen, ohne das Netz zu verlieren,",
+              "die Kosten eines Interfaces ablesen und gezielt ändern,",
+              "die Referenzbandbreite so anpassen, dass schnelle Verbindungen unterscheidbar bleiben,",
+              "mit `show ip ospf interface brief` und `show ip ospf neighbor` die Wirkung der Einstellungen prüfen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Interfaces konfigurieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "OSPF einrichten"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Ausgangslage dokumentieren"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Router-ID vorhersagen und prüfen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Router-ID fest vorgeben"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Rollen im Segment ablesen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "R1 zum DR machen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "LAN-Interface von R1 passiv setzen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Loopbacks passiv setzen"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Kosten ablesen"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Referenzbandbreite anheben"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Kosten gezielt setzen"
+                  },
+                  {
+                    "nr": "15",
+                    "titel": "Gesamttest und Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "In welcher Reihenfolge wird die Router-ID bestimmt?",
+              "Warum ändert sich die Router-ID nicht sofort nach `router-id 1.1.1.1`?",
+              "Wer wird DR, wenn alle Prioritäten gleich sind? Was bewirkt Priorität 0?",
+              "Was ist der Unterschied zwischen einem passiven und einem heruntergefahrenen Interface?",
+              "Warum sind bei der Standard-Referenzbandbreite Fast Ethernet und Gigabit nicht unterscheidbar?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Antworte mit `yes`, falls nachgefragt wird (nicht bestätigt). Prüfe danach mit `show ip protocols` und `show ip ospf neighbor`, dass die Router-IDs die neuen Werte haben und die Nachbarn wieder `FULL` sind."
+              },
+              {
+                "teil": "",
+                "text": "Welcher Router ist DR, welcher BDR? Welche Rolle hat dieser Router selbst (siehe `show ip ospf interface gigabitethernet 0/0`)? Die Wahl entscheidet bei gleicher Priorität die höchste Router-ID, in der Regel hat dann R3…"
+              },
+              {
+                "teil": "",
+                "text": "- **CLI:** Auf R1 die Priorität erhöhen, auf R3 senken (nicht bestätigt, Befehl `ip ospf priority`):"
+              },
+              {
+                "teil": "",
+                "text": "Der Wert ist in Mbit/s (10000 = 10 Gbit/s). Beim Setzen erscheint ein Hinweis, dass der Wert auf allen Routern gleich sein muss (nicht bestätigt). Lies danach die Kosten erneut ab: Gigabit kostet jetzt mehr als Fast Eth…"
+              },
+              {
+                "teil": "",
+                "text": "- Schreibt man die Loopback-Adresse in die `network`-Anweisung, wird sie als Stub-Netz beworben (bei Loopbacks mit `/24` erscheint sie je nach Version als `/32`, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Netzwerktyp:** Auf einer Zweier-Verbindung `ip ospf network point-to-point` testen (nicht bestätigt) und prüfen, ob DR/BDR entfallen."
+              },
+              {
+                "teil": "",
+                "text": "**Router-IDs ohne Vorgabe (Schritt 6, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Rollen bei gleicher Priorität (Schritt 8, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Priorität (Schritt 9):** R1 `ip ospf priority 100`, R3 `ip ospf priority 0`, anschließend `clear ip ospf process` auf allen Routern. Erwartung: R1 wird DR, R2 BDR, R3 DROTHER (nicht bestätigt). Ohne Neustart bleibt di…"
+              },
+              {
+                "teil": "",
+                "text": "**Kosten (Schritte 12–14, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "Mit `ip ospf cost 50` auf R1 `Gi0/0` zeigt `show ip ospf interface brief` für dieses Interface die Kosten 50. Die Metrik von R1 zu `192.168.2.0/24` setzt sich dann aus den Kosten 50 (R1 `Gi0/0`) und den Kosten des Ziel-…"
+              },
+              {
+                "teil": "",
+                "text": "- Wahlregeln für DR/BDR (Priorität, Router-ID, nicht präemptiv), Reihenfolge der Router-ID-Bestimmung und Kostenformel: allgemeines OSPF-Wissen, hier nicht aus der genannten Quelle im Wortlaut belegt. Der Befehl `ip osp…"
+              }
+            ],
+            "nr": "03.6"
+          }
+        ],
         "skripte": [],
-        "geplant": "statisches Routing, Inter-VLAN-Routing, OSPF."
+        "geplant": ""
       },
       {
         "nr": 4,
         "ordner": "04-netzdienste",
         "titel": "Netzdienste",
         "beschreibung": "",
-        "einheiten": [],
+        "einheiten": [
+          {
+            "datei": "04.1-dhcp-server-auf-dem-router.md",
+            "titel": "DHCP-Server auf dem Router",
+            "stufe": "Grundlage",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum Adressen automatisch vergeben werden und was DHCP dabei liefert,",
+              "den vierstufigen Ablauf (Discover, Offer, Request, Acknowledge) beschreiben,",
+              "auf einem Router einen DHCP-Pool anlegen und Adressen von der Vergabe ausnehmen,",
+              "PCs auf automatische Adressvergabe umstellen und das Ergebnis prüfen,",
+              "mit `show ip dhcp binding` nachvollziehen, welcher Client welche Adresse hat,",
+              "begründen, warum Router, Server und Drucker feste Adressen außerhalb des Pools bekommen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Router-Interface einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "PC2 fest einrichten"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Vorher testen: ohne DHCP"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Adressen von der Vergabe ausnehmen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Pool anlegen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Clients auf DHCP umstellen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Zuordnungen auf dem Router ansehen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Adresse freigeben und neu anfordern"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Lease-Dauer ändern"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Welche vier Meldungen gehören zur Adressvergabe, und welche sind Broadcasts?",
+              "Warum schließt man Adressen aus, statt sie nur nicht in den Pool zu legen?",
+              "Was passiert, wenn ein Client keinen DHCP-Server findet?",
+              "Welche vier Angaben liefert dein Pool an den Client?",
+              "Warum steht `ip dhcp excluded-address` vor dem Pool?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Ohne DHCP-Server bekommt der PC keine brauchbare Adresse (nicht bestätigt: Packet Tracer zeigt dann oft eine `169.254`-Adresse oder `0.0.0.0`)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** PC0 → *IP Configuration*: auf *Static* umschalten und wieder auf *DHCP* (gibt es keinen eigenen Knopf, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Auf R1 mit `show ip dhcp binding` prüfen, ob der Eintrag zwischendurch fehlt und ob PC0 dieselbe Adresse zurückbekommt (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "`lease 0 8` bedeutet 0 Tage, 8 Stunden. Ohne Angabe gilt ein Tag (so beschreibt es Cisco allgemein, in Packet Tracer nicht bestätigt). Neue Clients bekommen die neue Dauer; ändert sich die Ablaufzeit bei `show ip dhcp b…"
+              },
+              {
+                "teil": "",
+                "text": "- **Reservierung:** Einem PC über `host` und `client-identifier` im Pool immer dieselbe Adresse geben (nicht bestätigt in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "- **Konflikt:** PC2 mit der festen Adresse `192.168.10.12` versehen, bevor ein Client diese per DHCP bekommt. Was zeigt `show ip dhcp conflict` (nicht bestätigt)?"
+              },
+              {
+                "teil": "",
+                "text": "**Vorher (Schritt 5):** Ohne Server schlägt die Anfrage fehl; PC0 hat keine brauchbare Adresse (nicht bestätigt: `169.254.x.x` oder `0.0.0.0`)."
+              },
+              {
+                "teil": "",
+                "text": "**Ergebnis (Schritt 8, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Bindings (Schritt 9, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Release/Renew (Schritt 11):** Nach `ipconfig /release` hat PC0 keine Adresse mehr. Nach `ipconfig /renew` bekommt er in der Regel dieselbe Adresse zurück, weil der Server die frühere Zuordnung kennt (nicht bestätigt)."
+              }
+            ],
+            "nr": "04.1"
+          },
+          {
+            "datei": "04.2-dhcp-relay.md",
+            "titel": "DHCP-Relay",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum ein DHCP-Broadcast nicht über einen Router hinauskommt,",
+              "ein DHCP-Relay mit `ip helper-address` auf dem richtigen Interface einrichten,",
+              "am Server einen Pool für ein fremdes Netz anlegen,",
+              "erkennen, woran man ein Relay in den Client-Daten sieht (DHCP-Server-Adresse ist der Server, nicht das Gateway),",
+              "die Fehlersymptome ohne Relay beschreiben."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Router-Interfaces einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Server einrichten (Adresse)"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "DHCP-Pool am Server anlegen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Vorher testen: ohne Relay"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Relay auf R1 einrichten"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Clients erneut anfragen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Zuordnungen am Server ansehen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Gegenprobe: Relay auf dem falschen Interface"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum erreicht der DHCP-Broadcast den Server im anderen Netz nicht?",
+              "Auf welches Interface gehört `ip helper-address`, und welche Adresse trägt man ein?",
+              "Woran erkennt der Server, aus welchem Netz eine Anfrage kommt?",
+              "Welche Adresse steht bei den Clients als *DHCP Server*, und was beweist das?",
+              "Was passiert, wenn für ein Netz kein Pool am Server existiert?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Die Anfrage bleibt im LAN `192.168.20.0/24` hängen. Der Server sieht sie nie, die PCs bekommen keine brauchbare Adresse (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** SRV0 → *Services* → *DHCP*: Die Liste der vergebenen Adressen (Schaltfläche *Leases* bzw. Tabelle unten, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Ergebnis (Schritt 8, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "04.2"
+          },
+          {
+            "datei": "04.3-dns-namensaufloesung.md",
+            "titel": "DNS und Namensauflösung",
+            "stufe": "Aufbau",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, wozu DNS dient und was ein A-Record und ein CNAME sind,",
+              "am Server-PT den DNS-Dienst einschalten und Einträge anlegen,",
+              "Clients so einrichten, dass sie den DNS-Server nutzen,",
+              "mit `ping`, `nslookup` und dem Web Browser prüfen, ob die Namensauflösung klappt,",
+              "zwischen einem Fehler bei der Namensauflösung und einem Fehler bei der Erreichbarkeit unterscheiden,",
+              "einen Router so einrichten, dass er Namen auflöst."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Adressen einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Vorher testen: Adresse statt Name"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "DNS-Dienst am Server einschalten und Einträge anlegen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Namensauflösung prüfen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Web Browser mit Namen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Gegenprobe: falscher DNS-Server"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gegenprobe: fehlender Eintrag"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Router löst Namen auf"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Was ist der Unterschied zwischen einem A-Record und einem CNAME?",
+              "Der Ping auf die Adresse klappt, der Ping auf den Namen nicht. Was prüfst du zuerst?",
+              "Wo tragen die Clients den DNS-Server ein, und wie bekommen sie ihn automatisch?",
+              "Warum ist `www.firma.lan` besser als die Adresse im Browser einzutippen?",
+              "Was passiert mit einem CNAME, wenn sein Ziel-Eintrag fehlt?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Der erste Ping klappt, der zweite nicht, denn der DNS-Dienst ist noch nicht eingerichtet (nicht bestätigt: Meldung ähnlich „Ping request could not find host“)."
+              },
+              {
+                "teil": "",
+                "text": "`nslookup` zeigt den befragten DNS-Server und die Adresse. Bei `ping` auf den Namen erscheint die aufgelöste Adresse (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** PC0 → *Desktop* → *Web Browser*, Adresse `http://www.firma.lan` und `http://web.firma.lan` eingeben, *Go*. Die Standardseite des Servers erscheint (HTTP-Dienst am Server ist standardmäßig an, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "`ip domain-lookup` ist standardmäßig an. Der Router fragt dann den eingetragenen Server (nicht bestätigt in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "- Der Server-PT löst nur Namen auf, die du als Einträge angelegt hast. Er leitet unbekannte Namen nicht an das Internet weiter (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Router als DNS-Client:** `ip host server 192.168.1.10` auf dem Router und `ping server` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Prüfung (Schritt 6, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "Der Router löst den Namen über den Server auf und pingt `192.168.1.10` (nicht bestätigt)."
+              }
+            ],
+            "nr": "04.3"
+          },
+          {
+            "datei": "04.4-nat-statisch-und-dynamisch.md",
+            "titel": "NAT – statisch und dynamisch",
+            "stufe": "Aufbau",
+            "zeit": "ca. 75–90 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum private Adressen im Internet nicht geroutet werden und wozu NAT dient,",
+              "die Begriffe *Inside Local*, *Inside Global*, *Outside Local* und *Outside Global* unterscheiden,",
+              "Interfaces als `inside` und `outside` kennzeichnen,",
+              "eine statische NAT-Übersetzung (1:1) für einen Server einrichten,",
+              "eine dynamische NAT-Übersetzung mit Adresspool und ACL einrichten,",
+              "mit `show ip nat translations` die Übersetzungen lesen und die Grenzen eines kleinen Pools beobachten."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Interfaces und Endgeräte einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Vorher testen: ohne NAT"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Interfaces als inside und outside markieren"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Statische Übersetzung für den internen Server"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Statisches NAT testen: von außen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Statisches NAT testen: von innen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "ACL und Pool anlegen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Dynamisches NAT testen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Den Pool erschöpfen"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Übersetzungen leeren"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Statistik ansehen"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum schlägt der Ping ohne NAT fehl, obwohl R1 die Pakete weiterleitet?",
+              "Was sind Inside Local und Inside Global in diesem Beispiel?",
+              "Wozu dient die ACL beim dynamischen NAT?",
+              "Was passiert, wenn mehr Inside-Geräte gleichzeitig nach außen wollen, als Pool-Adressen vorhanden sind?",
+              "Wann ist statisches NAT sinnvoller als dynamisches?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Der interne Server antwortet unter der öffentlichen Adresse (nicht bestätigt: der HTTP-Dienst am SRV1 ist standardmäßig an)."
+              },
+              {
+                "teil": "",
+                "text": "Auf R1 mit `show ip nat translations` ansehen, wie viele Adressen vergeben sind. Der dritte PC geht leer aus, weil der Pool nur zwei Adressen hat und beide belegt sind (SRV1 hat seine eigene statische Adresse). Erwartun…"
+              },
+              {
+                "teil": "",
+                "text": "Dynamische Einträge verschwinden, statische bleiben. Danach klappt der Ping von PC2 wieder (nicht bestätigt, Befehl nicht in der genutzten Quelle)."
+              },
+              {
+                "teil": "",
+                "text": "Zeigt Anzahl der Übersetzungen, inside/outside-Interfaces, Pool und Treffer/Fehlschläge (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Statisches NAT (Schritt 6, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Dynamisches NAT (Schritt 10, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Pool erschöpft (Schritt 11):** PC0 und PC1 belegen `203.0.113.3` und `203.0.113.4`. PC2 hat keine freie Adresse; sein Ping schlägt fehl (nicht bestätigt). Nach `clear ip nat translation *` oder nach dem Timeout geht e…"
+              }
+            ],
+            "nr": "04.4"
+          },
+          {
+            "datei": "04.5-pat-port-address-translation.md",
+            "titel": "PAT – viele Geräte, eine öffentliche Adresse",
+            "stufe": "Fortgeschritten",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, wie PAT (NAT mit `overload`) viele private Adressen auf **eine** öffentliche Adresse abbildet,",
+              "PAT auf dem Outside-Interface einrichten,",
+              "in `show ip nat translations` die Portnummern lesen, mit denen Verbindungen unterschieden werden,",
+              "PAT und dynamisches NAT mit Pool vergleichen,",
+              "eine Port-Weiterleitung (Port Forwarding) für einen internen Webserver einrichten."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Interfaces und Endgeräte einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Vorher testen: ohne NAT"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "ACL anlegen: wer wird übersetzt"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "PAT einschalten"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Alle drei PCs gleichzeitig hinausschicken"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Die Tabelle lesen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Wiederholung mit längerem Verkehr"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Statistik und Aufräumen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Von außen ist der interne Server nicht erreichbar"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Port 80 auf SRV1 weiterleiten"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Web-Zugriff von außen testen"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Gegenprobe: anderer Port"
+                  },
+                  {
+                    "nr": "15",
+                    "titel": "Projekt und Konfiguration speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Welches Schlüsselwort macht aus NAT ein PAT?",
+              "Woran erkennt R1 bei einer Antwort, zu welchem PC sie gehört?",
+              "Warum reichen mit PAT eine einzige öffentliche Adresse und kein Pool?",
+              "Wozu braucht man Port Forwarding, obwohl PAT läuft?",
+              "Was ist der Unterschied zwischen statischem NAT (4.4) und der Weiterleitung eines einzelnen Ports (hier)?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Bei Web-Verbindungen erscheinen `tcp`-Einträge mit Quell-Ports (nicht bestätigt, dass der HTTP-Dienst am SRV0 standardmäßig läuft)."
+              },
+              {
+                "teil": "",
+                "text": "Nach `clear` ist die Tabelle (bis auf statische Einträge) leer (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** SRV0 → *Desktop* → *Web Browser*: `http://203.0.113.1`. Die Startseite von SRV1 erscheint (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Nur Port 80 ist weitergeleitet; der Zugriff auf Port 8080 schlägt fehl (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "5. **ICMP:** Beim Ping gibt es keine Ports; die Zuordnung läuft über die ICMP-ID (allgemeines Wissen, in Packet Tracer nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- Man kann PAT auch mit einem Pool betreiben (`ip nat pool … ` und `… pool … overload`, nicht bestätigt). Bei nur einer Adresse ist die Variante mit `interface` einfacher und folgt einer Änderung der Interface-Adresse a…"
+              },
+              {
+                "teil": "",
+                "text": "- **Pool-Variante:** PAT mit einem Pool aus einer Adresse (`ip nat pool … ` und `ip nat inside source list 1 pool … overload`), nicht bestätigt."
+              },
+              {
+                "teil": "",
+                "text": "**PAT (Schritt 8, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Port Forwarding (Schritt 12, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "04.5"
+          }
+        ],
         "skripte": [],
-        "geplant": "DHCP, DNS, NAT."
+        "geplant": ""
       },
       {
         "nr": 5,
         "ordner": "05-sicherheit",
         "titel": "Sicherheit",
         "beschreibung": "",
-        "einheiten": [],
+        "einheiten": [
+          {
+            "datei": "05.1-grundabsicherung-von-geraeten.md",
+            "titel": "Grundabsicherung von Geräten",
+            "stufe": "Grundlage",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "den privilegierten Modus mit `enable secret` schützen,",
+              "Konsole und VTY-Zugang (Telnet) mit Passwort sichern,",
+              "erklären, warum `enable secret` besser ist als `enable password`, und was `service password-encryption` leistet und nicht leistet,",
+              "ein Warn-Banner einrichten,",
+              "ungenutzte Switch-Ports abschalten und das prüfen,",
+              "mit `show running-config` kontrollieren, welche Zugangsdaten im Klartext stehen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Adressen einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Vorher prüfen: alles offen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Privilegierten Modus schützen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Konsole schützen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "VTY (Telnet) schützen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Telnet vom PC aus testen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gegenprobe: VTY ohne Passwort"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Passwörter verschleiern"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Banner einrichten"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Ungenutzte Switch-Ports abschalten"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Switch absichern und speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Welche drei Zugangsarten brauchen ein Passwort?",
+              "Warum ist `enable secret` besser als `enable password`?",
+              "Was leistet `service password-encryption`, und was nicht?",
+              "Warum schaltet man ungenutzte Ports ab?",
+              "Warum ist Telnet für den Fernzugang unsicher?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Teste: `exit`, dann wieder `enable`. Jetzt wird das Passwort verlangt (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Telnet wird abgewiesen („Password required, but none set“, nicht bestätigt). Setze danach `password Telnet-1` wieder."
+              },
+              {
+                "teil": "",
+                "text": "Ein 2960 hat 16 VTY-Leitungen (`0 15`, nicht bestätigt in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "- **Mindestlänge:** `security passwords min-length 8` ausprobieren und ein zu kurzes Passwort setzen (nicht bestätigt in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "- **Sperren nach Fehlversuchen:** `login block-for 60 attempts 3 within 30` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Gegenprobe (Schritt 9):** Ohne VTY-Passwort lehnt der Router die Telnet-Sitzung ab (nicht bestätigt)."
+              }
+            ],
+            "nr": "05.1"
+          },
+          {
+            "datei": "05.2-ssh-statt-telnet.md",
+            "titel": "SSH statt Telnet",
+            "stufe": "Aufbau",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, warum SSH Telnet ersetzt,",
+              "auf einem Router Voraussetzungen für SSH schaffen (Hostname, Domain, RSA-Schlüssel, lokaler Benutzer),",
+              "den VTY-Zugang auf SSH beschränken und Telnet sperren,",
+              "sich per SSH vom PC aus anmelden,",
+              "mit `show ip ssh` die Konfiguration prüfen,",
+              "die typischen Fehlerbilder (fehlende Domain, kein Schlüssel, falscher Benutzer) erkennen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Adressen und Basis-Telnet wie in Übung 5.1"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Domain festlegen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Gegenprobe: Schlüssel ohne Domain"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "RSA-Schlüssel erzeugen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "SSH-Version 2 und lokalen Benutzer festlegen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "VTY auf SSH umstellen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "SSH-Verbindung vom PC aus"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Telnet ist jetzt gesperrt"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "SSH prüfen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Gegenprobe: falscher Benutzer"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Was ist der Hauptunterschied zwischen Telnet und SSH?",
+              "Welche Voraussetzungen müssen vor dem Erzeugen des RSA-Schlüssels erfüllt sein?",
+              "Was bewirken `login local` und `transport input ssh`?",
+              "Wie sperrst du Telnet, ohne SSH zu verlieren?",
+              "Woran erkennst du mit `show ip ssh`, ob SSH läuft?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Ohne Domain verweigert IOS die Schlüsselerzeugung mit einem Hinweis auf den fehlenden Domainnamen (nicht bestätigt). Setze danach `ip domain name uebung.lan` wieder."
+              },
+              {
+                "teil": "",
+                "text": "Die Quelle nennt `modulus 4096` als Beispiel und empfiehlt die größte Länge, die die Plattform unterstützt. In Packet Tracer sind kürzere Längen üblich: Gibt es eine Fehlermeldung, nimm `1024` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Die Verbindung wird abgelehnt (nicht bestätigt: Meldung „Connection refused by remote host“ o. Ä.)."
+              },
+              {
+                "teil": "",
+                "text": "Die Anmeldung schlägt fehl (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Zeitlimit und Versuche:** `ip ssh time-out 60` und `ip ssh authentication-retries 2` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Zugriff beschränken:** Nur Adressen eines bestimmten Netzes zulassen, mit einer Standard-ACL auf der VTY-Leitung (`access-class`, nach Übung 5.4, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Prüfung (Schritt 10, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "05.2"
+          },
+          {
+            "datei": "05.3-port-security.md",
+            "titel": "Port Security",
+            "stufe": "Aufbau",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was Port Security schützt und wogegen sie nicht hilft,",
+              "einen Access-Port auf eine feste MAC-Adresse und auf eine Höchstzahl begrenzen,",
+              "die drei Verletzungsmodi `shutdown`, `restrict` und `protect` unterscheiden,",
+              "Sticky-Learning einsetzen,",
+              "einen ausgesperrten Port (`err-disabled`) wiederherstellen,",
+              "mit `show port-security interface` Zustand, Zähler und Adressen lesen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Adressen vergeben"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Vorher testen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "MAC-Adressen der PCs ermitteln"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Port Security mit fester MAC einschalten"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Zustand ansehen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verstoß auslösen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Folgen prüfen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Port wiederherstellen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Sticky-Learning an Port 2"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Verletzungsmodus ändern"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Wogegen schützt Port Security, wogegen nicht?",
+              "Was passiert im Modus `shutdown`, und wie stellst du den Port wieder her?",
+              "Was ist der Unterschied zwischen `restrict` und `protect`?",
+              "Wozu dient `sticky`?",
+              "Warum hilft ein Wechsel des Kabels allein nicht, wenn der Port `err-disabled` ist?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Der Switch setzt `Fa0/1` auf `err-disabled`. Es erscheinen Meldungen wie `%PM-4-ERR_DISABLE: psecure-violation error detected on Fa0/1` und `%PORT_SECURITY-2-PSECURE_VIOLATION` (Format laut Tutorial, in Packet Tracer ni…"
+              },
+              {
+                "teil": "",
+                "text": "Stecke PC2 an `Fa0/2` und pinge. Der Port bleibt aktiv, die Frames von PC2 werden verworfen, der Zähler steigt (nicht bestätigt). Teste auch `protect`."
+              }
+            ],
+            "nr": "05.3"
+          },
+          {
+            "datei": "05.4-standard-acls.md",
+            "titel": "Standard-ACLs",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was eine Standard-ACL filtert (nur die **Quelladresse**) und was nicht,",
+              "eine nummerierte und eine benannte Standard-ACL anlegen,",
+              "die ACL an einem Interface in der richtigen Richtung anwenden,",
+              "die Regel „Standard-ACLs so nah wie möglich am Ziel“ begründen,",
+              "das implizite `deny any` am Ende jeder ACL erklären,",
+              "mit `show access-lists` und `show ip interface` die Wirkung prüfen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Interfaces und Endgeräte einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Vorher testen: alles erreichbar"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Standard-ACL anlegen: PC1 sperren"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "ACL am Interface anwenden: nah am Ziel"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Wirkung testen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Trefferzähler ablesen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Platzierung: ACL auf dem Quell-Interface"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Gegenprobe: implizites deny"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Benannte Standard-ACL"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Netz sperren statt Host"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Was prüft eine Standard-ACL, und was kann sie nicht prüfen?",
+              "Warum wird eine Standard-ACL nahe am Ziel angewendet?",
+              "Was passiert mit einem Paket, das keine Regel trifft?",
+              "Was bewirkt `access-list 10 permit any` am Ende?",
+              "Welchen Unterschied macht `in` gegenüber `out`?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Der Ping schlägt fehl (R1 meldet „Destination host unreachable“, nicht bestätigt). Am PC0 klappt derselbe Ping."
+              },
+              {
+                "teil": "",
+                "text": "Benannte ACLs lassen sich in der Regel zeilenweise bearbeiten. Das Einfügen mit Sequenznummer (z. B. `5 deny host 192.168.10.12`) ist in Packet Tracer nicht bestätigt."
+              },
+              {
+                "teil": "",
+                "text": "- **Fernzugang beschränken:** Eine Standard-ACL per `access-class 10 in` auf `line vty 0 4` legen, damit nur ein Admin-PC per SSH zugreifen darf (nach Übung 5.2, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Dokumentation:** Mit `remark` Kommentare in die ACL schreiben (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Trefferzähler (Schritt 8, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "05.4"
+          },
+          {
+            "datei": "05.5-erweiterte-acls.md",
+            "titel": "Erweiterte ACLs",
+            "stufe": "Fortgeschritten",
+            "zeit": "ca. 75–90 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was eine erweiterte ACL gegenüber einer Standard-ACL zusätzlich prüft (Ziel, Protokoll, Port),",
+              "eine benannte erweiterte ACL mit TCP-, ICMP- und IP-Regeln schreiben,",
+              "die Reihenfolge der Regeln begründen und Regeln gezielt einfügen,",
+              "die ACL nahe der Quelle anwenden und die Platzierungsregel begründen,",
+              "mit Trefferzählern nachvollziehen, welche Regel gegriffen hat,",
+              "typische Fehler (falsche Reihenfolge, vergessenes `permit`, falsche Richtung) erkennen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Aufbau aus Übung 5.4 übernehmen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Vorher testen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Erweiterte ACL: nur Web erlauben"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "ACL anwenden: nah an der Quelle"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Wirkung testen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Trefferzähler lesen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Ping erlauben"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Einzelne Hosts herausnehmen: Reihenfolge"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gegenprobe: falsche Reihenfolge"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Gegenprobe: falsche Richtung"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Weitere Dienste: DNS und SSH"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Welche Angaben kann eine erweiterte ACL zusätzlich zu einer Standard-ACL prüfen?",
+              "Warum setzt man erweiterte ACLs nahe der Quelle?",
+              "Warum sperrt eine zu allgemeine Regel am Anfang später stehende Ausnahmen aus?",
+              "Wie erlaubst du nur Webseiten (HTTP) zu einem Server?",
+              "Was bewirkt es, wenn die ACL in der falschen Richtung am Interface liegt?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "Webseite und Ping funktionieren (der HTTP-Dienst am Server-PT ist standardmäßig an, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Jetzt kommen Pings zum Server und zum Gateway durch. Die Rückrichtung läuft über `Gi0/1`, wo keine ACL liegt. Die Option `echo` begrenzt die Regel auf Echo-Anfragen (nicht bestätigt in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "Der Eintrag erhält die Sequenznummer 5 und steht vor allen anderen. Teste Webseite und Ping von PC0 (klappt) und PC1 (gesperrt). Das Einfügen mit Sequenznummer ist in Packet Tracer nicht bestätigt; alternativ ACL lösche…"
+              },
+              {
+                "teil": "",
+                "text": "| `clear access-list counters` | Setzt die Zähler zurück (nicht bestätigt) | – |"
+              },
+              {
+                "teil": "",
+                "text": "- **HTTPS:** Port 443 ergänzen. Der Server-PT bietet unter *Services* → *HTTP* auch HTTPS an (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Established:** `permit tcp any any established` kennenlernen und mit dem Rückverkehr vergleichen (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Log:** `deny ip any any log` nutzen und auf der Konsole die Meldungen beobachten (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Anzeige (sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "05.5"
+          }
+        ],
         "skripte": [],
-        "geplant": "SSH, Port Security, ACLs."
+        "geplant": ""
       },
       {
         "nr": 6,
         "ordner": "06-wan-vpn",
         "titel": "WAN und VPN",
         "beschreibung": "",
-        "einheiten": [],
+        "einheiten": [
+          {
+            "datei": "06.1-serielle-wan-verbindung.md",
+            "titel": "Serielle WAN-Verbindung",
+            "stufe": "Aufbau",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was DCE und DTE bei einer seriellen Verbindung sind und wozu `clock rate` dient,",
+              "in einen Router ein serielles Modul einsetzen,",
+              "eine serielle Punkt-zu-Punkt-Verbindung mit Adressen und Taktrate einrichten,",
+              "mit `show controllers`, `show interface` und `show ip interface brief` den Zustand lesen,",
+              "die Kapselungen HDLC und PPP vergleichen und typische Fehler (fehlende Taktrate, ungleiche Kapselung) erkennen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Serielle Module einsetzen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Seriell verkabeln"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Hostnamen und Adressen konfigurieren"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Welche Seite ist DCE?"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Zustand vor der Taktrate"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Taktrate am DCE-Ende setzen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Kapselung und Verbindung prüfen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Gegenprobe: ungleiche Kapselung"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Beide auf PPP umstellen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Gegenprobe: Takt entfernen"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Was bedeuten DCE und DTE, und welche Seite braucht `clock rate`?",
+              "Was zeigt `up/down` bei einer seriellen Schnittstelle?",
+              "Welche Kapselung ist bei Cisco-Routern Standard?",
+              "Was passiert, wenn die Kapselungen der beiden Seiten nicht übereinstimmen?",
+              "Wie findest du heraus, welches Ende eines Kabels DCE ist?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config* → *Serial0/0/0*: *IP Address* und *Subnet Mask*, *Port Status* *On*. Die Taktrate setzt du im Feld *Clock Rate* (nur am DCE-Ende, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Das Kabelende mit Uhr-Symbol sitzt am DCE-Router (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Das Verbindungssymbol am Kabel ist rot (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Jetzt unterscheiden sich die Kapselungen (HDLC bei R1, PPP bei R2). Der Ping schlägt fehl und das Protokoll geht auf `down` (nicht bestätigt: die Schicht-1-Anzeige bleibt `up`)."
+              },
+              {
+                "teil": "",
+                "text": "Nach einigen Sekunden steht die Verbindung wieder. In der Ausgabe von `show interface` steht jetzt PPP, meist mit LCP und IPCP im Zustand `Open` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Die Leitung fällt aus (nicht bestätigt). Setze `clock rate 64000` wieder."
+              },
+              {
+                "teil": "",
+                "text": "- **PPP mit Authentifizierung:** CHAP einrichten (`ppp authentication chap`, `username`, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Vor der Taktrate (Schritt 6, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "06.1"
+          },
+          {
+            "datei": "06.2-standortkopplung.md",
+            "titel": "Standortkopplung über die WAN-Verbindung",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "zwei Standorte (je ein LAN) über eine WAN-Verbindung koppeln,",
+              "das Routing über die WAN-Strecke zuerst statisch und dann mit OSPF einrichten,",
+              "die Rolle der Default-Route am Zweigstandort erklären,",
+              "den Verkehr mit `tracert` verfolgen und den Weg über die WAN-Adressen erkennen,",
+              "Ausfälle der Strecke beobachten und deren Auswirkung auf beide LANs beschreiben."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Aufbau wie in Übung 6.1 plus LANs"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Interfaces einrichten"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Vorher testen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Statische Routen einrichten"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Verbindung prüfen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Statisches Routing durch OSPF ersetzen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "OSPF prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Ausfall der Strecke"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Auswirkung beobachten: LANs bleiben intern erreichbar"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Kosten der Strecke ansehen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum genügt an der Zweigstelle eine Default-Route?",
+              "Welche Route braucht die Zentrale, und warum?",
+              "Warum entfernst du die statischen Routen, bevor OSPF übernimmt?",
+              "Was bleibt bei einem Ausfall der WAN-Strecke erreichbar?",
+              "Wie beeinflusst die serielle Strecke die OSPF-Kosten?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config* → *Routing* → *Static*: Netzwerk, Maske, Next Hop. (nicht bestätigt, alternativ CLI)"
+              },
+              {
+                "teil": "",
+                "text": "Zur Serial-Strecke: OSPF behandelt sie als Punkt-zu-Punkt. Es gibt dort keine Wahl von DR/BDR (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Das serielle Interface hat höhere Kosten als ein Gigabit-Port, weil die Standardbandbreite einer seriellen Schnittstelle niedrig ist (T1 = 1544 kbit/s, nicht bestätigt). Mit `bandwidth 64` ließe sich der Wert an die tat…"
+              },
+              {
+                "teil": "",
+                "text": "**Routen (Schritt 7, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "06.2"
+          },
+          {
+            "datei": "06.3-gre-tunnel.md",
+            "titel": "GRE-Tunnel",
+            "stufe": "Fortgeschritten",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was ein GRE-Tunnel ist und warum er private Netze über ein öffentliches Netz verbinden kann,",
+              "ein Tunnel-Interface mit Quelle, Ziel und Tunnel-Adresse einrichten,",
+              "das Routing durch den Tunnel mit einer statischen Route festlegen,",
+              "im `tracert` erkennen, dass das Provider-Netz im Pfad nicht sichtbar ist,",
+              "begründen, warum GRE allein **nicht verschlüsselt**,",
+              "typische Fehler (falsche Adresse, fehlende Route zum Tunnelende) erkennen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Interfaces einrichten und Default-Routen setzen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Vorher testen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Tunnel-Interface auf R1"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Tunnel-Interface auf R2"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Tunnel prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Routen durch den Tunnel"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Standorte testen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Verkehr im Simulationsmodus ansehen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Gegenprobe: falsches Tunnel-Ziel"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Gegenprobe: Route fehlt"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum kommen private Adressen ohne Tunnel nicht über den ISP?",
+              "Was ist der Unterschied zwischen der Tunnel-Quelle/-Ziel und der Tunnel-Adresse?",
+              "Warum taucht der ISP im `tracert` nicht auf?",
+              "Warum ist ein GRE-Tunnel allein keine sichere Verbindung?",
+              "Welche Route würde einen Tunnel unbrauchbar machen, wenn das Tunnelziel durch den Tunnel selbst erreichbar wäre?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "**2. Verkabeln:** Endgeräte und Switches mit *Copper Straight-Through* (PC0 → SW0 `Fa0/1`, SW0 `Fa0/2` → R1 `Gi0/0`, R2 `Gi0/0` → SW1 `Fa0/2`, SW1 `Fa0/1` → PC1). Router untereinander mit *Copper Cross-Over* (R1 `Gi0/1`…"
+              },
+              {
+                "teil": "",
+                "text": "`Tunnel0` steht auf `up`/`up`, der Ping auf das Tunnel-Ende `10.10.10.2` klappt (nicht bestätigt: Der erste Versuch kann verloren gehen)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config* → *Routing* → *Static* (nicht bestätigt, alternativ CLI)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Unten rechts auf *Simulation* wechseln, Filter auf *ICMP* setzen, einen Ping von PC0 nach PC1 senden. Beim Weg über den ISP die Paketdetails öffnen (*Inspect PDU*/Umschlag): außen steht ein IP-Paket von `203.…"
+              },
+              {
+                "teil": "",
+                "text": "Der Ping schlägt fehl, weil die Pakete nicht beim R2 ankommen. Setze das Ziel wieder auf `198.51.100.2` (der Tunnelzustand kann trotzdem `up` zeigen, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "| `show interfaces tunnel 0` | Quelle, Ziel, Modus, Zähler (nicht bestätigt) | – (nur CLI) |"
+              },
+              {
+                "teil": "",
+                "text": "- **Keepalive:** `keepalive 5 3` auf dem Tunnel einstellen und den Ausfall beobachten (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **MTU:** `ip mtu 1400` setzen und `show interfaces tunnel 0` ansehen (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Weg (Schritt 9, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "06.3"
+          },
+          {
+            "datei": "06.4-site-to-site-vpn-mit-ipsec.md",
+            "titel": "Site-to-Site-VPN mit IPsec",
+            "stufe": "Fortgeschritten",
+            "zeit": "ca. 75–90 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "das Grundprinzip eines IPsec-Site-to-Site-VPN beschreiben (Phase 1 und Phase 2),",
+              "die Sicherheitslizenz (securityk9) in Packet Tracer aktivieren,",
+              "„interessanten Verkehr“ mit einer ACL festlegen,",
+              "ISAKMP-Richtlinie, Schlüssel, Transform-Set und Crypto-Map konfigurieren und am Interface anwenden,",
+              "das VPN mit `show crypto isakmp sa` und `show crypto ipsec sa` prüfen,",
+              "erklären, was GRE (Übung 6.3) von IPsec unterscheidet, und typische Fehler (ungleiche Parameter, falsche ACL) finden."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Aufbau aus Übung 6.3 übernehmen, ohne Tunnel"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Vorher testen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Sicherheitslizenz prüfen und aktivieren"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Interessanten Verkehr festlegen (ACL)"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Phase 1: ISAKMP-Richtlinie und Schlüssel"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Phase 2: Transform-Set"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Crypto-Map anlegen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Crypto-Map am Interface anwenden"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Verkehr auslösen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "VPN-Status prüfen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Im Simulationsmodus ansehen"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Gegenprobe: Schlüssel stimmt nicht"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Gegenprobe: ACL nicht gespiegelt"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Was geschieht in Phase 1 und was in Phase 2?",
+              "Warum muss die ACL auf R2 spiegelverkehrt zur ACL auf R1 sein?",
+              "Auf welches Interface gehört die Crypto-Map, und warum?",
+              "Wodurch unterscheidet sich IPsec von GRE?",
+              "Welche Parameter müssen auf beiden Seiten übereinstimmen?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config*/*Physical* (je nach Version unter *Config* → *Settings* → *Technology Package*) nicht bestätigt; nutze die CLI."
+              },
+              {
+                "teil": "",
+                "text": "Das Lab nennt den Befehl für die Routerreihe 2900 (`c2900`); für den 1941 ist `c1900` zu erwarten (nicht bestätigt). Nach dem Neustart zeigt `show version` in der Lizenztabelle `securityk9` mit dem Eintrag `Technology P…"
+              },
+              {
+                "teil": "",
+                "text": "Die Richtlinie muss auf beiden Seiten gleich sein. Das Lab setzt keinen eigenen Hash, es gelten die Standardwerte der IOS-Version (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Die ersten Pings können ausfallen, während die Router Phase 1 und 2 aushandeln. Danach klappen sie (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "`show crypto isakmp sa` zeigt Phase 1 (Zustand `QM_IDLE`, wenn aufgebaut). `show crypto ipsec sa` zeigt Phase 2 mit den Zählern `#pkts encaps` und `#pkts decaps`. Nach jedem Ping steigen die Zähler (die Befehle sind im…"
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** *Simulation*, Filter auf *ICMP* und *ESP* (falls vorhanden), Ping von PC0 nach PC1. Beim ISP zeigen die Paketdetails ein ESP-Paket zwischen `203.0.113.1` und `198.51.100.2` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- Der Pre-shared Key steht in der Konfiguration; in der Praxis verschlüsselt man Schlüssel (`service password-encryption`, nicht bestätigt) und nutzt lange Zufallswerte."
+              },
+              {
+                "teil": "",
+                "text": "| `show version` | Technology Package License (securityk9) | Router → *Config* → *Settings* (nicht bestätigt) |"
+              },
+              {
+                "teil": "",
+                "text": "**Status (Schritt 10, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "06.4"
+          }
+        ],
         "skripte": [],
-        "geplant": "Standortkopplung, VPN."
+        "geplant": ""
       },
       {
         "nr": 7,
         "ordner": "07-ipv6",
         "titel": "IPv6",
         "beschreibung": "",
-        "einheiten": [],
+        "einheiten": [
+          {
+            "datei": "07.1-ipv6-adressen-verstehen-und-vergeben.md",
+            "titel": "IPv6-Adressen verstehen und vergeben",
+            "stufe": "Grundlage",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "IPv6-Adressen kürzen und wieder ausschreiben,",
+              "Global Unicast, Unique Local, Link-Local und Multicast anhand des Präfixes erkennen,",
+              "den Aufbau einer /64-Adresse (Präfix und Interface-ID) erklären,",
+              "eine Interface-ID per EUI-64 aus einer MAC-Adresse bilden,",
+              "auf Router und PCs IPv6-Adressen vergeben und mit `show ipv6 interface brief` prüfen,",
+              "Pings über IPv6 durchführen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Adressen kürzen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Adressen ausschreiben"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Adresstypen bestimmen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Interface-ID per EUI-64 bilden"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Router: IPv6 einschalten und Adresse vergeben"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Adressen am Router ansehen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "PCs: IPv6-Adressen einrichten"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Link-Local-Verkehr ausprobieren"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Globale Adresse nach EUI-64 vergeben"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Unique-Local-Adresse"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Welche zwei Regeln gelten beim Kürzen einer IPv6-Adresse?",
+              "Woran erkennst du eine Link-Local-, eine Unique-Local- und eine Global-Unicast-Adresse?",
+              "Wie viele Bits hat die Interface-ID in einem /64, und wie wird sie per EUI-64 gebildet?",
+              "Wozu braucht ein Router `ipv6 unicast-routing`?",
+              "Warum gibt es in IPv6 keinen Broadcast mehr?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config* → *GigabitEthernet0/0*: Im Bereich *IPv6 Address* die Adresse `2001:db8:1::1` und Präfix `64` eintragen (nicht bestätigt), *Port Status* *On*."
+              },
+              {
+                "teil": "",
+                "text": "`ipv6 unicast-routing` schaltet das IPv6-Routing ein (nötig, damit der Router Pakete weiterleitet und später Router Advertisements sendet). Der Befehl `ipv6 address … link-local` setzt die Link-Local-Adresse von Hand (i…"
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** *Add Simple PDU*: PC0 → PC1 (bei IPv6 nur mit Eingabe der Adresse möglich, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Ob Packet Tracer das ohne Angabe der Schnittstelle akzeptiert, ist offen (nicht bestätigt). Auf dem Router:"
+              },
+              {
+                "teil": "",
+                "text": "- Pings auf Link-Local-Adressen brauchen auf Routern die Angabe der Schnittstelle (`ping fe80::1`, dann fragt IOS nach dem Interface; nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Anzeige (Schritt 8, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "07.1"
+          },
+          {
+            "datei": "07.2-automatische-adressvergabe-slaac.md",
+            "titel": "Automatische Adressvergabe mit SLAAC",
+            "stufe": "Aufbau",
+            "zeit": "ca. 45–60 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, wie ein IPv6-Gerät ohne DHCP an eine globale Adresse kommt (SLAAC),",
+              "beschreiben, was ein Router Advertisement (RA) enthält und wer es sendet,",
+              "PCs auf automatische IPv6-Konfiguration stellen und das Ergebnis prüfen,",
+              "die erhaltene Adresse mit der Rechnung aus Übung 7.1 vergleichen,",
+              "das Default Gateway als Link-Local-Adresse des Routers erkennen,",
+              "SLAAC, zustandsloses DHCPv6 und zustandsbehaftetes DHCPv6 unterscheiden."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Router einrichten: ohne IPv6-Routing"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "PCs auf automatische Konfiguration stellen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "IPv6-Routing am Router einschalten"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Ergebnis am PC prüfen"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Adresse mit der Rechnung vergleichen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Nachbarn und Router am Router ansehen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Gegenprobe: Router Advertisements abschalten"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Router als Gateway abschalten und beobachten"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Welche Aufgabe hat das Router Advertisement?",
+              "Warum sendet ein Router ohne `ipv6 unicast-routing` keine RAs?",
+              "Aus welchen zwei Teilen besteht eine per SLAAC gebildete Adresse?",
+              "Welche Adresse tragen die PCs als Default Gateway ein, und warum?",
+              "Worin unterscheiden sich SLAAC, Stateless DHCPv6 und Stateful DHCPv6?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config* → *GigabitEthernet0/0*: IPv6-Adresse `2001:db8:1::1/64` (nicht bestätigt), *Port Status* *On*."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Jeder PC → *Desktop* → *IP Configuration*: im Bereich *IPv6 Configuration* *Auto Config* wählen (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Ohne `ipv6 unicast-routing` bekommen die PCs keine globale Adresse, weil der Router keine Router Advertisements sendet (nicht bestätigt). Sie haben nur eine Link-Local-Adresse (`FE80::…`)."
+              },
+              {
+                "teil": "",
+                "text": "Notiere für jeden PC: IPv6-Adresse (mit Präfix `2001:db8:1::`), Link-Local-Adresse, Default Gateway. Das Default Gateway ist `FE80::1`, die Link-Local-Adresse des Routers (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Bilde aus der MAC-Adresse von PC0 die EUI-64-Interface-ID (Übung 7.1) und vergleiche mit den hinteren 64 Bit der erhaltenen Adresse. Stimmen sie überein? (Packet Tracer bildet die Adresse in der Regel per EUI-64, nicht…"
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** *Add Simple PDU*: PC0 → PC1 (bei IPv6 nur mit Adresseingabe, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "`show ipv6 neighbors` zeigt die gelernten Adressen der PCs samt MAC-Adresse (ersetzt die ARP-Tabelle; nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Stelle die PCs neu auf *Auto Config* (oder starte sie neu). Neue PCs bekommen keine globale Adresse mehr (nicht bestätigt). Hebe die Unterdrückung mit `no ipv6 nd ra suppress` wieder auf."
+              },
+              {
+                "teil": "",
+                "text": "| `show ipv6 interface <Port>` | Multicast-Gruppen, ND-Daten, ggf. RA-Intervalle (nicht bestätigt) | – (nur CLI) |"
+              },
+              {
+                "teil": "",
+                "text": "- **DHCPv6:** Zustandsloses DHCPv6 mit DNS-Server testen (`ipv6 dhcp pool`, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Mit `ipv6 unicast-routing` (Schritt 6, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "07.2"
+          },
+          {
+            "datei": "07.3-statisches-ipv6-routing.md",
+            "titel": "Statisches IPv6-Routing",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–75 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "zwei IPv6-Netze über zwei Router verbinden,",
+              "statische IPv6-Routen mit Next-Hop-Adresse und mit Ausgangsschnittstelle schreiben,",
+              "eine IPv6-Default-Route (`::/0`) setzen,",
+              "`show ipv6 route` lesen,",
+              "erklären, warum IPv6-Routing ohne `ipv6 unicast-routing` nicht funktioniert und was bei einer Link-Local-Adresse als Next Hop zu beachten ist,",
+              "den Unterschied zu IPv4-Routing (Übung 3.1) nennen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "IPv6-Adressen auf den Routern"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Vorher testen: nur direkte Nachbarn"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Route von R1 zu LAN B (mit Next-Hop-Adresse)"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Route von R2 zu LAN A (mit Ausgangsschnittstelle)"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Alternativ: Route mit Next Hop und Schnittstelle"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Routen prüfen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Default-Route statt Einzelroute"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Gegenprobe: Route fehlt oder IPv6-Routing aus"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Wie sieht die IPv6-Default-Route aus, und wann setzt man sie?",
+              "Wozu braucht der Router `ipv6 unicast-routing`?",
+              "Welche drei Möglichkeiten gibt es, den Next Hop einer statischen IPv6-Route anzugeben?",
+              "Warum muss bei einer Link-Local-Adresse als Next Hop die Schnittstelle mit angegeben werden?",
+              "Was ist in `show ipv6 route` der Unterschied zwischen `C` und `L`?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "**2. Verkabeln:** Endgeräte und Switches mit *Copper Straight-Through* (PC0 → SW0 `Fa0/1`, SW0 `Fa0/2` → R1 `Gi0/0`, R2 `Gi0/1` → SW1 `Fa0/2`, SW1 `Fa0/1` → PC1), R1 `Gi0/1` ↔ R2 `Gi0/0` mit *Copper Cross-Over* (nicht b…"
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Router → *Config* → Interface: IPv6-Adresse und Präfix eintragen (nicht bestätigt), *Port Status* *On*."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** *Add Simple PDU*: PC0 → PC1 (IPv6-Adresse von PC1 eintragen, nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Statt der globalen Adresse kannst du auch die Link-Local-Adresse des Nachbarn verwenden. Dann musst du die Schnittstelle angeben: `ipv6 route 2001:db8:a::/64 gigabitethernet 0/0 fe80::1` (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Werkzeug *Inspect* → Router → *Routing Table* (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "`tracert` zeigt `2001:db8:a::1` (R1) und `2001:db8:12::2` (R2) bzw. die Link-Local-Adressen (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Floating Route:** Eine zweite Route mit höherer Administrative Distance (`ipv6 route … 250`) als Reserve (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Anzeige auf R1 (Schritt 9, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "07.3"
+          },
+          {
+            "datei": "07.4-ospfv3.md",
+            "titel": "OSPFv3",
+            "stufe": "Fortgeschritten",
+            "zeit": "ca. 75–90 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "erklären, was OSPFv3 ist und worin es sich von OSPFv2 unterscheidet,",
+              "OSPFv3 für IPv6 einrichten (Prozess, Router-ID, Aktivierung am Interface),",
+              "Nachbarschaften und gelernte Routen prüfen,",
+              "erklären, warum es bei OSPFv3 keine `network`-Anweisung gibt,",
+              "passive Interfaces und Kosten wie in OSPFv2 einsetzen,",
+              "typische Fehler (fehlende Router-ID, fehlendes `ipv6 unicast-routing`, falsche Area) erkennen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Interfaces und PCs einrichten"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Vorher testen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "OSPFv3 auf R1 einrichten"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "OSPFv3 auf R2 und R3"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Nachbarschaften prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Gelernte Routen ansehen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Verbindung testen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Protokollübersicht"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "LAN-Interfaces passiv setzen"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Kosten ändern"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Gegenprobe: Router-ID fehlt"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Gegenprobe: falsche Area"
+                  },
+                  {
+                    "nr": "15",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Welche Befehle ersetzen die `network`-Anweisung von OSPFv2?",
+              "Warum braucht OSPFv3 eine Router-ID im IPv4-Format?",
+              "Welche Adresse erscheint als Next Hop in den OSPFv3-Routen?",
+              "Was muss zwischen zwei Nachbarn übereinstimmen?",
+              "Welche Konzepte aus Übung 3.5/3.6 gelten unverändert?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "**2. Verkabeln:** Endgeräte und Switches mit *Copper Straight-Through* (PC0 → SW0 `Fa0/1`, SW0 `Fa0/2` → R1 `Gi0/0`, R3 `Gi0/1` → SW1 `Fa0/2`, SW1 `Fa0/1` → PC1), Router untereinander mit *Copper Cross-Over* (R1 `Gi0/1`…"
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** PCs → *Desktop* → *IP Configuration* → IPv6 *Static*. Router → *Config* → Interface (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **GUI:** Werkzeug *Inspect* → *Routing Table* (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Das LAN bleibt als Netz im OSPF-Gebiet erreichbar, sendet aber keine Hello-Pakete mehr (wie in Übung 3.6; nicht bestätigt für OSPFv3 in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "Die Kosten des Interfaces ändern sich; das Metrik der Routen steigt entsprechend (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "Ohne IPv4-Adresse findet der Router keine Router-ID und der Prozess startet nicht oder meldet einen Fehler (nicht bestätigt). Setze `router-id 3.3.3.3` und aktiviere die Interfaces (`ipv6 ospf 1 area 0`) erneut."
+              },
+              {
+                "teil": "",
+                "text": "**Nachbarn (Schritt 7, sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "**Routen (Schritt 8, sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "07.4"
+          }
+        ],
         "skripte": [],
         "geplant": ""
       },
@@ -867,7 +4342,373 @@
         "ordner": "08-fehlersuche",
         "titel": "Fehlersuche",
         "beschreibung": "",
-        "einheiten": [],
+        "einheiten": [
+          {
+            "datei": "08.1-vorgehen-bei-der-fehlersuche.md",
+            "titel": "Vorgehen bei der Fehlersuche",
+            "stufe": "Grundlage",
+            "zeit": "ca. 90–120 Minuten (Aufbau und Dialog)",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "ein Problem als Symptom beschreiben, ohne die Ursache schon zu behaupten,",
+              "die Fehlersuche systematisch nach Schichten eingrenzen (von der Leitung bis zur Anwendung),",
+              "zu jeder Schicht die passenden Prüfbefehle auswählen,",
+              "den **Soll-Zustand** eines Netzes dokumentieren, damit Abweichungen auffallen,",
+              "die Suche in einem Protokoll festhalten (Symptom, Vermutung, Test, Ergebnis, Maßnahme),",
+              "das **Referenznetz** aufbauen, das in den Übungen 8.2 bis 8.5 mit Störungen versehen wird."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Neues Projekt beginnen"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Verkabeln"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Switch SW0: VLANs, Access-Ports, Trunk"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Router R1: Subinterfaces und Verbindung zu R2"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Router R2"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "PCs konfigurieren"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Soll-Zustand prüfen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Messprotokoll „Soll“ ausfüllen"
+                  },
+                  {
+                    "nr": "9",
+                    "titel": "Störung 1: Kabel entfernen"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Störung 2: Schnittstelle abschalten"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Störung 3: falsche Maske am PC"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "Protokoll führen"
+                  },
+                  {
+                    "nr": "13",
+                    "titel": "Speichern"
+                  },
+                  {
+                    "nr": "14",
+                    "titel": "Ergebnisse besprechen"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum beschreibt man zuerst das Symptom und nicht die Ursache?",
+              "In welcher Reihenfolge prüft man bei Bottom-up?",
+              "Was sagt `ping` auf das Default Gateway aus, und was nicht?",
+              "Warum ändert man immer nur eine Sache zugleich?",
+              "Wozu dient der dokumentierte Soll-Zustand?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "**2. Verkabeln:** Endgeräte, Switches und Router–Switch mit *Copper Straight-Through* (PC0 → SW0 `Fa0/1`, PC1 → SW0 `Fa0/2`, SW0 `Gi0/1` → R1 `Gi0/0`, R2 `Gi0/1` → SW1 `Fa0/2`, SW1 `Fa0/1` → PC2); R1 `Gi0/1` ↔ R2 `Gi0/0…"
+              },
+              {
+                "teil": "",
+                "text": "**Soll-Zustand (Schritt 7/8):** Alle Pings klappen; `tracert` von PC0 zu PC2 zeigt `192.168.10.1`, `10.0.12.2`, `192.168.30.10` (nicht bestätigt: Darstellung in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "**Störung 2 (R2 `Gi0/0` aus):** R1 verliert die Verbindung zu R2. In `show ip route` auf R1 fehlt die statische Route zu `192.168.30.0/24` (der Next Hop ist nicht mehr über ein aktives Interface erreichbar; nicht bestät…"
+              }
+            ],
+            "nr": "08.1"
+          },
+          {
+            "datei": "08.2-fehler-in-der-adressierung.md",
+            "titel": "Fehler in der Adressierung",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–90 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "typische Adressierungsfehler (Gateway, Subnetzmaske, falsche Adresse am Router-Interface) an ihren Symptomen erkennen,",
+              "mit `ipconfig`, `ping` und `show ip interface brief` systematisch eingrenzen,",
+              "unterscheiden, ob ein Fehler im eigenen Netz, am Gateway oder dahinter liegt,",
+              "jeden Fund im Protokoll festhalten und den Soll-Zustand wiederherstellen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Vorbereitung"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Störung einbauen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Eingrenzen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Beheben und prüfen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Auswertung im Dialog"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Woran erkennst du einen falschen Gateway-Eintrag am PC?",
+              "Warum scheitert bei falscher Maske sogar der Ping zum Gateway?",
+              "Was ist die Mindestbedingung für zwei Router-Interfaces auf einer Strecke?",
+              "Welcher Befehl zeigt am schnellsten eine falsche Adresse am Router?",
+              "Wie trennst du „Fehler im eigenen Netz“ von „Fehler hinter dem Gateway“?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **Doppelte Adresse:** Zwei Geräte mit derselben Adresse im Netz konfigurieren und die Symptome beschreiben (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Beobachtungen (sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "- **D:** Die statische Route auf R1 zeigt auf `10.0.12.2`, das aber nicht im Netz von R1 `Gi0/1` liegt. Die Route kann nicht benutzt werden bzw. verschwindet aus der Tabelle (nicht bestätigt)."
+              }
+            ],
+            "nr": "08.2"
+          },
+          {
+            "datei": "08.3-fehler-bei-vlans-und-trunks.md",
+            "titel": "Fehler bei VLANs und Trunks",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–90 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "typische VLAN- und Trunk-Fehler an ihren Symptomen erkennen (falsches Access-VLAN, nicht erlaubtes VLAN auf dem Trunk, Trunk-Port im falschen Modus, falsche VLAN-ID im Subinterface),",
+              "mit `show vlan brief` und `show interfaces trunk` systematisch prüfen,",
+              "zwischen Fehlern am Switch und am Router unterscheiden,",
+              "Befunde protokollieren und den Soll-Zustand wiederherstellen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Vorbereitung"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Störung einbauen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Eingrenzen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Beheben und prüfen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Auswertung im Dialog"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Woran erkennst du ein falsch zugeordnetes Access-VLAN?",
+              "Was zeigt `show interfaces trunk` bei einem eingeschränkten Trunk?",
+              "Warum fallen bei Störung C beide VLANs aus?",
+              "Wie wirkt sich eine falsche VLAN-ID im Subinterface aus?",
+              "Welche Befehle trennen Switch-Fehler von Router-Fehlern?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- Das Native VLAN sollte auf beiden Seiten gleich sein (Abweichung führt zu CDP-Hinweisen und seltsamen Effekten; nicht bestätigt in Packet Tracer)."
+              },
+              {
+                "teil": "",
+                "text": "- **Native-VLAN-Konflikt:** Auf SW0 `switchport trunk native vlan 99` setzen, auf R1 nicht, und beobachten (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "- **Fehlendes VLAN:** Das VLAN 20 auf SW0 löschen und die Folgen beschreiben (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Beobachtungen (sinngemäß, nicht bestätigt):**"
+              }
+            ],
+            "nr": "08.3"
+          },
+          {
+            "datei": "08.4-fehler-im-routing.md",
+            "titel": "Fehler im Routing",
+            "stufe": "Aufbau",
+            "zeit": "ca. 60–90 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "typische Routingfehler erkennen (fehlende Rückroute, falscher Next Hop, deaktivierte Schnittstelle, Tippfehler in der Zielnetzadresse),",
+              "mit `show ip route`, `show ip interface brief` und `tracert` die Stelle des Abbruchs eingrenzen,",
+              "die Rolle der **Rückroute** erklären: Ein Ping braucht den Weg hin **und** zurück,",
+              "Befunde protokollieren und den Soll-Zustand wiederherstellen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Vorbereitung"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Störung einbauen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Eingrenzen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Beheben und prüfen"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Auswertung im Dialog"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum kann ein Ping scheitern, obwohl die Hinroute stimmt?",
+              "Woran erkennst du `shutdown` an einem Router-Interface?",
+              "Was zeigt `show ip route`, wenn der Next Hop nicht erreichbar ist?",
+              "Wie hilft `tracert` bei der Eingrenzung?",
+              "Wie entfernst du eine falsche statische Route?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "",
+                "text": "- **Falsche Maske in der Route:** Route mit falscher Maske eintragen und das Symptom beschreiben (nicht bestätigt)."
+              },
+              {
+                "teil": "",
+                "text": "**Beobachtungen (sinngemäß, nicht bestätigt):**"
+              },
+              {
+                "teil": "",
+                "text": "3. Die Route kann zwar in der Tabelle stehen, wird aber nicht zur Zustellung genutzt (genaue Anzeige in Packet Tracer nicht bestätigt)."
+              }
+            ],
+            "nr": "08.4"
+          },
+          {
+            "datei": "08.5-gesamtnetz-mit-mehreren-fehlern.md",
+            "titel": "Gesamtnetz mit mehreren Fehlern",
+            "stufe": "Fortgeschritten",
+            "zeit": "ca. 90–120 Minuten",
+            "werkzeuge": "Cisco Packet Tracer",
+            "voraussetzungen": [],
+            "lernziele": [
+              "ein Netz mit **mehreren gleichzeitigen** Fehlern systematisch untersuchen,",
+              "Fehler voneinander trennen, auch wenn sich ihre Symptome überlagern,",
+              "die Behebung in sinnvoller Reihenfolge durchführen (Schicht 1 → 2 → 3) und nach jeder Korrektur neu messen,",
+              "ein vollständiges Fehlerprotokoll führen."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Aufgabe",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "Vorbereitung"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "Störungen einbauen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Systematisch untersuchen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Beheben"
+                  },
+                  {
+                    "nr": "5",
+                    "titel": "Auswertung im Dialog"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Speichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum behebst du immer nur eine Ursache auf einmal?",
+              "Wie kann ein Fehler einen anderen verdecken?",
+              "In welcher Reihenfolge prüfst du die Schichten?",
+              "Wozu dient die Messmatrix?",
+              "Woran erkennst du, dass die Fehlersuche abgeschlossen ist?"
+            ],
+            "nicht_bestaetigt": [],
+            "nr": "08.5"
+          }
+        ],
         "skripte": [],
         "geplant": ""
       }
@@ -1721,6 +5562,197 @@
           {
             "datei": "01.1-offsite-kopie.sh",
             "zweck": "Kopie auf ein zweites Laufwerk, mit Schutz vor falschem Ziel und laufenden Backups"
+          }
+        ],
+        "geplant": ""
+      },
+      {
+        "nr": 2,
+        "ordner": "02-monitoring-mit-prtg",
+        "titel": "Monitoring mit PRTG",
+        "beschreibung": "",
+        "einheiten": [
+          {
+            "datei": "02.1-monitoring-der-backup-umgebung-mit-prtg.md",
+            "titel": "Monitoring der Backup-Umgebung mit PRTG",
+            "stufe": "Aufbau",
+            "zeit": "4 bis 5 Stunden (Schätzung)",
+            "werkzeuge": "PRTG Network Monitor (Freeware), Hyper-V, Windows Server, Debian, PowerShell, Bash",
+            "voraussetzungen": [
+              "Die Umgebung aus Übung 01.1 läuft: `DC01`, `FS01`, `VBR01`, `NAS01` im privaten Switch `vSwitch-Backup-Uebung` (10.99.0.0/24). Die Sicherung auf `NAS01` hat mindestens einmal funktioniert.",
+              "Eine fünfte VM **PRTG01** (Windows Server, 2 vCPU, 4 GB RAM, 60 GB Platte) im selben Switch.",
+              "Ein Konto mit Domänenadministrator-Rechten für die Einrichtung (nur dafür).",
+              "PRTG von Paessler. Die Testversion läuft 30 Tage und wird danach automatisch zur Freeware mit bis zu 100 Sensoren (Quelle: Paessler-Handbuch „Available Licenses“). Die Freeware gibt es laut Handbuch nur, wenn zuerst die…"
+            ],
+            "lernziele": [
+              "einen PRTG-Server planvoll aufbauen: Gerätebaum, Vererbung der Zugangsdaten, überschaubare Sensorzahl,",
+              "einen Windows-Server mit einem Dienstkonto ohne Administratorrechte per WMI überwachen,",
+              "einen Linux-Server per SNMPv3 und SSH überwachen,",
+              "mit einem eigenen Sensor prüfen, ob die Veeam-Sicherung **wirklich** aktuell ist, unabhängig von der Erfolgsmeldung in Veeam,",
+              "Ausfälle im Labor auslösen und das Verhalten der Alarme beurteilen (Abhängigkeiten, Grenzwerte),",
+              "den Überwachungsserver selbst absichern und sichern."
+            ],
+            "teile": [
+              {
+                "nr": 1,
+                "titel": "Server und Struktur",
+                "schritte": [
+                  {
+                    "nr": "1",
+                    "titel": "PRTG01 vorbereiten"
+                  },
+                  {
+                    "nr": "2",
+                    "titel": "PRTG installieren, Erst-Scan abbrechen"
+                  },
+                  {
+                    "nr": "3",
+                    "titel": "Dienstkonto für WMI anlegen"
+                  },
+                  {
+                    "nr": "4",
+                    "titel": "Gerätebaum und Zugangsdaten auf Gruppenebene"
+                  }
+                ]
+              },
+              {
+                "nr": 2,
+                "titel": "Geräte anbinden",
+                "schritte": [
+                  {
+                    "nr": "5",
+                    "titel": "NAS01 für SNMPv3 und SSH vorbereiten"
+                  },
+                  {
+                    "nr": "6",
+                    "titel": "Sensoren planen, bevor man sie anlegt"
+                  },
+                  {
+                    "nr": "7",
+                    "titel": "Sensoren anlegen"
+                  },
+                  {
+                    "nr": "8",
+                    "titel": "Prüfen, ob die Werte ankommen"
+                  }
+                ]
+              },
+              {
+                "nr": 3,
+                "titel": "Eigener Sensor, Ausfälle, Betrieb",
+                "schritte": [
+                  {
+                    "nr": "9",
+                    "titel": "Sensor „Alter neueste Sicherung“ (Linux, SSH Script Advanced)"
+                  },
+                  {
+                    "nr": "10",
+                    "titel": "Ausfälle auslösen"
+                  },
+                  {
+                    "nr": "11",
+                    "titel": "Abhängigkeit einrichten"
+                  },
+                  {
+                    "nr": "12",
+                    "titel": "PRTG01 absichern und sichern"
+                  }
+                ]
+              }
+            ],
+            "kontrollfragen": [
+              "Warum stehen die Zugangsdaten auf der Gruppe und nicht am Gerät?",
+              "Warum bekommt das WMI-Konto keine Administratorrechte, und was braucht es stattdessen?",
+              "Warum reicht die Erfolgsmeldung von Veeam nicht aus?",
+              "Wann wendet PRTG die Grenzwerte aus dem Skript an, und was folgt daraus?",
+              "Was unterscheidet einen Alarm mit Abhängigkeit von einem ohne?",
+              "Warum steht in der Sensorplanung eine Summe, obwohl das Limit weit entfernt ist?"
+            ],
+            "nicht_bestaetigt": [
+              {
+                "teil": "Teil 1: Server und Struktur",
+                "text": "- **GUI:** Testversion auf PRTG01 herunterladen und mit Administratorrechten installieren. Nach der Installation bietet das Programm eine automatische Suche im Netz an (nicht bestätigt, wie der Dialog heißt). **Brich si…"
+              },
+              {
+                "teil": "Teil 1: Server und Struktur",
+                "text": "**WMI-Namespace-Recht (nicht bestätigt):** Die Gruppenmitgliedschaft reicht nach meiner Kenntnis nicht allein. Auf jedem überwachten Windows-Server: `wmimgmt.msc` → Rechtsklick *WMI-Steuerung* → *Eigenschaften* → *Siche…"
+              },
+              {
+                "teil": "Teil 1: Server und Struktur",
+                "text": "- **GUI:** In PRTG eine Gruppe `Standort Wien` anlegen, darunter `Backup-Labor`. Unter `Backup-Labor` die vier Geräte anlegen (`DC01`, `FS01`, `VBR01`, `NAS01`, jeweils mit IP-Adresse). Dann in den **Einstellungen der G…"
+              },
+              {
+                "teil": "Teil 2: Geräte anbinden",
+                "text": "Das Skript fragt zwei Kennwörter (SHA, AES, mindestens 8 Zeichen) und das Anmeldekennwort für `prtgmon`. Es setzt außerdem `agentaddress udp:161`. Ohne diese Zeile hört `snmpd` in der Debian-Grundeinstellung nach meiner…"
+              },
+              {
+                "teil": "Teil 2: Geräte anbinden",
+                "text": "Erwartet (sinngemäß): Die Zeile `SNMPv2-MIB::sysDescr.0 = STRING: Linux NAS01 ...`. Die Kennwörter stehen hier in der Befehlszeile und in der Verlaufsdatei der Shell. Das ist in der Übung hinnehmbar, in der Praxis nicht."
+              },
+              {
+                "teil": "Teil 2: Geräte anbinden",
+                "text": "| Gerät | Sensor (Name sinngemäß) | Anzahl |"
+              },
+              {
+                "teil": "Teil 2: Geräte anbinden",
+                "text": "Der Dienstname des Veeam-Dienstes ist *nicht bestätigt*. Lies ihn in `services.msc` auf `VBR01` ab, bevor du den Sensor anlegst. 18 von 100 Sensoren bleiben weit unter dem Limit, so ist Platz für Erweiterungen."
+              },
+              {
+                "teil": "Teil 2: Geräte anbinden",
+                "text": "- **GUI:** Pro Gerät: Rechtsklick → *Sensor hinzufügen* → die Sensortypen aus der Tabelle (Namen sinngemäß: *Ping*, *WMI CPU Load*, *WMI Memory*, *WMI Free Disk Space*, *Windows Service* bzw. *WMI Service*, *SNMP System…"
+              },
+              {
+                "teil": "Teil 2: Geräte anbinden",
+                "text": "Nach 1 bis 2 Minuten müssen alle Sensoren grün sein und Werte zeigen. Bei einem WMI-Fehler (Zugriff verweigert) zuerst das WMI-Namespace-Recht aus Schritt 3 prüfen, dann die Windows-Firewall auf dem Ziel (Regeln für „Wi…"
+              },
+              {
+                "teil": "Teil 3: Eigener Sensor, Ausfälle, Betrieb",
+                "text": "Erwartet (sinngemäß):"
+              },
+              {
+                "teil": "Teil 3: Eigener Sensor, Ausfälle, Betrieb",
+                "text": "*Variante für Windows (EXE/Script Advanced):* `02.1-prtg-backup-alter.ps1` liefert dieselbe Ausgabe und gehört in den Ordner `Custom Sensors\\EXEXML` des PRTG-Programmordners. Es läuft auf dem **PRTG-Server**, nicht auf…"
+              },
+              {
+                "teil": "Teil 3: Eigener Sensor, Ausfälle, Betrieb",
+                "text": "| Fall | So auslösen | Erwartung (sinngemäß) |"
+              },
+              {
+                "teil": "Teil 3: Eigener Sensor, Ausfälle, Betrieb",
+                "text": "- **GUI:** Am Gerät `NAS01` den Ping-Sensor als „Hauptsensor für die Abhängigkeit“ (nicht bestätigt, wie die Einstellung heißt) festlegen. Wiederhole Schritt 10, Netzausfall: Die übrigen Sensoren von `NAS01` sollen paus…"
+              },
+              {
+                "teil": "Teil 3: Eigener Sensor, Ausfälle, Betrieb",
+                "text": "Der Standard-HTTP-Port 80 gehört deaktiviert oder auf HTTPS umgeleitet (nicht bestätigt, wo das in PRTG einzustellen ist)."
+              },
+              {
+                "teil": "Teil 3: Eigener Sensor, Ausfälle, Betrieb",
+                "text": "- Nimm `PRTG01` in den Sicherungsjob aus Übung 01.1 auf. Die PRTG-Konfiguration liegt im Datenordner, standardmäßig unter `%ProgramData%\\Paessler\\PRTG Network Monitor` (nicht bestätigt). Sie enthält Zugangsdaten, also n…"
+              }
+            ],
+            "nr": "02.1"
+          }
+        ],
+        "skripte": [
+          {
+            "datei": "02.1-monitoring-benutzer.ps1",
+            "zweck": "Dienstkonto für WMI ohne Administratorrechte (Active Directory, `-WhatIf` möglich)"
+          },
+          {
+            "datei": "02.1-snmp-auf-nas.sh",
+            "zweck": "NAS-VM: SNMPv3-Benutzer, Konto für SSH-Sensoren (nur lesen), Ordner für eigene Sensoren"
+          },
+          {
+            "datei": "02.1-prtg-backup-alter.sh",
+            "zweck": "Eigener PRTG-Sensor (SSH Script Advanced): Alter der neuesten Sicherungsdatei"
+          },
+          {
+            "datei": "02.1-prtg-backup-alter.ps1",
+            "zweck": "Derselbe Sensor für Windows (EXE/Script Advanced)"
+          },
+          {
+            "datei": "02.1-ausfall-test.ps1",
+            "zweck": "Netzausfall einer VM simulieren, Adapter wird immer wieder verbunden (auf dem Hyper-V-Host)"
           }
         ],
         "geplant": ""

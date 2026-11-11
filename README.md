@@ -134,10 +134,10 @@ Eigene Übungsreihen, die nicht aus einem Lehrplan-Skript stammen: Homelab, Netz
 | Nr | Übung | Thema | Module | Einheiten | Repository |
 |---|---|---|---|---|---|
 | [E01](uebungen/E01-multi-site-hybrid-cloud-ai-sec-lab.md) | Multi-Site Hybrid Cloud & AI-Sec Operations | Homelab und Betrieb | 14 | 92 | [it-betrieb-uebungen/homelab-multi-site](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/homelab-multi-site) |
-| [E02](uebungen/E02-netzwerk-packet-tracer.md) | Netzwerktechnik mit Cisco Packet Tracer | Netzwerk | 8 | 1 | [netzwerk-und-firewall-uebungen/packet-tracer](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/packet-tracer) |
+| [E02](uebungen/E02-netzwerk-packet-tracer.md) | Netzwerktechnik mit Cisco Packet Tracer | Netzwerk | 8 | 37 | [netzwerk-und-firewall-uebungen/packet-tracer](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/packet-tracer) |
 | [E03](uebungen/E03-benutzerverwaltung-active-directory.md) | Benutzerverwaltung im Active Directory | Windows und Active Directory | 1 | 1 | [windows-server-uebungen/ad-benutzerverwaltung](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/ad-benutzerverwaltung) |
 | [E04](uebungen/E04-wlan-gaestenetz.md) | WLAN und Gästenetz | Netzwerk | 2 | 2 | [netzwerk-und-firewall-uebungen/wlan-gaestenetz](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/wlan-gaestenetz) |
-| [E05](uebungen/E05-backup-nas-veeam.md) | Backup auf NAS mit Veeam | Homelab und Betrieb | 1 | 1 | [storage-backup-uebungen/veeam-nas](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/veeam-nas) |
+| [E05](uebungen/E05-backup-nas-veeam.md) | Backup auf NAS mit Veeam | Homelab und Betrieb | 2 | 2 | [storage-backup-uebungen/veeam-nas](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/veeam-nas) |
 | [E06](uebungen/E06-geordnetes-herunterfahren-ohne-usv.md) | Geordnetes Herunterfahren ohne USV | Homelab und Betrieb | 1 | 1 | [it-betrieb-uebungen/usv-shutdown](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/usv-shutdown) |
 <!-- UEBUNGEN-ENDE -->
 
