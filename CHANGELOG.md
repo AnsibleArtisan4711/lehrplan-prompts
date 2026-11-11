@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-12 (Kurs P71 DHCP)
+
+- Neu: Kurs P71 „DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea)“ in `daten/kurse.json` (Priorität A, Gruppe Netzwerkdienste und Firewall, Repository `netzwerkdienste-uebungen`, Status Lehrplan erstellt) mit Prompt `prompts/P71-dhcp-grundlagen-und-betrieb.md` und Lehrplan `lehrplaene/P71-dhcp-grundlagen-und-betrieb.md` (12 Module, 116 UE; 10 Module Priorität 1 mit 96 UE, 2 Module Priorität 2 mit 20 UE).
+- Kennzeichnung der Herkunft: Der Lehrplan ist **nicht** aus dem Prompt über die Gem entstanden, sondern direkt von Claude nach dem Aufbau der Grundanweisung geschrieben. Der Prompt wurde nachträglich der Vollständigkeit halber erzeugt. Die DHCP-Lücke ergab sich aus der Auswertung der Excel-Lehrpläne (2026-11-12): Ein eigener DHCP-Lehrplan lag nicht vor.
+- Offen: Der Lehrplan ist von mir noch nicht geprüft. Die RFC-Adressen wurden nicht abgerufen (als „nicht geprüft“ markiert); Befehlsparameter, Paketnamen und Pfade sind an den betroffenen Stellen als „nicht bestätigt“ gekennzeichnet; die aktuell unterstützte Kea-Version ist vor dem Einsatz zu prüfen. Nichts davon wurde im Labor ausgeführt.
+- README-Tabelle und Zähler (71 Kurse) wurden mit `python tools/build_prompts.py` erzeugt. Die übrigen Kurse P01 bis P70 sind unverändert.
+
 ## 2026-11-11 (Themen-Repositories für die Kurse)
 
 - Neu: Felder `repo` (Themen-Repository, bei allen 70 Kursen) und `ordner` (Kursordner, nur bei gepushten Kursen) in `daten/kurse.json`. Die Zuordnung folgt dem Plan mit 14 Themen-Repositories; offen sind P47 bis P49 (vorläufig `it-betrieb-uebungen`) und die Trennung von Firewall und VPN.
