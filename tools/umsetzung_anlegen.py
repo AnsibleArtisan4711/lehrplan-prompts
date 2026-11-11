@@ -289,7 +289,7 @@ def lade_fach(kid):
 def quelle_fach(fach):
     z = "`faecher/%s-%s.md` im Repository `lehrplan-prompts`" % (fach["id"], fach["slug"])
     if fach["repo"]:
-        z += ", Übungsmaterial im Repository `%s`" % fach["repo"]
+        z += ", Übungsmaterial im Repository `%s`" % (fach["repo"] + ("/" + fach["ordner"] if fach.get("ordner") else ""))
     return z
 
 
@@ -402,7 +402,7 @@ def lade_reihe(eid):
 
 
 def quelle_reihe(r):
-    return "`uebungen/%s-%s.md` im Repository `lehrplan-prompts`, Material im Repository `%s`" % (r["id"], r["slug"], r["repo"])
+    return "`uebungen/%s-%s.md` im Repository `lehrplan-prompts`, Material im Repository `%s`" % (r["id"], r["slug"], r["repo"] + ("/" + r["ordner"] if r.get("ordner") else ""))
 
 
 def mit_material(r):
@@ -573,7 +573,7 @@ def main_reihe(eid, ziel_basis):
     zeilen = ["- [ ] Alle Modulchecklisten abgehakt"]
     if any(e.get("nicht_bestaetigt") for m in r["module"] for e in m["einheiten"]):
         zeilen.append("- [ ] `../befehle-nicht-bestaetigt.md` vollständig ausgefüllt")
-    zeilen += ["- [ ] Korrekturen an der Anleitung in `lehrplan-korrekturen.md` gesammelt und im Repository `%s` eingearbeitet" % r["repo"],
+    zeilen += ["- [ ] Korrekturen an der Anleitung in `lehrplan-korrekturen.md` gesammelt und im Repository `%s` eingearbeitet" % (r["repo"] + ("/" + r["ordner"] if r.get("ordner") else "")),
                "- [ ] Screenshots und Ausgaben auf Kennwörter, Schlüssel, echte Namen und Domains geprüft"]
     if r["art"] == "steps":
         zeilen.append("- [ ] Lebenslauf: nur real Umgesetztes als umgesetzt nennen, den Rest als geplant (siehe Protokolle)")

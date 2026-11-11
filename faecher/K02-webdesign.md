@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Web
 - Umfang: 21 Module, ca. 294,5 Stunden
 - Voraussetzung / Empfehlung: keine
-- Übungsmaterial: [webdesign-uebungen](https://github.com/AnsibleArtisan4711/webdesign-uebungen)
+- Übungsmaterial: [web-uebungen/webdesign](https://github.com/AnsibleArtisan4711/web-uebungen/tree/main/webdesign)
 
 ## Module
 

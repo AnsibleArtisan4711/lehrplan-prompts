@@ -3,7 +3,7 @@
 - Typ: Erweiterung, Bereich: Cloud, Doku & Business
 - Umfang: 12 Module, ca. 106 Stunden
 - Voraussetzung / Empfehlung: keine
-- Übungsmaterial: [aws-cloud-practitioner-uebungen](https://github.com/AnsibleArtisan4711/aws-cloud-practitioner-uebungen)
+- Übungsmaterial: [cloud-identitaet-uebungen/aws-cloud-practitioner](https://github.com/AnsibleArtisan4711/cloud-identitaet-uebungen/tree/main/aws-cloud-practitioner)
 
 ## Module
 

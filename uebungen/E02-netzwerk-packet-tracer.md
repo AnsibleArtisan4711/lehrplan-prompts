@@ -1,7 +1,7 @@
 # E02 – Netzwerktechnik mit Cisco Packet Tracer
 
 - Thema: Netzwerk
-- Repository: [netzwerk-uebungen-packet-tracer](https://github.com/AnsibleArtisan4711/netzwerk-uebungen-packet-tracer)
+- Repository: [netzwerk-und-firewall-uebungen/packet-tracer](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/packet-tracer)
 - Umfang: 8 Module, davon 1 mit Material; 1 Einheiten
 
 ## Modul 1: Grundlagen

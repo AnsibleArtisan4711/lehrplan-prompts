@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Cloud, Doku & Business
 - Umfang: 17 Module, ca. 191,75 Stunden
 - Voraussetzung / Empfehlung: keine
-- Übungsmaterial: [technische-dokumentation-uebungen](https://github.com/AnsibleArtisan4711/technische-dokumentation-uebungen)
+- Übungsmaterial: [it-betrieb-uebungen/technische-dokumentation](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/technische-dokumentation)
 
 ## Module
 

@@ -1,7 +1,7 @@
 # E04 – WLAN und Gästenetz
 
 - Thema: Netzwerk
-- Repository: [wlan-gaeste-netz-uebung](https://github.com/AnsibleArtisan4711/wlan-gaeste-netz-uebung)
+- Repository: [netzwerk-und-firewall-uebungen/wlan-gaestenetz](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/wlan-gaestenetz)
 - Umfang: 2 Module, davon 2 mit Material; 2 Einheiten
 
 ## Modul 1: Packet Tracer

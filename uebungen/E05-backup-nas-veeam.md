@@ -1,7 +1,7 @@
 # E05 – Backup auf NAS mit Veeam
 
 - Thema: Homelab und Betrieb
-- Repository: [veeam-backup-uebung](https://github.com/AnsibleArtisan4711/veeam-backup-uebung)
+- Repository: [storage-backup-uebungen/veeam-nas](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/veeam-nas)
 - Umfang: 1 Module, davon 1 mit Material; 1 Einheiten
 
 ## Modul 1: Backup und Restore

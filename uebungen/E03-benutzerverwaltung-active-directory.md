@@ -1,7 +1,7 @@
 # E03 – Benutzerverwaltung im Active Directory
 
 - Thema: Windows und Active Directory
-- Repository: [ad-uebungen-benutzerverwaltung](https://github.com/AnsibleArtisan4711/ad-uebungen-benutzerverwaltung)
+- Repository: [windows-server-uebungen/ad-benutzerverwaltung](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/ad-benutzerverwaltung)
 - Umfang: 1 Module, davon 1 mit Material; 1 Einheiten
 
 ## Modul 1: Benutzerverwaltung

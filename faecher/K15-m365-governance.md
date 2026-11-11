@@ -3,7 +3,7 @@
 - Typ: Erweiterung, Bereich: Windows & Microsoft
 - Umfang: 12 Module, ca. 109 Stunden
 - Voraussetzung / Empfehlung: Active Directory (empfohlen)
-- Übungsmaterial: [m365-governance-uebungen](https://github.com/AnsibleArtisan4711/m365-governance-uebungen)
+- Übungsmaterial: [cloud-identitaet-uebungen/m365-governance](https://github.com/AnsibleArtisan4711/cloud-identitaet-uebungen/tree/main/m365-governance)
 
 ## Module
 

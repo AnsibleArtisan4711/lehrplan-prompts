@@ -1,7 +1,7 @@
 # E01 – Multi-Site Hybrid Cloud & AI-Sec Operations
 
 - Thema: Homelab und Betrieb
-- Repository: [multi-site-hybrid-cloud-ai-sec-lab](https://github.com/AnsibleArtisan4711/multi-site-hybrid-cloud-ai-sec-lab)
+- Repository: [it-betrieb-uebungen/homelab-multi-site](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/homelab-multi-site)
 - Umfang: 14 Module, davon 14 mit Material; 92 Einheiten
 
 ## Modul 0: Mission Control (Strategie & Architektur)

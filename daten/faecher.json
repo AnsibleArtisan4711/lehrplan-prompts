@@ -7,7 +7,8 @@
     "bereich": "Fundament",
     "voraussetzung": "",
     "stunden": 96,
-    "repo": "linux-essentials-uebungen",
+    "repo": "linux-uebungen",
+    "ordner": "linux-essentials",
     "module": [
       {
         "nr": 1,
@@ -79,7 +80,8 @@
     "bereich": "Web",
     "voraussetzung": "",
     "stunden": 294.5,
-    "repo": "webdesign-uebungen",
+    "repo": "web-uebungen",
+    "ordner": "webdesign",
     "module": [
       {
         "nr": 1,
@@ -196,7 +198,8 @@
     "bereich": "Daten & Office",
     "voraussetzung": "Empfehlung: Office-Grundlagen (MOS, Erweiterung)",
     "stunden": 105,
-    "repo": "microsoft-excel-expert-uebungen",
+    "repo": "office-uebungen",
+    "ordner": "excel-expert",
     "module": [
       {
         "nr": 1,
@@ -268,7 +271,8 @@
     "bereich": "Scripting & Automatisierung",
     "voraussetzung": "Linux Essentials",
     "stunden": 124,
-    "repo": "bash-uebungen",
+    "repo": "automatisierung-uebungen",
+    "ordner": "bash",
     "module": [
       {
         "nr": 1,
@@ -340,7 +344,8 @@
     "bereich": "Cloud, Doku & Business",
     "voraussetzung": "",
     "stunden": 191.75,
-    "repo": "technische-dokumentation-uebungen",
+    "repo": "it-betrieb-uebungen",
+    "ordner": "technische-dokumentation",
     "module": [
       {
         "nr": 1,
@@ -437,7 +442,8 @@
     "bereich": "Windows & Microsoft",
     "voraussetzung": "",
     "stunden": 134,
-    "repo": "active-directory-uebungen",
+    "repo": "windows-server-uebungen",
+    "ordner": "active-directory",
     "module": [
       {
         "nr": 1,
@@ -509,7 +515,8 @@
     "bereich": "Scripting & Automatisierung",
     "voraussetzung": "Bash",
     "stunden": 150,
-    "repo": "python-automatisierung-uebungen",
+    "repo": "automatisierung-uebungen",
+    "ordner": "python-automatisierung",
     "module": [
       {
         "nr": 1,
@@ -596,7 +603,8 @@
     "bereich": "Scripting & Automatisierung",
     "voraussetzung": "Bash",
     "stunden": 126,
-    "repo": "git-versionskontrolle-uebungen",
+    "repo": "automatisierung-uebungen",
+    "ordner": "git-versionskontrolle",
     "module": [
       {
         "nr": 1,
@@ -668,7 +676,8 @@
     "bereich": "Windows & Microsoft",
     "voraussetzung": "Bash",
     "stunden": 126,
-    "repo": "powershell-uebungen",
+    "repo": "automatisierung-uebungen",
+    "ordner": "powershell",
     "module": [
       {
         "nr": 1,
@@ -740,7 +749,8 @@
     "bereich": "Fundament",
     "voraussetzung": "",
     "stunden": 100,
-    "repo": "microsoft-office-specialist-associate-uebungen",
+    "repo": "office-uebungen",
+    "ordner": "office-specialist-associate",
     "module": [
       {
         "nr": 1,
@@ -812,7 +822,8 @@
     "bereich": "Fundament",
     "voraussetzung": "",
     "stunden": 87,
-    "repo": "comptia-tech-itf-uebungen",
+    "repo": "client-hardware-uebungen",
+    "ordner": "comptia-tech-itf",
     "module": [
       {
         "nr": 1,
@@ -884,7 +895,8 @@
     "bereich": "Cloud, Doku & Business",
     "voraussetzung": "",
     "stunden": 106,
-    "repo": "aws-cloud-practitioner-uebungen",
+    "repo": "cloud-identitaet-uebungen",
+    "ordner": "aws-cloud-practitioner",
     "module": [
       {
         "nr": 1,
@@ -956,7 +968,8 @@
     "bereich": "Web",
     "voraussetzung": "Webdesign, Linux Essentials",
     "stunden": 165.5,
-    "repo": "webserver-uebungen",
+    "repo": "web-uebungen",
+    "ordner": "webserver",
     "module": [
       {
         "nr": 1,
@@ -1038,7 +1051,8 @@
     "bereich": "Windows & Microsoft",
     "voraussetzung": "Active Directory",
     "stunden": 100,
-    "repo": "100-gruppenrichtlinien-uebungen",
+    "repo": "windows-server-uebungen",
+    "ordner": "gruppenrichtlinien",
     "module": [
       {
         "nr": 1,
@@ -1100,7 +1114,8 @@
     "bereich": "Windows & Microsoft",
     "voraussetzung": "Active Directory (empfohlen)",
     "stunden": 109,
-    "repo": "m365-governance-uebungen",
+    "repo": "cloud-identitaet-uebungen",
+    "ordner": "m365-governance",
     "module": [
       {
         "nr": 1,
@@ -1172,7 +1187,8 @@
     "bereich": "Cloud, Doku & Business",
     "voraussetzung": "",
     "stunden": 110,
-    "repo": "unternehmensgruendung-uebungen",
+    "repo": "it-betrieb-uebungen",
+    "ordner": "unternehmensgruendung",
     "module": [
       {
         "nr": 1,

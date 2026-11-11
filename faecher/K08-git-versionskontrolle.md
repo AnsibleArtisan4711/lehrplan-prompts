@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Scripting & Automatisierung
 - Umfang: 12 Module, ca. 126 Stunden
 - Voraussetzung / Empfehlung: Bash
-- Übungsmaterial: [git-versionskontrolle-uebungen](https://github.com/AnsibleArtisan4711/git-versionskontrolle-uebungen)
+- Übungsmaterial: [automatisierung-uebungen/git-versionskontrolle](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/git-versionskontrolle)
 
 ## Module
 

@@ -1,7 +1,7 @@
 # E06 – Geordnetes Herunterfahren ohne USV
 
 - Thema: Homelab und Betrieb
-- Repository: [usv-shutdown-uebung](https://github.com/AnsibleArtisan4711/usv-shutdown-uebung)
+- Repository: [it-betrieb-uebungen/usv-shutdown](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/usv-shutdown)
 - Umfang: 1 Module, davon 1 mit Material; 1 Einheiten
 
 ## Modul 1: Geordnetes Herunterfahren

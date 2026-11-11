@@ -3,7 +3,7 @@
 - Typ: Erweiterung, Bereich: Fundament
 - Umfang: 12 Module, ca. 87 Stunden
 - Voraussetzung / Empfehlung: keine
-- Übungsmaterial: [comptia-tech-itf-uebungen](https://github.com/AnsibleArtisan4711/comptia-tech-itf-uebungen)
+- Übungsmaterial: [client-hardware-uebungen/comptia-tech-itf](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/comptia-tech-itf)
 
 ## Module
 

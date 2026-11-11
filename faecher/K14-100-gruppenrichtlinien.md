@@ -3,7 +3,7 @@
 - Typ: Erweiterung, Bereich: Windows & Microsoft
 - Umfang: 10 Module, ca. 100 Stunden
 - Voraussetzung / Empfehlung: Active Directory
-- Übungsmaterial: [100-gruppenrichtlinien-uebungen](https://github.com/AnsibleArtisan4711/100-gruppenrichtlinien-uebungen)
+- Übungsmaterial: [windows-server-uebungen/gruppenrichtlinien](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/gruppenrichtlinien)
 
 ## Module
 

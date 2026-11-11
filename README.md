@@ -108,22 +108,22 @@ Neben den Prompts für neue Lehrpläne gibt es 16 Fächer, die schon als Lehrpla
 
 | Nr | Fach | Typ | Bereich | Module | Stunden | Voraussetzung | Repository |
 |---|---|---|---|---|---|---|---|
-| [K01](faecher/K01-linux-essentials.md) | Linux Essentials | Kern | Fundament | 12 | 96 | – | [linux-essentials-uebungen](https://github.com/AnsibleArtisan4711/linux-essentials-uebungen) |
-| [K02](faecher/K02-webdesign.md) | Webdesign (HTML, CSS, responsives Design) | Kern | Web | 21 | 294,5 | – | [webdesign-uebungen](https://github.com/AnsibleArtisan4711/webdesign-uebungen) |
-| [K03](faecher/K03-microsoft-excel-expert.md) | Microsoft Excel Expert | Kern | Daten & Office | 12 | 105 | Empfehlung: Office-Grundlagen (MOS, Erweiterung) | [microsoft-excel-expert-uebungen](https://github.com/AnsibleArtisan4711/microsoft-excel-expert-uebungen) |
-| [K04](faecher/K04-bash.md) | Bash | Kern | Scripting & Automatisierung | 12 | 124 | Linux Essentials | [bash-uebungen](https://github.com/AnsibleArtisan4711/bash-uebungen) |
-| [K05](faecher/K05-technische-dokumentation.md) | Technische Dokumentation & Dokumentations-Governance | Kern | Cloud, Doku & Business | 17 | 191,75 | – | [technische-dokumentation-uebungen](https://github.com/AnsibleArtisan4711/technische-dokumentation-uebungen) |
-| [K06](faecher/K06-active-directory.md) | Active Directory | Kern | Windows & Microsoft | 12 | 134 | – | [active-directory-uebungen](https://github.com/AnsibleArtisan4711/active-directory-uebungen) |
-| [K07](faecher/K07-python-automatisierung.md) | Python (Automatisierung unter Linux) | Kern | Scripting & Automatisierung | 15 | 150 | Bash | [python-automatisierung-uebungen](https://github.com/AnsibleArtisan4711/python-automatisierung-uebungen) |
-| [K08](faecher/K08-git-versionskontrolle.md) | Git & Versionskontrolle | Kern | Scripting & Automatisierung | 12 | 126 | Bash | [git-versionskontrolle-uebungen](https://github.com/AnsibleArtisan4711/git-versionskontrolle-uebungen) |
-| [K09](faecher/K09-powershell.md) | PowerShell | Kern | Windows & Microsoft | 12 | 126 | Bash | [powershell-uebungen](https://github.com/AnsibleArtisan4711/powershell-uebungen) |
-| [K10](faecher/K10-microsoft-office-specialist-associate.md) | Microsoft Office Specialist Associate | Erweiterung | Fundament | 12 | 100 | – | [microsoft-office-specialist-associate-uebungen](https://github.com/AnsibleArtisan4711/microsoft-office-specialist-associate-uebungen) |
-| [K11](faecher/K11-comptia-tech-itf.md) | CompTIA Tech+ / ITF+ | Erweiterung | Fundament | 12 | 87 | – | [comptia-tech-itf-uebungen](https://github.com/AnsibleArtisan4711/comptia-tech-itf-uebungen) |
-| [K12](faecher/K12-aws-cloud-practitioner.md) | AWS Cloud Practitioner | Erweiterung | Cloud, Doku & Business | 12 | 106 | – | [aws-cloud-practitioner-uebungen](https://github.com/AnsibleArtisan4711/aws-cloud-practitioner-uebungen) |
-| [K13](faecher/K13-webserver-apache-nginx.md) | Webserver (Apache HTTP Server & Nginx) | Erweiterung | Web | 14 | 165,5 | Webdesign, Linux Essentials | [webserver-uebungen](https://github.com/AnsibleArtisan4711/webserver-uebungen) |
-| [K14](faecher/K14-100-gruppenrichtlinien.md) | 100 Gruppenrichtlinien | Erweiterung | Windows & Microsoft | 10 | 100 | Active Directory | [100-gruppenrichtlinien-uebungen](https://github.com/AnsibleArtisan4711/100-gruppenrichtlinien-uebungen) |
-| [K15](faecher/K15-m365-governance.md) | M365 Governance | Erweiterung | Windows & Microsoft | 12 | 109 | Active Directory (empfohlen) | [m365-governance-uebungen](https://github.com/AnsibleArtisan4711/m365-governance-uebungen) |
-| [K16](faecher/K16-unternehmensgruendung.md) | Unternehmensgründung | Erweiterung | Cloud, Doku & Business | 12 | 110 | – | [unternehmensgruendung-uebungen](https://github.com/AnsibleArtisan4711/unternehmensgruendung-uebungen) |
+| [K01](faecher/K01-linux-essentials.md) | Linux Essentials | Kern | Fundament | 12 | 96 | – | [linux-uebungen/linux-essentials](https://github.com/AnsibleArtisan4711/linux-uebungen/tree/main/linux-essentials) |
+| [K02](faecher/K02-webdesign.md) | Webdesign (HTML, CSS, responsives Design) | Kern | Web | 21 | 294,5 | – | [web-uebungen/webdesign](https://github.com/AnsibleArtisan4711/web-uebungen/tree/main/webdesign) |
+| [K03](faecher/K03-microsoft-excel-expert.md) | Microsoft Excel Expert | Kern | Daten & Office | 12 | 105 | Empfehlung: Office-Grundlagen (MOS, Erweiterung) | [office-uebungen/excel-expert](https://github.com/AnsibleArtisan4711/office-uebungen/tree/main/excel-expert) |
+| [K04](faecher/K04-bash.md) | Bash | Kern | Scripting & Automatisierung | 12 | 124 | Linux Essentials | [automatisierung-uebungen/bash](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/bash) |
+| [K05](faecher/K05-technische-dokumentation.md) | Technische Dokumentation & Dokumentations-Governance | Kern | Cloud, Doku & Business | 17 | 191,75 | – | [it-betrieb-uebungen/technische-dokumentation](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/technische-dokumentation) |
+| [K06](faecher/K06-active-directory.md) | Active Directory | Kern | Windows & Microsoft | 12 | 134 | – | [windows-server-uebungen/active-directory](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/active-directory) |
+| [K07](faecher/K07-python-automatisierung.md) | Python (Automatisierung unter Linux) | Kern | Scripting & Automatisierung | 15 | 150 | Bash | [automatisierung-uebungen/python-automatisierung](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/python-automatisierung) |
+| [K08](faecher/K08-git-versionskontrolle.md) | Git & Versionskontrolle | Kern | Scripting & Automatisierung | 12 | 126 | Bash | [automatisierung-uebungen/git-versionskontrolle](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/git-versionskontrolle) |
+| [K09](faecher/K09-powershell.md) | PowerShell | Kern | Windows & Microsoft | 12 | 126 | Bash | [automatisierung-uebungen/powershell](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/powershell) |
+| [K10](faecher/K10-microsoft-office-specialist-associate.md) | Microsoft Office Specialist Associate | Erweiterung | Fundament | 12 | 100 | – | [office-uebungen/office-specialist-associate](https://github.com/AnsibleArtisan4711/office-uebungen/tree/main/office-specialist-associate) |
+| [K11](faecher/K11-comptia-tech-itf.md) | CompTIA Tech+ / ITF+ | Erweiterung | Fundament | 12 | 87 | – | [client-hardware-uebungen/comptia-tech-itf](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/comptia-tech-itf) |
+| [K12](faecher/K12-aws-cloud-practitioner.md) | AWS Cloud Practitioner | Erweiterung | Cloud, Doku & Business | 12 | 106 | – | [cloud-identitaet-uebungen/aws-cloud-practitioner](https://github.com/AnsibleArtisan4711/cloud-identitaet-uebungen/tree/main/aws-cloud-practitioner) |
+| [K13](faecher/K13-webserver-apache-nginx.md) | Webserver (Apache HTTP Server & Nginx) | Erweiterung | Web | 14 | 165,5 | Webdesign, Linux Essentials | [web-uebungen/webserver](https://github.com/AnsibleArtisan4711/web-uebungen/tree/main/webserver) |
+| [K14](faecher/K14-100-gruppenrichtlinien.md) | 100 Gruppenrichtlinien | Erweiterung | Windows & Microsoft | 10 | 100 | Active Directory | [windows-server-uebungen/gruppenrichtlinien](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/gruppenrichtlinien) |
+| [K15](faecher/K15-m365-governance.md) | M365 Governance | Erweiterung | Windows & Microsoft | 12 | 109 | Active Directory (empfohlen) | [cloud-identitaet-uebungen/m365-governance](https://github.com/AnsibleArtisan4711/cloud-identitaet-uebungen/tree/main/m365-governance) |
+| [K16](faecher/K16-unternehmensgruendung.md) | Unternehmensgründung | Erweiterung | Cloud, Doku & Business | 12 | 110 | – | [it-betrieb-uebungen/unternehmensgruendung](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/unternehmensgruendung) |
 <!-- FAECHER-ENDE -->
 
 ## Die 6 Übungsreihen (E01–E06)
@@ -133,12 +133,12 @@ Eigene Übungsreihen, die nicht aus einem Lehrplan-Skript stammen: Homelab, Netz
 <!-- UEBUNGEN-START -->
 | Nr | Übung | Thema | Module | Einheiten | Repository |
 |---|---|---|---|---|---|
-| [E01](uebungen/E01-multi-site-hybrid-cloud-ai-sec-lab.md) | Multi-Site Hybrid Cloud & AI-Sec Operations | Homelab und Betrieb | 14 | 92 | [multi-site-hybrid-cloud-ai-sec-lab](https://github.com/AnsibleArtisan4711/multi-site-hybrid-cloud-ai-sec-lab) |
-| [E02](uebungen/E02-netzwerk-packet-tracer.md) | Netzwerktechnik mit Cisco Packet Tracer | Netzwerk | 8 | 1 | [netzwerk-uebungen-packet-tracer](https://github.com/AnsibleArtisan4711/netzwerk-uebungen-packet-tracer) |
-| [E03](uebungen/E03-benutzerverwaltung-active-directory.md) | Benutzerverwaltung im Active Directory | Windows und Active Directory | 1 | 1 | [ad-uebungen-benutzerverwaltung](https://github.com/AnsibleArtisan4711/ad-uebungen-benutzerverwaltung) |
-| [E04](uebungen/E04-wlan-gaestenetz.md) | WLAN und Gästenetz | Netzwerk | 2 | 2 | [wlan-gaeste-netz-uebung](https://github.com/AnsibleArtisan4711/wlan-gaeste-netz-uebung) |
-| [E05](uebungen/E05-backup-nas-veeam.md) | Backup auf NAS mit Veeam | Homelab und Betrieb | 1 | 1 | [veeam-backup-uebung](https://github.com/AnsibleArtisan4711/veeam-backup-uebung) |
-| [E06](uebungen/E06-geordnetes-herunterfahren-ohne-usv.md) | Geordnetes Herunterfahren ohne USV | Homelab und Betrieb | 1 | 1 | [usv-shutdown-uebung](https://github.com/AnsibleArtisan4711/usv-shutdown-uebung) |
+| [E01](uebungen/E01-multi-site-hybrid-cloud-ai-sec-lab.md) | Multi-Site Hybrid Cloud & AI-Sec Operations | Homelab und Betrieb | 14 | 92 | [it-betrieb-uebungen/homelab-multi-site](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/homelab-multi-site) |
+| [E02](uebungen/E02-netzwerk-packet-tracer.md) | Netzwerktechnik mit Cisco Packet Tracer | Netzwerk | 8 | 1 | [netzwerk-und-firewall-uebungen/packet-tracer](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/packet-tracer) |
+| [E03](uebungen/E03-benutzerverwaltung-active-directory.md) | Benutzerverwaltung im Active Directory | Windows und Active Directory | 1 | 1 | [windows-server-uebungen/ad-benutzerverwaltung](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/ad-benutzerverwaltung) |
+| [E04](uebungen/E04-wlan-gaestenetz.md) | WLAN und Gästenetz | Netzwerk | 2 | 2 | [netzwerk-und-firewall-uebungen/wlan-gaestenetz](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/wlan-gaestenetz) |
+| [E05](uebungen/E05-backup-nas-veeam.md) | Backup auf NAS mit Veeam | Homelab und Betrieb | 1 | 1 | [storage-backup-uebungen/veeam-nas](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/veeam-nas) |
+| [E06](uebungen/E06-geordnetes-herunterfahren-ohne-usv.md) | Geordnetes Herunterfahren ohne USV | Homelab und Betrieb | 1 | 1 | [it-betrieb-uebungen/usv-shutdown](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/usv-shutdown) |
 <!-- UEBUNGEN-ENDE -->
 
 ## Empfohlene Reihenfolge

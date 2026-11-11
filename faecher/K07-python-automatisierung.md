@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Scripting & Automatisierung
 - Umfang: 15 Module, ca. 150 Stunden
 - Voraussetzung / Empfehlung: Bash
-- Übungsmaterial: [python-automatisierung-uebungen](https://github.com/AnsibleArtisan4711/python-automatisierung-uebungen)
+- Übungsmaterial: [automatisierung-uebungen/python-automatisierung](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/python-automatisierung)
 
 ## Module
 

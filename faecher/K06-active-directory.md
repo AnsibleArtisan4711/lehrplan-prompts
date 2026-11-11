@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Windows & Microsoft
 - Umfang: 12 Module, ca. 134 Stunden
 - Voraussetzung / Empfehlung: keine
-- Übungsmaterial: [active-directory-uebungen](https://github.com/AnsibleArtisan4711/active-directory-uebungen)
+- Übungsmaterial: [windows-server-uebungen/active-directory](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/active-directory)
 
 ## Module
 

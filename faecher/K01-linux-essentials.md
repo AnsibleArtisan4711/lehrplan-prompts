@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Fundament
 - Umfang: 12 Module, ca. 96 Stunden
 - Voraussetzung / Empfehlung: keine
-- Übungsmaterial: [linux-essentials-uebungen](https://github.com/AnsibleArtisan4711/linux-essentials-uebungen)
+- Übungsmaterial: [linux-uebungen/linux-essentials](https://github.com/AnsibleArtisan4711/linux-uebungen/tree/main/linux-essentials)
 
 ## Module
 

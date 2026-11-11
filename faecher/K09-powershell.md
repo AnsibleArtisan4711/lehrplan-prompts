@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Windows & Microsoft
 - Umfang: 12 Module, ca. 126 Stunden
 - Voraussetzung / Empfehlung: Bash
-- Übungsmaterial: [powershell-uebungen](https://github.com/AnsibleArtisan4711/powershell-uebungen)
+- Übungsmaterial: [automatisierung-uebungen/powershell](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/powershell)
 
 ## Module
 

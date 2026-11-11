@@ -3,7 +3,7 @@
 - Typ: Erweiterung, Bereich: Fundament
 - Umfang: 12 Module, ca. 100 Stunden
 - Voraussetzung / Empfehlung: keine
-- Übungsmaterial: [microsoft-office-specialist-associate-uebungen](https://github.com/AnsibleArtisan4711/microsoft-office-specialist-associate-uebungen)
+- Übungsmaterial: [office-uebungen/office-specialist-associate](https://github.com/AnsibleArtisan4711/office-uebungen/tree/main/office-specialist-associate)
 
 ## Module
 

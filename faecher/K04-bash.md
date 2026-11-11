@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Scripting & Automatisierung
 - Umfang: 12 Module, ca. 124 Stunden
 - Voraussetzung / Empfehlung: Linux Essentials
-- Übungsmaterial: [bash-uebungen](https://github.com/AnsibleArtisan4711/bash-uebungen)
+- Übungsmaterial: [automatisierung-uebungen/bash](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/bash)
 
 ## Module
 

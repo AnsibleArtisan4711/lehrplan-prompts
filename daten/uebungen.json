@@ -4,9 +4,10 @@
     "titel": "Multi-Site Hybrid Cloud & AI-Sec Operations",
     "slug": "multi-site-hybrid-cloud-ai-sec-lab",
     "thema": "Homelab und Betrieb",
-    "repo": "multi-site-hybrid-cloud-ai-sec-lab",
+    "repo": "it-betrieb-uebungen",
+    "ordner": "homelab-multi-site",
     "art": "steps",
-    "lokal": "D:\\Multi Site Hybrid Cloud AI Sec Lab\\github",
+    "lokal": "D:\\IT-Betrieb-Übungen\\homelab-multi-site",
     "module": [
       {
         "nr": 0,
@@ -696,9 +697,10 @@
     "titel": "Netzwerktechnik mit Cisco Packet Tracer",
     "slug": "netzwerk-packet-tracer",
     "thema": "Netzwerk",
-    "repo": "netzwerk-uebungen-packet-tracer",
+    "repo": "netzwerk-und-firewall-uebungen",
+    "ordner": "packet-tracer",
     "art": "uebungen",
-    "lokal": "D:\\Netzwerktechnik\\github",
+    "lokal": "D:\\Netzwerk-und-Firewall-Übungen\\packet-tracer",
     "module": [
       {
         "nr": 1,
@@ -876,9 +878,10 @@
     "titel": "Benutzerverwaltung im Active Directory",
     "slug": "benutzerverwaltung-active-directory",
     "thema": "Windows und Active Directory",
-    "repo": "ad-uebungen-benutzerverwaltung",
+    "repo": "windows-server-uebungen",
+    "ordner": "ad-benutzerverwaltung",
     "art": "uebungen",
-    "lokal": "D:\\Benutzerverwaltung im Active Directory\\github",
+    "lokal": "D:\\Windows-Server-Übungen\\ad-benutzerverwaltung",
     "module": [
       {
         "nr": 1,
@@ -1105,9 +1108,10 @@
     "titel": "WLAN und Gästenetz",
     "slug": "wlan-gaestenetz",
     "thema": "Netzwerk",
-    "repo": "wlan-gaeste-netz-uebung",
+    "repo": "netzwerk-und-firewall-uebungen",
+    "ordner": "wlan-gaestenetz",
     "art": "uebungen",
-    "lokal": "D:\\WLAN Gästenetzübung\\github",
+    "lokal": "D:\\Netzwerk-und-Firewall-Übungen\\wlan-gaestenetz",
     "module": [
       {
         "nr": 1,
@@ -1480,9 +1484,10 @@
     "titel": "Backup auf NAS mit Veeam",
     "slug": "backup-nas-veeam",
     "thema": "Homelab und Betrieb",
-    "repo": "veeam-backup-uebung",
+    "repo": "storage-backup-uebungen",
+    "ordner": "veeam-nas",
     "art": "uebungen",
-    "lokal": "D:\\Backup auf NAS mit Veeam\\github",
+    "lokal": "D:\\Storage-Backup-Übungen\\veeam-nas",
     "module": [
       {
         "nr": 1,
@@ -1727,9 +1732,10 @@
     "titel": "Geordnetes Herunterfahren ohne USV",
     "slug": "geordnetes-herunterfahren-ohne-usv",
     "thema": "Homelab und Betrieb",
-    "repo": "usv-shutdown-uebung",
+    "repo": "it-betrieb-uebungen",
+    "ordner": "usv-shutdown",
     "art": "uebungen",
-    "lokal": "D:\\Geordnetes Herunterfahren ohne USV\\github",
+    "lokal": "D:\\IT-Betrieb-Übungen\\usv-shutdown",
     "module": [
       {
         "nr": 1,

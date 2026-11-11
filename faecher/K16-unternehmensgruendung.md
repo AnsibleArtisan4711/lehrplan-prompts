@@ -3,7 +3,7 @@
 - Typ: Erweiterung, Bereich: Cloud, Doku & Business
 - Umfang: 12 Module, ca. 110 Stunden
 - Voraussetzung / Empfehlung: keine
-- Übungsmaterial: [unternehmensgruendung-uebungen](https://github.com/AnsibleArtisan4711/unternehmensgruendung-uebungen)
+- Übungsmaterial: [it-betrieb-uebungen/unternehmensgruendung](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/unternehmensgruendung)
 
 ## Module
 

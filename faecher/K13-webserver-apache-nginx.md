@@ -3,7 +3,7 @@
 - Typ: Erweiterung, Bereich: Web
 - Umfang: 14 Module, ca. 165,5 Stunden
 - Voraussetzung / Empfehlung: Webdesign, Linux Essentials
-- Übungsmaterial: [webserver-uebungen](https://github.com/AnsibleArtisan4711/webserver-uebungen)
+- Übungsmaterial: [web-uebungen/webserver](https://github.com/AnsibleArtisan4711/web-uebungen/tree/main/webserver)
 
 ## Module
 

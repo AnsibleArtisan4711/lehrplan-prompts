@@ -20,6 +20,16 @@ MARK_B = "<!-- TABELLE-ENDE -->"
 FMARK_A = "<!-- FAECHER-START -->"
 FMARK_B = "<!-- FAECHER-ENDE -->"
 GITHUB = "https://github.com/AnsibleArtisan4711/"
+
+
+def repo_name(x):
+    """Name des Themen-Repositories, mit Kursordner, wenn das Feld "ordner" gesetzt ist."""
+    return x["repo"] + ("/" + x["ordner"] if x.get("ordner") else "")
+
+
+def repo_url(x):
+    """Adresse des Repositories; bei Kursordnern direkt auf den Ordner."""
+    return GITHUB + x["repo"] + ("/tree/main/" + x["ordner"] if x.get("ordner") else "")
 UMARK_A = "<!-- UEBUNGEN-START -->"
 UMARK_B = "<!-- UEBUNGEN-ENDE -->"
 
@@ -102,7 +112,7 @@ def fach_seite(fach):
          "- Umfang: %d Module, ca. %s Stunden" % (len(fach["module"]), zahl(fach["stunden"])),
          "- Voraussetzung / Empfehlung: %s" % (fach["voraussetzung"] or "keine")]
     if fach["repo"]:
-        z.append("- Übungsmaterial: [%s](%s%s)" % (fach["repo"], GITHUB, fach["repo"]))
+        z.append("- Übungsmaterial: [%s](%s)" % (repo_name(fach), repo_url(fach)))
     z += ["", "## Module", "", "| Nr | Modul | ca. Stunden |", "|---|---|---|"]
     for m in fach["module"]:
         z.append("| %d | %s | %s |" % (m["nr"], m["titel"], zahl(m["stunden"])))
@@ -116,7 +126,7 @@ def faecher_tabelle(faecher):
     zeilen = ["| Nr | Fach | Typ | Bereich | Module | Stunden | Voraussetzung | Repository |",
               "|---|---|---|---|---|---|---|---|"]
     for f in faecher:
-        repo = "[%s](%s%s)" % (f["repo"], GITHUB, f["repo"]) if f["repo"] else "–"
+        repo = "[%s](%s)" % (repo_name(f), repo_url(f)) if f["repo"] else "–"
         zeilen.append("| [%s](faecher/%s) | %s | %s | %s | %d | %s | %s | %s |" % (
             f["id"], fach_datei(f), f["titel"], f["typ"], f["bereich"], len(f["module"]),
             zahl(f["stunden"]), f["voraussetzung"] or "–", repo))
@@ -138,7 +148,7 @@ def anzahl_einheiten(r):
 def uebung_seite(r):
     z = ["# %s – %s" % (r["id"], r["titel"]), "",
          "- Thema: %s" % r["thema"],
-         "- Repository: [%s](%s%s)" % (r["repo"], GITHUB, r["repo"]),
+         "- Repository: [%s](%s)" % (repo_name(r), repo_url(r)),
          "- Umfang: %d Module, davon %d mit Material; %d Einheiten" % (
              len(r.get("module", [])), sum(1 for m in r.get("module", []) if m["einheiten"]),
              anzahl_einheiten(r)), ""]
@@ -169,10 +179,10 @@ def uebung_seite(r):
 def uebungen_tabelle(reihen):
     zeilen = ["| Nr | Übung | Thema | Module | Einheiten | Repository |", "|---|---|---|---|---|---|"]
     for r in reihen:
-        zeilen.append("| [%s](uebungen/%s) | %s | %s | %d | %d | [%s](%s%s) |" % (
+        zeilen.append("| [%s](uebungen/%s) | %s | %s | %d | %d | [%s](%s) |" % (
             r["id"], uebung_datei(r), r["titel"], r["thema"],
             len(r.get("module", [])), anzahl_einheiten(r),
-            r["repo"], GITHUB, r["repo"]))
+            repo_name(r), repo_url(r)))
     return "\n".join(zeilen)
 
 

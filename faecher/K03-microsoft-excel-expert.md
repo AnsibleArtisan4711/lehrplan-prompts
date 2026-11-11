@@ -3,7 +3,7 @@
 - Typ: Kern, Bereich: Daten & Office
 - Umfang: 12 Module, ca. 105 Stunden
 - Voraussetzung / Empfehlung: Empfehlung: Office-Grundlagen (MOS, Erweiterung)
-- Übungsmaterial: [microsoft-excel-expert-uebungen](https://github.com/AnsibleArtisan4711/microsoft-excel-expert-uebungen)
+- Übungsmaterial: [office-uebungen/excel-expert](https://github.com/AnsibleArtisan4711/office-uebungen/tree/main/excel-expert)
 
 ## Module
 
