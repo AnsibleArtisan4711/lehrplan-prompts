@@ -1,5 +1,13 @@
 # Änderungen
 
+## 2026-11-12 (Kurs P72 Weiterbildung IT-Systemtechnik)
+
+- Neu: Kurs P72 „Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre)“ in `daten/kurse.json` (Priorität A, Gruppe IT-Betrieb und Prozesse, Repository `it-betrieb-uebungen`, Status Lehrplan erstellt) mit Prompt `prompts/P72-weiterbildung-it-systemtechnik.md` und Lehrplan `lehrplaene/P72-weiterbildung-it-systemtechnik.md` (12 Module, 110 UE; 10 Module Priorität 1 mit 93 UE, 2 Module Priorität 2 mit 17 UE).
+- Kennzeichnung der Herkunft: Der Lehrplan wurde aus der Excel-Vorlage „Lehrplan - Weiterbildung IT Systemtechnik“ umgewandelt. Modultitel, Einheiten und Prioritäten stammen aus der Vorlage; Lernziele, Praxisaufgaben und Kontrollfragen sind neu geschrieben, weil die Vorlage dort nur gleichlautende Platzhaltertexte enthält. Abweichungen: Modul 5 (Linux-Server) wurde von Priorität 2 auf 1 angehoben; die Einheiten (UE) werden als 45-Minuten-Einheiten gelesen. Der Prompt wurde nachträglich der Vollständigkeit halber erzeugt.
+- Hinweis: P72 ist ein Querschnittskurs mit Einstieg in jedes Gebiet. Überschneidungen mit den Spezialkursen (zum Beispiel DNS, DHCP, Backup, Monitoring, Windows-Client) wurden nicht im Einzelnen analysiert.
+- Offen: Befehlsparameter und Pfade sind an den betroffenen Stellen als „nicht bestätigt“ gekennzeichnet; Microsoft-Learn-Angaben stammen aus Suchtreffer-Auszügen vom 12.11.2026. Nichts davon wurde im Labor ausgeführt.
+- README-Tabelle und Zähler (72 Kurse) wurden mit `python tools/build_prompts.py` erzeugt. Die übrigen Kurse P01 bis P71 sind unverändert.
+
 ## 2026-11-12 (Kurs P71 DHCP)
 
 - Neu: Kurs P71 „DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea)“ in `daten/kurse.json` (Priorität A, Gruppe Netzwerkdienste und Firewall, Repository `netzwerkdienste-uebungen`, Status Lehrplan erstellt) mit Prompt `prompts/P71-dhcp-grundlagen-und-betrieb.md` und Lehrplan `lehrplaene/P71-dhcp-grundlagen-und-betrieb.md` (12 Module, 116 UE; 10 Module Priorität 1 mit 96 UE, 2 Module Priorität 2 mit 20 UE).

@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 71 Kurse: 54 offen, 15 Lehrplan erstellt, 0 aufbereitet, 2 gepusht.
+Stand der 72 Kurse: 54 offen, 16 Lehrplan erstellt, 0 aufbereitet, 2 gepusht.
 
 Bedeutung der Status:
 
@@ -100,6 +100,7 @@ Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das gepl
 | 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | offen | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | – | `it-betrieb-uebungen` (geplant) |
 | 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | offen | [P70](prompts/P70-lizenzmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
 | 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | `netzwerkdienste-uebungen` (geplant) |
+| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | Lehrplan erstellt | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | `it-betrieb-uebungen` (geplant) |
 <!-- TABELLE-ENDE -->
 
 ## Die 16 Fächer (K01–K16)
@@ -173,7 +174,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | `datenbanken-uebungen` (noch nicht angelegt) | P30 SQL-Grundlagen; P31 MariaDB und PostgreSQL Administration; P32 SQL Server Administration; P67 NoSQL-Datenbanken und Redis; P68 Datenbank-Backup und -Wiederherstellung |
 | [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO); P36 Notfallplanung und Disaster Recovery; P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS |
 | `e-mail-uebungen` (noch nicht angelegt) | P37 Exchange Online Administration; P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC; P39 Mailserver mit Postfix und Dovecot |
-| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen; P41 Incident-, Problem- und Change-Management; P42 Ticketsysteme in der Praxis; P43 SLA und Betriebshandbuch; P47 Datenschutz (DSGVO) in der IT; P48 NIS2 für Administratoren; P49 ISO 27001 Grundlagen; P50 Troubleshooting-Methodik; P51 Projektmanagement für Administratoren; P52 IT-Englisch für Administratoren; P69 Asset-Verwaltung und CMDB; P70 Lizenzmanagement |
+| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen; P41 Incident-, Problem- und Change-Management; P42 Ticketsysteme in der Praxis; P43 SLA und Betriebshandbuch; P47 Datenschutz (DSGVO) in der IT; P48 NIS2 für Administratoren; P49 ISO 27001 Grundlagen; P50 Troubleshooting-Methodik; P51 Projektmanagement für Administratoren; P52 IT-Englisch für Administratoren; P69 Asset-Verwaltung und CMDB; P70 Lizenzmanagement; P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) |
 | [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche; P45 Windows-11-Client-Administration; P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) |
 <!-- REPOS-ENDE -->
 
