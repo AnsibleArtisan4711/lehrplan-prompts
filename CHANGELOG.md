@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-12 (Links auf die Kursordner für P71 und P72)
+
+- Fehlerbehebung: In der README-Tabelle waren P71 und P72 in der Spalte „Repository“ nur als `geplant` ohne Link eingetragen, obwohl die Übungsreihen in `netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb` und `it-betrieb-uebungen/weiterbildung-it-systemtechnik` liegen.
+- `daten/kurse.json`: Feld `ordner` bei P71 und P72 ergänzt. Der Status bleibt „Lehrplan erstellt“, weil die Gruppen noch nicht vollständig sind.
+- `tools/build_prompts.py`: Die Spalte „Repository“ und die Tabelle der Themen-Repositories verlinken jetzt, sobald `ordner` gesetzt ist (bisher nur bei Status „gepusht“). Die Legende im README wurde angepasst.
+- README mit `python tools/build_prompts.py` neu erzeugt; alle anderen Zeilen sind unverändert.
+
 ## 2026-11-12 (Kurs P72 Weiterbildung IT-Systemtechnik)
 
 - Neu: Kurs P72 „Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre)“ in `daten/kurse.json` (Priorität A, Gruppe IT-Betrieb und Prozesse, Repository `it-betrieb-uebungen`, Status Lehrplan erstellt) mit Prompt `prompts/P72-weiterbildung-it-systemtechnik.md` und Lehrplan `lehrplaene/P72-weiterbildung-it-systemtechnik.md` (12 Module, 110 UE; 10 Module Priorität 1 mit 93 UE, 2 Module Priorität 2 mit 17 UE).

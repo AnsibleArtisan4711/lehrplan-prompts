@@ -1135,7 +1135,8 @@
     "hinweis": "Versions- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Befehle, Parameter und Menünamen nicht erfinden. ISC DHCP wird nicht mehr als Server behandelt (Kea statt ISC DHCP).",
     "status": "Lehrplan erstellt",
     "labor": "1x Linux-Router-VM mit drei Netzen (Relay); 2x Windows-Server-VM (DHCP, Failover); 1x Windows-Server-VM als Domänencontroller (ab Modul 6); 1x Linux-Server-VM (Kea); 1 Windows-Client-VM; 1 Linux-Client-VM; drei private Hyper-V-Switches ohne Verbindung zum Heimnetz",
-    "repo": "netzwerkdienste-uebungen"
+    "repo": "netzwerkdienste-uebungen",
+    "ordner": "dhcp-grundlagen-und-betrieb"
   },
   {
     "id": "P72",
@@ -1151,6 +1152,7 @@
     "hinweis": "Versions- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Befehle, Parameter und Menünamen nicht erfinden. Cloud nur über Testzugänge (Intune-Testversion, Azure-Free-Account) und nur als begründete Ausnahme zum Hyper-V-Labor.",
     "status": "Lehrplan erstellt",
     "labor": "Hyper-V mit drei privaten Switches (Server-, Client- und Testnetz) und dem Default Switch nur für Internetphasen; 1x Windows-Server-VM als Domänencontroller, 1x Windows-Server-VM als Dateiserver und Router, 1x Windows-11-Client-VM, 1x Ubuntu-Server-VM, 1x Windows-11-Client-VM nur für Cloud-Verwaltung; Intune-Testversion (30 Tage) und Azure-Free-Account als Cloud-Ausnahmen; Domäne lab.example.internal",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "weiterbildung-it-systemtechnik"
   }
 ]

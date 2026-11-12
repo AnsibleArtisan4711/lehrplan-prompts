@@ -25,7 +25,7 @@ Bedeutung der Status:
 - **aufbereitet**: Aus dem Lehrplan ist Übungsmaterial ausgearbeitet, aber noch nicht veröffentlicht.
 - **gepusht**: Das Übungsmaterial liegt als Kursordner in einem Themen-Repository auf GitHub, das in der Spalte „Repository“ verlinkt wird.
 
-Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das geplante Themen-Repository (Feld `repo` in `daten/kurse.json`).
+Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link darauf, sonst das geplante Themen-Repository (Feld `repo` in `daten/kurse.json`).
 
 | Nr | Prio | Themengebiet | Kurs | Status | Prompt | Lehrplan | Repository |
 |---|---|---|---|---|---|---|---|
@@ -99,8 +99,8 @@ Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das gepl
 | 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – | `datenbanken-uebungen` (geplant) |
 | 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | offen | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | – | `it-betrieb-uebungen` (geplant) |
 | 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | offen | [P70](prompts/P70-lizenzmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
-| 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | `netzwerkdienste-uebungen` (geplant) |
-| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | Lehrplan erstellt | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | `it-betrieb-uebungen` (geplant) |
+| 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | [netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dhcp-grundlagen-und-betrieb) |
+| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | Lehrplan erstellt | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | [it-betrieb-uebungen/weiterbildung-it-systemtechnik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/weiterbildung-it-systemtechnik) |
 <!-- TABELLE-ENDE -->
 
 ## Die 16 Fächer (K01–K16)

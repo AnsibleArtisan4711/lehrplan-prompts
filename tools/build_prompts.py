@@ -78,8 +78,8 @@ def lehrplan_datei(kurs):
 
 
 def repo_zelle(k):
-    """Gepusht: Link auf den Kursordner. Sonst: das geplante Themen-Repository."""
-    if k["status"] == "gepusht":
+    """Kursordner vorhanden (Feld "ordner"): Link auf den Kursordner. Sonst: das geplante Themen-Repository."""
+    if k["status"] == "gepusht" or k.get("ordner"):
         return "[%s](%s)" % (repo_name(k), repo_url(k))
     return "`%s` (geplant)" % k["repo"]
 
@@ -128,7 +128,7 @@ def uebersicht(kurse, rahmen):
     for s in rahmen["status_werte"]:
         zeilen.append("- **%s**: %s" % (s, rahmen["status_legende"][s]))
     zeilen.append("")
-    zeilen.append("Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das geplante "
+    zeilen.append("Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link darauf, sonst das geplante "
                   "Themen-Repository (Feld `repo` in `daten/kurse.json`).")
     zeilen.append("")
     return "\n".join(zeilen)
@@ -306,7 +306,7 @@ def main():
     readme.write_text(um.sub(lambda m: uneu, text), encoding="utf-8", newline="\n")
     # Zuordnung Kurse -> Themen-Repositories
     vorhanden = ({f["repo"] for f in faecher if f["repo"]} | {u["repo"] for u in uebungen}
-                 | {k["repo"] for k in kurse if k["status"] == "gepusht"})
+                 | {k["repo"] for k in kurse if k["status"] == "gepusht" or k.get("ordner")})
     rm = re.compile(re.escape(RMARK_A) + r".*?" + re.escape(RMARK_B), re.S)
     text = readme.read_text(encoding="utf-8")
     if not rm.search(text):
