@@ -703,9 +703,10 @@
     "themen": "Komponenten und Schnittstellen; Speicher und Netzwerkkarten; Firmware (BIOS/UEFI); Fehlersuche systematisch; Diagnosewerkzeuge; Peripherie und Drucker; Wartung; Sicherheit am Arbeitsplatz",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1 Windows-11-VM; 1 Linux-Live-Medium; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Hardwareübungen an Altgeräten oder anhand von Fallbeispielen",
-    "repo": "client-hardware-uebungen"
+    "repo": "client-hardware-uebungen",
+    "ordner": "pc-hardware-und-fehlersuche"
   },
   {
     "id": "P45",
@@ -719,7 +720,7 @@
     "themen": "Installation und Bereitstellung; Konten und Rechte; Netzwerk und Domänenbeitritt; Sicherheit (BitLocker, Defender, Firewall); Updates; Sicherung und Wiederherstellung; Fernwartung; Fehlersuche; Leistung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Windows-11-Client-VM (Domäne beitretbar); 1x Windows-Server-VM (Domain Controller); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "client-hardware-uebungen",
     "ordner": "windows-11-client-administration"
@@ -736,9 +737,10 @@
     "themen": "Rollout-Konzepte; Abbilder und Treiber; Aufgabensequenzen; Bereitstellung per Netzwerk (PXE); Softwareverteilung; Alternativen (Autopilot, Intune); Wartung der Abbilder; Fehlersuche",
     "abgrenzung": "Intune und Autopilot sind ein eigener Kurs",
     "hinweis": "Prüfe den aktuellen Status von MDT und die Bezeichnung von Microsoft Configuration Manager mit Stand; kennzeichne Unsicherheit.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Deployment-Server-VM; 1x Domain Controller; 2 leere Client-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "client-hardware-uebungen"
+    "repo": "client-hardware-uebungen",
+    "ordner": "betriebssystem-rollout"
   },
   {
     "id": "P47",

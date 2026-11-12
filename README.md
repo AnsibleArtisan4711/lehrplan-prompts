@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 72 Kurse: 52 offen, 14 Lehrplan erstellt, 0 aufbereitet, 6 gepusht.
+Stand der 72 Kurse: 52 offen, 11 Lehrplan erstellt, 0 aufbereitet, 9 gepusht.
 
 Bedeutung der Status:
 
@@ -72,9 +72,9 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 41 | C | IT-Betrieb und Prozesse | Incident-, Problem- und Change-Management | Lehrplan erstellt | [P41](prompts/P41-incident-problem-und-change-management.md) | [P41](lehrplaene/P41-incident-problem-und-change-management.md) | `it-betrieb-uebungen` (geplant) |
 | 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | Lehrplan erstellt | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) | [P42](lehrplaene/P42-ticketsysteme-in-der-praxis.md) | `it-betrieb-uebungen` (geplant) |
 | 43 | C | IT-Betrieb und Prozesse | SLA und Betriebshandbuch | Lehrplan erstellt | [P43](prompts/P43-sla-und-betriebshandbuch.md) | [P43](lehrplaene/P43-sla-und-betriebshandbuch.md) | `it-betrieb-uebungen` (geplant) |
-| 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | Lehrplan erstellt | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) | [P44](lehrplaene/P44-pc-hardware-und-fehlersuche.md) | `client-hardware-uebungen` (geplant) |
-| 45 | C | Client und Hardware | Windows-11-Client-Administration | Lehrplan erstellt | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | [client-hardware-uebungen/windows-11-client-administration](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/windows-11-client-administration) |
-| 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | Lehrplan erstellt | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [P46](lehrplaene/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | `client-hardware-uebungen` (geplant) |
+| 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | gepusht | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) | [P44](lehrplaene/P44-pc-hardware-und-fehlersuche.md) | [client-hardware-uebungen/pc-hardware-und-fehlersuche](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/pc-hardware-und-fehlersuche) |
+| 45 | C | Client und Hardware | Windows-11-Client-Administration | gepusht | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | [client-hardware-uebungen/windows-11-client-administration](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/windows-11-client-administration) |
+| 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | gepusht | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [P46](lehrplaene/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [client-hardware-uebungen/betriebssystem-rollout](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/betriebssystem-rollout) |
 | 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | offen | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) | – | `it-betrieb-uebungen` (geplant) |
 | 48 | C | Recht und Compliance | NIS2 für Administratoren | offen | [P48](prompts/P48-nis2-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
 | 49 | C | Recht und Compliance | ISO 27001 Grundlagen | offen | [P49](prompts/P49-iso-27001-grundlagen.md) | – | `it-betrieb-uebungen` (geplant) |
@@ -175,7 +175,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO); P36 Notfallplanung und Disaster Recovery; P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS |
 | `e-mail-uebungen` (noch nicht angelegt) | P37 Exchange Online Administration; P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC; P39 Mailserver mit Postfix und Dovecot |
 | [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen; P41 Incident-, Problem- und Change-Management; P42 Ticketsysteme in der Praxis; P43 SLA und Betriebshandbuch; P47 Datenschutz (DSGVO) in der IT; P48 NIS2 für Administratoren; P49 ISO 27001 Grundlagen; P50 Troubleshooting-Methodik; P51 Projektmanagement für Administratoren; P52 IT-Englisch für Administratoren; P69 Asset-Verwaltung und CMDB; P70 Lizenzmanagement; P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) |
-| [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche; P45 Windows-11-Client-Administration; P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) |
+| [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche (gepusht); P45 Windows-11-Client-Administration (gepusht); P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) (gepusht) |
 <!-- REPOS-ENDE -->
 
 ## Entstehung

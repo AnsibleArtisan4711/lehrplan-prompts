@@ -1,5 +1,11 @@
 # Änderungen
 
+## 2026-11-12 (Gruppe Client und Hardware komplett: P44, P45, P46)
+
+- `status` von P44, P45 und P46 auf „gepusht“, Feld `ordner` ergänzt (`pc-hardware-und-fehlersuche`, `windows-11-client-administration`, `betriebssystem-rollout` im Repository `client-hardware-uebungen`). Die Gruppe „Client und Hardware“ ist damit komplett. Commits im Repository `client-hardware-uebungen`: 639f82b (P45), 8a341ee (P46), ad7df40 (P44).
+- Die Übungsreihen sind Entwürfe und wurden nicht auf Windows oder Hyper-V ausgeführt.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-12 (Gruppe Windows-Server-Rollen komplett: P03, P04, P59, P61)
 
 - Neu: Lehrplan `lehrplaene/P59-remotedesktopdienste-rds.md` (13 Module, 104 UE; Prio 1: 90 UE, Prio 2: 14 UE) und Lehrplan `lehrplaene/P61-windows-admin-center.md` (9 Module, 52 UE; Prio 1: 42 UE, Prio 2: 10 UE). Beide wurden direkt nach der Grundanweisung geschrieben und von Matija noch nicht geprüft. Microsoft-Learn-Angaben stammen aus Suchtreffer-Auszügen vom 12.11.2026.
