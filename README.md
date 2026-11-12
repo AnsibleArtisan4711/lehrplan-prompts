@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 72 Kurse: 52 offen, 11 Lehrplan erstellt, 0 aufbereitet, 9 gepusht.
+Stand der 72 Kurse: 50 offen, 6 Lehrplan erstellt, 0 aufbereitet, 16 gepusht.
 
 Bedeutung der Status:
 
@@ -68,10 +68,10 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 37 | B | E-Mail | Exchange Online Administration | offen | [P37](prompts/P37-exchange-online-administration.md) | – | `e-mail-uebungen` (geplant) |
 | 38 | B | E-Mail | E-Mail-Authentifizierung: SPF, DKIM und DMARC | offen | [P38](prompts/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) | – | `e-mail-uebungen` (geplant) |
 | 39 | B | E-Mail | Mailserver mit Postfix und Dovecot | offen | [P39](prompts/P39-mailserver-mit-postfix-und-dovecot.md) | – | `e-mail-uebungen` (geplant) |
-| 40 | C | IT-Betrieb und Prozesse | ITIL 4 Grundlagen | Lehrplan erstellt | [P40](prompts/P40-itil-4-grundlagen.md) | [P40](lehrplaene/P40-itil-4-grundlagen.md) | `it-betrieb-uebungen` (geplant) |
-| 41 | C | IT-Betrieb und Prozesse | Incident-, Problem- und Change-Management | Lehrplan erstellt | [P41](prompts/P41-incident-problem-und-change-management.md) | [P41](lehrplaene/P41-incident-problem-und-change-management.md) | `it-betrieb-uebungen` (geplant) |
-| 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | Lehrplan erstellt | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) | [P42](lehrplaene/P42-ticketsysteme-in-der-praxis.md) | `it-betrieb-uebungen` (geplant) |
-| 43 | C | IT-Betrieb und Prozesse | SLA und Betriebshandbuch | Lehrplan erstellt | [P43](prompts/P43-sla-und-betriebshandbuch.md) | [P43](lehrplaene/P43-sla-und-betriebshandbuch.md) | `it-betrieb-uebungen` (geplant) |
+| 40 | C | IT-Betrieb und Prozesse | ITIL 4 Grundlagen | gepusht | [P40](prompts/P40-itil-4-grundlagen.md) | [P40](lehrplaene/P40-itil-4-grundlagen.md) | [it-betrieb-uebungen/itil-4-grundlagen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/itil-4-grundlagen) |
+| 41 | C | IT-Betrieb und Prozesse | Incident-, Problem- und Change-Management | gepusht | [P41](prompts/P41-incident-problem-und-change-management.md) | [P41](lehrplaene/P41-incident-problem-und-change-management.md) | [it-betrieb-uebungen/incident-problem-und-change-management](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/incident-problem-und-change-management) |
+| 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | gepusht | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) | [P42](lehrplaene/P42-ticketsysteme-in-der-praxis.md) | [it-betrieb-uebungen/ticketsysteme-in-der-praxis](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/ticketsysteme-in-der-praxis) |
+| 43 | C | IT-Betrieb und Prozesse | SLA und Betriebshandbuch | gepusht | [P43](prompts/P43-sla-und-betriebshandbuch.md) | [P43](lehrplaene/P43-sla-und-betriebshandbuch.md) | [it-betrieb-uebungen/sla-und-betriebshandbuch](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/sla-und-betriebshandbuch) |
 | 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | gepusht | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) | [P44](lehrplaene/P44-pc-hardware-und-fehlersuche.md) | [client-hardware-uebungen/pc-hardware-und-fehlersuche](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/pc-hardware-und-fehlersuche) |
 | 45 | C | Client und Hardware | Windows-11-Client-Administration | gepusht | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | [client-hardware-uebungen/windows-11-client-administration](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/windows-11-client-administration) |
 | 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | gepusht | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [P46](lehrplaene/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [client-hardware-uebungen/betriebssystem-rollout](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/betriebssystem-rollout) |
@@ -97,10 +97,10 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 66 | C | Monitoring und Logging | Windows Event Forwarding und Ereignisprotokolle | offen | [P66](prompts/P66-windows-event-forwarding-und-ereignisprotokolle.md) | – | `monitoring-logging-uebungen` (geplant) |
 | 67 | C | Datenbanken | NoSQL-Datenbanken und Redis | offen | [P67](prompts/P67-nosql-datenbanken-und-redis.md) | – | `datenbanken-uebungen` (geplant) |
 | 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – | `datenbanken-uebungen` (geplant) |
-| 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | offen | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | – | `it-betrieb-uebungen` (geplant) |
-| 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | offen | [P70](prompts/P70-lizenzmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
+| 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | gepusht | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | [P69](lehrplaene/P69-asset-verwaltung-und-cmdb.md) | [it-betrieb-uebungen/asset-verwaltung-und-cmdb](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/asset-verwaltung-und-cmdb) |
+| 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | gepusht | [P70](prompts/P70-lizenzmanagement.md) | [P70](lehrplaene/P70-lizenzmanagement.md) | [it-betrieb-uebungen/lizenzmanagement](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/lizenzmanagement) |
 | 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | [netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dhcp-grundlagen-und-betrieb) |
-| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | Lehrplan erstellt | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | [it-betrieb-uebungen/weiterbildung-it-systemtechnik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/weiterbildung-it-systemtechnik) |
+| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | gepusht | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | [it-betrieb-uebungen/weiterbildung-it-systemtechnik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/weiterbildung-it-systemtechnik) |
 <!-- TABELLE-ENDE -->
 
 ## Die 16 Fächer (K01–K16)
@@ -174,7 +174,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | `datenbanken-uebungen` (noch nicht angelegt) | P30 SQL-Grundlagen; P31 MariaDB und PostgreSQL Administration; P32 SQL Server Administration; P67 NoSQL-Datenbanken und Redis; P68 Datenbank-Backup und -Wiederherstellung |
 | [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO); P36 Notfallplanung und Disaster Recovery; P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS |
 | `e-mail-uebungen` (noch nicht angelegt) | P37 Exchange Online Administration; P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC; P39 Mailserver mit Postfix und Dovecot |
-| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen; P41 Incident-, Problem- und Change-Management; P42 Ticketsysteme in der Praxis; P43 SLA und Betriebshandbuch; P47 Datenschutz (DSGVO) in der IT; P48 NIS2 für Administratoren; P49 ISO 27001 Grundlagen; P50 Troubleshooting-Methodik; P51 Projektmanagement für Administratoren; P52 IT-Englisch für Administratoren; P69 Asset-Verwaltung und CMDB; P70 Lizenzmanagement; P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) |
+| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen (gepusht); P41 Incident-, Problem- und Change-Management (gepusht); P42 Ticketsysteme in der Praxis (gepusht); P43 SLA und Betriebshandbuch (gepusht); P47 Datenschutz (DSGVO) in der IT; P48 NIS2 für Administratoren; P49 ISO 27001 Grundlagen; P50 Troubleshooting-Methodik; P51 Projektmanagement für Administratoren; P52 IT-Englisch für Administratoren; P69 Asset-Verwaltung und CMDB (gepusht); P70 Lizenzmanagement (gepusht); P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) (gepusht) |
 | [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche (gepusht); P45 Windows-11-Client-Administration (gepusht); P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) (gepusht) |
 <!-- REPOS-ENDE -->
 

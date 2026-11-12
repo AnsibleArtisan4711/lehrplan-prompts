@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-13 (Gruppe IT-Betrieb und Prozesse komplett: P40, P41, P42, P43, P69, P70, P72)
+
+- Neu: Lehrpläne `lehrplaene/P69-asset-verwaltung-und-cmdb.md` (8 Module, 45 UE; Prio 1: 39 UE, Prio 2: 6 UE) und `lehrplaene/P70-lizenzmanagement.md` (8 Module, 40 UE; Prio 1: 31 UE, Prio 2: 9 UE). Beide wurden direkt nach der Grundanweisung geschrieben und von Matija noch nicht geprüft. Quellen: GLPI-Dokumentation (Voraussetzungen, Inventory-Seite) und ein archivierter Microsoft-Blog zu Windows Server 2016, jeweils mit Abrufdatum 13.11.2026; Lizenzregeln für aktuelle Produkte und rechtliche Aussagen sind nicht geprüft.
+- `status` von P40, P41, P42, P43, P69, P70 und P72 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-betrieb-uebungen`: `itil-4-grundlagen`, `incident-problem-und-change-management`, `ticketsysteme-in-der-praxis`, `sla-und-betriebshandbuch`, `asset-verwaltung-und-cmdb`, `lizenzmanagement`; P72 hatte `ordner` bereits). Die Gruppe „IT-Betrieb und Prozesse“ ist damit komplett.
+- Die Übungsreihen sind Entwürfe. In GLPI, Zammad, Ubuntu, Hyper-V und Windows wurde nichts ausgeführt; real gelaufen sind nur die Python-Rechenhilfen.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-12 (Gruppe Client und Hardware komplett: P44, P45, P46)
 
 - `status` von P44, P45 und P46 auf „gepusht“, Feld `ordner` ergänzt (`pc-hardware-und-fehlersuche`, `windows-11-client-administration`, `betriebssystem-rollout` im Repository `client-hardware-uebungen`). Die Gruppe „Client und Hardware“ ist damit komplett. Commits im Repository `client-hardware-uebungen`: 639f82b (P45), 8a341ee (P46), ad7df40 (P44).

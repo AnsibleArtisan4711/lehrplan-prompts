@@ -639,9 +639,10 @@
     "themen": "Service-Wertschöpfungssystem; Leitprinzipien; Praktiken; Servicemanagement im Betrieb; Rollen; Kennzahlen; Verbesserung; Bezug zum Alltag der Systemadministration",
     "abgrenzung": "",
     "hinweis": "Keine geschützten ITIL-Texte übernehmen; Inhalte sinngemäß und mit eigenen Beispielen; Version und Stand nennen.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "itil-4-grundlagen"
   },
   {
     "id": "P41",
@@ -655,9 +656,10 @@
     "themen": "Incident-Lebenszyklus; Priorisierung; Eskalation; Problem-Analyse (5-Why, Ishikawa); Change-Typen; Genehmigung und Rückfallplan; Wartungsfenster; Post-Incident-Review; Dokumentation und Kennzahlen",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; optional ein Open-Source-Ticketsystem",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "incident-problem-und-change-management"
   },
   {
     "id": "P42",
@@ -671,9 +673,10 @@
     "themen": "Zweck und Aufbau; Open-Source-Ticketsystem (z. B. GLPI oder Zammad) installieren; Kategorien und Warteschlangen; Prioritäten und SLAs; Wissensdatenbank; Automatisierung; Berichte; Anbindung an Monitoring und E-Mail",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM mit Ticketsystem; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "ticketsysteme-in-der-praxis"
   },
   {
     "id": "P43",
@@ -687,9 +690,10 @@
     "themen": "Servicekatalog; SLA, OLA und Kennzahlen; Verfügbarkeitsberechnung; Bereitschaft; Betriebshandbuch und Runbooks; Übergabe; Qualität und Aktualität",
     "abgrenzung": "Technische Dokumentation ist ein vorhandener Kurs; hier Betriebsregelwerk",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "sla-und-betriebshandbuch"
   },
   {
     "id": "P44",
@@ -1108,9 +1112,10 @@
     "themen": "Begriffe (Asset, Configuration Item, CMDB); Lebenszyklus von Geräten und Software; Datenmodell und Beziehungen; Inventarisierung (manuell und automatisch); Importe; Verknüpfung mit Tickets; Datenqualität und Verantwortlichkeiten; Berichte; Prüfung und Bestandsaufnahme; Datenschutz",
     "abgrenzung": "ITIL, Ticketsysteme und Lizenzmanagement sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Lizenzmodelle der Werkzeuge mit Stand nennen.",
-    "status": "offen",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM mit einem Asset-Werkzeug; 1x Windows-11-Client-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "asset-verwaltung-und-cmdb"
   },
   {
     "id": "P70",
@@ -1124,9 +1129,10 @@
     "themen": "Lizenzarten und -modelle (Gerät, Benutzer, Subscription, Core); Microsoft-Lizenzierung im Überblick (Server, Client-Zugriff, Microsoft 365); Open-Source-Lizenzen und Pflichten; Cloud-Lizenzen und Kosten; Lizenzinventur und Compliance; Audits und Nachweise; Lizenzoptimierung; Beschaffung; Dokumentation",
     "abgrenzung": "Asset-Verwaltung ist ein eigener Kurs; keine Rechtsberatung",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Bei rechtlichen Aussagen auf die Pflicht zur Prüfung durch Fachleute hinweisen; keine Preise ohne Stand.",
-    "status": "offen",
+    "status": "gepusht",
     "labor": "kein technisches Labor; Tabellenkalkulation und Beispielunterlagen",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "lizenzmanagement"
   },
   {
     "id": "P71",
@@ -1157,7 +1163,7 @@
     "themen": "Berufsbild und Spezialisierungslandkarte; Netzwerk und Protokolle; Windows Server, Active Directory und Hybrid Identity; Modern Workplace und Endpoint Management; Linux-Server und Open-Source-Dienste; Virtualisierung und Storage; Cloud-Administration und Hybrid Platforms; Monitoring, Logging, Backup und Business Continuity; Security, Hardening und Identity & Access Management; Automation, Scripting und Infrastructure as Code; Troubleshooting, ITSM und Dokumentation; Karrierepfade und Zertifikate",
     "abgrenzung": "Querschnittskurs mit Einstieg in jedes Gebiet, keine Vertiefung: Die Spezialkurse (DNS, DHCP, Backup, Monitoring und andere) bleiben eigene Lehrpläne und werden nur kurz verwiesen; kein praktischer Aufbau von Exchange Online, Teams und SharePoint, Entra Connect, Clustern, SAN/NAS, VMware oder Proxmox (nur Konzept); keine Zertifizierungsprüfung und keine Fragenkataloge; keine produktiven Mandanten, Konten oder Netze",
     "hinweis": "Versions- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Befehle, Parameter und Menünamen nicht erfinden. Cloud nur über Testzugänge (Intune-Testversion, Azure-Free-Account) und nur als begründete Ausnahme zum Hyper-V-Labor.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "Hyper-V mit drei privaten Switches (Server-, Client- und Testnetz) und dem Default Switch nur für Internetphasen; 1x Windows-Server-VM als Domänencontroller, 1x Windows-Server-VM als Dateiserver und Router, 1x Windows-11-Client-VM, 1x Ubuntu-Server-VM, 1x Windows-11-Client-VM nur für Cloud-Verwaltung; Intune-Testversion (30 Tage) und Azure-Free-Account als Cloud-Ausnahmen; Domäne lab.example.internal",
     "repo": "it-betrieb-uebungen",
     "ordner": "weiterbildung-it-systemtechnik"
