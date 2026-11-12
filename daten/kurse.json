@@ -719,7 +719,8 @@
     "hinweis": "",
     "status": "Lehrplan erstellt",
     "labor": "1x Windows-11-Client-VM (Domäne beitretbar); 1x Windows-Server-VM (Domain Controller); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "client-hardware-uebungen"
+    "repo": "client-hardware-uebungen",
+    "ordner": "windows-11-client-administration"
   },
   {
     "id": "P46",

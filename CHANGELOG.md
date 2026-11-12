@@ -1,9 +1,9 @@
 # Änderungen
 
-## 2026-11-12 (Links auf die Kursordner für P71 und P72)
+## 2026-11-12 (Links auf die Kursordner für P71, P72 und P45)
 
 - Fehlerbehebung: In der README-Tabelle waren P71 und P72 in der Spalte „Repository“ nur als `geplant` ohne Link eingetragen, obwohl die Übungsreihen in `netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb` und `it-betrieb-uebungen/weiterbildung-it-systemtechnik` liegen.
-- `daten/kurse.json`: Feld `ordner` bei P71 und P72 ergänzt. Der Status bleibt „Lehrplan erstellt“, weil die Gruppen noch nicht vollständig sind.
+- `daten/kurse.json`: Feld `ordner` bei P71, P72 und P45 (`client-hardware-uebungen/windows-11-client-administration`) ergänzt. Der Status bleibt „Lehrplan erstellt“, weil die Gruppen noch nicht vollständig sind.
 - `tools/build_prompts.py`: Die Spalte „Repository“ und die Tabelle der Themen-Repositories verlinken jetzt, sobald `ordner` gesetzt ist (bisher nur bei Status „gepusht“). Die Legende im README wurde angepasst.
 - README mit `python tools/build_prompts.py` neu erzeugt; alle anderen Zeilen sind unverändert.
 
