@@ -45,9 +45,10 @@
     "themen": "Update-Verwaltung im Unternehmen; WSUS installieren und konfigurieren; Computergruppen, Genehmigungen, Zeitpläne; Client-Steuerung per Gruppenrichtlinie; Berichte; Bereinigung; Datenbank und Speicher; Alternativen und Ausblick (Windows Update for Business, Intune, Azure Update Manager)",
     "abgrenzung": "",
     "hinweis": "Prüfe den aktuellen Support- und Lebenszyklusstatus von WSUS und nenne ihn mit Stand; kennzeichne Unsicherheit.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x WSUS-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "windows-server-uebungen"
+    "repo": "windows-server-uebungen",
+    "ordner": "wsus-und-update-verwaltung"
   },
   {
     "id": "P04",
@@ -61,9 +62,10 @@
     "themen": "PKI-Grundlagen; zweistufige Hierarchie (Offline-Root und ausstellende CA); Zertifikatvorlagen; Autoenrollment per Gruppenrichtlinie; CRL und OCSP; Zertifikate für Webserver, Clients und 802.1X; Sperrung und Erneuerung; Sicherung und Wiederherstellung der CA; typische Konfigurationsfehler und ihre Sicherheitsfolgen in Grundzügen",
     "abgrenzung": "Kryptografie-Theorie gehört in den Kurs „Kryptografie, Zertifikate und TLS“; hier die Praxis mit AD CS",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Domain Controller; 1x Server-VM für die Zertifizierungsstelle; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "windows-server-uebungen"
+    "repo": "windows-server-uebungen",
+    "ordner": "zertifikatsdienste-und-pki"
   },
   {
     "id": "P05",
@@ -719,8 +721,7 @@
     "hinweis": "",
     "status": "Lehrplan erstellt",
     "labor": "1x Windows-11-Client-VM (Domäne beitretbar); 1x Windows-Server-VM (Domain Controller); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "client-hardware-uebungen",
-    "ordner": "windows-11-client-administration"
+    "repo": "client-hardware-uebungen"
   },
   {
     "id": "P46",
@@ -942,9 +943,10 @@
     "themen": "RDS-Architektur und Rollendienste; Sitzungshost; Verbindungsbroker; Gateway; Webzugriff; Lizenzierung (RDS-CALs); Sammlungen und RemoteApps; Profilverwaltung (Benutzerprofil-Datenträger); Gruppenrichtlinien für RDS; Druck und Laufwerksumleitung; Sicherheit und Netzwerkebenenauthentifizierung; Überwachung und Fehlersuche",
     "abgrenzung": "Gruppenrichtlinien-Grundlagen und Active Directory sind eigene vorhandene Lehrpläne; Dateidienste im Kurs „Dateidienste, DFS und Druckserver“",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Lizenzmodell und Testzeitraum mit Stand nennen.",
-    "status": "offen",
+    "status": "gepusht",
     "labor": "1x Windows-Server-VM (DC); 1x Windows-Server-VM (RDS); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "windows-server-uebungen"
+    "repo": "windows-server-uebungen",
+    "ordner": "remotedesktopdienste-rds"
   },
   {
     "id": "P60",
@@ -974,9 +976,10 @@
     "themen": "Architektur und Installation; Verbindungen zu Servern und Clustern; Verwaltung von Rollen, Diensten und Speicher; Hyper-V-Verwaltung; Updates; Zertifikate und Authentifizierung; Erweiterungen; Berechtigungen und Sicherheit; Abgrenzung zum Server-Manager und zu PowerShell",
     "abgrenzung": "Hyper-V, Failover-Clustering und PowerShell sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Support- und Lebenszyklusstatus nennen.",
-    "status": "offen",
+    "status": "gepusht",
     "labor": "1x Windows-Server-VM mit Windows Admin Center; 1x Windows-Server-VM als Verwaltungsziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "windows-server-uebungen"
+    "repo": "windows-server-uebungen",
+    "ordner": "windows-admin-center"
   },
   {
     "id": "P62",
@@ -1136,8 +1139,7 @@
     "hinweis": "Versions- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Befehle, Parameter und Menünamen nicht erfinden. ISC DHCP wird nicht mehr als Server behandelt (Kea statt ISC DHCP).",
     "status": "Lehrplan erstellt",
     "labor": "1x Linux-Router-VM mit drei Netzen (Relay); 2x Windows-Server-VM (DHCP, Failover); 1x Windows-Server-VM als Domänencontroller (ab Modul 6); 1x Linux-Server-VM (Kea); 1 Windows-Client-VM; 1 Linux-Client-VM; drei private Hyper-V-Switches ohne Verbindung zum Heimnetz",
-    "repo": "netzwerkdienste-uebungen",
-    "ordner": "dhcp-grundlagen-und-betrieb"
+    "repo": "netzwerkdienste-uebungen"
   },
   {
     "id": "P72",
@@ -1153,7 +1155,6 @@
     "hinweis": "Versions- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Befehle, Parameter und Menünamen nicht erfinden. Cloud nur über Testzugänge (Intune-Testversion, Azure-Free-Account) und nur als begründete Ausnahme zum Hyper-V-Labor.",
     "status": "Lehrplan erstellt",
     "labor": "Hyper-V mit drei privaten Switches (Server-, Client- und Testnetz) und dem Default Switch nur für Internetphasen; 1x Windows-Server-VM als Domänencontroller, 1x Windows-Server-VM als Dateiserver und Router, 1x Windows-11-Client-VM, 1x Ubuntu-Server-VM, 1x Windows-11-Client-VM nur für Cloud-Verwaltung; Intune-Testversion (30 Tage) und Azure-Free-Account als Cloud-Ausnahmen; Domäne lab.example.internal",
-    "repo": "it-betrieb-uebungen",
-    "ordner": "weiterbildung-it-systemtechnik"
+    "repo": "it-betrieb-uebungen"
   }
 ]

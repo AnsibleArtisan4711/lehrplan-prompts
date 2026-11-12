@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 72 Kurse: 54 offen, 16 Lehrplan erstellt, 0 aufbereitet, 2 gepusht.
+Stand der 72 Kurse: 52 offen, 14 Lehrplan erstellt, 0 aufbereitet, 6 gepusht.
 
 Bedeutung der Status:
 
@@ -25,14 +25,14 @@ Bedeutung der Status:
 - **aufbereitet**: Aus dem Lehrplan ist Übungsmaterial ausgearbeitet, aber noch nicht veröffentlicht.
 - **gepusht**: Das Übungsmaterial liegt als Kursordner in einem Themen-Repository auf GitHub, das in der Spalte „Repository“ verlinkt wird.
 
-Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link darauf, sonst das geplante Themen-Repository (Feld `repo` in `daten/kurse.json`).
+Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das geplante Themen-Repository (Feld `repo` in `daten/kurse.json`).
 
 | Nr | Prio | Themengebiet | Kurs | Status | Prompt | Lehrplan | Repository |
 |---|---|---|---|---|---|---|---|
 | 1 | A | Windows-Server-Rollen | DNS-Grundlagen (Windows-DNS und BIND) | gepusht | [P01](prompts/P01-dns-grundlagen-windows-dns-und-bind.md) | [P01](lehrplaene/P01-dns-grundlagen-windows-dns-und-bind.md) | [netzwerkdienste-uebungen/dns-grundlagen](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dns-grundlagen) |
 | 2 | A | Windows-Server-Rollen | Dateidienste, DFS und Druckserver | gepusht | [P02](prompts/P02-dateidienste-dfs-und-druckserver.md) | [P02](lehrplaene/P02-dateidienste-dfs-und-druckserver.md) | [windows-server-uebungen/dateidienste-dfs-druckserver](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/dateidienste-dfs-druckserver) |
-| 3 | A | Windows-Server-Rollen | WSUS und Update-Verwaltung | Lehrplan erstellt | [P03](prompts/P03-wsus-und-update-verwaltung.md) | [P03](lehrplaene/P03-wsus-und-update-verwaltung.md) | `windows-server-uebungen` (geplant) |
-| 4 | A | Windows-Server-Rollen | Zertifikatsdienste und PKI (AD CS) | Lehrplan erstellt | [P04](prompts/P04-zertifikatsdienste-und-pki-ad-cs.md) | [P04](lehrplaene/P04-zertifikatsdienste-und-pki-ad-cs.md) | `windows-server-uebungen` (geplant) |
+| 3 | A | Windows-Server-Rollen | WSUS und Update-Verwaltung | gepusht | [P03](prompts/P03-wsus-und-update-verwaltung.md) | [P03](lehrplaene/P03-wsus-und-update-verwaltung.md) | [windows-server-uebungen/wsus-und-update-verwaltung](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/wsus-und-update-verwaltung) |
+| 4 | A | Windows-Server-Rollen | Zertifikatsdienste und PKI (AD CS) | gepusht | [P04](prompts/P04-zertifikatsdienste-und-pki-ad-cs.md) | [P04](lehrplaene/P04-zertifikatsdienste-und-pki-ad-cs.md) | [windows-server-uebungen/zertifikatsdienste-und-pki](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/zertifikatsdienste-und-pki) |
 | 5 | A | Virtualisierung | Hyper-V Administration | Lehrplan erstellt | [P05](prompts/P05-hyper-v-administration.md) | [P05](lehrplaene/P05-hyper-v-administration.md) | `virtualisierung-uebungen` (geplant) |
 | 6 | A | Virtualisierung | Proxmox VE | offen | [P06](prompts/P06-proxmox-ve.md) | – | `virtualisierung-uebungen` (geplant) |
 | 7 | A | Virtualisierung | VMware vSphere und ESXi | offen | [P07](prompts/P07-vmware-vsphere-und-esxi.md) | – | `virtualisierung-uebungen` (geplant) |
@@ -73,7 +73,7 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | Lehrplan erstellt | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) | [P42](lehrplaene/P42-ticketsysteme-in-der-praxis.md) | `it-betrieb-uebungen` (geplant) |
 | 43 | C | IT-Betrieb und Prozesse | SLA und Betriebshandbuch | Lehrplan erstellt | [P43](prompts/P43-sla-und-betriebshandbuch.md) | [P43](lehrplaene/P43-sla-und-betriebshandbuch.md) | `it-betrieb-uebungen` (geplant) |
 | 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | Lehrplan erstellt | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) | [P44](lehrplaene/P44-pc-hardware-und-fehlersuche.md) | `client-hardware-uebungen` (geplant) |
-| 45 | C | Client und Hardware | Windows-11-Client-Administration | Lehrplan erstellt | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | [client-hardware-uebungen/windows-11-client-administration](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/windows-11-client-administration) |
+| 45 | C | Client und Hardware | Windows-11-Client-Administration | Lehrplan erstellt | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | `client-hardware-uebungen` (geplant) |
 | 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | Lehrplan erstellt | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [P46](lehrplaene/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | `client-hardware-uebungen` (geplant) |
 | 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | offen | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) | – | `it-betrieb-uebungen` (geplant) |
 | 48 | C | Recht und Compliance | NIS2 für Administratoren | offen | [P48](prompts/P48-nis2-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
@@ -87,9 +87,9 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 56 | B | Cloud-Plattformen | AWS Administration (SysOps) | offen | [P56](prompts/P56-aws-administration-sysops.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 57 | B | Azure und Identität | Azure-Netzwerk und Azure-Sicherheit | offen | [P57](prompts/P57-azure-netzwerk-und-azure-sicherheit.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 58 | C | Cloud-Plattformen | Google Cloud Grundlagen | offen | [P58](prompts/P58-google-cloud-grundlagen.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 59 | B | Windows-Server-Rollen | Remotedesktopdienste (RDS) | offen | [P59](prompts/P59-remotedesktopdienste-rds.md) | – | `windows-server-uebungen` (geplant) |
+| 59 | B | Windows-Server-Rollen | Remotedesktopdienste (RDS) | gepusht | [P59](prompts/P59-remotedesktopdienste-rds.md) | [P59](lehrplaene/P59-remotedesktopdienste-rds.md) | [windows-server-uebungen/remotedesktopdienste-rds](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/remotedesktopdienste-rds) |
 | 60 | B | Virtualisierung | Failover-Clustering und Hochverfügbarkeit | offen | [P60](prompts/P60-failover-clustering-und-hochverfuegbarkeit.md) | – | `virtualisierung-uebungen` (geplant) |
-| 61 | C | Windows-Server-Rollen | Windows Admin Center | offen | [P61](prompts/P61-windows-admin-center.md) | – | `windows-server-uebungen` (geplant) |
+| 61 | C | Windows-Server-Rollen | Windows Admin Center | gepusht | [P61](prompts/P61-windows-admin-center.md) | [P61](lehrplaene/P61-windows-admin-center.md) | [windows-server-uebungen/windows-admin-center](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/windows-admin-center) |
 | 62 | B | IT-Sicherheit | IDS und IPS mit Suricata | offen | [P62](prompts/P62-ids-und-ips-mit-suricata.md) | – | `it-sicherheit-uebungen` (geplant) |
 | 63 | B | IT-Sicherheit | Passwort- und Secrets-Verwaltung | offen | [P63](prompts/P63-passwort-und-secrets-verwaltung.md) | – | `it-sicherheit-uebungen` (geplant) |
 | 64 | B | IT-Sicherheit | Penetrationstest-Grundlagen | offen | [P64](prompts/P64-penetrationstest-grundlagen.md) | – | `it-sicherheit-uebungen` (geplant) |
@@ -99,8 +99,8 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – | `datenbanken-uebungen` (geplant) |
 | 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | offen | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | – | `it-betrieb-uebungen` (geplant) |
 | 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | offen | [P70](prompts/P70-lizenzmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
-| 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | [netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dhcp-grundlagen-und-betrieb) |
-| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | Lehrplan erstellt | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | [it-betrieb-uebungen/weiterbildung-it-systemtechnik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/weiterbildung-it-systemtechnik) |
+| 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | `netzwerkdienste-uebungen` (geplant) |
+| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | Lehrplan erstellt | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | `it-betrieb-uebungen` (geplant) |
 <!-- TABELLE-ENDE -->
 
 ## Die 16 Fächer (K01–K16)
@@ -163,7 +163,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | Repository | Kurse |
 |---|---|
 | [netzwerkdienste-uebungen](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen) | P01 DNS-Grundlagen (Windows-DNS und BIND) (gepusht); P71 DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) |
-| [windows-server-uebungen](https://github.com/AnsibleArtisan4711/windows-server-uebungen) | P02 Dateidienste, DFS und Druckserver (gepusht); P03 WSUS und Update-Verwaltung; P04 Zertifikatsdienste und PKI (AD CS); P59 Remotedesktopdienste (RDS); P61 Windows Admin Center |
+| [windows-server-uebungen](https://github.com/AnsibleArtisan4711/windows-server-uebungen) | P02 Dateidienste, DFS und Druckserver (gepusht); P03 WSUS und Update-Verwaltung (gepusht); P04 Zertifikatsdienste und PKI (AD CS) (gepusht); P59 Remotedesktopdienste (RDS) (gepusht); P61 Windows Admin Center (gepusht) |
 | `virtualisierung-uebungen` (noch nicht angelegt) | P05 Hyper-V Administration; P06 Proxmox VE; P07 VMware vSphere und ESXi; P60 Failover-Clustering und Hochverfügbarkeit |
 | [netzwerk-und-firewall-uebungen](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen) | P08 Firewall mit OPNsense; P09 Linux-Firewall mit nftables und iptables; P10 VPN mit WireGuard und OpenVPN; P11 Reverse Proxy, Lastverteilung und TLS |
 | `it-sicherheit-uebungen` (noch nicht angelegt) | P12 IT-Sicherheitsgrundlagen; P13 Windows-Server-Härtung; P14 Linux-Server-Härtung; P15 Schwachstellenmanagement; P16 Kryptografie, Zertifikate und TLS; P62 IDS und IPS mit Suricata; P63 Passwort- und Secrets-Verwaltung; P64 Penetrationstest-Grundlagen |

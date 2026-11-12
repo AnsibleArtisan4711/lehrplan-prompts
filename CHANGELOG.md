@@ -1,11 +1,11 @@
 # Änderungen
 
-## 2026-11-12 (Links auf die Kursordner für P71, P72 und P45)
+## 2026-11-12 (Gruppe Windows-Server-Rollen komplett: P03, P04, P59, P61)
 
-- Fehlerbehebung: In der README-Tabelle waren P71 und P72 in der Spalte „Repository“ nur als `geplant` ohne Link eingetragen, obwohl die Übungsreihen in `netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb` und `it-betrieb-uebungen/weiterbildung-it-systemtechnik` liegen.
-- `daten/kurse.json`: Feld `ordner` bei P71, P72 und P45 (`client-hardware-uebungen/windows-11-client-administration`) ergänzt. Der Status bleibt „Lehrplan erstellt“, weil die Gruppen noch nicht vollständig sind.
-- `tools/build_prompts.py`: Die Spalte „Repository“ und die Tabelle der Themen-Repositories verlinken jetzt, sobald `ordner` gesetzt ist (bisher nur bei Status „gepusht“). Die Legende im README wurde angepasst.
-- README mit `python tools/build_prompts.py` neu erzeugt; alle anderen Zeilen sind unverändert.
+- Neu: Lehrplan `lehrplaene/P59-remotedesktopdienste-rds.md` (13 Module, 104 UE; Prio 1: 90 UE, Prio 2: 14 UE) und Lehrplan `lehrplaene/P61-windows-admin-center.md` (9 Module, 52 UE; Prio 1: 42 UE, Prio 2: 10 UE). Beide wurden direkt nach der Grundanweisung geschrieben und von Matija noch nicht geprüft. Microsoft-Learn-Angaben stammen aus Suchtreffer-Auszügen vom 12.11.2026.
+- `status` von P03, P04, P59 und P61 auf „gepusht“, Feld `ordner` ergänzt (`wsus-und-update-verwaltung`, `zertifikatsdienste-und-pki`, `remotedesktopdienste-rds`, `windows-admin-center` im Repository `windows-server-uebungen`). Die Gruppe „Windows-Server-Rollen“ (P01 bis P04, P59, P61) ist damit komplett. Die Übungsreihen sind Entwürfe und nicht auf Windows ausgeführt.
+- Hinweis: Die Übungsreihen P59 und P61 und die beiden Lehrpläne liegen im selben Commit wie diese Änderung.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
 
 ## 2026-11-12 (Kurs P72 Weiterbildung IT-Systemtechnik)
 
