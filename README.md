@@ -25,7 +25,7 @@ Bedeutung der Status:
 - **aufbereitet**: Aus dem Lehrplan ist Übungsmaterial ausgearbeitet, aber noch nicht veröffentlicht.
 - **gepusht**: Das Übungsmaterial liegt als Kursordner in einem Themen-Repository auf GitHub, das in der Spalte „Repository“ verlinkt wird.
 
-Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das geplante Themen-Repository (Feld `repo` in `daten/kurse.json`).
+Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link darauf, sonst das geplante Themen-Repository (Feld `repo` in `daten/kurse.json`).
 
 | Nr | Prio | Themengebiet | Kurs | Status | Prompt | Lehrplan | Repository |
 |---|---|---|---|---|---|---|---|
@@ -73,7 +73,7 @@ Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das gepl
 | 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | Lehrplan erstellt | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) | [P42](lehrplaene/P42-ticketsysteme-in-der-praxis.md) | `it-betrieb-uebungen` (geplant) |
 | 43 | C | IT-Betrieb und Prozesse | SLA und Betriebshandbuch | Lehrplan erstellt | [P43](prompts/P43-sla-und-betriebshandbuch.md) | [P43](lehrplaene/P43-sla-und-betriebshandbuch.md) | `it-betrieb-uebungen` (geplant) |
 | 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | Lehrplan erstellt | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) | [P44](lehrplaene/P44-pc-hardware-und-fehlersuche.md) | `client-hardware-uebungen` (geplant) |
-| 45 | C | Client und Hardware | Windows-11-Client-Administration | Lehrplan erstellt | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | `client-hardware-uebungen` (geplant) |
+| 45 | C | Client und Hardware | Windows-11-Client-Administration | Lehrplan erstellt | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | [client-hardware-uebungen/windows-11-client-administration](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/windows-11-client-administration) |
 | 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | Lehrplan erstellt | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [P46](lehrplaene/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | `client-hardware-uebungen` (geplant) |
 | 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | offen | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) | – | `it-betrieb-uebungen` (geplant) |
 | 48 | C | Recht und Compliance | NIS2 für Administratoren | offen | [P48](prompts/P48-nis2-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
@@ -99,8 +99,8 @@ Spalte „Repository“: bei gepusht der Link auf den Kursordner, sonst das gepl
 | 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – | `datenbanken-uebungen` (geplant) |
 | 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | offen | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | – | `it-betrieb-uebungen` (geplant) |
 | 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | offen | [P70](prompts/P70-lizenzmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
-| 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | `netzwerkdienste-uebungen` (geplant) |
-| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | Lehrplan erstellt | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | `it-betrieb-uebungen` (geplant) |
+| 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | [netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dhcp-grundlagen-und-betrieb) |
+| 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | Lehrplan erstellt | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | [it-betrieb-uebungen/weiterbildung-it-systemtechnik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/weiterbildung-it-systemtechnik) |
 <!-- TABELLE-ENDE -->
 
 ## Die 16 Fächer (K01–K16)
