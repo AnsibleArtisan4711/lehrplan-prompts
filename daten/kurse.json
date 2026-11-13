@@ -193,9 +193,10 @@
     "themen": "Schutzziele; Bedrohungen und Angriffsarten; Risikobewertung; Authentifizierung und Autorisierung; Netzwerk- und Endgerätesicherheit; Kryptografie im Überblick; Sicherheitsrichtlinien; Vorfallbehandlung; Awareness",
     "abgrenzung": "",
     "hinweis": "Orientiere dich sinngemäß an den aktuellen Prüfungszielen von CompTIA Security+ (Stand nennen). Keine Prüfungsfragen und keine geschützten Texte übernehmen.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "it-sicherheit-uebungen"
+    "repo": "it-sicherheit-uebungen",
+    "ordner": "it-sicherheitsgrundlagen"
   },
   {
     "id": "P13",

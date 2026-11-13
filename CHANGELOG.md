@@ -1,5 +1,13 @@
 # Änderungen
 
+## 2026-11-13 (Übungsreihe P12: IT-Sicherheitsgrundlagen)
+
+- `status` von P12 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-sicherheit-uebungen`, neu angelegt: `it-sicherheitsgrundlagen`).
+- Die Übungsreihe (12 Module, 116 UE, 87 Stunden) ist ein Entwurf. **Nicht unter Hyper-V und nicht auf Windows erprobt.** Die Linux-Befehle der Module 3, 4, 5, 7, 10 und 12 und die Python-Hilfsskripte (Phishing-Prüfung, CVSS-3.1-Rechner mit Selbsttest, ALE-Rechner, Logzähler) wurden in Netzwerk-Namespaces eines Cloud-Containers (Ubuntu 24.04.5) ausgeführt; der Windows-Server in Modul 12 wurde mit nftables nachgebildet. Windows-Befehle wurden nicht ausgeführt; Parameter von `Get-FileHash`, `New-NetFirewallRule`, `icacls` und die Ereignis-IDs 4624/4625 wurden auf Microsoft Learn gelesen (13.11.2026). Die Formeln im CVSS-Rechner stammen aus dem Gedächtnis des Verfassers, nicht aus der Spezifikation.
+- Material, das im Lehrplan fehlte (drei E-Mails, zehn Szenarien, Schwachstellenbericht mit erfundenen Kennungen `FIKTIV-2026-000N`, Krankenhaus-Szenario, Logauszug), wurde für die Übungen erfunden und ist gekennzeichnet.
+- Der Lehrplan P12 wurde nicht verändert; Befunde stehen in `lehrplan-korrekturen.md` der Übungsreihe (u. a. zeigt `ls -lR` die Rechte des Wurzelordners nicht, sodass die Abweichung `chmod 777` im Audit unentdeckt bleibt; `PasswordAuthentication no` allein lässt `keyboard-interactive` zu; `icacls`-Schalter für die Vererbung in Microsoft Learn anders benannt).
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-13 (Übungsreihe P10: VPN mit WireGuard und OpenVPN)
 
 - `status` von P10 auf „gepusht“, Feld `ordner` ergänzt (Repository `netzwerk-und-firewall-uebungen`: `vpn-mit-wireguard-und-openvpn`).
