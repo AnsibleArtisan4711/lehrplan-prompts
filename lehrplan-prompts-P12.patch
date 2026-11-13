@@ -1,0 +1,66 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 2ee58d5..f80904a 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,13 @@
+ # Änderungen
+ 
++## 2026-11-13 (Übungsreihe P12: IT-Sicherheitsgrundlagen)
++
++- `status` von P12 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-sicherheit-uebungen`, neu angelegt: `it-sicherheitsgrundlagen`).
++- Die Übungsreihe (12 Module, 116 UE, 87 Stunden) ist ein Entwurf. **Nicht unter Hyper-V und nicht auf Windows erprobt.** Die Linux-Befehle der Module 3, 4, 5, 7, 10 und 12 und die Python-Hilfsskripte (Phishing-Prüfung, CVSS-3.1-Rechner mit Selbsttest, ALE-Rechner, Logzähler) wurden in Netzwerk-Namespaces eines Cloud-Containers (Ubuntu 24.04.5) ausgeführt; der Windows-Server in Modul 12 wurde mit nftables nachgebildet. Windows-Befehle wurden nicht ausgeführt; Parameter von `Get-FileHash`, `New-NetFirewallRule`, `icacls` und die Ereignis-IDs 4624/4625 wurden auf Microsoft Learn gelesen (13.11.2026). Die Formeln im CVSS-Rechner stammen aus dem Gedächtnis des Verfassers, nicht aus der Spezifikation.
++- Material, das im Lehrplan fehlte (drei E-Mails, zehn Szenarien, Schwachstellenbericht mit erfundenen Kennungen `FIKTIV-2026-000N`, Krankenhaus-Szenario, Logauszug), wurde für die Übungen erfunden und ist gekennzeichnet.
++- Der Lehrplan P12 wurde nicht verändert; Befunde stehen in `lehrplan-korrekturen.md` der Übungsreihe (u. a. zeigt `ls -lR` die Rechte des Wurzelordners nicht, sodass die Abweichung `chmod 777` im Audit unentdeckt bleibt; `PasswordAuthentication no` allein lässt `keyboard-interactive` zu; `icacls`-Schalter für die Vererbung in Microsoft Learn anders benannt).
++- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
++
+ ## 2026-11-13 (Übungsreihe P10: VPN mit WireGuard und OpenVPN)
+ 
+ - `status` von P10 auf „gepusht“, Feld `ordner` ergänzt (Repository `netzwerk-und-firewall-uebungen`: `vpn-mit-wireguard-und-openvpn`).
+diff --git a/README.md b/README.md
+index a69f066..ffb10c2 100644
+--- a/README.md
++++ b/README.md
+@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
+ Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
+ 
+ <!-- TABELLE-START -->
+-Stand der 72 Kurse: 44 offen, 4 Lehrplan erstellt, 0 aufbereitet, 24 gepusht.
++Stand der 72 Kurse: 44 offen, 3 Lehrplan erstellt, 0 aufbereitet, 25 gepusht.
+ 
+ Bedeutung der Status:
+ 
+@@ -40,7 +40,7 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
+ | 9 | A | Netzwerkdienste und Firewall | Linux-Firewall mit nftables und iptables | offen | [P09](prompts/P09-linux-firewall-mit-nftables-und-iptables.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+ | 10 | A | Netzwerkdienste und Firewall | VPN mit WireGuard und OpenVPN | gepusht | [P10](prompts/P10-vpn-mit-wireguard-und-openvpn.md) | [P10](lehrplaene/P10-vpn-mit-wireguard-und-openvpn.md) | [netzwerk-und-firewall-uebungen/vpn-mit-wireguard-und-openvpn](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/vpn-mit-wireguard-und-openvpn) |
+ | 11 | A | Netzwerkdienste und Firewall | Reverse Proxy, Lastverteilung und TLS | offen | [P11](prompts/P11-reverse-proxy-lastverteilung-und-tls.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+-| 12 | A | IT-Sicherheit | IT-Sicherheitsgrundlagen | Lehrplan erstellt | [P12](prompts/P12-it-sicherheitsgrundlagen.md) | [P12](lehrplaene/P12-it-sicherheitsgrundlagen.md) | `it-sicherheit-uebungen` (geplant) |
++| 12 | A | IT-Sicherheit | IT-Sicherheitsgrundlagen | gepusht | [P12](prompts/P12-it-sicherheitsgrundlagen.md) | [P12](lehrplaene/P12-it-sicherheitsgrundlagen.md) | [it-sicherheit-uebungen/it-sicherheitsgrundlagen](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen/tree/main/it-sicherheitsgrundlagen) |
+ | 13 | A | IT-Sicherheit | Windows-Server-Härtung | offen | [P13](prompts/P13-windows-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
+ | 14 | A | IT-Sicherheit | Linux-Server-Härtung | offen | [P14](prompts/P14-linux-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
+ | 15 | A | IT-Sicherheit | Schwachstellenmanagement | offen | [P15](prompts/P15-schwachstellenmanagement.md) | – | `it-sicherheit-uebungen` (geplant) |
+@@ -166,7 +166,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
+ | [windows-server-uebungen](https://github.com/AnsibleArtisan4711/windows-server-uebungen) | P02 Dateidienste, DFS und Druckserver (gepusht); P03 WSUS und Update-Verwaltung (gepusht); P04 Zertifikatsdienste und PKI (AD CS) (gepusht); P59 Remotedesktopdienste (RDS) (gepusht); P61 Windows Admin Center (gepusht) |
+ | [virtualisierung-uebungen](https://github.com/AnsibleArtisan4711/virtualisierung-uebungen) | P05 Hyper-V Administration (gepusht); P06 Proxmox VE; P07 VMware vSphere und ESXi; P60 Failover-Clustering und Hochverfügbarkeit |
+ | [netzwerk-und-firewall-uebungen](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen) | P08 Firewall mit OPNsense; P09 Linux-Firewall mit nftables und iptables; P10 VPN mit WireGuard und OpenVPN (gepusht); P11 Reverse Proxy, Lastverteilung und TLS |
+-| `it-sicherheit-uebungen` (noch nicht angelegt) | P12 IT-Sicherheitsgrundlagen; P13 Windows-Server-Härtung; P14 Linux-Server-Härtung; P15 Schwachstellenmanagement; P16 Kryptografie, Zertifikate und TLS; P62 IDS und IPS mit Suricata; P63 Passwort- und Secrets-Verwaltung; P64 Penetrationstest-Grundlagen |
++| [it-sicherheit-uebungen](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen) | P12 IT-Sicherheitsgrundlagen (gepusht); P13 Windows-Server-Härtung; P14 Linux-Server-Härtung; P15 Schwachstellenmanagement; P16 Kryptografie, Zertifikate und TLS; P62 IDS und IPS mit Suricata; P63 Passwort- und Secrets-Verwaltung; P64 Penetrationstest-Grundlagen |
+ | `monitoring-logging-uebungen` (noch nicht angelegt) | P17 Monitoring mit Zabbix; P18 Monitoring mit Prometheus und Grafana; P19 Zentrales Logging mit Graylog und Elastic Stack; P20 Monitoring mit PRTG; P66 Windows Event Forwarding und Ereignisprotokolle |
+ | [automatisierung-uebungen](https://github.com/AnsibleArtisan4711/automatisierung-uebungen) | P21 Konfigurationsmanagement mit Ansible; P22 Infrastructure as Code mit Terraform; P23 cloud-init und VM-Vorlagen; P24 PowerShell Desired State Configuration (DSC); P65 CI/CD mit GitLab und Jenkins |
+ | `container-uebungen` (noch nicht angelegt) | P25 Docker und Docker Compose; P26 Kubernetes-Grundlagen; P53 Podman und Container-Sicherheit |
+diff --git a/daten/kurse.json b/daten/kurse.json
+index 24383ce..465ccdf 100644
+--- a/daten/kurse.json
++++ b/daten/kurse.json
+@@ -193,9 +193,10 @@
+     "themen": "Schutzziele; Bedrohungen und Angriffsarten; Risikobewertung; Authentifizierung und Autorisierung; Netzwerk- und Endgerätesicherheit; Kryptografie im Überblick; Sicherheitsrichtlinien; Vorfallbehandlung; Awareness",
+     "abgrenzung": "",
+     "hinweis": "Orientiere dich sinngemäß an den aktuellen Prüfungszielen von CompTIA Security+ (Stand nennen). Keine Prüfungsfragen und keine geschützten Texte übernehmen.",
+-    "status": "Lehrplan erstellt",
++    "status": "gepusht",
+     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+-    "repo": "it-sicherheit-uebungen"
++    "repo": "it-sicherheit-uebungen",
++    "ordner": "it-sicherheitsgrundlagen"
+   },
+   {
+     "id": "P13",
