@@ -1180,6 +1180,22 @@
     "ordner": "weiterbildung-it-systemtechnik"
   },
   {
+    "id": "P73",
+    "prio": "C",
+    "gruppe": "Zusatz",
+    "titel": "Bewerbungstraining für IT-Berufe",
+    "slug": "bewerbungstraining-fuer-it-berufe",
+    "umfang": "klein",
+    "fokus": "Bewerbung, Vorstellungsgespräch und Jobsuche für IT-Berufe",
+    "vorkenntnisse": "IT-Grundlagen aus Lehre, Ausbildung oder Selbststudium; Grundkenntnisse in Textverarbeitung und PDF-Erstellung",
+    "themen": "Standortbestimmung und Ziele; Jobsuche und Tracker; Lebenslauf; Anschreiben und Online-Profil; Vorstellungsgespräch (Vorbereitung, STAR, technische Fachgespräche); Nachbereitung und Gehaltsverhandlung; Mock-Interviews und 4-Wochen-Plan",
+    "abgrenzung": "Kein IT-Fachwissen, keine Rechts- oder Karriereberatung, keine Software-Schulung für Textverarbeitung.",
+    "hinweis": "",
+    "status": "Lehrplan erstellt",
+    "labor": "kein technisches Labor nötig; Textverarbeitung, Tabellenkalkulation, Kamera und Mikrofon; eigene Unterlagen gehören nicht in ein öffentliches Repository",
+    "repo": "it-betrieb-uebungen"
+  },
+  {
     "id": "A01",
     "prio": "C",
     "gruppe": "Windows, Client & Betriebssysteme",

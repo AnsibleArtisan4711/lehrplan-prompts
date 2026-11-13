@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 241 Kurse: 213 offen, 0 Lehrplan erstellt, 0 aufbereitet, 28 gepusht.
+Stand der 242 Kurse: 213 offen, 1 Lehrplan erstellt, 0 aufbereitet, 28 gepusht.
 
 Bedeutung der Status:
 
@@ -103,175 +103,176 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | gepusht | [P70](prompts/P70-lizenzmanagement.md) | [P70](lehrplaene/P70-lizenzmanagement.md) | [it-betrieb-uebungen/lizenzmanagement](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/lizenzmanagement) |
 | 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | gepusht | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | [netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dhcp-grundlagen-und-betrieb) |
 | 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | gepusht | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | [it-betrieb-uebungen/weiterbildung-it-systemtechnik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/weiterbildung-it-systemtechnik) |
-| 73 | C | Windows, Client & Betriebssysteme | Betriebssysteme | offen | [A01](prompts/A01-betriebssysteme.md) | – | `client-hardware-uebungen` (geplant) |
-| 74 | C | Windows, Client & Betriebssysteme | CompTIA A+ | offen | [A02](prompts/A02-comptia-a-plus.md) | – | `client-hardware-uebungen` (geplant) |
-| 75 | C | Windows, Client & Betriebssysteme | Microsoft MD-102 | offen | [A03](prompts/A03-microsoft-md-102.md) | – | `client-hardware-uebungen` (geplant) |
-| 76 | C | Windows, Client & Betriebssysteme | Microsoft Windows Server Hybrid Administrator | offen | [A04](prompts/A04-microsoft-windows-server-hybrid-administrator.md) | – | `windows-server-uebungen` (geplant) |
-| 77 | C | Windows, Client & Betriebssysteme | Weiterbildung IT Systemtechnik | offen | [A05](prompts/A05-weiterbildung-it-systemtechnik.md) | – | `it-betrieb-uebungen` (geplant) |
-| 78 | C | Windows, Client & Betriebssysteme | Windows Autopilot | offen | [A06](prompts/A06-windows-autopilot.md) | – | `client-hardware-uebungen` (geplant) |
-| 79 | C | Windows, Client & Betriebssysteme | Windows Server 2025 | offen | [A07](prompts/A07-windows-server-2025.md) | – | `windows-server-uebungen` (geplant) |
-| 80 | C | Identität, Zugriff & Microsoft 365 | Conditional Access (CA) | offen | [A08](prompts/A08-conditional-access.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 81 | C | Identität, Zugriff & Microsoft 365 | LDAP | offen | [A09](prompts/A09-ldap.md) | – | `windows-server-uebungen` (geplant) |
-| 82 | C | Identität, Zugriff & Microsoft 365 | MFA und Passwordless | offen | [A10](prompts/A10-mfa-und-passwordless.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 83 | C | Identität, Zugriff & Microsoft 365 | Microsoft Defender | offen | [A11](prompts/A11-microsoft-defender.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 84 | C | Identität, Zugriff & Microsoft 365 | Microsoft MS-102 | offen | [A12](prompts/A12-microsoft-ms-102.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 85 | C | Identität, Zugriff & Microsoft 365 | Microsoft SC-300 | offen | [A13](prompts/A13-microsoft-sc-300.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 86 | C | Identität, Zugriff & Microsoft 365 | Privileged Identity Management | offen | [A14](prompts/A14-privileged-identity-management.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 87 | C | Linux & Open Source | LPIC-1 | offen | [A15](prompts/A15-lpic-1.md) | – | `linux-uebungen` (geplant) |
-| 88 | C | Linux & Open Source | LPIC-2 | offen | [A16](prompts/A16-lpic-2.md) | – | `linux-uebungen` (geplant) |
-| 89 | C | Linux & Open Source | LPIC-3 | offen | [A17](prompts/A17-lpic-3.md) | – | `linux-uebungen` (geplant) |
-| 90 | C | Linux & Open Source | RHEL-Familie (Red Hat Enterprise Linux und AlmaLinux) | offen | [A18](prompts/A18-rhel-familie.md) | – | `linux-uebungen` (geplant) |
-| 91 | C | Netzwerk & Netzwerkdienste | Cisco CCNA | offen | [A19](prompts/A19-cisco-ccna.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 92 | C | Netzwerk & Netzwerkdienste | DNS Security (DNSSEC) | offen | [A20](prompts/A20-dns-security.md) | – | `netzwerkdienste-uebungen` (geplant) |
-| 93 | C | Netzwerk & Netzwerkdienste | E-Mail-Routing, SMTP und Mail Security | offen | [A21](prompts/A21-e-mail-routing-smtp-und-mail-security.md) | – | `e-mail-uebungen` (geplant) |
-| 94 | C | Netzwerk & Netzwerkdienste | Firewall, Netzwerkdesign und DMZ | offen | [A22](prompts/A22-firewall-netzwerkdesign-und-dmz.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 95 | C | Netzwerk & Netzwerkdienste | Netzwerktechnik | offen | [A23](prompts/A23-netzwerktechnik.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 96 | C | Netzwerk & Netzwerkdienste | Open-Source-Firewalls (IPFire und OPNsense) | offen | [A24](prompts/A24-open-source-firewalls.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 97 | C | Netzwerk & Netzwerkdienste | Traffic Analysis (NetFlow, Wireshark, tcpdump) | offen | [A25](prompts/A25-traffic-analysis.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 98 | C | IT-Sicherheit & Compliance | CompTIA Security+ | offen | [A26](prompts/A26-comptia-security-plus.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 99 | C | IT-Sicherheit & Compliance | Cyber-Angriffe und Verteidigung | offen | [A27](prompts/A27-cyber-angriffe-und-verteidigung.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 100 | C | IT-Sicherheit & Compliance | DSGVO | offen | [A28](prompts/A28-dsgvo.md) | – | `it-betrieb-uebungen` (geplant) |
-| 101 | C | IT-Sicherheit & Compliance | Incident Response | offen | [A29](prompts/A29-incident-response.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 102 | C | IT-Sicherheit & Compliance | SIEM | offen | [A30](prompts/A30-siem.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 103 | C | IT-Sicherheit & Compliance | Schwachstellen-, Patch- und Änderungsmanagement | offen | [A31](prompts/A31-schwachstellen-patch-und-aenderungsmanagement.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 104 | C | Cloud-Plattformen (AWS, Azure, Google) | AWS Certified CloudOps Engineer Associate | offen | [A32](prompts/A32-aws-certified-cloudops-engineer-associate.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 105 | C | Cloud-Plattformen (AWS, Azure, Google) | AWS Certified Solutions Architect Associate | offen | [A33](prompts/A33-aws-certified-solutions-architect-associate.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 106 | C | Cloud-Plattformen (AWS, Azure, Google) | Azure Virtual Desktop | offen | [A34](prompts/A34-azure-virtual-desktop.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 107 | C | Cloud-Plattformen (AWS, Azure, Google) | Google Associate Cloud Engineer | offen | [A35](prompts/A35-google-associate-cloud-engineer.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 108 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-104 | offen | [A36](prompts/A36-microsoft-az-104.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 109 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-500 | offen | [A37](prompts/A37-microsoft-az-500.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 110 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-900 (Azure Fundamentals) | offen | [A38](prompts/A38-microsoft-az-900.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 111 | C | Virtualisierung, Container & Automatisierung | Ansible | offen | [A39](prompts/A39-ansible.md) | – | `automatisierung-uebungen` (geplant) |
-| 112 | C | Virtualisierung, Container & Automatisierung | Docker und Container (inkl. Nano-Images) | offen | [A40](prompts/A40-docker-und-container.md) | – | `container-uebungen` (geplant) |
-| 113 | C | Virtualisierung, Container & Automatisierung | Kubernetes (Grundlagen und Betrieb) | offen | [A41](prompts/A41-kubernetes.md) | – | `container-uebungen` (geplant) |
-| 114 | C | Virtualisierung, Container & Automatisierung | Virtualisierung (VMware vSphere/ESXi und Microsoft Hyper-V) | offen | [A42](prompts/A42-virtualisierung.md) | – | `virtualisierung-uebungen` (geplant) |
-| 115 | C | Speicher, Backup & Hochverfügbarkeit | BCDR | offen | [A43](prompts/A43-bcdr.md) | – | `storage-backup-uebungen` (geplant) |
-| 116 | C | Speicher, Backup & Hochverfügbarkeit | Backup, Restore und Ransomware Recovery | offen | [A44](prompts/A44-backup-restore-und-ransomware-recovery.md) | – | `storage-backup-uebungen` (geplant) |
-| 117 | C | Speicher, Backup & Hochverfügbarkeit | File-Systeme | offen | [A45](prompts/A45-file-systeme.md) | – | `storage-backup-uebungen` (geplant) |
-| 118 | C | Speicher, Backup & Hochverfügbarkeit | High Availability und Load Balancing | offen | [A46](prompts/A46-high-availability-und-load-balancing.md) | – | `virtualisierung-uebungen` (geplant) |
-| 119 | C | Speicher, Backup & Hochverfügbarkeit | Storage: SAN, NAS und Storage-Protokolle | offen | [A47](prompts/A47-storage-san-nas-und-storage-protokolle.md) | – | `storage-backup-uebungen` (geplant) |
-| 120 | C | Datenbanken | MS SQL | offen | [A48](prompts/A48-ms-sql.md) | – | `datenbanken-uebungen` (geplant) |
-| 121 | C | Datenbanken | MySQL (MariaDB) | offen | [A49](prompts/A49-mysql.md) | – | `datenbanken-uebungen` (geplant) |
-| 122 | C | Datenbanken | PostgreSQL | offen | [A50](prompts/A50-postgresql.md) | – | `datenbanken-uebungen` (geplant) |
-| 123 | C | Monitoring, Logging & Betrieb | Logmanagement | offen | [A51](prompts/A51-logmanagement.md) | – | `monitoring-logging-uebungen` (geplant) |
-| 124 | C | Monitoring, Logging & Betrieb | Monitoring, Alerting und SLO/SLA/SLI | offen | [A52](prompts/A52-monitoring-alerting-und-slo-sla-sli.md) | – | `monitoring-logging-uebungen` (geplant) |
-| 125 | C | Monitoring, Logging & Betrieb | Troubleshooting | offen | [A53](prompts/A53-troubleshooting.md) | – | `it-betrieb-uebungen` (geplant) |
-| 126 | C | ITSM, Assets & Lieferanten | CMDB und Asset Management | offen | [A54](prompts/A54-cmdb-und-asset-management.md) | – | `it-betrieb-uebungen` (geplant) |
-| 127 | C | Windows, Client & Betriebssysteme | Registry und Treiber | offen | [N01](prompts/N01-registry-und-treiber.md) | – | `client-hardware-uebungen` (geplant) |
-| 128 | C | Identität, Zugriff & Microsoft 365 | Copilot Readiness | offen | [N02](prompts/N02-copilot-readiness.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 129 | C | Identität, Zugriff & Microsoft 365 | MS-900 | offen | [N03](prompts/N03-ms-900.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 130 | C | Identität, Zugriff & Microsoft 365 | Microsoft Purview | offen | [N04](prompts/N04-microsoft-purview.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 131 | C | Identität, Zugriff & Microsoft 365 | Microsoft SC-500 | offen | [N05](prompts/N05-microsoft-sc-500.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 132 | C | Identität, Zugriff & Microsoft 365 | Microsoft SC-900 | offen | [N06](prompts/N06-microsoft-sc-900.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 133 | C | Netzwerk & Netzwerkdienste | BGP | offen | [N07](prompts/N07-bgp.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 134 | C | Netzwerk & Netzwerkdienste | NAC (802.1X) | offen | [N08](prompts/N08-nac.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 135 | C | Netzwerk & Netzwerkdienste | SD-WAN | offen | [N09](prompts/N09-sd-wan.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 136 | C | Netzwerk & Netzwerkdienste | VoIP und QoS | offen | [N10](prompts/N10-voip-und-qos.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 137 | C | Netzwerk & Netzwerkdienste | WLAN-Infrastruktur | offen | [N11](prompts/N11-wlan-infrastruktur.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 138 | C | IT-Sicherheit & Compliance | Compliance in Unternehmen | offen | [N12](prompts/N12-compliance-in-unternehmen.md) | – | `it-betrieb-uebungen` (geplant) |
-| 139 | C | IT-Sicherheit & Compliance | IT-Risikomanagement | offen | [N13](prompts/N13-it-risikomanagement.md) | – | `it-betrieb-uebungen` (geplant) |
-| 140 | C | IT-Sicherheit & Compliance | Kali Linux | offen | [N14](prompts/N14-kali-linux.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 141 | C | IT-Sicherheit & Compliance | Secrets Management und Vault-Konzepte | offen | [N15](prompts/N15-secrets-management-und-vault-konzepte.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 142 | C | IT-Sicherheit & Compliance | Security Awareness und Phishing-Simulation | offen | [N16](prompts/N16-security-awareness-und-phishing-simulation.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 143 | C | IT-Sicherheit & Compliance | Zero Trust Grundlagen: Identität, Geräte und Daten | offen | [N17](prompts/N17-zero-trust-grundlagen-identitaet-geraete-und-dat.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 144 | C | Cloud-Plattformen (AWS, Azure, Google) | AWS Certified Advanced Networking Specialty | offen | [N18](prompts/N18-aws-certified-advanced-networking-specialty.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 145 | C | Cloud-Plattformen (AWS, Azure, Google) | AWS Certified Security Specialty | offen | [N19](prompts/N19-aws-certified-security-specialty.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 146 | C | Cloud-Plattformen (AWS, Azure, Google) | Google Cloud Digital Leader | offen | [N20](prompts/N20-google-cloud-digital-leader.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 147 | C | Cloud-Plattformen (AWS, Azure, Google) | Google Professional Cloud Network Engineer | offen | [N21](prompts/N21-google-professional-cloud-network-engineer.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 148 | C | Cloud-Plattformen (AWS, Azure, Google) | Google Professional Cloud Security Engineer | offen | [N22](prompts/N22-google-professional-cloud-security-engineer.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 149 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-305 | offen | [N23](prompts/N23-microsoft-az-305.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 150 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-700 | offen | [N24](prompts/N24-microsoft-az-700.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 151 | C | Virtualisierung, Container & Automatisierung | AWS Certified DevOps Engineer Professional | offen | [N25](prompts/N25-aws-certified-devops-engineer-professional.md) | – | `automatisierung-uebungen` (geplant) |
-| 152 | C | Virtualisierung, Container & Automatisierung | CI/CD-Pipeline | offen | [N26](prompts/N26-ci-cd-pipeline.md) | – | `automatisierung-uebungen` (geplant) |
-| 153 | C | Virtualisierung, Container & Automatisierung | Google Professional Cloud DevOps Engineer | offen | [N27](prompts/N27-google-professional-cloud-devops-engineer.md) | – | `automatisierung-uebungen` (geplant) |
-| 154 | C | Virtualisierung, Container & Automatisierung | Terraform | offen | [N28](prompts/N28-terraform.md) | – | `automatisierung-uebungen` (geplant) |
-| 155 | C | Datenbanken | Google Professional Database Engineer | offen | [N29](prompts/N29-google-professional-database-engineer.md) | – | `datenbanken-uebungen` (geplant) |
-| 156 | C | Datenbanken | MongoDB | offen | [N30](prompts/N30-mongodb.md) | – | `datenbanken-uebungen` (geplant) |
-| 157 | C | Datenbanken | Redis | offen | [N31](prompts/N31-redis.md) | – | `datenbanken-uebungen` (geplant) |
-| 158 | C | ITSM, Assets & Lieferanten | Anwendungssupport | offen | [N32](prompts/N32-anwendungssupport.md) | – | `it-betrieb-uebungen` (geplant) |
-| 159 | C | ITSM, Assets & Lieferanten | Jira Service Management | offen | [N33](prompts/N33-jira-service-management.md) | – | `it-betrieb-uebungen` (geplant) |
-| 160 | C | ITSM, Assets & Lieferanten | ServiceNow | offen | [N34](prompts/N34-servicenow.md) | – | `it-betrieb-uebungen` (geplant) |
-| 161 | C | ITSM, Assets & Lieferanten | Vendor Management und Lizenzmanagement | offen | [N35](prompts/N35-vendor-management-und-lizenzmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
-| 162 | C | Hardware, Geräte & Elektro | Arduino | offen | [N36](prompts/N36-arduino.md) | – | `client-hardware-uebungen` (geplant) |
-| 163 | C | Hardware, Geräte & Elektro | Elektrotechnik, Strom und Sicherheit | offen | [N37](prompts/N37-elektrotechnik-strom-und-sicherheit.md) | – | `client-hardware-uebungen` (geplant) |
-| 164 | C | Hardware, Geräte & Elektro | Gerätetechnik | offen | [N38](prompts/N38-geraetetechnik.md) | – | `client-hardware-uebungen` (geplant) |
-| 165 | C | Hardware, Geräte & Elektro | Kabel und Stecker | offen | [N39](prompts/N39-kabel-und-stecker.md) | – | `client-hardware-uebungen` (geplant) |
-| 166 | C | Hardware, Geräte & Elektro | Raspberry Pi und Einplatinencomputer | offen | [N40](prompts/N40-raspberry-pi-und-einplatinencomputer.md) | – | `client-hardware-uebungen` (geplant) |
-| 167 | C | Office, Dokumentation & Low-Code | Confluence | offen | [N41](prompts/N41-confluence.md) | – | `it-betrieb-uebungen` (geplant) |
-| 168 | C | Office, Dokumentation & Low-Code | LaTeX (inkl. MiKTeX, TeXstudio und Overleaf) | offen | [N42](prompts/N42-latex.md) | – | `office-uebungen` (geplant) |
-| 169 | C | Office, Dokumentation & Low-Code | Microsoft Access Expert | offen | [N43](prompts/N43-microsoft-access-expert.md) | – | `office-uebungen` (geplant) |
-| 170 | C | Office, Dokumentation & Low-Code | Microsoft Outlook Associate | offen | [N44](prompts/N44-microsoft-outlook-associate.md) | – | `office-uebungen` (geplant) |
-| 171 | C | Office, Dokumentation & Low-Code | Microsoft PL-900 (Power Platform Fundamentals) | offen | [N45](prompts/N45-microsoft-pl-900.md) | – | `office-uebungen` (geplant) |
-| 172 | C | Office, Dokumentation & Low-Code | Microsoft PowerPoint Associate | offen | [N46](prompts/N46-microsoft-powerpoint-associate.md) | – | `office-uebungen` (geplant) |
-| 173 | C | Office, Dokumentation & Low-Code | Microsoft Word Expert | offen | [N47](prompts/N47-microsoft-word-expert.md) | – | `office-uebungen` (geplant) |
-| 174 | C | Office, Dokumentation & Low-Code | Power Platform Governance | offen | [N48](prompts/N48-power-platform-governance.md) | – | `office-uebungen` (geplant) |
-| 175 | C | Projekt- und Methodenwissen | Anforderungsmanagement | offen | [N49](prompts/N49-anforderungsmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
-| 176 | C | Projekt- und Methodenwissen | Kanban | offen | [N50](prompts/N50-kanban.md) | – | `it-betrieb-uebungen` (geplant) |
-| 177 | C | Projekt- und Methodenwissen | Projekt-Risikoregister und Issue Tracking | offen | [N51](prompts/N51-projekt-risikoregister-und-issue-tracking.md) | – | `it-betrieb-uebungen` (geplant) |
-| 178 | C | Projekt- und Methodenwissen | Projektmanagement | offen | [N52](prompts/N52-projektmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
-| 179 | C | Projekt- und Methodenwissen | Scrum | offen | [N53](prompts/N53-scrum.md) | – | `it-betrieb-uebungen` (geplant) |
-| 180 | C | Programmierung, Web & Design | Apache Tomcat | offen | [N54](prompts/N54-apache-tomcat.md) | – | `web-uebungen` (geplant) |
-| 181 | C | Projekt- und Methodenwissen | Open Source | offen | [F01](prompts/F01-open-source.md) | – | `it-betrieb-uebungen` (geplant) |
-| 182 | C | Projekt- und Methodenwissen | Stakeholder Management und Moderation | offen | [F02](prompts/F02-stakeholder-management-und-moderation.md) | – | `it-betrieb-uebungen` (geplant) |
-| 183 | C | Programmierung, Web & Design | AWS Certified Developer Associate | offen | [F03](prompts/F03-aws-certified-developer-associate.md) | – | `programmierung-uebungen` (geplant) |
-| 184 | C | Programmierung, Web & Design | Adobe XD | offen | [F04](prompts/F04-adobe-xd.md) | – | `web-uebungen` (geplant) |
-| 185 | C | Programmierung, Web & Design | Algorithmen und Datenstrukturen | offen | [F05](prompts/F05-algorithmen-und-datenstrukturen.md) | – | `programmierung-uebungen` (geplant) |
-| 186 | C | Programmierung, Web & Design | Android | offen | [F06](prompts/F06-android.md) | – | `programmierung-uebungen` (geplant) |
-| 187 | C | Programmierung, Web & Design | Angular | offen | [F07](prompts/F07-angular.md) | – | `web-uebungen` (geplant) |
-| 188 | C | Programmierung, Web & Design | Bootstrap | offen | [F08](prompts/F08-bootstrap.md) | – | `web-uebungen` (geplant) |
-| 189 | C | Programmierung, Web & Design | C# und .NET | offen | [F09](prompts/F09-c-sharp-und-net.md) | – | `programmierung-uebungen` (geplant) |
-| 190 | C | Programmierung, Web & Design | C++ | offen | [F10](prompts/F10-c-plus-plus.md) | – | `programmierung-uebungen` (geplant) |
-| 191 | C | Programmierung, Web & Design | GraphQL | offen | [F11](prompts/F11-graphql.md) | – | `web-uebungen` (geplant) |
-| 192 | C | Programmierung, Web & Design | Java | offen | [F12](prompts/F12-java.md) | – | `programmierung-uebungen` (geplant) |
-| 193 | C | Programmierung, Web & Design | JavaScript | offen | [F13](prompts/F13-javascript.md) | – | `web-uebungen` (geplant) |
-| 194 | C | Programmierung, Web & Design | Logik und diskrete Mathematik | offen | [F14](prompts/F14-logik-und-diskrete-mathematik.md) | – | `programmierung-uebungen` (geplant) |
-| 195 | C | Programmierung, Web & Design | Material 3 | offen | [F15](prompts/F15-material-3.md) | – | `web-uebungen` (geplant) |
-| 196 | C | Programmierung, Web & Design | Mathematik (Grundlagen und Anwendung) | offen | [F16](prompts/F16-mathematik.md) | – | `programmierung-uebungen` (geplant) |
-| 197 | C | Programmierung, Web & Design | PHP | offen | [F17](prompts/F17-php.md) | – | `web-uebungen` (geplant) |
-| 198 | C | Programmierung, Web & Design | RESTful API | offen | [F18](prompts/F18-restful-api.md) | – | `web-uebungen` (geplant) |
-| 199 | C | Programmierung, Web & Design | React.js | offen | [F19](prompts/F19-react-js.md) | – | `web-uebungen` (geplant) |
-| 200 | C | Programmierung, Web & Design | Visual Basic | offen | [F20](prompts/F20-visual-basic.md) | – | `programmierung-uebungen` (geplant) |
-| 201 | C | Programmierung, Web & Design | Vue.js | offen | [F21](prompts/F21-vue-js.md) | – | `web-uebungen` (geplant) |
-| 202 | C | Programmierung, Web & Design | XML | offen | [F22](prompts/F22-xml.md) | – | `web-uebungen` (geplant) |
-| 203 | C | KI, Machine Learning & Daten | AWS Certified AI Practitioner | offen | [F23](prompts/F23-aws-certified-ai-practitioner.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 204 | C | KI, Machine Learning & Daten | AWS Certified Data Engineer Associate | offen | [F24](prompts/F24-aws-certified-data-engineer-associate.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 205 | C | KI, Machine Learning & Daten | AWS Certified Generative AI Developer Professional | offen | [F25](prompts/F25-aws-certified-generative-ai-developer-profession.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 206 | C | KI, Machine Learning & Daten | AWS Certified Machine Learning Engineer Associate | offen | [F26](prompts/F26-aws-certified-machine-learning-engineer-associat.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 207 | C | KI, Machine Learning & Daten | CompTIA Data+ | offen | [F27](prompts/F27-comptia-data-plus.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 208 | C | KI, Machine Learning & Daten | Google AI Studio | offen | [F28](prompts/F28-google-ai-studio.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 209 | C | KI, Machine Learning & Daten | Google Generative AI Leader | offen | [F29](prompts/F29-google-generative-ai-leader.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 210 | C | KI, Machine Learning & Daten | Google Professional Data Engineer | offen | [F30](prompts/F30-google-professional-data-engineer.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 211 | C | KI, Machine Learning & Daten | Google Professional Machine Learning Engineer | offen | [F31](prompts/F31-google-professional-machine-learning-engineer.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 212 | C | KI, Machine Learning & Daten | KI-Ethik & Datenschutz | offen | [F32](prompts/F32-ki-ethik-und-datenschutz.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 213 | C | KI, Machine Learning & Daten | Künstliche Intelligenz | offen | [F33](prompts/F33-kuenstliche-intelligenz.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 214 | C | KI, Machine Learning & Daten | Large und Small Language Models | offen | [F34](prompts/F34-large-und-small-language-models.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 215 | C | KI, Machine Learning & Daten | Machine Learning und Data Science | offen | [F35](prompts/F35-machine-learning-und-data-science.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 216 | C | KI, Machine Learning & Daten | Microsoft AI-900 | offen | [F36](prompts/F36-microsoft-ai-900.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 217 | C | KI, Machine Learning & Daten | Microsoft DP-900 | offen | [F37](prompts/F37-microsoft-dp-900.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 218 | C | KI, Machine Learning & Daten | Pandas | offen | [F38](prompts/F38-pandas.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 219 | C | KI, Machine Learning & Daten | Prompt Engineering | offen | [F39](prompts/F39-prompt-engineering.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 220 | C | KI, Machine Learning & Daten | TensorFlow | offen | [F40](prompts/F40-tensorflow.md) | – | `ki-und-daten-uebungen` (geplant) |
-| 221 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Bankenwesen | offen | [F41](prompts/F41-bankenwesen.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 222 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Bilanzbuchhalterprüfung Österreich | offen | [F42](prompts/F42-bilanzbuchhalterpruefung-oesterreich.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 223 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Buchhalterprüfung Österreich | offen | [F43](prompts/F43-buchhalterpruefung-oesterreich.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 224 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Business Management | offen | [F44](prompts/F44-business-management.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 225 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Controlling und Reporting | offen | [F45](prompts/F45-controlling-und-reporting.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 226 | C | Wirtschaft, Steuer, Marketing & Soft Skills | E-Commerce: Zahlungsabwicklung | offen | [F46](prompts/F46-e-commerce-zahlungsabwicklung.md) | – | `web-uebungen` (geplant) |
-| 227 | C | Wirtschaft, Steuer, Marketing & Soft Skills | IT-Controlling | offen | [F47](prompts/F47-it-controlling.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 228 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Kommunikation | offen | [F48](prompts/F48-kommunikation.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 229 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Kundenorientierung | offen | [F49](prompts/F49-kundenorientierung.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 230 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Magento | offen | [F50](prompts/F50-magento.md) | – | `web-uebungen` (geplant) |
-| 231 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Marketing | offen | [F51](prompts/F51-marketing.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 232 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Microsoft Dynamics 365 | offen | [F52](prompts/F52-microsoft-dynamics-365.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 233 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Personalverrechnung Österreich | offen | [F53](prompts/F53-personalverrechnung-oesterreich.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 234 | C | Wirtschaft, Steuer, Marketing & Soft Skills | SAP | offen | [F54](prompts/F54-sap.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 235 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Search Engine Optimization | offen | [F55](prompts/F55-search-engine-optimization.md) | – | `web-uebungen` (geplant) |
-| 236 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Shopify | offen | [F56](prompts/F56-shopify.md) | – | `web-uebungen` (geplant) |
-| 237 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Social Media Marketing (LinkedIn, Meta und YouTube) | offen | [F57](prompts/F57-social-media-marketing.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 238 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Steuerrecht Österreich (inkl. Umsatzsteuer und Internationales) | offen | [F58](prompts/F58-steuerrecht-oesterreich.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 239 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Tax Technology (BMD, Excel, Power Query) | offen | [F59](prompts/F59-tax-technology.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 240 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Weiterbildungsfahrplan Steuerassistenz Österreich | offen | [F60](prompts/F60-weiterbildungsfahrplan-steuerassistenz-oesterrei.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
-| 241 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Wirtschaft und kaufmännische Grundlagen | offen | [F61](prompts/F61-wirtschaft-und-kaufmaennische-grundlagen.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 73 | C | Zusatz | Bewerbungstraining für IT-Berufe | Lehrplan erstellt | [P73](prompts/P73-bewerbungstraining-fuer-it-berufe.md) | [P73](lehrplaene/P73-bewerbungstraining-fuer-it-berufe.md) | `it-betrieb-uebungen` (geplant) |
+| 74 | C | Windows, Client & Betriebssysteme | Betriebssysteme | offen | [A01](prompts/A01-betriebssysteme.md) | – | `client-hardware-uebungen` (geplant) |
+| 75 | C | Windows, Client & Betriebssysteme | CompTIA A+ | offen | [A02](prompts/A02-comptia-a-plus.md) | – | `client-hardware-uebungen` (geplant) |
+| 76 | C | Windows, Client & Betriebssysteme | Microsoft MD-102 | offen | [A03](prompts/A03-microsoft-md-102.md) | – | `client-hardware-uebungen` (geplant) |
+| 77 | C | Windows, Client & Betriebssysteme | Microsoft Windows Server Hybrid Administrator | offen | [A04](prompts/A04-microsoft-windows-server-hybrid-administrator.md) | – | `windows-server-uebungen` (geplant) |
+| 78 | C | Windows, Client & Betriebssysteme | Weiterbildung IT Systemtechnik | offen | [A05](prompts/A05-weiterbildung-it-systemtechnik.md) | – | `it-betrieb-uebungen` (geplant) |
+| 79 | C | Windows, Client & Betriebssysteme | Windows Autopilot | offen | [A06](prompts/A06-windows-autopilot.md) | – | `client-hardware-uebungen` (geplant) |
+| 80 | C | Windows, Client & Betriebssysteme | Windows Server 2025 | offen | [A07](prompts/A07-windows-server-2025.md) | – | `windows-server-uebungen` (geplant) |
+| 81 | C | Identität, Zugriff & Microsoft 365 | Conditional Access (CA) | offen | [A08](prompts/A08-conditional-access.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 82 | C | Identität, Zugriff & Microsoft 365 | LDAP | offen | [A09](prompts/A09-ldap.md) | – | `windows-server-uebungen` (geplant) |
+| 83 | C | Identität, Zugriff & Microsoft 365 | MFA und Passwordless | offen | [A10](prompts/A10-mfa-und-passwordless.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 84 | C | Identität, Zugriff & Microsoft 365 | Microsoft Defender | offen | [A11](prompts/A11-microsoft-defender.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 85 | C | Identität, Zugriff & Microsoft 365 | Microsoft MS-102 | offen | [A12](prompts/A12-microsoft-ms-102.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 86 | C | Identität, Zugriff & Microsoft 365 | Microsoft SC-300 | offen | [A13](prompts/A13-microsoft-sc-300.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 87 | C | Identität, Zugriff & Microsoft 365 | Privileged Identity Management | offen | [A14](prompts/A14-privileged-identity-management.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 88 | C | Linux & Open Source | LPIC-1 | offen | [A15](prompts/A15-lpic-1.md) | – | `linux-uebungen` (geplant) |
+| 89 | C | Linux & Open Source | LPIC-2 | offen | [A16](prompts/A16-lpic-2.md) | – | `linux-uebungen` (geplant) |
+| 90 | C | Linux & Open Source | LPIC-3 | offen | [A17](prompts/A17-lpic-3.md) | – | `linux-uebungen` (geplant) |
+| 91 | C | Linux & Open Source | RHEL-Familie (Red Hat Enterprise Linux und AlmaLinux) | offen | [A18](prompts/A18-rhel-familie.md) | – | `linux-uebungen` (geplant) |
+| 92 | C | Netzwerk & Netzwerkdienste | Cisco CCNA | offen | [A19](prompts/A19-cisco-ccna.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 93 | C | Netzwerk & Netzwerkdienste | DNS Security (DNSSEC) | offen | [A20](prompts/A20-dns-security.md) | – | `netzwerkdienste-uebungen` (geplant) |
+| 94 | C | Netzwerk & Netzwerkdienste | E-Mail-Routing, SMTP und Mail Security | offen | [A21](prompts/A21-e-mail-routing-smtp-und-mail-security.md) | – | `e-mail-uebungen` (geplant) |
+| 95 | C | Netzwerk & Netzwerkdienste | Firewall, Netzwerkdesign und DMZ | offen | [A22](prompts/A22-firewall-netzwerkdesign-und-dmz.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 96 | C | Netzwerk & Netzwerkdienste | Netzwerktechnik | offen | [A23](prompts/A23-netzwerktechnik.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 97 | C | Netzwerk & Netzwerkdienste | Open-Source-Firewalls (IPFire und OPNsense) | offen | [A24](prompts/A24-open-source-firewalls.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 98 | C | Netzwerk & Netzwerkdienste | Traffic Analysis (NetFlow, Wireshark, tcpdump) | offen | [A25](prompts/A25-traffic-analysis.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 99 | C | IT-Sicherheit & Compliance | CompTIA Security+ | offen | [A26](prompts/A26-comptia-security-plus.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 100 | C | IT-Sicherheit & Compliance | Cyber-Angriffe und Verteidigung | offen | [A27](prompts/A27-cyber-angriffe-und-verteidigung.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 101 | C | IT-Sicherheit & Compliance | DSGVO | offen | [A28](prompts/A28-dsgvo.md) | – | `it-betrieb-uebungen` (geplant) |
+| 102 | C | IT-Sicherheit & Compliance | Incident Response | offen | [A29](prompts/A29-incident-response.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 103 | C | IT-Sicherheit & Compliance | SIEM | offen | [A30](prompts/A30-siem.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 104 | C | IT-Sicherheit & Compliance | Schwachstellen-, Patch- und Änderungsmanagement | offen | [A31](prompts/A31-schwachstellen-patch-und-aenderungsmanagement.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 105 | C | Cloud-Plattformen (AWS, Azure, Google) | AWS Certified CloudOps Engineer Associate | offen | [A32](prompts/A32-aws-certified-cloudops-engineer-associate.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 106 | C | Cloud-Plattformen (AWS, Azure, Google) | AWS Certified Solutions Architect Associate | offen | [A33](prompts/A33-aws-certified-solutions-architect-associate.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 107 | C | Cloud-Plattformen (AWS, Azure, Google) | Azure Virtual Desktop | offen | [A34](prompts/A34-azure-virtual-desktop.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 108 | C | Cloud-Plattformen (AWS, Azure, Google) | Google Associate Cloud Engineer | offen | [A35](prompts/A35-google-associate-cloud-engineer.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 109 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-104 | offen | [A36](prompts/A36-microsoft-az-104.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 110 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-500 | offen | [A37](prompts/A37-microsoft-az-500.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 111 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-900 (Azure Fundamentals) | offen | [A38](prompts/A38-microsoft-az-900.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 112 | C | Virtualisierung, Container & Automatisierung | Ansible | offen | [A39](prompts/A39-ansible.md) | – | `automatisierung-uebungen` (geplant) |
+| 113 | C | Virtualisierung, Container & Automatisierung | Docker und Container (inkl. Nano-Images) | offen | [A40](prompts/A40-docker-und-container.md) | – | `container-uebungen` (geplant) |
+| 114 | C | Virtualisierung, Container & Automatisierung | Kubernetes (Grundlagen und Betrieb) | offen | [A41](prompts/A41-kubernetes.md) | – | `container-uebungen` (geplant) |
+| 115 | C | Virtualisierung, Container & Automatisierung | Virtualisierung (VMware vSphere/ESXi und Microsoft Hyper-V) | offen | [A42](prompts/A42-virtualisierung.md) | – | `virtualisierung-uebungen` (geplant) |
+| 116 | C | Speicher, Backup & Hochverfügbarkeit | BCDR | offen | [A43](prompts/A43-bcdr.md) | – | `storage-backup-uebungen` (geplant) |
+| 117 | C | Speicher, Backup & Hochverfügbarkeit | Backup, Restore und Ransomware Recovery | offen | [A44](prompts/A44-backup-restore-und-ransomware-recovery.md) | – | `storage-backup-uebungen` (geplant) |
+| 118 | C | Speicher, Backup & Hochverfügbarkeit | File-Systeme | offen | [A45](prompts/A45-file-systeme.md) | – | `storage-backup-uebungen` (geplant) |
+| 119 | C | Speicher, Backup & Hochverfügbarkeit | High Availability und Load Balancing | offen | [A46](prompts/A46-high-availability-und-load-balancing.md) | – | `virtualisierung-uebungen` (geplant) |
+| 120 | C | Speicher, Backup & Hochverfügbarkeit | Storage: SAN, NAS und Storage-Protokolle | offen | [A47](prompts/A47-storage-san-nas-und-storage-protokolle.md) | – | `storage-backup-uebungen` (geplant) |
+| 121 | C | Datenbanken | MS SQL | offen | [A48](prompts/A48-ms-sql.md) | – | `datenbanken-uebungen` (geplant) |
+| 122 | C | Datenbanken | MySQL (MariaDB) | offen | [A49](prompts/A49-mysql.md) | – | `datenbanken-uebungen` (geplant) |
+| 123 | C | Datenbanken | PostgreSQL | offen | [A50](prompts/A50-postgresql.md) | – | `datenbanken-uebungen` (geplant) |
+| 124 | C | Monitoring, Logging & Betrieb | Logmanagement | offen | [A51](prompts/A51-logmanagement.md) | – | `monitoring-logging-uebungen` (geplant) |
+| 125 | C | Monitoring, Logging & Betrieb | Monitoring, Alerting und SLO/SLA/SLI | offen | [A52](prompts/A52-monitoring-alerting-und-slo-sla-sli.md) | – | `monitoring-logging-uebungen` (geplant) |
+| 126 | C | Monitoring, Logging & Betrieb | Troubleshooting | offen | [A53](prompts/A53-troubleshooting.md) | – | `it-betrieb-uebungen` (geplant) |
+| 127 | C | ITSM, Assets & Lieferanten | CMDB und Asset Management | offen | [A54](prompts/A54-cmdb-und-asset-management.md) | – | `it-betrieb-uebungen` (geplant) |
+| 128 | C | Windows, Client & Betriebssysteme | Registry und Treiber | offen | [N01](prompts/N01-registry-und-treiber.md) | – | `client-hardware-uebungen` (geplant) |
+| 129 | C | Identität, Zugriff & Microsoft 365 | Copilot Readiness | offen | [N02](prompts/N02-copilot-readiness.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 130 | C | Identität, Zugriff & Microsoft 365 | MS-900 | offen | [N03](prompts/N03-ms-900.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 131 | C | Identität, Zugriff & Microsoft 365 | Microsoft Purview | offen | [N04](prompts/N04-microsoft-purview.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 132 | C | Identität, Zugriff & Microsoft 365 | Microsoft SC-500 | offen | [N05](prompts/N05-microsoft-sc-500.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 133 | C | Identität, Zugriff & Microsoft 365 | Microsoft SC-900 | offen | [N06](prompts/N06-microsoft-sc-900.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 134 | C | Netzwerk & Netzwerkdienste | BGP | offen | [N07](prompts/N07-bgp.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 135 | C | Netzwerk & Netzwerkdienste | NAC (802.1X) | offen | [N08](prompts/N08-nac.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 136 | C | Netzwerk & Netzwerkdienste | SD-WAN | offen | [N09](prompts/N09-sd-wan.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 137 | C | Netzwerk & Netzwerkdienste | VoIP und QoS | offen | [N10](prompts/N10-voip-und-qos.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 138 | C | Netzwerk & Netzwerkdienste | WLAN-Infrastruktur | offen | [N11](prompts/N11-wlan-infrastruktur.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 139 | C | IT-Sicherheit & Compliance | Compliance in Unternehmen | offen | [N12](prompts/N12-compliance-in-unternehmen.md) | – | `it-betrieb-uebungen` (geplant) |
+| 140 | C | IT-Sicherheit & Compliance | IT-Risikomanagement | offen | [N13](prompts/N13-it-risikomanagement.md) | – | `it-betrieb-uebungen` (geplant) |
+| 141 | C | IT-Sicherheit & Compliance | Kali Linux | offen | [N14](prompts/N14-kali-linux.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 142 | C | IT-Sicherheit & Compliance | Secrets Management und Vault-Konzepte | offen | [N15](prompts/N15-secrets-management-und-vault-konzepte.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 143 | C | IT-Sicherheit & Compliance | Security Awareness und Phishing-Simulation | offen | [N16](prompts/N16-security-awareness-und-phishing-simulation.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 144 | C | IT-Sicherheit & Compliance | Zero Trust Grundlagen: Identität, Geräte und Daten | offen | [N17](prompts/N17-zero-trust-grundlagen-identitaet-geraete-und-dat.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 145 | C | Cloud-Plattformen (AWS, Azure, Google) | AWS Certified Advanced Networking Specialty | offen | [N18](prompts/N18-aws-certified-advanced-networking-specialty.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 146 | C | Cloud-Plattformen (AWS, Azure, Google) | AWS Certified Security Specialty | offen | [N19](prompts/N19-aws-certified-security-specialty.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 147 | C | Cloud-Plattformen (AWS, Azure, Google) | Google Cloud Digital Leader | offen | [N20](prompts/N20-google-cloud-digital-leader.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 148 | C | Cloud-Plattformen (AWS, Azure, Google) | Google Professional Cloud Network Engineer | offen | [N21](prompts/N21-google-professional-cloud-network-engineer.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 149 | C | Cloud-Plattformen (AWS, Azure, Google) | Google Professional Cloud Security Engineer | offen | [N22](prompts/N22-google-professional-cloud-security-engineer.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 150 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-305 | offen | [N23](prompts/N23-microsoft-az-305.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 151 | C | Cloud-Plattformen (AWS, Azure, Google) | Microsoft AZ-700 | offen | [N24](prompts/N24-microsoft-az-700.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 152 | C | Virtualisierung, Container & Automatisierung | AWS Certified DevOps Engineer Professional | offen | [N25](prompts/N25-aws-certified-devops-engineer-professional.md) | – | `automatisierung-uebungen` (geplant) |
+| 153 | C | Virtualisierung, Container & Automatisierung | CI/CD-Pipeline | offen | [N26](prompts/N26-ci-cd-pipeline.md) | – | `automatisierung-uebungen` (geplant) |
+| 154 | C | Virtualisierung, Container & Automatisierung | Google Professional Cloud DevOps Engineer | offen | [N27](prompts/N27-google-professional-cloud-devops-engineer.md) | – | `automatisierung-uebungen` (geplant) |
+| 155 | C | Virtualisierung, Container & Automatisierung | Terraform | offen | [N28](prompts/N28-terraform.md) | – | `automatisierung-uebungen` (geplant) |
+| 156 | C | Datenbanken | Google Professional Database Engineer | offen | [N29](prompts/N29-google-professional-database-engineer.md) | – | `datenbanken-uebungen` (geplant) |
+| 157 | C | Datenbanken | MongoDB | offen | [N30](prompts/N30-mongodb.md) | – | `datenbanken-uebungen` (geplant) |
+| 158 | C | Datenbanken | Redis | offen | [N31](prompts/N31-redis.md) | – | `datenbanken-uebungen` (geplant) |
+| 159 | C | ITSM, Assets & Lieferanten | Anwendungssupport | offen | [N32](prompts/N32-anwendungssupport.md) | – | `it-betrieb-uebungen` (geplant) |
+| 160 | C | ITSM, Assets & Lieferanten | Jira Service Management | offen | [N33](prompts/N33-jira-service-management.md) | – | `it-betrieb-uebungen` (geplant) |
+| 161 | C | ITSM, Assets & Lieferanten | ServiceNow | offen | [N34](prompts/N34-servicenow.md) | – | `it-betrieb-uebungen` (geplant) |
+| 162 | C | ITSM, Assets & Lieferanten | Vendor Management und Lizenzmanagement | offen | [N35](prompts/N35-vendor-management-und-lizenzmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
+| 163 | C | Hardware, Geräte & Elektro | Arduino | offen | [N36](prompts/N36-arduino.md) | – | `client-hardware-uebungen` (geplant) |
+| 164 | C | Hardware, Geräte & Elektro | Elektrotechnik, Strom und Sicherheit | offen | [N37](prompts/N37-elektrotechnik-strom-und-sicherheit.md) | – | `client-hardware-uebungen` (geplant) |
+| 165 | C | Hardware, Geräte & Elektro | Gerätetechnik | offen | [N38](prompts/N38-geraetetechnik.md) | – | `client-hardware-uebungen` (geplant) |
+| 166 | C | Hardware, Geräte & Elektro | Kabel und Stecker | offen | [N39](prompts/N39-kabel-und-stecker.md) | – | `client-hardware-uebungen` (geplant) |
+| 167 | C | Hardware, Geräte & Elektro | Raspberry Pi und Einplatinencomputer | offen | [N40](prompts/N40-raspberry-pi-und-einplatinencomputer.md) | – | `client-hardware-uebungen` (geplant) |
+| 168 | C | Office, Dokumentation & Low-Code | Confluence | offen | [N41](prompts/N41-confluence.md) | – | `it-betrieb-uebungen` (geplant) |
+| 169 | C | Office, Dokumentation & Low-Code | LaTeX (inkl. MiKTeX, TeXstudio und Overleaf) | offen | [N42](prompts/N42-latex.md) | – | `office-uebungen` (geplant) |
+| 170 | C | Office, Dokumentation & Low-Code | Microsoft Access Expert | offen | [N43](prompts/N43-microsoft-access-expert.md) | – | `office-uebungen` (geplant) |
+| 171 | C | Office, Dokumentation & Low-Code | Microsoft Outlook Associate | offen | [N44](prompts/N44-microsoft-outlook-associate.md) | – | `office-uebungen` (geplant) |
+| 172 | C | Office, Dokumentation & Low-Code | Microsoft PL-900 (Power Platform Fundamentals) | offen | [N45](prompts/N45-microsoft-pl-900.md) | – | `office-uebungen` (geplant) |
+| 173 | C | Office, Dokumentation & Low-Code | Microsoft PowerPoint Associate | offen | [N46](prompts/N46-microsoft-powerpoint-associate.md) | – | `office-uebungen` (geplant) |
+| 174 | C | Office, Dokumentation & Low-Code | Microsoft Word Expert | offen | [N47](prompts/N47-microsoft-word-expert.md) | – | `office-uebungen` (geplant) |
+| 175 | C | Office, Dokumentation & Low-Code | Power Platform Governance | offen | [N48](prompts/N48-power-platform-governance.md) | – | `office-uebungen` (geplant) |
+| 176 | C | Projekt- und Methodenwissen | Anforderungsmanagement | offen | [N49](prompts/N49-anforderungsmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
+| 177 | C | Projekt- und Methodenwissen | Kanban | offen | [N50](prompts/N50-kanban.md) | – | `it-betrieb-uebungen` (geplant) |
+| 178 | C | Projekt- und Methodenwissen | Projekt-Risikoregister und Issue Tracking | offen | [N51](prompts/N51-projekt-risikoregister-und-issue-tracking.md) | – | `it-betrieb-uebungen` (geplant) |
+| 179 | C | Projekt- und Methodenwissen | Projektmanagement | offen | [N52](prompts/N52-projektmanagement.md) | – | `it-betrieb-uebungen` (geplant) |
+| 180 | C | Projekt- und Methodenwissen | Scrum | offen | [N53](prompts/N53-scrum.md) | – | `it-betrieb-uebungen` (geplant) |
+| 181 | C | Programmierung, Web & Design | Apache Tomcat | offen | [N54](prompts/N54-apache-tomcat.md) | – | `web-uebungen` (geplant) |
+| 182 | C | Projekt- und Methodenwissen | Open Source | offen | [F01](prompts/F01-open-source.md) | – | `it-betrieb-uebungen` (geplant) |
+| 183 | C | Projekt- und Methodenwissen | Stakeholder Management und Moderation | offen | [F02](prompts/F02-stakeholder-management-und-moderation.md) | – | `it-betrieb-uebungen` (geplant) |
+| 184 | C | Programmierung, Web & Design | AWS Certified Developer Associate | offen | [F03](prompts/F03-aws-certified-developer-associate.md) | – | `programmierung-uebungen` (geplant) |
+| 185 | C | Programmierung, Web & Design | Adobe XD | offen | [F04](prompts/F04-adobe-xd.md) | – | `web-uebungen` (geplant) |
+| 186 | C | Programmierung, Web & Design | Algorithmen und Datenstrukturen | offen | [F05](prompts/F05-algorithmen-und-datenstrukturen.md) | – | `programmierung-uebungen` (geplant) |
+| 187 | C | Programmierung, Web & Design | Android | offen | [F06](prompts/F06-android.md) | – | `programmierung-uebungen` (geplant) |
+| 188 | C | Programmierung, Web & Design | Angular | offen | [F07](prompts/F07-angular.md) | – | `web-uebungen` (geplant) |
+| 189 | C | Programmierung, Web & Design | Bootstrap | offen | [F08](prompts/F08-bootstrap.md) | – | `web-uebungen` (geplant) |
+| 190 | C | Programmierung, Web & Design | C# und .NET | offen | [F09](prompts/F09-c-sharp-und-net.md) | – | `programmierung-uebungen` (geplant) |
+| 191 | C | Programmierung, Web & Design | C++ | offen | [F10](prompts/F10-c-plus-plus.md) | – | `programmierung-uebungen` (geplant) |
+| 192 | C | Programmierung, Web & Design | GraphQL | offen | [F11](prompts/F11-graphql.md) | – | `web-uebungen` (geplant) |
+| 193 | C | Programmierung, Web & Design | Java | offen | [F12](prompts/F12-java.md) | – | `programmierung-uebungen` (geplant) |
+| 194 | C | Programmierung, Web & Design | JavaScript | offen | [F13](prompts/F13-javascript.md) | – | `web-uebungen` (geplant) |
+| 195 | C | Programmierung, Web & Design | Logik und diskrete Mathematik | offen | [F14](prompts/F14-logik-und-diskrete-mathematik.md) | – | `programmierung-uebungen` (geplant) |
+| 196 | C | Programmierung, Web & Design | Material 3 | offen | [F15](prompts/F15-material-3.md) | – | `web-uebungen` (geplant) |
+| 197 | C | Programmierung, Web & Design | Mathematik (Grundlagen und Anwendung) | offen | [F16](prompts/F16-mathematik.md) | – | `programmierung-uebungen` (geplant) |
+| 198 | C | Programmierung, Web & Design | PHP | offen | [F17](prompts/F17-php.md) | – | `web-uebungen` (geplant) |
+| 199 | C | Programmierung, Web & Design | RESTful API | offen | [F18](prompts/F18-restful-api.md) | – | `web-uebungen` (geplant) |
+| 200 | C | Programmierung, Web & Design | React.js | offen | [F19](prompts/F19-react-js.md) | – | `web-uebungen` (geplant) |
+| 201 | C | Programmierung, Web & Design | Visual Basic | offen | [F20](prompts/F20-visual-basic.md) | – | `programmierung-uebungen` (geplant) |
+| 202 | C | Programmierung, Web & Design | Vue.js | offen | [F21](prompts/F21-vue-js.md) | – | `web-uebungen` (geplant) |
+| 203 | C | Programmierung, Web & Design | XML | offen | [F22](prompts/F22-xml.md) | – | `web-uebungen` (geplant) |
+| 204 | C | KI, Machine Learning & Daten | AWS Certified AI Practitioner | offen | [F23](prompts/F23-aws-certified-ai-practitioner.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 205 | C | KI, Machine Learning & Daten | AWS Certified Data Engineer Associate | offen | [F24](prompts/F24-aws-certified-data-engineer-associate.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 206 | C | KI, Machine Learning & Daten | AWS Certified Generative AI Developer Professional | offen | [F25](prompts/F25-aws-certified-generative-ai-developer-profession.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 207 | C | KI, Machine Learning & Daten | AWS Certified Machine Learning Engineer Associate | offen | [F26](prompts/F26-aws-certified-machine-learning-engineer-associat.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 208 | C | KI, Machine Learning & Daten | CompTIA Data+ | offen | [F27](prompts/F27-comptia-data-plus.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 209 | C | KI, Machine Learning & Daten | Google AI Studio | offen | [F28](prompts/F28-google-ai-studio.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 210 | C | KI, Machine Learning & Daten | Google Generative AI Leader | offen | [F29](prompts/F29-google-generative-ai-leader.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 211 | C | KI, Machine Learning & Daten | Google Professional Data Engineer | offen | [F30](prompts/F30-google-professional-data-engineer.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 212 | C | KI, Machine Learning & Daten | Google Professional Machine Learning Engineer | offen | [F31](prompts/F31-google-professional-machine-learning-engineer.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 213 | C | KI, Machine Learning & Daten | KI-Ethik & Datenschutz | offen | [F32](prompts/F32-ki-ethik-und-datenschutz.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 214 | C | KI, Machine Learning & Daten | Künstliche Intelligenz | offen | [F33](prompts/F33-kuenstliche-intelligenz.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 215 | C | KI, Machine Learning & Daten | Large und Small Language Models | offen | [F34](prompts/F34-large-und-small-language-models.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 216 | C | KI, Machine Learning & Daten | Machine Learning und Data Science | offen | [F35](prompts/F35-machine-learning-und-data-science.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 217 | C | KI, Machine Learning & Daten | Microsoft AI-900 | offen | [F36](prompts/F36-microsoft-ai-900.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 218 | C | KI, Machine Learning & Daten | Microsoft DP-900 | offen | [F37](prompts/F37-microsoft-dp-900.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 219 | C | KI, Machine Learning & Daten | Pandas | offen | [F38](prompts/F38-pandas.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 220 | C | KI, Machine Learning & Daten | Prompt Engineering | offen | [F39](prompts/F39-prompt-engineering.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 221 | C | KI, Machine Learning & Daten | TensorFlow | offen | [F40](prompts/F40-tensorflow.md) | – | `ki-und-daten-uebungen` (geplant) |
+| 222 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Bankenwesen | offen | [F41](prompts/F41-bankenwesen.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 223 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Bilanzbuchhalterprüfung Österreich | offen | [F42](prompts/F42-bilanzbuchhalterpruefung-oesterreich.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 224 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Buchhalterprüfung Österreich | offen | [F43](prompts/F43-buchhalterpruefung-oesterreich.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 225 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Business Management | offen | [F44](prompts/F44-business-management.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 226 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Controlling und Reporting | offen | [F45](prompts/F45-controlling-und-reporting.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 227 | C | Wirtschaft, Steuer, Marketing & Soft Skills | E-Commerce: Zahlungsabwicklung | offen | [F46](prompts/F46-e-commerce-zahlungsabwicklung.md) | – | `web-uebungen` (geplant) |
+| 228 | C | Wirtschaft, Steuer, Marketing & Soft Skills | IT-Controlling | offen | [F47](prompts/F47-it-controlling.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 229 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Kommunikation | offen | [F48](prompts/F48-kommunikation.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 230 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Kundenorientierung | offen | [F49](prompts/F49-kundenorientierung.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 231 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Magento | offen | [F50](prompts/F50-magento.md) | – | `web-uebungen` (geplant) |
+| 232 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Marketing | offen | [F51](prompts/F51-marketing.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 233 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Microsoft Dynamics 365 | offen | [F52](prompts/F52-microsoft-dynamics-365.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 234 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Personalverrechnung Österreich | offen | [F53](prompts/F53-personalverrechnung-oesterreich.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 235 | C | Wirtschaft, Steuer, Marketing & Soft Skills | SAP | offen | [F54](prompts/F54-sap.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 236 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Search Engine Optimization | offen | [F55](prompts/F55-search-engine-optimization.md) | – | `web-uebungen` (geplant) |
+| 237 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Shopify | offen | [F56](prompts/F56-shopify.md) | – | `web-uebungen` (geplant) |
+| 238 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Social Media Marketing (LinkedIn, Meta und YouTube) | offen | [F57](prompts/F57-social-media-marketing.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 239 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Steuerrecht Österreich (inkl. Umsatzsteuer und Internationales) | offen | [F58](prompts/F58-steuerrecht-oesterreich.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 240 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Tax Technology (BMD, Excel, Power Query) | offen | [F59](prompts/F59-tax-technology.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 241 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Weiterbildungsfahrplan Steuerassistenz Österreich | offen | [F60](prompts/F60-weiterbildungsfahrplan-steuerassistenz-oesterrei.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
+| 242 | C | Wirtschaft, Steuer, Marketing & Soft Skills | Wirtschaft und kaufmännische Grundlagen | offen | [F61](prompts/F61-wirtschaft-und-kaufmaennische-grundlagen.md) | – | `wirtschaft-und-steuer-uebungen` (geplant) |
 <!-- TABELLE-ENDE -->
 
 ## Die 16 Fächer (K01–K16)
@@ -345,7 +346,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | [datenbanken-uebungen](https://github.com/AnsibleArtisan4711/datenbanken-uebungen) | P30 SQL-Grundlagen (gepusht); P31 MariaDB und PostgreSQL Administration; P32 SQL Server Administration; P67 NoSQL-Datenbanken und Redis; P68 Datenbank-Backup und -Wiederherstellung; A48 MS SQL; A49 MySQL (MariaDB); A50 PostgreSQL; N29 Google Professional Database Engineer; N30 MongoDB; N31 Redis |
 | [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO); P36 Notfallplanung und Disaster Recovery; P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS; A43 BCDR; A44 Backup, Restore und Ransomware Recovery; A45 File-Systeme; A47 Storage: SAN, NAS und Storage-Protokolle |
 | `e-mail-uebungen` (noch nicht angelegt) | P37 Exchange Online Administration; P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC; P39 Mailserver mit Postfix und Dovecot; A21 E-Mail-Routing, SMTP und Mail Security |
-| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen (gepusht); P41 Incident-, Problem- und Change-Management (gepusht); P42 Ticketsysteme in der Praxis (gepusht); P43 SLA und Betriebshandbuch (gepusht); P47 Datenschutz (DSGVO) in der IT (gepusht); P48 NIS2 für Administratoren (gepusht); P49 ISO 27001 Grundlagen (gepusht); P50 Troubleshooting-Methodik (gepusht); P51 Projektmanagement für Administratoren (gepusht); P52 IT-Englisch für Administratoren (gepusht); P69 Asset-Verwaltung und CMDB (gepusht); P70 Lizenzmanagement (gepusht); P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) (gepusht); A05 Weiterbildung IT Systemtechnik; A28 DSGVO; A53 Troubleshooting; A54 CMDB und Asset Management; N12 Compliance in Unternehmen; N13 IT-Risikomanagement; N32 Anwendungssupport; N33 Jira Service Management; N34 ServiceNow; N35 Vendor Management und Lizenzmanagement; N41 Confluence; N49 Anforderungsmanagement; N50 Kanban; N51 Projekt-Risikoregister und Issue Tracking; N52 Projektmanagement; N53 Scrum; F01 Open Source; F02 Stakeholder Management und Moderation |
+| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen (gepusht); P41 Incident-, Problem- und Change-Management (gepusht); P42 Ticketsysteme in der Praxis (gepusht); P43 SLA und Betriebshandbuch (gepusht); P47 Datenschutz (DSGVO) in der IT (gepusht); P48 NIS2 für Administratoren (gepusht); P49 ISO 27001 Grundlagen (gepusht); P50 Troubleshooting-Methodik (gepusht); P51 Projektmanagement für Administratoren (gepusht); P52 IT-Englisch für Administratoren (gepusht); P69 Asset-Verwaltung und CMDB (gepusht); P70 Lizenzmanagement (gepusht); P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) (gepusht); P73 Bewerbungstraining für IT-Berufe; A05 Weiterbildung IT Systemtechnik; A28 DSGVO; A53 Troubleshooting; A54 CMDB und Asset Management; N12 Compliance in Unternehmen; N13 IT-Risikomanagement; N32 Anwendungssupport; N33 Jira Service Management; N34 ServiceNow; N35 Vendor Management und Lizenzmanagement; N41 Confluence; N49 Anforderungsmanagement; N50 Kanban; N51 Projekt-Risikoregister und Issue Tracking; N52 Projektmanagement; N53 Scrum; F01 Open Source; F02 Stakeholder Management und Moderation |
 | [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche (gepusht); P45 Windows-11-Client-Administration (gepusht); P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) (gepusht); A01 Betriebssysteme; A02 CompTIA A+; A03 Microsoft MD-102; A06 Windows Autopilot; N01 Registry und Treiber; N36 Arduino; N37 Elektrotechnik, Strom und Sicherheit; N38 Gerätetechnik; N39 Kabel und Stecker; N40 Raspberry Pi und Einplatinencomputer |
 | [linux-uebungen](https://github.com/AnsibleArtisan4711/linux-uebungen) | A15 LPIC-1; A16 LPIC-2; A17 LPIC-3; A18 RHEL-Familie (Red Hat Enterprise Linux und AlmaLinux) |
 | [office-uebungen](https://github.com/AnsibleArtisan4711/office-uebungen) | N42 LaTeX (inkl. MiKTeX, TeXstudio und Overleaf); N43 Microsoft Access Expert; N44 Microsoft Outlook Associate; N45 Microsoft PL-900 (Power Platform Fundamentals); N46 Microsoft PowerPoint Associate; N47 Microsoft Word Expert; N48 Power Platform Governance |

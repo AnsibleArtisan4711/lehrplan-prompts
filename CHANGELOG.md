@@ -1,5 +1,11 @@
 # Änderungen
 
+## 2026-11-13 (P73 Bewerbungstraining für IT-Berufe)
+
+- Neu: **P73** in der Gruppe „Zusatz“ (Repository `it-betrieb-uebungen`, ohne Labor): `lehrplaene/P73-bewerbungstraining-fuer-it-berufe.md` mit 8 Modulen und 48 UE, Eintrag in `daten/kurse.json`, Prompt und README-Tabellen mit `python tools/build_prompts.py` erzeugt (242 Kurse).
+- Der Lehrplan beruht auf dem Excel-Lehrplan und dem LaTeX-Skript, ist aber IT-nah neu gefasst (Entscheidung von AnsibleArtisan4711) und **fachlich nicht geprüft**; die rechtlichen Aussagen stammen aus dem Rohmaterial und sind nicht neu belegt.
+- Status: `Lehrplan erstellt`. Auf `gepusht` (mit `ordner`) wird er erst gesetzt, wenn die Übungsreihe im Repository liegt.
+
 ## 2026-11-13 (Klarname durch Pseudonym ersetzt)
 
 - In neun Dateien (`CHANGELOG.md` und die Lehrpläne P47 bis P52, P69 und P70) stand ein Vorname im Prüfvermerk („von … noch nicht geprüft“). Er wurde durch das Pseudonym `AnsibleArtisan4711` ersetzt. Sonst wurde nichts geändert.
