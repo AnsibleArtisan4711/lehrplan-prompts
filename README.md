@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 72 Kurse: 44 offen, 2 Lehrplan erstellt, 0 aufbereitet, 26 gepusht.
+Stand der 72 Kurse: 44 offen, 1 Lehrplan erstellt, 0 aufbereitet, 27 gepusht.
 
 Bedeutung der Status:
 
@@ -58,7 +58,7 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 27 | B | Azure und Identität | Azure Administration | offen | [P27](prompts/P27-azure-administration.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 28 | B | Azure und Identität | Entra ID und Hybrid-Identität | offen | [P28](prompts/P28-entra-id-und-hybrid-identitaet.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 29 | B | Azure und Identität | Intune und Autopilot | offen | [P29](prompts/P29-intune-und-autopilot.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 30 | B | Datenbanken | SQL-Grundlagen | Lehrplan erstellt | [P30](prompts/P30-sql-grundlagen.md) | [P30](lehrplaene/P30-sql-grundlagen.md) | `datenbanken-uebungen` (geplant) |
+| 30 | B | Datenbanken | SQL-Grundlagen | gepusht | [P30](prompts/P30-sql-grundlagen.md) | [P30](lehrplaene/P30-sql-grundlagen.md) | [datenbanken-uebungen/sql-grundlagen](https://github.com/AnsibleArtisan4711/datenbanken-uebungen/tree/main/sql-grundlagen) |
 | 31 | B | Datenbanken | MariaDB und PostgreSQL Administration | offen | [P31](prompts/P31-mariadb-und-postgresql-administration.md) | – | `datenbanken-uebungen` (geplant) |
 | 32 | B | Datenbanken | SQL Server Administration | offen | [P32](prompts/P32-sql-server-administration.md) | – | `datenbanken-uebungen` (geplant) |
 | 33 | B | Storage | NAS, SAN, iSCSI und RAID | offen | [P33](prompts/P33-nas-san-iscsi-und-raid.md) | – | `storage-backup-uebungen` (geplant) |
@@ -171,7 +171,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | [automatisierung-uebungen](https://github.com/AnsibleArtisan4711/automatisierung-uebungen) | P21 Konfigurationsmanagement mit Ansible; P22 Infrastructure as Code mit Terraform; P23 cloud-init und VM-Vorlagen; P24 PowerShell Desired State Configuration (DSC); P65 CI/CD mit GitLab und Jenkins |
 | `container-uebungen` (noch nicht angelegt) | P25 Docker und Docker Compose; P26 Kubernetes-Grundlagen; P53 Podman und Container-Sicherheit |
 | [cloud-identitaet-uebungen](https://github.com/AnsibleArtisan4711/cloud-identitaet-uebungen) | P27 Azure Administration; P28 Entra ID und Hybrid-Identität; P29 Intune und Autopilot; P56 AWS Administration (SysOps); P57 Azure-Netzwerk und Azure-Sicherheit; P58 Google Cloud Grundlagen |
-| `datenbanken-uebungen` (noch nicht angelegt) | P30 SQL-Grundlagen; P31 MariaDB und PostgreSQL Administration; P32 SQL Server Administration; P67 NoSQL-Datenbanken und Redis; P68 Datenbank-Backup und -Wiederherstellung |
+| [datenbanken-uebungen](https://github.com/AnsibleArtisan4711/datenbanken-uebungen) | P30 SQL-Grundlagen (gepusht); P31 MariaDB und PostgreSQL Administration; P32 SQL Server Administration; P67 NoSQL-Datenbanken und Redis; P68 Datenbank-Backup und -Wiederherstellung |
 | [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO); P36 Notfallplanung und Disaster Recovery; P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS |
 | `e-mail-uebungen` (noch nicht angelegt) | P37 Exchange Online Administration; P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC; P39 Mailserver mit Postfix und Dovecot |
 | [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen (gepusht); P41 Incident-, Problem- und Change-Management (gepusht); P42 Ticketsysteme in der Praxis (gepusht); P43 SLA und Betriebshandbuch (gepusht); P47 Datenschutz (DSGVO) in der IT (gepusht); P48 NIS2 für Administratoren (gepusht); P49 ISO 27001 Grundlagen (gepusht); P50 Troubleshooting-Methodik (gepusht); P51 Projektmanagement für Administratoren (gepusht); P52 IT-Englisch für Administratoren (gepusht); P69 Asset-Verwaltung und CMDB (gepusht); P70 Lizenzmanagement (gepusht); P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) (gepusht) |

@@ -1,5 +1,13 @@
 # Änderungen
 
+## 2026-11-13 (Übungsreihe P30: SQL-Grundlagen)
+
+- `status` von P30 auf „gepusht“, Feld `ordner` ergänzt (Repository `datenbanken-uebungen`: `sql-grundlagen`, neues Repository).
+- Die Übungsreihe (12 Module, 120 UE, 90 Stunden, davon 2 Module mit Priorität 2) ist ein Entwurf. **Nicht unter Hyper-V, nicht auf Debian 12 mit PostgreSQL 15 und nicht mit DBeaver erprobt.** Die SQL-Skripte und psql-Befehle wurden in einem Cloud-Container (Ubuntu 24.04.5, PostgreSQL 16.15, Cluster `main` mit `de_AT.UTF-8`, zwei Netzwerk-Namespaces für `db-server` 192.168.100.10 und `db-client` 192.168.100.20) ausgeführt; `psql` ersetzt DBeaver, `pg_ctlcluster` ersetzt `systemctl`. Nicht ausgeführt: `apt install`, `systemctl`, `/etc/network/interfaces`, Windows und DBeaver (siehe `befehle-nicht-bestaetigt.md`).
+- Der Lehrplan P30 wurde nicht verändert; Befunde stehen in `lehrplan-korrekturen.md` der Übungsreihe (u. a. verbrauchen fehlgeschlagene `INSERT`-Befehle Identity-Werte; `UNIQUE` erlaubt mehrere `NULL`; `NOT IN` mit `NULL` liefert 0 Zeilen; Restore in die bestehende Datenbank `firma` ergibt 17 statt 18 Fehler; Logdatei heißt unter PostgreSQL 16 `postgresql-16-main.log`).
+- Lerneinheiten ohne Praxisaufgabe im Lehrplan (1.1, 5.1, 9.1, 10.1, 11.1) wurden durch gekennzeichnete „Ergänzungen der Ausarbeitung“ abgedeckt. Material, das im Rohmaterial fehlte (Rechnung, Flat-File), ist erfunden und als solches gekennzeichnet.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-13 (Übungsreihe P16: Kryptografie, Zertifikate und TLS)
 
 - `status` von P16 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-sicherheit-uebungen`: `kryptografie-zertifikate-und-tls`).

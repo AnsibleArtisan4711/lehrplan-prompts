@@ -483,9 +483,10 @@
     "themen": "Relationale Modelle; Tabellen und Schlüssel; SELECT, INSERT, UPDATE, DELETE; Joins; Gruppierung und Aggregation; Unterabfragen; Indizes; Transaktionen; Sichten; Normalisierung; Übungen mit SQLite oder PostgreSQL",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM mit Datenbank; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "datenbanken-uebungen"
+    "repo": "datenbanken-uebungen",
+    "ordner": "sql-grundlagen"
   },
   {
     "id": "P31",
