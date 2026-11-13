@@ -160,9 +160,10 @@
     "themen": "VPN-Konzepte; WireGuard (Schlüssel, Peers, Routing); OpenVPN (Zertifikate, Server, Clients); Site-to-Site und Road-Warrior; IPsec in Grundzügen; Split Tunneling; Firewall-Regeln; Fehlersuche; Härtung und Betrieb",
     "abgrenzung": "OPNsense-Konfiguration nur soweit nötig; Zertifikatsgrundlagen im Kurs „Kryptografie, Zertifikate und TLS“",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x VPN-Server-VM; 1 Client-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "netzwerk-und-firewall-uebungen"
+    "repo": "netzwerk-und-firewall-uebungen",
+    "ordner": "vpn-mit-wireguard-und-openvpn"
   },
   {
     "id": "P11",

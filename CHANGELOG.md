@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-13 (Übungsreihe P10: VPN mit WireGuard und OpenVPN)
+
+- `status` von P10 auf „gepusht“, Feld `ordner` ergänzt (Repository `netzwerk-und-firewall-uebungen`: `vpn-mit-wireguard-und-openvpn`).
+- Die Übungsreihe (12 Module, 110 UE, 82,5 Stunden) ist ein Entwurf. **Nicht auf Debian 12 und nicht unter Hyper-V erprobt.** Die Linux-Befehle der Module 2 bis 12 wurden in zwei Netzwerk-Namespaces eines Cloud-Containers nachgestellt (Ubuntu 24.04, wireguard-go statt Kernelmodul, OpenVPN 2.6.19, EasyRSA 3.1.7, nftables 1.0.9); die Ausgaben liegen als `beispiele/` in den Modulen. Nicht geprüft: Debian 12, Hyper-V, systemd-Dienste, SSH/`scp`, Kernelmodule `dummy` und WireGuard, `dynamic_debug`. Modul 1 ist eine reine Fallstudie.
+- Der Lehrplan P10 wurde nicht verändert; Befunde stehen in `lehrplan-korrekturen.md` der Übungsreihe (u. a. `wg syncconf` ändert Routen nicht, erster Ping muss vom Client kommen, `bad source address` erst ab `verb 6`).
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-13 (Übungsreihe P05: Hyper-V Administration)
 
 - `status` von P05 auf „gepusht“, Feld `ordner` ergänzt (Repository `virtualisierung-uebungen`: `hyper-v-administration`).
