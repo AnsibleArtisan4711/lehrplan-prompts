@@ -247,4 +247,4 @@ Dieser Lehrplan wurde direkt aus dem Prompt P50 erstellt (Annahmen: Bergfried Me
 
 **Nicht bestätigt:** Alle Befehlsoptionen und Ausgabeformate außer den auf Microsoft Learn gelesenen Angaben zu `Get-WinEvent` und `Test-NetConnection`; die Schichtenliste ist ein Kurshilfsmittel, keine Norm; `journalctl`-Handbuchseite nicht abgerufen.
 
-**Offen:** Zeitaufwand unerprobt; Labor nicht aufgebaut; der Lehrplan wurde von Matija noch nicht geprüft.
+**Offen:** Zeitaufwand unerprobt; Labor nicht aufgebaut; der Lehrplan wurde von AnsibleArtisan4711 noch nicht geprüft.

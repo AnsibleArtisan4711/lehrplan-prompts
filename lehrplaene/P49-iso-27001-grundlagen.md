@@ -262,4 +262,4 @@ Dieser Lehrplan wurde direkt aus dem Prompt P49 erstellt (Annahmen: fiktive Silb
 
 **Nicht bestätigt:** Inhalt der Änderung von 2024, Gliederung und Maßnahmenzahl von Anhang A, Zertifizierungsablauf und Fristen, österreichische Normenausgabe und Zertifizierungsstellen. Kein Rechtsrat.
 
-**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von Matija noch nicht geprüft.
+**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von AnsibleArtisan4711 noch nicht geprüft.

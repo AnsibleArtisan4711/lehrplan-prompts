@@ -250,4 +250,4 @@ Dieser Lehrplan wurde direkt aus dem Prompt P48 erstellt (Annahmen: fiktive Dona
 
 **Nicht bestätigt:** Wortlaut von Richtlinie und Gesetz, genaue Schwellen und Sektorlisten, Kriterien des erheblichen Vorfalls, Fristen der Registrierung und Selbstdeklaration, Frist des Abschlussberichts im österreichischen Gesetz, Sanktionsrahmen. Kein Rechtsrat.
 
-**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von Matija noch nicht geprüft.
+**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von AnsibleArtisan4711 noch nicht geprüft.

@@ -267,4 +267,4 @@ Dieser Lehrplan wurde direkt aus dem Prompt P47 erstellt (Annahmen: fiktive Alpe
 
 **Nicht bestätigt:** Wortlaut aller DSGVO-Artikel und -Fristen (EUR-Lex nicht abrufbar), österreichisches DSG (RIS nicht geprüft), Muster und Kriterienlisten der Datenschutzbehörde, Aufbewahrungsfristen aus anderen Gesetzen, Rechtslage zu Drittlandübermittlungen, Videoüberwachung und Mitarbeiterkontrolle. Aus einer geprüften Sekundärquelle (WKO, Stand 23.10.2026) stammen nur die Angaben zur Meldung von Datenpannen. Kein Rechtsrat.
 
-**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von Matija noch nicht geprüft.
+**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von AnsibleArtisan4711 noch nicht geprüft.

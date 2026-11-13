@@ -230,4 +230,4 @@ Dieser Lehrplan wurde direkt aus dem Prompt P70 erstellt (Annahmen: kein Labor, 
 
 **Nicht bestätigt:** Lizenzregeln für die aktuelle Windows-Server-Version, Microsoft-365-Pläne, alle Preise, Wortlaut und Auslegung der Open-Source-Lizenzen, Ablauf und Rechte bei Hersteller-Audits. Die Beispielregel zu Kernen stammt aus einer archivierten Quelle zu Windows Server 2016. Der Kurs gibt **keine Rechtsberatung**.
 
-**Offen:** Der Zeitaufwand ist unerprobt. Der Lehrplan wurde von Matija noch nicht geprüft.
+**Offen:** Der Zeitaufwand ist unerprobt. Der Lehrplan wurde von AnsibleArtisan4711 noch nicht geprüft.

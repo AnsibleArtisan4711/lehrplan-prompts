@@ -238,4 +238,4 @@ Dieser Lehrplan wurde direkt aus dem Prompt P52 erstellt (Annahmen: Bergfried Me
 
 **Nicht bestätigt:** Wortschatz und Beispielsätze sind Fachwissen und nicht von einer Englischlehrkraft geprüft; Stilleitfaden und RFC 2119 nicht gelesen.
 
-**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von Matija noch nicht geprüft.
+**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von AnsibleArtisan4711 noch nicht geprüft.

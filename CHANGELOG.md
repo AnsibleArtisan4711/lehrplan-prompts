@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-13 (Klarname durch Pseudonym ersetzt)
+
+- In neun Dateien (`CHANGELOG.md` und die Lehrpläne P47 bis P52, P69 und P70) stand ein Vorname im Prüfvermerk („von … noch nicht geprüft“). Er wurde durch das Pseudonym `AnsibleArtisan4711` ersetzt. Sonst wurde nichts geändert.
+- **Die Git-Historie ist davon nicht betroffen:** Frühere Commits enthalten den Namen weiterhin. Wer ihn auch dort entfernen will, muss die Historie umschreiben (nur mit Absprache, weil sich alle Commit-Nummern ändern).
+
 ## 2026-11-13 (GitHub-Topics per Skript)
 
 - Neu: `tools/topics_setzen.py` und `daten/topics.json`. Das Skript setzt GitHub-Topics bei Repositories, die noch keine haben. Vorhandene Topics bleiben unverändert, Repositories ohne Vorgabe werden nur gemeldet. Ohne `--anwenden` ändert es nichts.
@@ -73,14 +78,14 @@
 
 ## 2026-11-13 (Lehrpläne P47, P48, P49: Recht und Compliance)
 
-- Neu: Lehrpläne `lehrplaene/P47-datenschutz-dsgvo-in-der-it.md` (9 Module, 49 UE; Prio 1: 45 UE, Prio 2: 4 UE), `lehrplaene/P48-nis2-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 40 UE, Prio 2: 6 UE) und `lehrplaene/P49-iso-27001-grundlagen.md` (9 Module, 49 UE; Prio 1: 45 UE, Prio 2: 4 UE). Alle drei wurden direkt nach der Grundanweisung geschrieben und von Matija noch nicht geprüft.
+- Neu: Lehrpläne `lehrplaene/P47-datenschutz-dsgvo-in-der-it.md` (9 Module, 49 UE; Prio 1: 45 UE, Prio 2: 4 UE), `lehrplaene/P48-nis2-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 40 UE, Prio 2: 6 UE) und `lehrplaene/P49-iso-27001-grundlagen.md` (9 Module, 49 UE; Prio 1: 45 UE, Prio 2: 4 UE). Alle drei wurden direkt nach der Grundanweisung geschrieben und von AnsibleArtisan4711 noch nicht geprüft.
 - `status` von P47, P48 und P49 auf „Lehrplan erstellt“.
 - Quellenstand (13.11.2026): P47 stützt sich bei den Meldepflichten auf eine WKO-Seite (Stand 23.10.2026); P48 auf Austrian Standards (NISG 2026, Inkrafttreten laut Quelle 01.10.2026, Seite ohne Datum, mit Widersprüchen bei Registrierungs- und Selbstdeklarationsfrist) sowie Wiedergaben von Art. 21 und 23 der NIS-2-Richtlinie; P49 auf die Produktseite von ISO/IEC 27001:2022 mit Amendment 1:2024. Gesetzestexte (EUR-Lex, RIS) und die Norm selbst wurden nicht gelesen; Rechtsaussagen sind Kursannahmen, kein Rechtsrat.
 - README-Tabellen mit `python tools/build_prompts.py` erzeugt.
 
 ## 2026-11-13 (Gruppe IT-Betrieb und Prozesse komplett: P40, P41, P42, P43, P69, P70, P72)
 
-- Neu: Lehrpläne `lehrplaene/P69-asset-verwaltung-und-cmdb.md` (8 Module, 45 UE; Prio 1: 39 UE, Prio 2: 6 UE) und `lehrplaene/P70-lizenzmanagement.md` (8 Module, 40 UE; Prio 1: 31 UE, Prio 2: 9 UE). Beide wurden direkt nach der Grundanweisung geschrieben und von Matija noch nicht geprüft. Quellen: GLPI-Dokumentation (Voraussetzungen, Inventory-Seite) und ein archivierter Microsoft-Blog zu Windows Server 2016, jeweils mit Abrufdatum 13.11.2026; Lizenzregeln für aktuelle Produkte und rechtliche Aussagen sind nicht geprüft.
+- Neu: Lehrpläne `lehrplaene/P69-asset-verwaltung-und-cmdb.md` (8 Module, 45 UE; Prio 1: 39 UE, Prio 2: 6 UE) und `lehrplaene/P70-lizenzmanagement.md` (8 Module, 40 UE; Prio 1: 31 UE, Prio 2: 9 UE). Beide wurden direkt nach der Grundanweisung geschrieben und von AnsibleArtisan4711 noch nicht geprüft. Quellen: GLPI-Dokumentation (Voraussetzungen, Inventory-Seite) und ein archivierter Microsoft-Blog zu Windows Server 2016, jeweils mit Abrufdatum 13.11.2026; Lizenzregeln für aktuelle Produkte und rechtliche Aussagen sind nicht geprüft.
 - `status` von P40, P41, P42, P43, P69, P70 und P72 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-betrieb-uebungen`: `itil-4-grundlagen`, `incident-problem-und-change-management`, `ticketsysteme-in-der-praxis`, `sla-und-betriebshandbuch`, `asset-verwaltung-und-cmdb`, `lizenzmanagement`; P72 hatte `ordner` bereits). Die Gruppe „IT-Betrieb und Prozesse“ ist damit komplett.
 - Die Übungsreihen sind Entwürfe. In GLPI, Zammad, Ubuntu, Hyper-V und Windows wurde nichts ausgeführt; real gelaufen sind nur die Python-Rechenhilfen.
 - README-Tabellen mit `python tools/build_prompts.py` erzeugt.
@@ -93,7 +98,7 @@
 
 ## 2026-11-12 (Gruppe Windows-Server-Rollen komplett: P03, P04, P59, P61)
 
-- Neu: Lehrplan `lehrplaene/P59-remotedesktopdienste-rds.md` (13 Module, 104 UE; Prio 1: 90 UE, Prio 2: 14 UE) und Lehrplan `lehrplaene/P61-windows-admin-center.md` (9 Module, 52 UE; Prio 1: 42 UE, Prio 2: 10 UE). Beide wurden direkt nach der Grundanweisung geschrieben und von Matija noch nicht geprüft. Microsoft-Learn-Angaben stammen aus Suchtreffer-Auszügen vom 12.11.2026.
+- Neu: Lehrplan `lehrplaene/P59-remotedesktopdienste-rds.md` (13 Module, 104 UE; Prio 1: 90 UE, Prio 2: 14 UE) und Lehrplan `lehrplaene/P61-windows-admin-center.md` (9 Module, 52 UE; Prio 1: 42 UE, Prio 2: 10 UE). Beide wurden direkt nach der Grundanweisung geschrieben und von AnsibleArtisan4711 noch nicht geprüft. Microsoft-Learn-Angaben stammen aus Suchtreffer-Auszügen vom 12.11.2026.
 - `status` von P03, P04, P59 und P61 auf „gepusht“, Feld `ordner` ergänzt (`wsus-und-update-verwaltung`, `zertifikatsdienste-und-pki`, `remotedesktopdienste-rds`, `windows-admin-center` im Repository `windows-server-uebungen`). Die Gruppe „Windows-Server-Rollen“ (P01 bis P04, P59, P61) ist damit komplett. Die Übungsreihen sind Entwürfe und nicht auf Windows ausgeführt.
 - Hinweis: Die Übungsreihen P59 und P61 und die beiden Lehrpläne liegen im selben Commit wie diese Änderung.
 - README-Tabellen mit `python tools/build_prompts.py` erzeugt.

@@ -251,4 +251,4 @@ Dieser Lehrplan wurde ohne Gem-Entwurf direkt aus dem Prompt P69 erstellt (Annah
 
 **Nicht bestätigt:** Menüpfade und Bezeichnungen in GLPI, CSV-Import-Dialog, Installationsschritte des GLPI Agent, Pfad für Agenten-Daten, aktuelle GLPI-Version, Paketnamen der PHP-Erweiterungen unter Ubuntu 24.04. Die Lernenden notieren Abweichungen.
 
-**Offen:** Der Zeitaufwand ist unerprobt. Der Lehrplan wurde von Matija noch nicht geprüft.
+**Offen:** Der Zeitaufwand ist unerprobt. Der Lehrplan wurde von AnsibleArtisan4711 noch nicht geprüft.

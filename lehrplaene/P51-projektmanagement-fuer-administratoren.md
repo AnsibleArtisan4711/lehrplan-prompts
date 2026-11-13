@@ -239,4 +239,4 @@ Dieser Lehrplan wurde direkt aus dem Prompt P51 erstellt (Annahmen: Tannenhof Lo
 
 **Nicht bestätigt:** Alle Methodenaussagen (Phasen, Formeln, Skalen) sind Fachwissen; Scrum Guide nicht abgerufen; keine Norm gelesen.
 
-**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von Matija noch nicht geprüft.
+**Offen:** Zeitaufwand unerprobt; der Lehrplan wurde von AnsibleArtisan4711 noch nicht geprüft.
