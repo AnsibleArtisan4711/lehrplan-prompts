@@ -1,0 +1,29 @@
+{
+  "besitzer": "AnsibleArtisan4711",
+  "gemeinsam": ["learning", "it-exercises", "german"],
+  "ohne_gemeinsam": ["lehrplan-prompts"],
+  "ignorieren": ["AnsibleArtisan4711"],
+  "repos": {
+    "netzwerkdienste-uebungen": ["networking", "dns", "dhcp", "network-services", "sysadmin"],
+    "windows-server-uebungen": ["windows-server", "active-directory", "group-policy", "file-server", "sysadmin"],
+    "netzwerk-und-firewall-uebungen": ["networking", "firewall", "cisco", "packet-tracer", "wlan"],
+    "automatisierung-uebungen": ["automation", "powershell", "bash", "python", "git"],
+    "cloud-identitaet-uebungen": ["cloud", "aws", "microsoft-365", "entra-id", "identity"],
+    "storage-backup-uebungen": ["storage", "backup", "veeam", "disaster-recovery"],
+    "it-betrieb-uebungen": ["it-operations", "homelab", "documentation", "sysadmin"],
+    "client-hardware-uebungen": ["hardware", "client", "troubleshooting", "comptia"],
+    "linux-uebungen": ["linux", "linux-essentials", "open-source", "sysadmin"],
+    "office-uebungen": ["microsoft-office", "excel", "word", "powerpoint"],
+    "web-uebungen": ["web-development", "html", "css", "webserver", "webdesign"],
+    "virtualisierung-uebungen": ["virtualization", "hyper-v", "sysadmin"],
+    "it-sicherheit-uebungen": ["it-security", "security", "hardening", "compliance"],
+    "monitoring-logging-uebungen": ["monitoring", "logging", "observability", "sysadmin"],
+    "container-uebungen": ["containers", "docker", "kubernetes"],
+    "datenbanken-uebungen": ["databases", "sql", "postgresql"],
+    "e-mail-uebungen": ["email", "smtp", "mail-server", "sysadmin"],
+    "programmierung-uebungen": ["programming", "software-development"],
+    "ki-und-daten-uebungen": ["artificial-intelligence", "machine-learning", "data-science"],
+    "wirtschaft-und-steuer-uebungen": ["business", "taxes", "marketing", "soft-skills"],
+    "lehrplan-prompts": ["curriculum", "prompt-engineering", "education", "it-training"]
+  }
+}

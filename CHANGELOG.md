@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-13 (GitHub-Topics per Skript)
+
+- Neu: `tools/topics_setzen.py` und `daten/topics.json`. Das Skript setzt GitHub-Topics bei Repositories, die noch keine haben. Vorhandene Topics bleiben unverändert, Repositories ohne Vorgabe werden nur gemeldet. Ohne `--anwenden` ändert es nichts.
+- Die Topics in `daten/topics.json` sind ein Vorschlag von mir und noch nicht bestätigt. Das Skript wurde mit einer Attrappe der GitHub-CLI getestet, nicht gegen GitHub selbst.
+
 ## 2026-11-13 (169 neue Kurse A, N, F aus den Excel-Lehrplänen)
 
 - 169 neue Einträge in `daten/kurse.json` mit eigenen Kennungen nach dem Berufsbild Systemtechnik: **A01–A54** (Admin-Kern), **N01–N54** (Admin-nah), **F01–F61** (profilfern). Die Buchstaben sind eine Annahme und lassen sich durch Umbenennen der IDs und erneutes Erzeugen ändern.

@@ -371,6 +371,7 @@ Die Prompts und das Erzeugungsskript wurden gemeinsam mit Claude (Anthropic) ent
 | `daten/uebungen.json` | Quelle der 6 Übungsreihen E01–E06: Titel, Thema, Repository, lokaler Ordner und der aus den Repositories gelesene Aufbau |
 | `daten/faecher.json` | Quelle der 16 Fächer K01–K16: Typ, Bereich, Voraussetzung, Stunden, Module mit Stunden, Repository |
 | `daten/rahmen.json` | gemeinsame Angaben: Umfang, Standard-Abgrenzung, erlaubte Status |
+| `daten/topics.json` | GitHub-Topics je Themen-Repository (gemeinsame und fachliche Topics) für `tools/topics_setzen.py` |
 | `rahmen/prompt-vorlage.txt` | Variablen-Vorlage aller Prompts mit Platzhaltern |
 | `gem/grundanweisung.md` | Grundanweisung der Gem (von Hand einzufügen) |
 | `gem/vorlage-variablen.md` | leere Vorlage für einen eigenen Kurs-Prompt |
@@ -378,6 +379,7 @@ Die Prompts und das Erzeugungsskript wurden gemeinsam mit Claude (Anthropic) ent
 | `tools/uebungen_einlesen.py` | liest den Aufbau der Übungsreihen E01–E06 aus ihren lokalen Repository-Ordnern in `daten/uebungen.json` |
 | `tools/umsetzung_anlegen.py` | legt aus einem Lehrplan einen Umsetzungsordner an (Checklisten, Protokolle, Ablage für Screenshots) |
 | `tools/bilder_index.py` | erzeugt `bilder-index.md` mit allen Bildern eines Umsetzungsordners; meldet unverlinkte, fehlende und große Bilder |
+| `tools/topics_setzen.py` | setzt GitHub-Topics bei Repositories ohne Topics (Trockenlauf, `--anwenden` zum Setzen; braucht die GitHub-CLI `gh`) |
 | `CHANGELOG.md` | Änderungen am gemeinsamen Rahmen |
 | `LICENSE`, `LICENSE-DOCS.md` | MIT für das Skript, CC BY 4.0 für die Texte (Prompts, Vorlage, Daten, Lehrpläne) |
 
@@ -399,6 +401,7 @@ git push
 - **Übungsreihe ändern oder ergänzen:** Eintrag in `daten/uebungen.json` anpassen (Feld `lokal` = Ordner des Repositories), dann `python tools/uebungen_einlesen.py` und `python tools/build_prompts.py`.
 - **Umsetzung vorbereiten:** `python tools/umsetzung_anlegen.py P46` (oder `K01`, `E03`) legt neben dem Repository den Ordner `Umsetzung/P46-<slug>/` an, mit einem Unterordner je Modul (`checkliste.md`, `protokoll.md`, `fehlerprotokoll.md`, `screenshots/`, `notizen/`, `ausgaben/`), einer Übersicht, einer Liste der Befehle mit „nicht bestätigt“ und einem Abschlussordner. Ein zweiter Parameter wählt einen anderen Zielordner. Vorhandene Dateien werden nicht überschrieben.
 - **Bilder indizieren:** `python tools/bilder_index.py` (Standard: `D:\Umsetzung`) oder mit Ordner als Parameter schreibt `bilder-index.md` in diesen Ordner: Tabelle aller verlinkten Bilder mit Modul, Abschnitt, Beschreibung, Größe und Link, dazu unverlinkte Bilder, Links auf fehlende Bilder und Bilder über 1 MB.
+- **GitHub-Topics setzen:** `python tools/topics_setzen.py` zeigt als Trockenlauf, was gesetzt würde; `python tools/topics_setzen.py --anwenden` setzt die Topics aus `daten/topics.json`. Repositories, die schon Topics haben, bleiben unverändert; Repositories ohne Eintrag in `daten/topics.json` werden nur gemeldet. Voraussetzung: GitHub-CLI, angemeldet mit `gh auth login`.
 - **Qualität:** Die Prompts verlangen Versions- und Lizenzstände mit Datum. Diese Angaben im fertigen Lehrplan stichprobenartig gegen die Herstellerdokumentation prüfen.
 
 ## Lizenz
