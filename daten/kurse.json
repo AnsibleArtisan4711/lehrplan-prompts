@@ -809,9 +809,10 @@
     "themen": "Systematisches Vorgehen; Informationen sammeln; Hypothesen; Eingrenzen; Werkzeuge (Ping, Traceroute, Protokolle, Ereignisanzeige); Dokumentieren; Kommunikation mit Anwendern; typische Fehlerbilder in Netzwerk, Server und Client; Übungsfälle",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "gepusht",
     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Fehler werden vorab in der Testumgebung eingebaut",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "troubleshooting-methodik"
   },
   {
     "id": "P51",
@@ -825,9 +826,10 @@
     "themen": "Projektphasen; Anforderungen; Planung und Aufwandsschätzung; Risiken; Kommunikation; agile und klassische Methoden im Überblick; Abnahme und Übergabe; Dokumentation; Fallbeispiele (Server-Migration, Rollout)",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "gepusht",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "projektmanagement-fuer-administratoren"
   },
   {
     "id": "P52",
@@ -841,9 +843,10 @@
     "themen": "Fachwortschatz; Dokumentation und Fehlermeldungen lesen; E-Mails und Tickets auf Englisch; Telefon- und Support-Situationen; Berichte; Übungsdialoge; Glossar Deutsch–Englisch",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "gepusht",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen; Texte, Tickets und Dokumentation als Übungsmaterial",
-    "repo": "it-betrieb-uebungen"
+    "repo": "it-betrieb-uebungen",
+    "ordner": "it-englisch-fuer-administratoren"
   },
   {
     "id": "P53",

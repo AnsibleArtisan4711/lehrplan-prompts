@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-13 (Lehrpläne und Übungsreihen P50, P51, P52: Zusatz)
+
+- Neu: Lehrpläne `lehrplaene/P50-troubleshooting-methodik.md` (8 Module, 47 UE; Prio 1: 43 UE, Prio 2: 4 UE), `lehrplaene/P51-projektmanagement-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 41 UE, Prio 2: 5 UE) und `lehrplaene/P52-it-englisch-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 42 UE, Prio 2: 4 UE). Modul 8 hat jeweils Priorität 2.
+- `status` von P50, P51 und P52 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-betrieb-uebungen`: `troubleshooting-methodik`, `projektmanagement-fuer-administratoren`, `it-englisch-fuer-administratoren`).
+- Die Übungsreihen (35,25, 34,5 und 34,5 Stunden) sind Entwürfe. Real gelaufen sind nur die Python-Hilfsskripte (Zeitleiste, Eingrenzen, Routenverfolgung, Protokollprüfung, kritischer Pfad, Dreipunktschätzung, Fehlermeldungen, Glossar). Bei P50 wurde das Labor nicht aufgebaut und kein Befehl wie `ping` oder `journalctl` ausgeführt; von `Get-WinEvent` und `Test-NetConnection` sind nur Schlüssel bzw. Parameter auf Microsoft Learn gelesen (13.11.2026). Scrum Guide, RFC 2119 und `journalctl`-Handbuchseite wurden nicht abgerufen (Zugriff gesperrt bzw. nur Suchtreffer); alle englischen Texte in P52 sind erfunden und nicht von einer Lehrkraft geprüft.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-13 (Gruppe Recht und Compliance komplett: P47, P48, P49)
 
 - `status` von P47, P48 und P49 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-betrieb-uebungen`: `datenschutz-dsgvo-in-der-it`, `nis2-fuer-administratoren`, `iso-27001-grundlagen`). Die Gruppe „Recht und Compliance“ ist damit komplett.

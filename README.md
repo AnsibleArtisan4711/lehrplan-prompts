@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 72 Kurse: 47 offen, 6 Lehrplan erstellt, 0 aufbereitet, 19 gepusht.
+Stand der 72 Kurse: 44 offen, 6 Lehrplan erstellt, 0 aufbereitet, 22 gepusht.
 
 Bedeutung der Status:
 
@@ -78,9 +78,9 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | gepusht | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) | [P47](lehrplaene/P47-datenschutz-dsgvo-in-der-it.md) | [it-betrieb-uebungen/datenschutz-dsgvo-in-der-it](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/datenschutz-dsgvo-in-der-it) |
 | 48 | C | Recht und Compliance | NIS2 für Administratoren | gepusht | [P48](prompts/P48-nis2-fuer-administratoren.md) | [P48](lehrplaene/P48-nis2-fuer-administratoren.md) | [it-betrieb-uebungen/nis2-fuer-administratoren](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/nis2-fuer-administratoren) |
 | 49 | C | Recht und Compliance | ISO 27001 Grundlagen | gepusht | [P49](prompts/P49-iso-27001-grundlagen.md) | [P49](lehrplaene/P49-iso-27001-grundlagen.md) | [it-betrieb-uebungen/iso-27001-grundlagen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/iso-27001-grundlagen) |
-| 50 | C | Zusatz | Troubleshooting-Methodik | offen | [P50](prompts/P50-troubleshooting-methodik.md) | – | `it-betrieb-uebungen` (geplant) |
-| 51 | C | Zusatz | Projektmanagement für Administratoren | offen | [P51](prompts/P51-projektmanagement-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
-| 52 | C | Zusatz | IT-Englisch für Administratoren | offen | [P52](prompts/P52-it-englisch-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
+| 50 | C | Zusatz | Troubleshooting-Methodik | gepusht | [P50](prompts/P50-troubleshooting-methodik.md) | [P50](lehrplaene/P50-troubleshooting-methodik.md) | [it-betrieb-uebungen/troubleshooting-methodik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/troubleshooting-methodik) |
+| 51 | C | Zusatz | Projektmanagement für Administratoren | gepusht | [P51](prompts/P51-projektmanagement-fuer-administratoren.md) | [P51](lehrplaene/P51-projektmanagement-fuer-administratoren.md) | [it-betrieb-uebungen/projektmanagement-fuer-administratoren](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/projektmanagement-fuer-administratoren) |
+| 52 | C | Zusatz | IT-Englisch für Administratoren | gepusht | [P52](prompts/P52-it-englisch-fuer-administratoren.md) | [P52](lehrplaene/P52-it-englisch-fuer-administratoren.md) | [it-betrieb-uebungen/it-englisch-fuer-administratoren](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/it-englisch-fuer-administratoren) |
 | 53 | B | Container | Podman und Container-Sicherheit | offen | [P53](prompts/P53-podman-und-container-sicherheit.md) | – | `container-uebungen` (geplant) |
 | 54 | B | Storage | LVM und Dateisysteme unter Linux | offen | [P54](prompts/P54-lvm-und-dateisysteme-unter-linux.md) | – | `storage-backup-uebungen` (geplant) |
 | 55 | B | Storage | Dateidienste unter Linux mit Samba und NFS | offen | [P55](prompts/P55-dateidienste-unter-linux-mit-samba-und-nfs.md) | – | `storage-backup-uebungen` (geplant) |
@@ -174,7 +174,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | `datenbanken-uebungen` (noch nicht angelegt) | P30 SQL-Grundlagen; P31 MariaDB und PostgreSQL Administration; P32 SQL Server Administration; P67 NoSQL-Datenbanken und Redis; P68 Datenbank-Backup und -Wiederherstellung |
 | [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO); P36 Notfallplanung und Disaster Recovery; P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS |
 | `e-mail-uebungen` (noch nicht angelegt) | P37 Exchange Online Administration; P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC; P39 Mailserver mit Postfix und Dovecot |
-| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen (gepusht); P41 Incident-, Problem- und Change-Management (gepusht); P42 Ticketsysteme in der Praxis (gepusht); P43 SLA und Betriebshandbuch (gepusht); P47 Datenschutz (DSGVO) in der IT (gepusht); P48 NIS2 für Administratoren (gepusht); P49 ISO 27001 Grundlagen (gepusht); P50 Troubleshooting-Methodik; P51 Projektmanagement für Administratoren; P52 IT-Englisch für Administratoren; P69 Asset-Verwaltung und CMDB (gepusht); P70 Lizenzmanagement (gepusht); P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) (gepusht) |
+| [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen (gepusht); P41 Incident-, Problem- und Change-Management (gepusht); P42 Ticketsysteme in der Praxis (gepusht); P43 SLA und Betriebshandbuch (gepusht); P47 Datenschutz (DSGVO) in der IT (gepusht); P48 NIS2 für Administratoren (gepusht); P49 ISO 27001 Grundlagen (gepusht); P50 Troubleshooting-Methodik (gepusht); P51 Projektmanagement für Administratoren (gepusht); P52 IT-Englisch für Administratoren (gepusht); P69 Asset-Verwaltung und CMDB (gepusht); P70 Lizenzmanagement (gepusht); P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) (gepusht) |
 | [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche (gepusht); P45 Windows-11-Client-Administration (gepusht); P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) (gepusht) |
 <!-- REPOS-ENDE -->
 
