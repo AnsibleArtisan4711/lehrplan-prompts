@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 72 Kurse: 50 offen, 6 Lehrplan erstellt, 0 aufbereitet, 16 gepusht.
+Stand der 72 Kurse: 47 offen, 9 Lehrplan erstellt, 0 aufbereitet, 16 gepusht.
 
 Bedeutung der Status:
 
@@ -75,9 +75,9 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 44 | C | Client und Hardware | PC-Hardware und Fehlersuche | gepusht | [P44](prompts/P44-pc-hardware-und-fehlersuche.md) | [P44](lehrplaene/P44-pc-hardware-und-fehlersuche.md) | [client-hardware-uebungen/pc-hardware-und-fehlersuche](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/pc-hardware-und-fehlersuche) |
 | 45 | C | Client und Hardware | Windows-11-Client-Administration | gepusht | [P45](prompts/P45-windows-11-client-administration.md) | [P45](lehrplaene/P45-windows-11-client-administration.md) | [client-hardware-uebungen/windows-11-client-administration](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/windows-11-client-administration) |
 | 46 | C | Client und Hardware | Betriebssystem-Rollout (MDT, MECM und Alternativen) | gepusht | [P46](prompts/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [P46](lehrplaene/P46-betriebssystem-rollout-mdt-mecm-und-alternativen.md) | [client-hardware-uebungen/betriebssystem-rollout](https://github.com/AnsibleArtisan4711/client-hardware-uebungen/tree/main/betriebssystem-rollout) |
-| 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | offen | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) | – | `it-betrieb-uebungen` (geplant) |
-| 48 | C | Recht und Compliance | NIS2 für Administratoren | offen | [P48](prompts/P48-nis2-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
-| 49 | C | Recht und Compliance | ISO 27001 Grundlagen | offen | [P49](prompts/P49-iso-27001-grundlagen.md) | – | `it-betrieb-uebungen` (geplant) |
+| 47 | C | Recht und Compliance | Datenschutz (DSGVO) in der IT | Lehrplan erstellt | [P47](prompts/P47-datenschutz-dsgvo-in-der-it.md) | [P47](lehrplaene/P47-datenschutz-dsgvo-in-der-it.md) | `it-betrieb-uebungen` (geplant) |
+| 48 | C | Recht und Compliance | NIS2 für Administratoren | Lehrplan erstellt | [P48](prompts/P48-nis2-fuer-administratoren.md) | [P48](lehrplaene/P48-nis2-fuer-administratoren.md) | `it-betrieb-uebungen` (geplant) |
+| 49 | C | Recht und Compliance | ISO 27001 Grundlagen | Lehrplan erstellt | [P49](prompts/P49-iso-27001-grundlagen.md) | [P49](lehrplaene/P49-iso-27001-grundlagen.md) | `it-betrieb-uebungen` (geplant) |
 | 50 | C | Zusatz | Troubleshooting-Methodik | offen | [P50](prompts/P50-troubleshooting-methodik.md) | – | `it-betrieb-uebungen` (geplant) |
 | 51 | C | Zusatz | Projektmanagement für Administratoren | offen | [P51](prompts/P51-projektmanagement-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |
 | 52 | C | Zusatz | IT-Englisch für Administratoren | offen | [P52](prompts/P52-it-englisch-fuer-administratoren.md) | – | `it-betrieb-uebungen` (geplant) |

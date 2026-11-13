@@ -758,7 +758,7 @@
     "themen": "Grundbegriffe und Grundsätze; Rechtsgrundlagen; Betroffenenrechte; Verzeichnis der Verarbeitungstätigkeiten; Auftragsverarbeitung; technische und organisatorische Maßnahmen; Datenpannen und Meldung; Protokollierung und Aufbewahrung; Praxisfälle aus der Administration",
     "abgrenzung": "",
     "hinweis": "Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
     "repo": "it-betrieb-uebungen"
   },
@@ -774,7 +774,7 @@
     "themen": "Anwendungsbereich; Pflichten; Risikomanagementmaßnahmen; Meldepflichten; Lieferkette; Leitungsorgane; Umsetzung in Österreich (Stand prüfen); Bezug zu Härtung, Backup und Monitoring",
     "abgrenzung": "",
     "hinweis": "Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen. Prüfe den Umsetzungsstand in Österreich mit Datum.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
     "repo": "it-betrieb-uebungen"
   },
@@ -790,7 +790,7 @@
     "themen": "Aufbau eines Informationssicherheits-Managementsystems; Kontext und Risiko; Maßnahmen im Überblick; Dokumentation; interne Audits; Zertifizierung; Verbesserungsprozess; Bezug zum Betrieb",
     "abgrenzung": "",
     "hinweis": "Normtexte sind urheberrechtlich geschützt: nur sinngemäß und mit eigenen Beispielen; Ausgabe der Norm mit Stand nennen. Kein Rechtsrat; Rechtsgrundlagen mit Fundstelle und Stand nennen; Österreich und EU berücksichtigen; Unsicherheit kennzeichnen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "kein technisches Labor nötig; Fallstudien, Vorlagen und Dokumentationsaufgaben mit fiktiven Unternehmen",
     "repo": "it-betrieb-uebungen"
   },
