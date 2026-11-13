@@ -79,9 +79,10 @@
     "themen": "Installation; Generation 1 und 2; virtuelle Switches (extern, intern, privat); Speicher (VHDX, Differenzdatenträger); dynamischer Arbeitsspeicher; Checkpoints; Live-Migration; Hyper-V-Replika; Failover-Cluster-Grundlagen; Nested Virtualization; Verwaltung per PowerShell; Leistungsüberwachung",
     "abgrenzung": "Hyper-V dient in anderen Übungen (Veeam, USV, Homelab) nur als Umgebung; hier ist es der Lerngegenstand",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1 Hyper-V-Host (physisch oder verschachtelte Virtualisierung); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "virtualisierung-uebungen"
+    "repo": "virtualisierung-uebungen",
+    "ordner": "hyper-v-administration"
   },
   {
     "id": "P06",

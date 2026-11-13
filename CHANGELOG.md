@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-13 (Übungsreihe P05: Hyper-V Administration)
+
+- `status` von P05 auf „gepusht“, Feld `ordner` ergänzt (Repository `virtualisierung-uebungen`: `hyper-v-administration`).
+- Die Übungsreihe (12 Module, 110 UE, 82,5 Stunden) ist ein Entwurf. **Es wurde kein Windows-Befehl ausgeführt**; Cmdlets und Parameter wurden, soweit in den Quellen der Übungen vermerkt, auf Microsoft Learn gelesen. Sechs PowerShell-Hilfsskripte sind ungeprüft (nicht ausgeführt, nicht mit PowerShell syntaxgeprüft).
+- Der Lehrplan P05 wurde nicht verändert; Anmerkungen stehen in `lehrplan-korrekturen.md` der Übungsreihe.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-13 (Lehrpläne und Übungsreihen P50, P51, P52: Zusatz)
 
 - Neu: Lehrpläne `lehrplaene/P50-troubleshooting-methodik.md` (8 Module, 47 UE; Prio 1: 43 UE, Prio 2: 4 UE), `lehrplaene/P51-projektmanagement-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 41 UE, Prio 2: 5 UE) und `lehrplaene/P52-it-englisch-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 42 UE, Prio 2: 4 UE). Modul 8 hat jeweils Priorität 2.

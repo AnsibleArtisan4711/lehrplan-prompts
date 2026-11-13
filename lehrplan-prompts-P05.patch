@@ -1,0 +1,65 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index d8e8461..cb702b8 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,12 @@
+ # Änderungen
+ 
++## 2026-11-13 (Übungsreihe P05: Hyper-V Administration)
++
++- `status` von P05 auf „gepusht“, Feld `ordner` ergänzt (Repository `virtualisierung-uebungen`: `hyper-v-administration`).
++- Die Übungsreihe (12 Module, 110 UE, 82,5 Stunden) ist ein Entwurf. **Es wurde kein Windows-Befehl ausgeführt**; Cmdlets und Parameter wurden, soweit in den Quellen der Übungen vermerkt, auf Microsoft Learn gelesen. Sechs PowerShell-Hilfsskripte sind ungeprüft (nicht ausgeführt, nicht mit PowerShell syntaxgeprüft).
++- Der Lehrplan P05 wurde nicht verändert; Anmerkungen stehen in `lehrplan-korrekturen.md` der Übungsreihe.
++- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
++
+ ## 2026-11-13 (Lehrpläne und Übungsreihen P50, P51, P52: Zusatz)
+ 
+ - Neu: Lehrpläne `lehrplaene/P50-troubleshooting-methodik.md` (8 Module, 47 UE; Prio 1: 43 UE, Prio 2: 4 UE), `lehrplaene/P51-projektmanagement-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 41 UE, Prio 2: 5 UE) und `lehrplaene/P52-it-englisch-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 42 UE, Prio 2: 4 UE). Modul 8 hat jeweils Priorität 2.
+diff --git a/README.md b/README.md
+index 7786027..cb6cc28 100644
+--- a/README.md
++++ b/README.md
+@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
+ Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
+ 
+ <!-- TABELLE-START -->
+-Stand der 72 Kurse: 44 offen, 6 Lehrplan erstellt, 0 aufbereitet, 22 gepusht.
++Stand der 72 Kurse: 44 offen, 5 Lehrplan erstellt, 0 aufbereitet, 23 gepusht.
+ 
+ Bedeutung der Status:
+ 
+@@ -33,7 +33,7 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
+ | 2 | A | Windows-Server-Rollen | Dateidienste, DFS und Druckserver | gepusht | [P02](prompts/P02-dateidienste-dfs-und-druckserver.md) | [P02](lehrplaene/P02-dateidienste-dfs-und-druckserver.md) | [windows-server-uebungen/dateidienste-dfs-druckserver](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/dateidienste-dfs-druckserver) |
+ | 3 | A | Windows-Server-Rollen | WSUS und Update-Verwaltung | gepusht | [P03](prompts/P03-wsus-und-update-verwaltung.md) | [P03](lehrplaene/P03-wsus-und-update-verwaltung.md) | [windows-server-uebungen/wsus-und-update-verwaltung](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/wsus-und-update-verwaltung) |
+ | 4 | A | Windows-Server-Rollen | Zertifikatsdienste und PKI (AD CS) | gepusht | [P04](prompts/P04-zertifikatsdienste-und-pki-ad-cs.md) | [P04](lehrplaene/P04-zertifikatsdienste-und-pki-ad-cs.md) | [windows-server-uebungen/zertifikatsdienste-und-pki](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/zertifikatsdienste-und-pki) |
+-| 5 | A | Virtualisierung | Hyper-V Administration | Lehrplan erstellt | [P05](prompts/P05-hyper-v-administration.md) | [P05](lehrplaene/P05-hyper-v-administration.md) | `virtualisierung-uebungen` (geplant) |
++| 5 | A | Virtualisierung | Hyper-V Administration | gepusht | [P05](prompts/P05-hyper-v-administration.md) | [P05](lehrplaene/P05-hyper-v-administration.md) | [virtualisierung-uebungen/hyper-v-administration](https://github.com/AnsibleArtisan4711/virtualisierung-uebungen/tree/main/hyper-v-administration) |
+ | 6 | A | Virtualisierung | Proxmox VE | offen | [P06](prompts/P06-proxmox-ve.md) | – | `virtualisierung-uebungen` (geplant) |
+ | 7 | A | Virtualisierung | VMware vSphere und ESXi | offen | [P07](prompts/P07-vmware-vsphere-und-esxi.md) | – | `virtualisierung-uebungen` (geplant) |
+ | 8 | A | Netzwerkdienste und Firewall | Firewall mit OPNsense | offen | [P08](prompts/P08-firewall-mit-opnsense.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+@@ -164,7 +164,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
+ |---|---|
+ | [netzwerkdienste-uebungen](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen) | P01 DNS-Grundlagen (Windows-DNS und BIND) (gepusht); P71 DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) |
+ | [windows-server-uebungen](https://github.com/AnsibleArtisan4711/windows-server-uebungen) | P02 Dateidienste, DFS und Druckserver (gepusht); P03 WSUS und Update-Verwaltung (gepusht); P04 Zertifikatsdienste und PKI (AD CS) (gepusht); P59 Remotedesktopdienste (RDS) (gepusht); P61 Windows Admin Center (gepusht) |
+-| `virtualisierung-uebungen` (noch nicht angelegt) | P05 Hyper-V Administration; P06 Proxmox VE; P07 VMware vSphere und ESXi; P60 Failover-Clustering und Hochverfügbarkeit |
++| [virtualisierung-uebungen](https://github.com/AnsibleArtisan4711/virtualisierung-uebungen) | P05 Hyper-V Administration (gepusht); P06 Proxmox VE; P07 VMware vSphere und ESXi; P60 Failover-Clustering und Hochverfügbarkeit |
+ | [netzwerk-und-firewall-uebungen](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen) | P08 Firewall mit OPNsense; P09 Linux-Firewall mit nftables und iptables; P10 VPN mit WireGuard und OpenVPN; P11 Reverse Proxy, Lastverteilung und TLS |
+ | `it-sicherheit-uebungen` (noch nicht angelegt) | P12 IT-Sicherheitsgrundlagen; P13 Windows-Server-Härtung; P14 Linux-Server-Härtung; P15 Schwachstellenmanagement; P16 Kryptografie, Zertifikate und TLS; P62 IDS und IPS mit Suricata; P63 Passwort- und Secrets-Verwaltung; P64 Penetrationstest-Grundlagen |
+ | `monitoring-logging-uebungen` (noch nicht angelegt) | P17 Monitoring mit Zabbix; P18 Monitoring mit Prometheus und Grafana; P19 Zentrales Logging mit Graylog und Elastic Stack; P20 Monitoring mit PRTG; P66 Windows Event Forwarding und Ereignisprotokolle |
+diff --git a/daten/kurse.json b/daten/kurse.json
+index 26404f2..67baeb7 100644
+--- a/daten/kurse.json
++++ b/daten/kurse.json
+@@ -79,9 +79,10 @@
+     "themen": "Installation; Generation 1 und 2; virtuelle Switches (extern, intern, privat); Speicher (VHDX, Differenzdatenträger); dynamischer Arbeitsspeicher; Checkpoints; Live-Migration; Hyper-V-Replika; Failover-Cluster-Grundlagen; Nested Virtualization; Verwaltung per PowerShell; Leistungsüberwachung",
+     "abgrenzung": "Hyper-V dient in anderen Übungen (Veeam, USV, Homelab) nur als Umgebung; hier ist es der Lerngegenstand",
+     "hinweis": "",
+-    "status": "Lehrplan erstellt",
++    "status": "gepusht",
+     "labor": "1 Hyper-V-Host (physisch oder verschachtelte Virtualisierung); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+-    "repo": "virtualisierung-uebungen"
++    "repo": "virtualisierung-uebungen",
++    "ordner": "hyper-v-administration"
+   },
+   {
+     "id": "P06",
