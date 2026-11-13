@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-13 (Status von P71 nachgetragen)
+
+- `status` von P71 (DHCP-Grundlagen und -Betrieb) auf „gepusht“ gesetzt. Die Übungsreihe liegt seit 2026-11-12 in `netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb` (Commit bc423fc, 12 Module); der Status war beim Eintrag der Ordner am 2026-11-12 auf „Lehrplan erstellt“ geblieben und nicht nachgezogen worden. Damit haben alle 28 Lehrpläne in `lehrplaene/` den Status „gepusht“.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-13 (Übungsreihe P30: SQL-Grundlagen)
 
 - `status` von P30 auf „gepusht“, Feld `ordner` ergänzt (Repository `datenbanken-uebungen`: `sql-grundlagen`, neues Repository).

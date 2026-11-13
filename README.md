@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 72 Kurse: 44 offen, 1 Lehrplan erstellt, 0 aufbereitet, 27 gepusht.
+Stand der 72 Kurse: 44 offen, 0 Lehrplan erstellt, 0 aufbereitet, 28 gepusht.
 
 Bedeutung der Status:
 
@@ -99,7 +99,7 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – | `datenbanken-uebungen` (geplant) |
 | 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | gepusht | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | [P69](lehrplaene/P69-asset-verwaltung-und-cmdb.md) | [it-betrieb-uebungen/asset-verwaltung-und-cmdb](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/asset-verwaltung-und-cmdb) |
 | 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | gepusht | [P70](prompts/P70-lizenzmanagement.md) | [P70](lehrplaene/P70-lizenzmanagement.md) | [it-betrieb-uebungen/lizenzmanagement](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/lizenzmanagement) |
-| 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | Lehrplan erstellt | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | [netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dhcp-grundlagen-und-betrieb) |
+| 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | gepusht | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | [netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dhcp-grundlagen-und-betrieb) |
 | 72 | A | IT-Betrieb und Prozesse | Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) | gepusht | [P72](prompts/P72-weiterbildung-it-systemtechnik.md) | [P72](lehrplaene/P72-weiterbildung-it-systemtechnik.md) | [it-betrieb-uebungen/weiterbildung-it-systemtechnik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/weiterbildung-it-systemtechnik) |
 <!-- TABELLE-ENDE -->
 
@@ -162,7 +162,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 <!-- REPOS-START -->
 | Repository | Kurse |
 |---|---|
-| [netzwerkdienste-uebungen](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen) | P01 DNS-Grundlagen (Windows-DNS und BIND) (gepusht); P71 DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) |
+| [netzwerkdienste-uebungen](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen) | P01 DNS-Grundlagen (Windows-DNS und BIND) (gepusht); P71 DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) (gepusht) |
 | [windows-server-uebungen](https://github.com/AnsibleArtisan4711/windows-server-uebungen) | P02 Dateidienste, DFS und Druckserver (gepusht); P03 WSUS und Update-Verwaltung (gepusht); P04 Zertifikatsdienste und PKI (AD CS) (gepusht); P59 Remotedesktopdienste (RDS) (gepusht); P61 Windows Admin Center (gepusht) |
 | [virtualisierung-uebungen](https://github.com/AnsibleArtisan4711/virtualisierung-uebungen) | P05 Hyper-V Administration (gepusht); P06 Proxmox VE; P07 VMware vSphere und ESXi; P60 Failover-Clustering und Hochverfügbarkeit |
 | [netzwerk-und-firewall-uebungen](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen) | P08 Firewall mit OPNsense; P09 Linux-Firewall mit nftables und iptables; P10 VPN mit WireGuard und OpenVPN (gepusht); P11 Reverse Proxy, Lastverteilung und TLS |
