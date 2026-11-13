@@ -1,5 +1,11 @@
 # Änderungen
 
+## 2026-11-13 (Gruppe Recht und Compliance komplett: P47, P48, P49)
+
+- `status` von P47, P48 und P49 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-betrieb-uebungen`: `datenschutz-dsgvo-in-der-it`, `nis2-fuer-administratoren`, `iso-27001-grundlagen`). Die Gruppe „Recht und Compliance“ ist damit komplett.
+- Die Übungsreihen (9, 8 und 9 Module; 36,75, 34,5 und 36,75 Stunden) sind Entwürfe ohne technisches Labor. Real gelaufen sind nur die Python-Rechenhilfen (Fristen, Einstufung nach Kursregel, Risikomatrix, Risikoregister, Kennzahlen, Protokollprüfung). Der Wortlaut von DSGVO, NIS-2-Richtlinie und NISG 2026 sowie die Norm ISO/IEC 27001 wurden nicht gelesen; Rechtsaussagen sind Kursannahmen, kein Rechtsrat.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-13 (Lehrpläne P47, P48, P49: Recht und Compliance)
 
 - Neu: Lehrpläne `lehrplaene/P47-datenschutz-dsgvo-in-der-it.md` (9 Module, 49 UE; Prio 1: 45 UE, Prio 2: 4 UE), `lehrplaene/P48-nis2-fuer-administratoren.md` (8 Module, 46 UE; Prio 1: 40 UE, Prio 2: 6 UE) und `lehrplaene/P49-iso-27001-grundlagen.md` (9 Module, 49 UE; Prio 1: 45 UE, Prio 2: 4 UE). Alle drei wurden direkt nach der Grundanweisung geschrieben und von Matija noch nicht geprüft.
