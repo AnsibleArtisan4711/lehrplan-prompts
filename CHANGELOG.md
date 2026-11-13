@@ -1,5 +1,15 @@
 # Änderungen
 
+## 2026-11-13 (169 neue Kurse A, N, F aus den Excel-Lehrplänen)
+
+- 169 neue Einträge in `daten/kurse.json` mit eigenen Kennungen nach dem Berufsbild Systemtechnik: **A01–A54** (Admin-Kern), **N01–N54** (Admin-nah), **F01–F61** (profilfern). Die Buchstaben sind eine Annahme und lassen sich durch Umbenennen der IDs und erneutes Erzeugen ändern.
+- Quelle: die Excel-Lehrpläne im Ordner „Für Tauglich Befunden“ (169 Dateien). `gruppe` = eine von 17 Kategorien, `prio` = C (noch nicht priorisiert), `status` = offen.
+- `themen` stammen aus den Modulnamen der Excel-Dateien (Umlaute wiederhergestellt). `fokus`, `vorkenntnisse`, `labor` und `repo` habe ich je Kategorie abgeleitet und teils einzeln angepasst. **Bitte prüfen.** Nicht in den Excel-Dateien belegte Technologien wurden entfernt.
+- Etwa 62 Kurse überschneiden sich mit vorhandenen P-Kursen oder Übungsreihen; der Verweis steht in `abgrenzung`.
+- Mehrere Themen-Repositories (`programmierung-uebungen`, `ki-und-daten-uebungen`, `wirtschaft-und-steuer-uebungen`) sind noch nicht angelegt.
+- `tools/build_prompts.py`: Verwaiste Prompts werden mit `*.md` erkannt; die README erklärt die Kennungen P, A, N, F.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt (241 Kurse).
+
 ## 2026-11-13 (Status von P71 nachgetragen)
 
 - `status` von P71 (DHCP-Grundlagen und -Betrieb) auf „gepusht“ gesetzt. Die Übungsreihe liegt seit 2026-11-12 in `netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb` (Commit bc423fc, 12 Module); der Status war beim Eintrag der Ordner am 2026-11-12 auf „Lehrplan erstellt“ geblieben und nicht nachgezogen worden. Damit haben alle 28 Lehrpläne in `lehrplaene/` den Status „gepusht“.

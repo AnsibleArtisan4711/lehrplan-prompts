@@ -128,6 +128,12 @@ def uebersicht(kurse, rahmen):
     for s in rahmen["status_werte"]:
         zeilen.append("- **%s**: %s" % (s, rahmen["status_legende"][s]))
     zeilen.append("")
+    zeilen.append("Kennung: **P** = ursprüngliche Prompt-Reihe (P01–P72). Die Kennungen **A**, **N** und **F** "
+                  "gehören zu Kursen aus der Sichtung der Excel-Lehrpläne, eingestuft nach dem Berufsbild "
+                  "Systemadministration und IT-Betrieb: **A** = Admin-Kern, **N** = Admin-nah, **F** = profilfern. "
+                  "Bei A, N und F steht die Priorität C, solange sie nicht von Hand gesetzt ist; das Themengebiet "
+                  "ist die Kategorie der Sichtung.")
+    zeilen.append("")
     zeilen.append("Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link darauf, sonst das geplante "
                   "Themen-Repository (Feld `repo` in `daten/kurse.json`).")
     zeilen.append("")
@@ -265,7 +271,7 @@ def main():
         name = datei_name(k)
         erwartet.add(name)
         (ordner / name).write_text(prompt_datei(k, rahmen, vorlage), encoding="utf-8", newline="\n")
-    for alt in ordner.glob("P*.md"):
+    for alt in ordner.glob("*.md"):
         if alt.name not in erwartet:
             print("Hinweis: verwaiste Datei, bitte prüfen und von Hand löschen:", alt.name)
 
