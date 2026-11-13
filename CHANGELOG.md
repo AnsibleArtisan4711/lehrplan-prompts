@@ -1,5 +1,13 @@
 # Änderungen
 
+## 2026-11-13 (Übungsreihe P16: Kryptografie, Zertifikate und TLS)
+
+- `status` von P16 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-sicherheit-uebungen`: `kryptografie-zertifikate-und-tls`).
+- Die Übungsreihe (12 Module, 110 UE, 82,5 Stunden) ist ein Entwurf. **Nicht unter Hyper-V und nicht auf Windows erprobt.** Die OpenSSL-Befehle der Module 2 bis 7, 9 und 12, die TLS-Mitschnitte mit `tshark` (Modul 8) und die LUKS-Verwaltungsbefehle (Modul 10, an einem Loop-Gerät) wurden in einem Cloud-Container (Ubuntu 24.04.5, OpenSSL 3.0.13, curl 8.5.0, TShark 4.2.2, cryptsetup 2.7.0, zwei Netzwerk-Namespaces) ausgeführt; Windows 11 wurde durch einen Linux-Namespace mit `curl` ersetzt. Nicht ausgeführt: alle Windows-Teile (`certlm.msc`, `certutil`, `Import-Certificate`, Browser, `curl.exe`), BitLocker (Modul 11, Befehlssyntax von `manage-bde -lock`, `-unlock` und `-protectors` auf Microsoft Learn gelesen), `scp` zwischen den VMs und `luksOpen`/`mount` (kein Device-Mapper im Container). Die BSI TR-02102-1 wurde nicht inhaltlich gelesen.
+- Der Lehrplan P16 wurde nicht verändert; Befunde stehen in `lehrplan-korrekturen.md` der Übungsreihe (u. a. zeigt das Server Hello bei TLS 1.3 `TLS 1.2` als `Version`, die echte Version steht in `supported_versions`; `openssl ciphers -v` akzeptiert TLS-1.3-Suitenamen nur über `-ciphersuites`; `openssl verify` meldet für ein Zertifikat ohne SAN `OK`; unter Ubuntu 24.04 entsteht für neue Konten `$y$` statt `$6$`). Die Ausgaben des Lehrplans zu den Modulen 2 bis 7, 9 und 12 ließen sich bestätigen.
+- Lerneinheiten ohne Praxisaufgabe im Lehrplan (1.2, 1.3, 2.1, 2.2, 3.2, 3.3, 4.2, 6.3, 6.4, 10.1, 10.2, 11.1, 12.1) wurden durch gekennzeichnete „Ergänzungen der Ausarbeitung“ an vorhandenen Aufgaben abgedeckt.
+- README-Tabellen mit `python tools/build_prompts.py` erzeugt.
+
 ## 2026-11-13 (Übungsreihe P12: IT-Sicherheitsgrundlagen)
 
 - `status` von P12 auf „gepusht“, Feld `ordner` ergänzt (Repository `it-sicherheit-uebungen`, neu angelegt: `it-sicherheitsgrundlagen`).

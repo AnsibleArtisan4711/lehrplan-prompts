@@ -258,9 +258,10 @@
     "themen": "Symmetrische und asymmetrische Verfahren; Hashes und Signaturen; Zertifikate und Vertrauenskette; TLS-Handshake; Schlüsselverwaltung; OpenSSL in der Praxis; Zertifikatsprüfung und Fehlersuche; Verschlüsselung ruhender Daten (BitLocker, LUKS); Passwörter und Hashing",
     "abgrenzung": "Die AD-CS-Praxis steht im Kurs „Zertifikatsdienste und PKI“",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "it-sicherheit-uebungen"
+    "repo": "it-sicherheit-uebungen",
+    "ordner": "kryptografie-zertifikate-und-tls"
   },
   {
     "id": "P17",

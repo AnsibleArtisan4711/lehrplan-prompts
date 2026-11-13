@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 72 Kurse: 44 offen, 3 Lehrplan erstellt, 0 aufbereitet, 25 gepusht.
+Stand der 72 Kurse: 44 offen, 2 Lehrplan erstellt, 0 aufbereitet, 26 gepusht.
 
 Bedeutung der Status:
 
@@ -44,7 +44,7 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 13 | A | IT-Sicherheit | Windows-Server-Härtung | offen | [P13](prompts/P13-windows-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
 | 14 | A | IT-Sicherheit | Linux-Server-Härtung | offen | [P14](prompts/P14-linux-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
 | 15 | A | IT-Sicherheit | Schwachstellenmanagement | offen | [P15](prompts/P15-schwachstellenmanagement.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 16 | A | IT-Sicherheit | Kryptografie, Zertifikate und TLS | Lehrplan erstellt | [P16](prompts/P16-kryptografie-zertifikate-und-tls.md) | [P16](lehrplaene/P16-kryptografie-zertifikate-und-tls.md) | `it-sicherheit-uebungen` (geplant) |
+| 16 | A | IT-Sicherheit | Kryptografie, Zertifikate und TLS | gepusht | [P16](prompts/P16-kryptografie-zertifikate-und-tls.md) | [P16](lehrplaene/P16-kryptografie-zertifikate-und-tls.md) | [it-sicherheit-uebungen/kryptografie-zertifikate-und-tls](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen/tree/main/kryptografie-zertifikate-und-tls) |
 | 17 | A | Monitoring und Logging | Monitoring mit Zabbix | offen | [P17](prompts/P17-monitoring-mit-zabbix.md) | – | `monitoring-logging-uebungen` (geplant) |
 | 18 | A | Monitoring und Logging | Monitoring mit Prometheus und Grafana | offen | [P18](prompts/P18-monitoring-mit-prometheus-und-grafana.md) | – | `monitoring-logging-uebungen` (geplant) |
 | 19 | A | Monitoring und Logging | Zentrales Logging mit Graylog und Elastic Stack | offen | [P19](prompts/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) | – | `monitoring-logging-uebungen` (geplant) |
@@ -166,7 +166,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | [windows-server-uebungen](https://github.com/AnsibleArtisan4711/windows-server-uebungen) | P02 Dateidienste, DFS und Druckserver (gepusht); P03 WSUS und Update-Verwaltung (gepusht); P04 Zertifikatsdienste und PKI (AD CS) (gepusht); P59 Remotedesktopdienste (RDS) (gepusht); P61 Windows Admin Center (gepusht) |
 | [virtualisierung-uebungen](https://github.com/AnsibleArtisan4711/virtualisierung-uebungen) | P05 Hyper-V Administration (gepusht); P06 Proxmox VE; P07 VMware vSphere und ESXi; P60 Failover-Clustering und Hochverfügbarkeit |
 | [netzwerk-und-firewall-uebungen](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen) | P08 Firewall mit OPNsense; P09 Linux-Firewall mit nftables und iptables; P10 VPN mit WireGuard und OpenVPN (gepusht); P11 Reverse Proxy, Lastverteilung und TLS |
-| [it-sicherheit-uebungen](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen) | P12 IT-Sicherheitsgrundlagen (gepusht); P13 Windows-Server-Härtung; P14 Linux-Server-Härtung; P15 Schwachstellenmanagement; P16 Kryptografie, Zertifikate und TLS; P62 IDS und IPS mit Suricata; P63 Passwort- und Secrets-Verwaltung; P64 Penetrationstest-Grundlagen |
+| [it-sicherheit-uebungen](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen) | P12 IT-Sicherheitsgrundlagen (gepusht); P13 Windows-Server-Härtung; P14 Linux-Server-Härtung; P15 Schwachstellenmanagement; P16 Kryptografie, Zertifikate und TLS (gepusht); P62 IDS und IPS mit Suricata; P63 Passwort- und Secrets-Verwaltung; P64 Penetrationstest-Grundlagen |
 | `monitoring-logging-uebungen` (noch nicht angelegt) | P17 Monitoring mit Zabbix; P18 Monitoring mit Prometheus und Grafana; P19 Zentrales Logging mit Graylog und Elastic Stack; P20 Monitoring mit PRTG; P66 Windows Event Forwarding und Ereignisprotokolle |
 | [automatisierung-uebungen](https://github.com/AnsibleArtisan4711/automatisierung-uebungen) | P21 Konfigurationsmanagement mit Ansible; P22 Infrastructure as Code mit Terraform; P23 cloud-init und VM-Vorlagen; P24 PowerShell Desired State Configuration (DSC); P65 CI/CD mit GitLab und Jenkins |
 | `container-uebungen` (noch nicht angelegt) | P25 Docker und Docker Compose; P26 Kubernetes-Grundlagen; P53 Podman und Container-Sicherheit |
