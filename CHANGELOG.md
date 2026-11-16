@@ -1,5 +1,9 @@
 # Änderungen
 
+## 2026-11-13 (P73 gepusht)
+
+- P73 steht auf `gepusht`: Die Übungsreihe liegt in `it-betrieb-uebungen/bewerbungstraining-fuer-it-berufe` (Commit 38d9c12). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
+
 ## 2026-11-13 (P73 Bewerbungstraining für IT-Berufe)
 
 - Neu: **P73** in der Gruppe „Zusatz“ (Repository `it-betrieb-uebungen`, ohne Labor): `lehrplaene/P73-bewerbungstraining-fuer-it-berufe.md` mit 8 Modulen und 48 UE, Eintrag in `daten/kurse.json`, Prompt und README-Tabellen mit `python tools/build_prompts.py` erzeugt (242 Kurse).
