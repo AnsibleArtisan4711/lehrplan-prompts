@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 213 offen, 0 Lehrplan erstellt, 0 aufbereitet, 29 gepusht.
+Stand der 242 Kurse: 211 offen, 2 Lehrplan erstellt, 0 aufbereitet, 29 gepusht.
 
 Bedeutung der Status:
 
@@ -65,8 +65,8 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 32 | B | Datenbanken | SQL Server Administration | offen | [P32](prompts/P32-sql-server-administration.md) | – | `datenbanken-uebungen` (geplant) |
 | 33 | B | Storage | NAS, SAN, iSCSI und RAID | offen | [P33](prompts/P33-nas-san-iscsi-und-raid.md) | – | `storage-backup-uebungen` (geplant) |
 | 34 | B | Storage | Btrfs, ZFS und Snapshots | offen | [P34](prompts/P34-btrfs-zfs-und-snapshots.md) | – | `storage-backup-uebungen` (geplant) |
-| 35 | B | Backup und Notfall | Backup-Konzept (3-2-1, RPO und RTO) | offen | [P35](prompts/P35-backup-konzept-3-2-1-rpo-und-rto.md) | – | `storage-backup-uebungen` (geplant) |
-| 36 | B | Backup und Notfall | Notfallplanung und Disaster Recovery | offen | [P36](prompts/P36-notfallplanung-und-disaster-recovery.md) | – | `storage-backup-uebungen` (geplant) |
+| 35 | B | Backup und Notfall | Backup-Konzept (3-2-1, RPO und RTO) | Lehrplan erstellt | [P35](prompts/P35-backup-konzept-3-2-1-rpo-und-rto.md) | [P35](lehrplaene/P35-backup-konzept-3-2-1-rpo-und-rto.md) | `storage-backup-uebungen` (geplant) |
+| 36 | B | Backup und Notfall | Notfallplanung und Disaster Recovery | Lehrplan erstellt | [P36](prompts/P36-notfallplanung-und-disaster-recovery.md) | [P36](lehrplaene/P36-notfallplanung-und-disaster-recovery.md) | `storage-backup-uebungen` (geplant) |
 | 37 | B | E-Mail | Exchange Online Administration | offen | [P37](prompts/P37-exchange-online-administration.md) | – | `e-mail-uebungen` (geplant) |
 | 38 | B | E-Mail | E-Mail-Authentifizierung: SPF, DKIM und DMARC | offen | [P38](prompts/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) | – | `e-mail-uebungen` (geplant) |
 | 39 | B | E-Mail | Mailserver mit Postfix und Dovecot | offen | [P39](prompts/P39-mailserver-mit-postfix-und-dovecot.md) | – | `e-mail-uebungen` (geplant) |

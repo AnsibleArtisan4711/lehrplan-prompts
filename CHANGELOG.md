@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-19 (P35 und P36 ausgearbeitet)
+
+- Neu: `lehrplaene/P35-backup-konzept-3-2-1-rpo-und-rto.md` (13 Module, 116 UE) und `lehrplaene/P36-notfallplanung-und-disaster-recovery.md` (13 Module, 111 UE) nach der Grundanweisung. Beide stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen im Repository `storage-backup-uebungen` liegen.
+- Die Lehrpläne wurden zusammen mit der Übungsreihe aus denselben Daten erzeugt; die Summen der Unterrichtseinheiten wurden per Skript geprüft, die Aufgabentexte und Kontrollfragen stehen in Lehrplan und Übung wortgleich.
+- Prüfstand ehrlich: Die Linux-Skripte beider Reihen wurden in einem Cloud-Container ausgeführt, das Windows-Skript (P35 Modul 6) nur auf Syntaxfehler geprüft, Windows und Active Directory (P36 Modul 8) nicht ausgeführt, kein Hyper-V-Labor. Normen (ISO 22301, BSI-Standard 200-4) und die Regel 3-2-1 haben keine geprüfte Quelle.
+- Priorität 2 (Vertiefung): P35 Modul 12; P36 Modul 11 und 12.
+
 ## 2026-11-13 (P73 gepusht)
 
 - P73 steht auf `gepusht`: Die Übungsreihe liegt in `it-betrieb-uebungen/bewerbungstraining-fuer-it-berufe` (Commit 38d9c12). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
