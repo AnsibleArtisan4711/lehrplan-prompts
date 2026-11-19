@@ -128,9 +128,10 @@
     "themen": "Installation; Interfaces und VLANs; Aliase; Firewall-Regeln und Reihenfolge; NAT; DHCP und DNS auf der Firewall; VPN-Dienste; Zertifikate; IDS/IPS mit Suricata; Hochverfügbarkeit (CARP); Sicherung der Konfiguration; Plugins; Logging",
     "abgrenzung": "pfSense-Unterschiede nur kurz; VPN-Vertiefung im Kurs „VPN“",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x OPNsense-VM; 1 Client-VM im LAN; 1x Linux-Server-VM im zweiten Netz; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "netzwerk-und-firewall-uebungen"
+    "repo": "netzwerk-und-firewall-uebungen",
+    "ordner": "firewall-mit-opnsense"
   },
   {
     "id": "P09",
@@ -144,9 +145,10 @@
     "themen": "Netfilter-Architektur; Tabellen, Ketten, Regeln; Zustandsverfolgung; NAT; Rate Limiting und Protokollierung; Regelsätze sichern und laden; Migration von iptables zu nftables; Fehlersuche; Anbindung an firewalld und ufw in Grundzügen",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Firewall-VM; 1 Client-VM; 1x Linux-Server-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "netzwerk-und-firewall-uebungen"
+    "repo": "netzwerk-und-firewall-uebungen",
+    "ordner": "linux-firewall-mit-nftables-und-iptables"
   },
   {
     "id": "P10",
@@ -177,9 +179,10 @@
     "themen": "Reverse-Proxy-Konzept; Nginx und HAProxy als Proxy; TLS-Terminierung; Let’s Encrypt und ACME; Lastverteilung und Health Checks; Header und HSTS; WebSocket; Caching; Sicherheitsaspekte; Fehlersuche",
     "abgrenzung": "Der vorhandene Kurs „Webserver“ behandelt Apache und Nginx als Webserver; hier Fokus auf Proxy, Lastverteilung und TLS",
     "hinweis": "Zertifikate lokal mit einer internen CA oder einem lokalen ACME-Testserver (z. B. Pebble) ausstellen, keine öffentlichen Zertifizierungsstellen und keine echten Domänen.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Proxy-VM; 2x Web-Backend-VMs; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "netzwerk-und-firewall-uebungen"
+    "repo": "netzwerk-und-firewall-uebungen",
+    "ordner": "reverse-proxy-lastverteilung-und-tls"
   },
   {
     "id": "P12",

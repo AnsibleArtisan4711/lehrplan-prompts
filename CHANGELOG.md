@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-19 (P08, P09 und P11 gepusht, Gruppe Netzwerk und Firewall komplett)
+
+- P08, P09 und P11 stehen auf `gepusht`: Die Übungsreihen liegen in `netzwerk-und-firewall-uebungen/firewall-mit-opnsense`, `netzwerk-und-firewall-uebungen/linux-firewall-mit-nftables-und-iptables` und `netzwerk-und-firewall-uebungen/reverse-proxy-lastverteilung-und-tls` (Commit 4b2b70b). Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
+- Damit ist die Gruppe „Netzwerkdienste und Firewall“ (P08, P09, P10, P11, P71) komplett. Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. OPNsense wurde für P08 nicht ausgeführt.
+
 ## 2026-11-19 (P08, P09 und P11 ausgearbeitet)
 
 - Neu: `lehrplaene/P08-firewall-mit-opnsense.md` (13 Module, 108 UE), `lehrplaene/P09-linux-firewall-mit-nftables-und-iptables.md` (13 Module, 106 UE) und `lehrplaene/P11-reverse-proxy-lastverteilung-und-tls.md` (13 Module, 110 UE) nach der Grundanweisung. Alle drei stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen im Repository `netzwerk-und-firewall-uebungen` liegen. Mit ihnen ist die Gruppe „Netzwerkdienste und Firewall“ (zusammen mit P10 und P71) vollständig.
