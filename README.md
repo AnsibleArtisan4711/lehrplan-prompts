@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 211 offen, 0 Lehrplan erstellt, 0 aufbereitet, 31 gepusht.
+Stand der 242 Kurse: 208 offen, 3 Lehrplan erstellt, 0 aufbereitet, 31 gepusht.
 
 Bedeutung der Status:
 
@@ -38,10 +38,10 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 5 | A | Virtualisierung | Hyper-V Administration | gepusht | [P05](prompts/P05-hyper-v-administration.md) | [P05](lehrplaene/P05-hyper-v-administration.md) | [virtualisierung-uebungen/hyper-v-administration](https://github.com/AnsibleArtisan4711/virtualisierung-uebungen/tree/main/hyper-v-administration) |
 | 6 | A | Virtualisierung | Proxmox VE | offen | [P06](prompts/P06-proxmox-ve.md) | – | `virtualisierung-uebungen` (geplant) |
 | 7 | A | Virtualisierung | VMware vSphere und ESXi | offen | [P07](prompts/P07-vmware-vsphere-und-esxi.md) | – | `virtualisierung-uebungen` (geplant) |
-| 8 | A | Netzwerkdienste und Firewall | Firewall mit OPNsense | offen | [P08](prompts/P08-firewall-mit-opnsense.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
-| 9 | A | Netzwerkdienste und Firewall | Linux-Firewall mit nftables und iptables | offen | [P09](prompts/P09-linux-firewall-mit-nftables-und-iptables.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 8 | A | Netzwerkdienste und Firewall | Firewall mit OPNsense | Lehrplan erstellt | [P08](prompts/P08-firewall-mit-opnsense.md) | [P08](lehrplaene/P08-firewall-mit-opnsense.md) | `netzwerk-und-firewall-uebungen` (geplant) |
+| 9 | A | Netzwerkdienste und Firewall | Linux-Firewall mit nftables und iptables | Lehrplan erstellt | [P09](prompts/P09-linux-firewall-mit-nftables-und-iptables.md) | [P09](lehrplaene/P09-linux-firewall-mit-nftables-und-iptables.md) | `netzwerk-und-firewall-uebungen` (geplant) |
 | 10 | A | Netzwerkdienste und Firewall | VPN mit WireGuard und OpenVPN | gepusht | [P10](prompts/P10-vpn-mit-wireguard-und-openvpn.md) | [P10](lehrplaene/P10-vpn-mit-wireguard-und-openvpn.md) | [netzwerk-und-firewall-uebungen/vpn-mit-wireguard-und-openvpn](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/vpn-mit-wireguard-und-openvpn) |
-| 11 | A | Netzwerkdienste und Firewall | Reverse Proxy, Lastverteilung und TLS | offen | [P11](prompts/P11-reverse-proxy-lastverteilung-und-tls.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 11 | A | Netzwerkdienste und Firewall | Reverse Proxy, Lastverteilung und TLS | Lehrplan erstellt | [P11](prompts/P11-reverse-proxy-lastverteilung-und-tls.md) | [P11](lehrplaene/P11-reverse-proxy-lastverteilung-und-tls.md) | `netzwerk-und-firewall-uebungen` (geplant) |
 | 12 | A | IT-Sicherheit | IT-Sicherheitsgrundlagen | gepusht | [P12](prompts/P12-it-sicherheitsgrundlagen.md) | [P12](lehrplaene/P12-it-sicherheitsgrundlagen.md) | [it-sicherheit-uebungen/it-sicherheitsgrundlagen](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen/tree/main/it-sicherheitsgrundlagen) |
 | 13 | A | IT-Sicherheit | Windows-Server-Härtung | offen | [P13](prompts/P13-windows-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
 | 14 | A | IT-Sicherheit | Linux-Server-Härtung | offen | [P14](prompts/P14-linux-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |

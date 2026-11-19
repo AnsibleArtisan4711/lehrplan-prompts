@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-19 (P08, P09 und P11 ausgearbeitet)
+
+- Neu: `lehrplaene/P08-firewall-mit-opnsense.md` (13 Module, 108 UE), `lehrplaene/P09-linux-firewall-mit-nftables-und-iptables.md` (13 Module, 106 UE) und `lehrplaene/P11-reverse-proxy-lastverteilung-und-tls.md` (13 Module, 110 UE) nach der Grundanweisung. Alle drei stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen im Repository `netzwerk-und-firewall-uebungen` liegen. Mit ihnen ist die Gruppe „Netzwerkdienste und Firewall“ (zusammen mit P10 und P71) vollständig.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; die Summen der Unterrichtseinheiten wurden per Skript geprüft, die Aufgabentexte und Kontrollfragen stehen in Lehrplan und Übung wortgleich.
+- Prüfstand ehrlich: Die Skripte von P09 und P11 wurden in einem Cloud-Container in Netzwerk-Namespaces ausgeführt (Ubuntu 24.04; nftables 1.0.9, iptables 1.8.10, nginx 1.24.0, HAProxy 2.8.30, Pebble 2.6.0, certbot 5.10.0), nicht unter Hyper-V und nicht auf Debian 12. **OPNsense (P08) wurde nicht ausgeführt:** die Skripte bilden das Verhalten mit Linux (nftables, dnsmasq, Suricata, keepalived) nach; Menüs, Regelverarbeitung (pf), CARP und Dateiformate von OPNsense sind „nicht bestätigt“. Es wurden keine Quellen und Handbücher gelesen.
+- Priorität 2 (Vertiefung): P08 Modul 8 und 10; P09 Modul 5 und 12; P11 Modul 11 und 12.
+
 ## 2026-11-19 (P35 und P36 gepusht, Gruppe Backup und Notfall komplett)
 
 - P35 und P36 stehen auf `gepusht`: Die Übungsreihen liegen in `storage-backup-uebungen/backup-konzept` und `storage-backup-uebungen/notfallplanung-und-dr` (Commit ddd8fb7). Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
