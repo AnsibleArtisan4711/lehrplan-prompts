@@ -1,0 +1,78 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index b7b6789..7a4a5c7 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,5 +1,10 @@
+ # Änderungen
+ 
++## 2026-11-19 (P35 und P36 gepusht, Gruppe Backup und Notfall komplett)
++
++- P35 und P36 stehen auf `gepusht`: Die Übungsreihen liegen in `storage-backup-uebungen/backup-konzept` und `storage-backup-uebungen/notfallplanung-und-dr` (Commit ddd8fb7). Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
++- Damit ist die Gruppe „Backup und Notfall“ komplett. Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft.
++
+ ## 2026-11-19 (P35 und P36 ausgearbeitet)
+ 
+ - Neu: `lehrplaene/P35-backup-konzept-3-2-1-rpo-und-rto.md` (13 Module, 116 UE) und `lehrplaene/P36-notfallplanung-und-disaster-recovery.md` (13 Module, 111 UE) nach der Grundanweisung. Beide stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen im Repository `storage-backup-uebungen` liegen.
+diff --git a/README.md b/README.md
+index 62f04c7..7f0c444 100644
+--- a/README.md
++++ b/README.md
+@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
+ Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
+ 
+ <!-- TABELLE-START -->
+-Stand der 242 Kurse: 211 offen, 2 Lehrplan erstellt, 0 aufbereitet, 29 gepusht.
++Stand der 242 Kurse: 211 offen, 0 Lehrplan erstellt, 0 aufbereitet, 31 gepusht.
+ 
+ Bedeutung der Status:
+ 
+@@ -65,8 +65,8 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
+ | 32 | B | Datenbanken | SQL Server Administration | offen | [P32](prompts/P32-sql-server-administration.md) | – | `datenbanken-uebungen` (geplant) |
+ | 33 | B | Storage | NAS, SAN, iSCSI und RAID | offen | [P33](prompts/P33-nas-san-iscsi-und-raid.md) | – | `storage-backup-uebungen` (geplant) |
+ | 34 | B | Storage | Btrfs, ZFS und Snapshots | offen | [P34](prompts/P34-btrfs-zfs-und-snapshots.md) | – | `storage-backup-uebungen` (geplant) |
+-| 35 | B | Backup und Notfall | Backup-Konzept (3-2-1, RPO und RTO) | Lehrplan erstellt | [P35](prompts/P35-backup-konzept-3-2-1-rpo-und-rto.md) | [P35](lehrplaene/P35-backup-konzept-3-2-1-rpo-und-rto.md) | `storage-backup-uebungen` (geplant) |
+-| 36 | B | Backup und Notfall | Notfallplanung und Disaster Recovery | Lehrplan erstellt | [P36](prompts/P36-notfallplanung-und-disaster-recovery.md) | [P36](lehrplaene/P36-notfallplanung-und-disaster-recovery.md) | `storage-backup-uebungen` (geplant) |
++| 35 | B | Backup und Notfall | Backup-Konzept (3-2-1, RPO und RTO) | gepusht | [P35](prompts/P35-backup-konzept-3-2-1-rpo-und-rto.md) | [P35](lehrplaene/P35-backup-konzept-3-2-1-rpo-und-rto.md) | [storage-backup-uebungen/backup-konzept](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/backup-konzept) |
++| 36 | B | Backup und Notfall | Notfallplanung und Disaster Recovery | gepusht | [P36](prompts/P36-notfallplanung-und-disaster-recovery.md) | [P36](lehrplaene/P36-notfallplanung-und-disaster-recovery.md) | [storage-backup-uebungen/notfallplanung-und-dr](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/notfallplanung-und-dr) |
+ | 37 | B | E-Mail | Exchange Online Administration | offen | [P37](prompts/P37-exchange-online-administration.md) | – | `e-mail-uebungen` (geplant) |
+ | 38 | B | E-Mail | E-Mail-Authentifizierung: SPF, DKIM und DMARC | offen | [P38](prompts/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) | – | `e-mail-uebungen` (geplant) |
+ | 39 | B | E-Mail | Mailserver mit Postfix und Dovecot | offen | [P39](prompts/P39-mailserver-mit-postfix-und-dovecot.md) | – | `e-mail-uebungen` (geplant) |
+@@ -344,7 +344,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
+ | `container-uebungen` (noch nicht angelegt) | P25 Docker und Docker Compose; P26 Kubernetes-Grundlagen; P53 Podman und Container-Sicherheit; A40 Docker und Container (inkl. Nano-Images); A41 Kubernetes (Grundlagen und Betrieb) |
+ | [cloud-identitaet-uebungen](https://github.com/AnsibleArtisan4711/cloud-identitaet-uebungen) | P27 Azure Administration; P28 Entra ID und Hybrid-Identität; P29 Intune und Autopilot; P56 AWS Administration (SysOps); P57 Azure-Netzwerk und Azure-Sicherheit; P58 Google Cloud Grundlagen; A08 Conditional Access (CA); A10 MFA und Passwordless; A11 Microsoft Defender; A12 Microsoft MS-102; A13 Microsoft SC-300; A14 Privileged Identity Management; A32 AWS Certified CloudOps Engineer Associate; A33 AWS Certified Solutions Architect Associate; A34 Azure Virtual Desktop; A35 Google Associate Cloud Engineer; A36 Microsoft AZ-104; A37 Microsoft AZ-500; A38 Microsoft AZ-900 (Azure Fundamentals); N02 Copilot Readiness; N03 MS-900; N04 Microsoft Purview; N05 Microsoft SC-500; N06 Microsoft SC-900; N18 AWS Certified Advanced Networking Specialty; N19 AWS Certified Security Specialty; N20 Google Cloud Digital Leader; N21 Google Professional Cloud Network Engineer; N22 Google Professional Cloud Security Engineer; N23 Microsoft AZ-305; N24 Microsoft AZ-700 |
+ | [datenbanken-uebungen](https://github.com/AnsibleArtisan4711/datenbanken-uebungen) | P30 SQL-Grundlagen (gepusht); P31 MariaDB und PostgreSQL Administration; P32 SQL Server Administration; P67 NoSQL-Datenbanken und Redis; P68 Datenbank-Backup und -Wiederherstellung; A48 MS SQL; A49 MySQL (MariaDB); A50 PostgreSQL; N29 Google Professional Database Engineer; N30 MongoDB; N31 Redis |
+-| [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO); P36 Notfallplanung und Disaster Recovery; P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS; A43 BCDR; A44 Backup, Restore und Ransomware Recovery; A45 File-Systeme; A47 Storage: SAN, NAS und Storage-Protokolle |
++| [storage-backup-uebungen](https://github.com/AnsibleArtisan4711/storage-backup-uebungen) | P33 NAS, SAN, iSCSI und RAID; P34 Btrfs, ZFS und Snapshots; P35 Backup-Konzept (3-2-1, RPO und RTO) (gepusht); P36 Notfallplanung und Disaster Recovery (gepusht); P54 LVM und Dateisysteme unter Linux; P55 Dateidienste unter Linux mit Samba und NFS; A43 BCDR; A44 Backup, Restore und Ransomware Recovery; A45 File-Systeme; A47 Storage: SAN, NAS und Storage-Protokolle |
+ | `e-mail-uebungen` (noch nicht angelegt) | P37 Exchange Online Administration; P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC; P39 Mailserver mit Postfix und Dovecot; A21 E-Mail-Routing, SMTP und Mail Security |
+ | [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen (gepusht); P41 Incident-, Problem- und Change-Management (gepusht); P42 Ticketsysteme in der Praxis (gepusht); P43 SLA und Betriebshandbuch (gepusht); P47 Datenschutz (DSGVO) in der IT (gepusht); P48 NIS2 für Administratoren (gepusht); P49 ISO 27001 Grundlagen (gepusht); P50 Troubleshooting-Methodik (gepusht); P51 Projektmanagement für Administratoren (gepusht); P52 IT-Englisch für Administratoren (gepusht); P69 Asset-Verwaltung und CMDB (gepusht); P70 Lizenzmanagement (gepusht); P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) (gepusht); P73 Bewerbungstraining für IT-Berufe (gepusht); A05 Weiterbildung IT Systemtechnik; A28 DSGVO; A53 Troubleshooting; A54 CMDB und Asset Management; N12 Compliance in Unternehmen; N13 IT-Risikomanagement; N32 Anwendungssupport; N33 Jira Service Management; N34 ServiceNow; N35 Vendor Management und Lizenzmanagement; N41 Confluence; N49 Anforderungsmanagement; N50 Kanban; N51 Projekt-Risikoregister und Issue Tracking; N52 Projektmanagement; N53 Scrum; F01 Open Source; F02 Stakeholder Management und Moderation |
+ | [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche (gepusht); P45 Windows-11-Client-Administration (gepusht); P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) (gepusht); A01 Betriebssysteme; A02 CompTIA A+; A03 Microsoft MD-102; A06 Windows Autopilot; N01 Registry und Treiber; N36 Arduino; N37 Elektrotechnik, Strom und Sicherheit; N38 Gerätetechnik; N39 Kabel und Stecker; N40 Raspberry Pi und Einplatinencomputer |
+diff --git a/daten/kurse.json b/daten/kurse.json
+index 20fe64f..01ec9b5 100644
+--- a/daten/kurse.json
++++ b/daten/kurse.json
+@@ -564,9 +564,10 @@
+     "themen": "Zweck von Backup; 3-2-1-Regel; RPO und RTO; Sicherungsarten (voll, inkrementell, differenziell); Aufbewahrung; Unveränderlichkeit (Immutability) und Ransomware-Schutz; Verschlüsselung; Prüfung von Wiederherstellung; Dokumentation",
+     "abgrenzung": "Die Veeam-Übung im Repository „veeam-backup-uebung“ ist eine Praxisübung; hier das Konzept und herstellerneutrale Praxis",
+     "hinweis": "",
+-    "status": "Lehrplan erstellt",
++    "status": "gepusht",
+     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel (zweite VM oder Freigabe); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
+-    "repo": "storage-backup-uebungen"
++    "repo": "storage-backup-uebungen",
++    "ordner": "backup-konzept"
+   },
+   {
+     "id": "P36",
+@@ -580,9 +581,10 @@
+     "themen": "Business-Impact-Analyse; Notfallplan und Alarmierung; Wiederanlaufreihenfolge; Standortausfall und Ausweichstandort; Wiederherstellungsübungen; Verantwortlichkeiten; Kommunikation; Dokumentation (Notfallhandbuch); Tests und Lehren",
+     "abgrenzung": "Technische Dokumentation ist ein eigener vorhandener Kurs; hier Notfallplanung",
+     "hinweis": "",
+-    "status": "Lehrplan erstellt",
++    "status": "gepusht",
+     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Wiederanlauf-Übungen nur in der Testumgebung",
+-    "repo": "storage-backup-uebungen"
++    "repo": "storage-backup-uebungen",
++    "ordner": "notfallplanung-und-dr"
+   },
+   {
+     "id": "P37",

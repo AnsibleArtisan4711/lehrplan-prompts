@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-19 (P35 und P36 gepusht, Gruppe Backup und Notfall komplett)
+
+- P35 und P36 stehen auf `gepusht`: Die Übungsreihen liegen in `storage-backup-uebungen/backup-konzept` und `storage-backup-uebungen/notfallplanung-und-dr` (Commit ddd8fb7). Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
+- Damit ist die Gruppe „Backup und Notfall“ komplett. Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft.
+
 ## 2026-11-19 (P35 und P36 ausgearbeitet)
 
 - Neu: `lehrplaene/P35-backup-konzept-3-2-1-rpo-und-rto.md` (13 Module, 116 UE) und `lehrplaene/P36-notfallplanung-und-disaster-recovery.md` (13 Module, 111 UE) nach der Grundanweisung. Beide stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen im Repository `storage-backup-uebungen` liegen.

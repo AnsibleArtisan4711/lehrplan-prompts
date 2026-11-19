@@ -564,9 +564,10 @@
     "themen": "Zweck von Backup; 3-2-1-Regel; RPO und RTO; Sicherungsarten (voll, inkrementell, differenziell); Aufbewahrung; Unveränderlichkeit (Immutability) und Ransomware-Schutz; Verschlüsselung; Prüfung von Wiederherstellung; Dokumentation",
     "abgrenzung": "Die Veeam-Übung im Repository „veeam-backup-uebung“ ist eine Praxisübung; hier das Konzept und herstellerneutrale Praxis",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel (zweite VM oder Freigabe); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "storage-backup-uebungen"
+    "repo": "storage-backup-uebungen",
+    "ordner": "backup-konzept"
   },
   {
     "id": "P36",
@@ -580,9 +581,10 @@
     "themen": "Business-Impact-Analyse; Notfallplan und Alarmierung; Wiederanlaufreihenfolge; Standortausfall und Ausweichstandort; Wiederherstellungsübungen; Verantwortlichkeiten; Kommunikation; Dokumentation (Notfallhandbuch); Tests und Lehren",
     "abgrenzung": "Technische Dokumentation ist ein eigener vorhandener Kurs; hier Notfallplanung",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Windows-Server-VM; 1x Linux-Server-VM; Backup-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Wiederanlauf-Übungen nur in der Testumgebung",
-    "repo": "storage-backup-uebungen"
+    "repo": "storage-backup-uebungen",
+    "ordner": "notfallplanung-und-dr"
   },
   {
     "id": "P37",
