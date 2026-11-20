@@ -419,7 +419,7 @@
     "themen": "Container und Images; Dockerfile; Registries; Volumes und Netzwerke; Docker Compose (Mehrcontainer-Anwendungen); Ressourcenlimits; Sicherheit (Rootless, Rechte, Images prüfen); Aufräumen; Logging; Sicherung von Daten",
     "abgrenzung": "",
     "hinweis": "Lizenzbedingungen von Docker Desktop mit Stand nennen; als Alternative auf Docker Engine unter Linux eingehen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM mit Docker; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "container-uebungen"
   },
@@ -435,7 +435,7 @@
     "themen": "Architektur; Pods, Deployments, Services; ConfigMaps und Secrets; Volumes; Ingress; Namespaces und Rechte (RBAC); Updates und Rollbacks; lokale Umgebung (z. B. k3s oder kind); Fehlersuche; Einordnung gegenüber Docker Compose",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "2 bis 3 Linux-VMs für den Cluster; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "container-uebungen"
   },

@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 174 offen, 0 Lehrplan erstellt, 0 aufbereitet, 68 gepusht.
+Stand der 242 Kurse: 172 offen, 2 Lehrplan erstellt, 0 aufbereitet, 68 gepusht.
 
 Bedeutung der Status:
 
@@ -55,8 +55,8 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 22 | B | Automatisierung | Infrastructure as Code mit Terraform | gepusht | [P22](prompts/P22-infrastructure-as-code-mit-terraform.md) | [P22](lehrplaene/P22-infrastructure-as-code-mit-terraform.md) | [automatisierung-uebungen/infrastructure-as-code-mit-terraform](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/infrastructure-as-code-mit-terraform) |
 | 23 | B | Automatisierung | cloud-init und VM-Vorlagen | gepusht | [P23](prompts/P23-cloud-init-und-vm-vorlagen.md) | [P23](lehrplaene/P23-cloud-init-und-vm-vorlagen.md) | [automatisierung-uebungen/cloud-init-und-vm-vorlagen](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/cloud-init-und-vm-vorlagen) |
 | 24 | B | Automatisierung | PowerShell Desired State Configuration (DSC) | gepusht | [P24](prompts/P24-powershell-desired-state-configuration-dsc.md) | [P24](lehrplaene/P24-powershell-desired-state-configuration-dsc.md) | [automatisierung-uebungen/powershell-desired-state-configuration-dsc](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/powershell-desired-state-configuration-dsc) |
-| 25 | B | Container | Docker und Docker Compose | offen | [P25](prompts/P25-docker-und-docker-compose.md) | – | `container-uebungen` (geplant) |
-| 26 | B | Container | Kubernetes-Grundlagen | offen | [P26](prompts/P26-kubernetes-grundlagen.md) | – | `container-uebungen` (geplant) |
+| 25 | B | Container | Docker und Docker Compose | Lehrplan erstellt | [P25](prompts/P25-docker-und-docker-compose.md) | [P25](lehrplaene/P25-docker-und-docker-compose.md) | `container-uebungen` (geplant) |
+| 26 | B | Container | Kubernetes-Grundlagen | Lehrplan erstellt | [P26](prompts/P26-kubernetes-grundlagen.md) | [P26](lehrplaene/P26-kubernetes-grundlagen.md) | `container-uebungen` (geplant) |
 | 27 | B | Azure und Identität | Azure Administration | offen | [P27](prompts/P27-azure-administration.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 28 | B | Azure und Identität | Entra ID und Hybrid-Identität | offen | [P28](prompts/P28-entra-id-und-hybrid-identitaet.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 29 | B | Azure und Identität | Intune und Autopilot | offen | [P29](prompts/P29-intune-und-autopilot.md) | – | `cloud-identitaet-uebungen` (geplant) |

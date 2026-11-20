@@ -1,5 +1,14 @@
 # Änderungen
 
+## 2026-11-20 (P25 und P26 ausgearbeitet)
+
+- Neu: `lehrplaene/P25-docker-und-docker-compose.md` (8 Module, 100 UE) und `lehrplaene/P26-kubernetes-grundlagen.md` (8 Module, 100 UE) nach der Grundanweisung. Beide stehen auf `Lehrplan erstellt`.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; Summen der Unterrichtseinheiten, Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfstand ehrlich: P25 wurde mit Docker Engine 29.9.2, Compose 5.7.0, einer lokalen Registry 2.8.2 und Podman 4.9.3 echt ausgeführt; Docker Hub war nicht erreichbar, daher ein selbst gebautes Basis-Image aus `busybox-static`; Docker Desktop, Rootless-Docker, Image-Scanner und Hyper-V nicht. Der Lizenzstand von Docker Desktop (20.11.2026) beruht nur auf der Zusammenfassung einer Seite von docs.docker.com (dort Aktualisierung 28.09.2026), der Wortlaut wurde nicht gelesen. P26: Kubernetes wurde nicht ausgeführt; die Manifeste wurden mit `kubernetes-validate` 1.37.0 gegen das Schema 1.31 echt geprüft, der Cluster ist ein Python-Modell (`k8ssim.py`); Modul 1 stellt einen Pod mit Docker nach. kubectl, kubeadm, k3s, kind, minikube, ein Ingress-Controller und Hyper-V wurden nicht ausgeführt; die Kubernetes-Dokumentation wurde nicht gelesen.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft.
+- Beide Reihen liegen im bestehenden Repository `container-uebungen`.
+- Priorität 2 (Vertiefung): P25 Modul 7 (Docker Desktop, Lizenz und Alternativen; 92 UE ohne; der Lizenzstand aus Schritt 5 ist laut Lehrplanhinweis aber Pflicht), P26 Modul 7 (lokale Umgebung; 92 UE ohne).
+
 ## 2026-11-20 (P21 bis P24 gepusht)
 
 - P21 bis P24 stehen auf `gepusht`: `automatisierung-uebungen/konfigurationsmanagement-mit-ansible`, `.../infrastructure-as-code-mit-terraform`, `.../cloud-init-und-vm-vorlagen` und `.../powershell-desired-state-configuration-dsc` (Commit fae17b5). Lehrpläne mit Commit 4e65bd8. README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
