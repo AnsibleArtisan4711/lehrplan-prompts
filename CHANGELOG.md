@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P06, P07, P13, P14 und P15 gepusht)
+
+- P06 und P07 stehen auf `gepusht`: Die Übungsreihen liegen in `virtualisierung-uebungen/proxmox-ve` und `virtualisierung-uebungen/vmware-vsphere-esxi` (Commit 4393edc). P13, P14 und P15 stehen auf `gepusht`: Sie liegen in `it-sicherheit-uebungen/windows-server-haertung`, `it-sicherheit-uebungen/linux-server-haertung` und `it-sicherheit-uebungen/schwachstellenmanagement` (Commit cdd7514). Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. Proxmox VE, ESXi, Windows, Greenbone und Nessus wurden nicht ausgeführt.
+
 ## 2026-11-20 (P06, P07, P13, P14 und P15 ausgearbeitet)
 
 - Neu: `lehrplaene/P06-proxmox-ve.md` (14 Module, 115 UE), `lehrplaene/P07-vmware-vsphere-und-esxi.md` (13 Module, 106 UE), `lehrplaene/P13-windows-server-haertung.md` (13 Module, 111 UE), `lehrplaene/P14-linux-server-haertung.md` (13 Module, 112 UE) und `lehrplaene/P15-schwachstellenmanagement.md` (13 Module, 113 UE) nach der Grundanweisung. Alle fünf stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen in `virtualisierung-uebungen` (P06, P07) und `it-sicherheit-uebungen` (P13 bis P15) liegen.

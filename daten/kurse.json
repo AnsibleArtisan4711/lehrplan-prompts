@@ -96,9 +96,10 @@
     "themen": "Installation; Weboberfläche und Shell; virtuelle Maschinen und LXC-Container; Speicherarten (lokal, LVM, ZFS, NFS); virtuelle Netzwerke und Bridges; Vorlagen und Klone; Backup mit Proxmox Backup Server; Snapshots; Cluster-Grundlagen; Migration; Benutzer und Berechtigungen",
     "abgrenzung": "Allgemeine Linux-Kenntnisse werden vorausgesetzt (LPIC-Lehrpläne sind vorhanden)",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1 Proxmox-VE-Host (verschachtelt unter Hyper-V oder eigener Rechner); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "virtualisierung-uebungen"
+    "repo": "virtualisierung-uebungen",
+    "ordner": "proxmox-ve"
   },
   {
     "id": "P07",
@@ -112,9 +113,10 @@
     "themen": "Architektur (ESXi, vCenter); Installation; virtuelle Maschinen und Hardware-Versionen; virtuelle Switches und Portgruppen; Datastores; Snapshots und Klone; vMotion, HA und DRS in Grundzügen; Ressourcenverwaltung; Verwaltung per PowerCLI; Sicherung; Migration von und nach Hyper-V",
     "abgrenzung": "",
     "hinweis": "Prüfe Lizenz- und Verfügbarkeitsstand der kostenlosen oder Evaluationsversionen und nenne ihn mit Stand; kennzeichne Unsicherheit.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1 ESXi-Host (verschachtelt, Evaluations- oder Testlizenz, Stand prüfen); 2 kleine Gast-VMs; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "virtualisierung-uebungen"
+    "repo": "virtualisierung-uebungen",
+    "ordner": "vmware-vsphere-esxi"
   },
   {
     "id": "P08",
@@ -213,9 +215,10 @@
     "themen": "Sicherheitsbaselines (CIS und Microsoft); Tier-Modell; lokale Richtlinien und Gruppenrichtlinien; Dienste und Rollen reduzieren; Defender und Firewall; Anmeldeschutz (LAPS, Credential Guard in Grundzügen); Protokollierung und Überwachung; Patch-Management; Härtung prüfen und dokumentieren",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Windows-Server-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "it-sicherheit-uebungen"
+    "repo": "it-sicherheit-uebungen",
+    "ordner": "windows-server-haertung"
   },
   {
     "id": "P14",
@@ -229,9 +232,10 @@
     "themen": "Sicherheitsbaselines (CIS); Benutzer, sudo und PAM; SSH-Härtung; Dienste und Pakete reduzieren; Dateirechte und ACLs; SELinux und AppArmor; Firewall; Protokollierung und auditd; automatische Updates; Härtung prüfen (z. B. Lynis)",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM (frisch installiert); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "it-sicherheit-uebungen"
+    "repo": "it-sicherheit-uebungen",
+    "ordner": "linux-server-haertung"
   },
   {
     "id": "P15",
@@ -245,9 +249,10 @@
     "themen": "Prozess (Erfassen, Bewerten, Beheben, Prüfen); Schwachstellenscanner (Greenbone/OpenVAS) und Nmap; CVE und CVSS; Priorisierung; Patchen und Gegenmaßnahmen; Berichte; Ausnahmen dokumentieren; rechtliche und organisatorische Rahmenbedingungen; Scans nur gegen eigene Lab-Systeme",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Scanner-VM; 1x Windows-Ziel-VM; 1x Linux-Ziel-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Scans nur gegen eigene Lab-VMs",
-    "repo": "it-sicherheit-uebungen"
+    "repo": "it-sicherheit-uebungen",
+    "ordner": "schwachstellenmanagement"
   },
   {
     "id": "P16",
