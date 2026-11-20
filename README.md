@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 189 offen, 0 Lehrplan erstellt, 0 aufbereitet, 53 gepusht.
+Stand der 242 Kurse: 182 offen, 7 Lehrplan erstellt, 0 aufbereitet, 53 gepusht.
 
 Bedeutung der Status:
 
@@ -92,13 +92,13 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 59 | B | Windows-Server-Rollen | Remotedesktopdienste (RDS) | gepusht | [P59](prompts/P59-remotedesktopdienste-rds.md) | [P59](lehrplaene/P59-remotedesktopdienste-rds.md) | [windows-server-uebungen/remotedesktopdienste-rds](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/remotedesktopdienste-rds) |
 | 60 | B | Virtualisierung | Failover-Clustering und Hochverfügbarkeit | gepusht | [P60](prompts/P60-failover-clustering-und-hochverfuegbarkeit.md) | [P60](lehrplaene/P60-failover-clustering-und-hochverfuegbarkeit.md) | [virtualisierung-uebungen/failover-clustering-und-hochverfuegbarkeit](https://github.com/AnsibleArtisan4711/virtualisierung-uebungen/tree/main/failover-clustering-und-hochverfuegbarkeit) |
 | 61 | C | Windows-Server-Rollen | Windows Admin Center | gepusht | [P61](prompts/P61-windows-admin-center.md) | [P61](lehrplaene/P61-windows-admin-center.md) | [windows-server-uebungen/windows-admin-center](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/windows-admin-center) |
-| 62 | B | IT-Sicherheit | IDS und IPS mit Suricata | offen | [P62](prompts/P62-ids-und-ips-mit-suricata.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 63 | B | IT-Sicherheit | Passwort- und Secrets-Verwaltung | offen | [P63](prompts/P63-passwort-und-secrets-verwaltung.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 64 | B | IT-Sicherheit | Penetrationstest-Grundlagen | offen | [P64](prompts/P64-penetrationstest-grundlagen.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 65 | B | Automatisierung | CI/CD mit GitLab und Jenkins | offen | [P65](prompts/P65-ci-cd-mit-gitlab-und-jenkins.md) | – | `automatisierung-uebungen` (geplant) |
-| 66 | C | Monitoring und Logging | Windows Event Forwarding und Ereignisprotokolle | offen | [P66](prompts/P66-windows-event-forwarding-und-ereignisprotokolle.md) | – | `monitoring-logging-uebungen` (geplant) |
-| 67 | C | Datenbanken | NoSQL-Datenbanken und Redis | offen | [P67](prompts/P67-nosql-datenbanken-und-redis.md) | – | `datenbanken-uebungen` (geplant) |
-| 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | offen | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | – | `datenbanken-uebungen` (geplant) |
+| 62 | B | IT-Sicherheit | IDS und IPS mit Suricata | Lehrplan erstellt | [P62](prompts/P62-ids-und-ips-mit-suricata.md) | [P62](lehrplaene/P62-ids-und-ips-mit-suricata.md) | `it-sicherheit-uebungen` (geplant) |
+| 63 | B | IT-Sicherheit | Passwort- und Secrets-Verwaltung | Lehrplan erstellt | [P63](prompts/P63-passwort-und-secrets-verwaltung.md) | [P63](lehrplaene/P63-passwort-und-secrets-verwaltung.md) | `it-sicherheit-uebungen` (geplant) |
+| 64 | B | IT-Sicherheit | Penetrationstest-Grundlagen | Lehrplan erstellt | [P64](prompts/P64-penetrationstest-grundlagen.md) | [P64](lehrplaene/P64-penetrationstest-grundlagen.md) | `it-sicherheit-uebungen` (geplant) |
+| 65 | B | Automatisierung | CI/CD mit GitLab und Jenkins | Lehrplan erstellt | [P65](prompts/P65-ci-cd-mit-gitlab-und-jenkins.md) | [P65](lehrplaene/P65-ci-cd-mit-gitlab-und-jenkins.md) | `automatisierung-uebungen` (geplant) |
+| 66 | C | Monitoring und Logging | Windows Event Forwarding und Ereignisprotokolle | Lehrplan erstellt | [P66](prompts/P66-windows-event-forwarding-und-ereignisprotokolle.md) | [P66](lehrplaene/P66-windows-event-forwarding-und-ereignisprotokolle.md) | `monitoring-logging-uebungen` (geplant) |
+| 67 | C | Datenbanken | NoSQL-Datenbanken und Redis | Lehrplan erstellt | [P67](prompts/P67-nosql-datenbanken-und-redis.md) | [P67](lehrplaene/P67-nosql-datenbanken-und-redis.md) | `datenbanken-uebungen` (geplant) |
+| 68 | B | Datenbanken | Datenbank-Backup und -Wiederherstellung | Lehrplan erstellt | [P68](prompts/P68-datenbank-backup-und-wiederherstellung.md) | [P68](lehrplaene/P68-datenbank-backup-und-wiederherstellung.md) | `datenbanken-uebungen` (geplant) |
 | 69 | C | IT-Betrieb und Prozesse | Asset-Verwaltung und CMDB | gepusht | [P69](prompts/P69-asset-verwaltung-und-cmdb.md) | [P69](lehrplaene/P69-asset-verwaltung-und-cmdb.md) | [it-betrieb-uebungen/asset-verwaltung-und-cmdb](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/asset-verwaltung-und-cmdb) |
 | 70 | C | IT-Betrieb und Prozesse | Lizenzmanagement | gepusht | [P70](prompts/P70-lizenzmanagement.md) | [P70](lehrplaene/P70-lizenzmanagement.md) | [it-betrieb-uebungen/lizenzmanagement](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/lizenzmanagement) |
 | 71 | A | Netzwerkdienste und Firewall | DHCP-Grundlagen und -Betrieb (Windows-Server und ISC Kea) | gepusht | [P71](prompts/P71-dhcp-grundlagen-und-betrieb.md) | [P71](lehrplaene/P71-dhcp-grundlagen-und-betrieb.md) | [netzwerkdienste-uebungen/dhcp-grundlagen-und-betrieb](https://github.com/AnsibleArtisan4711/netzwerkdienste-uebungen/tree/main/dhcp-grundlagen-und-betrieb) |

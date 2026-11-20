@@ -1035,7 +1035,7 @@
     "themen": "Grundlagen IDS und IPS; Installation und Betriebsmodi; Netzwerkverkehr mitschneiden; Regeln (Aufbau, Quellen, Aktualisierung); eigene Regeln schreiben; Ausgabeformate und Protokollierung (EVE JSON); Anbindung an Log-Auswertung; Leistungsoptimierung; False Positives; Testverkehr erzeugen; Fehlersuche",
     "abgrenzung": "OPNsense-Konfiguration nur soweit nötig; zentrales Logging im Kurs „Zentrales Logging mit Graylog und Elastic Stack“",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Nur im isolierten Labor, keine Tests gegen fremde Systeme.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Sensor-VM; 1x Linux-Angreifer-VM; 1x Linux-Server-VM als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "it-sicherheit-uebungen"
   },
@@ -1051,7 +1051,7 @@
     "themen": "Passwortrichtlinien und Passphrasen; Passwortmanager im Team; Secrets in Skripten und Konfigurationen; Vault-Architektur; Secret-Engines; Authentifizierungsmethoden; Richtlinien; dynamische Zugangsdaten; Rotation; Sicherung und Wiederherstellung; Audit; Notfallzugriff; Anbindung an Automatisierung",
     "abgrenzung": "Kryptografie und PKI sind eigene Kurse; Active-Directory-Kennwortrichtlinien nur kurz",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Lizenzmodelle (HashiCorp/OpenBao) mit Stand nennen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM; 1x Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "it-sicherheit-uebungen"
   },
@@ -1067,7 +1067,7 @@
     "themen": "Rechtlicher Rahmen und Einwilligung; Vorgehensmodell; Informationsbeschaffung; Scans und Schwachstellenanalyse; Exploits in der Laborumgebung; Passwortangriffe; Webanwendungen (Grundzüge); Windows- und Active-Directory-Angriffsflächen; Berichtswesen; Gegenmaßnahmen und Härtung",
     "abgrenzung": "Schwachstellenmanagement, Windows- und Linux-Härtung sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Nur im isolierten Labor und mit eigenen Systemen; rechtliche Hinweise ausdrücklich nennen, keine Anleitungen gegen fremde Systeme.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Kali-Linux-VM; 2 bis 3 absichtlich verwundbare Ziel-VMs; 1x Windows-Server-VM mit Active Directory; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "it-sicherheit-uebungen"
   },
@@ -1083,7 +1083,7 @@
     "themen": "CI/CD-Konzepte; GitLab installieren und betreiben; Pipelines (Jobs, Stages, Artefakte); Runner; Variablen und Geheimnisse; Tests und Qualitätsprüfung; Container-Images bauen; Bereitstellung auf Testserver; Jenkins-Pipelines im Vergleich; Rechteverwaltung; Sicherung; Fehlersuche",
     "abgrenzung": "Git und Versionskontrolle sind ein eigener vorhandener Lehrplan; Docker, Ansible und Terraform sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM (GitLab); 1x Linux-Server-VM (Runner und Jenkins); 1x Linux-Server-VM als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "automatisierung-uebungen"
   },
@@ -1099,7 +1099,7 @@
     "themen": "Aufbau der Windows-Ereignisprotokolle; wichtige Ereignis-IDs für Betrieb und Sicherheit; Filter und benutzerdefinierte Ansichten; Auswertung mit PowerShell; Windows Event Forwarding (Collector und Quellen, Abonnements); Gruppenrichtlinien dafür; Überwachungsrichtlinien; Aufbewahrung und Größe; Weiterleitung an ein zentrales Logsystem; Fehlersuche",
     "abgrenzung": "Zentrales Logging mit Graylog und Elastic Stack ist ein eigener Kurs; PowerShell ist ein eigener vorhandener Lehrplan",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Windows-Server-VM (DC); 1x Windows-Server-VM (Collector); 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "monitoring-logging-uebungen"
   },
@@ -1115,7 +1115,7 @@
     "themen": "NoSQL-Arten im Überblick; Redis (Datentypen, Persistenz, Replikation, Sentinel); MongoDB (Dokumente, Sammlungen, Indizes); Einsatzszenarien und Abgrenzung zu relationalen Datenbanken; Sicherheit und Zugriff; Sicherung und Wiederherstellung; Überwachung; Fehlersuche",
     "abgrenzung": "SQL-Grundlagen und die Administration von MariaDB, PostgreSQL und SQL Server sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Lizenzmodelle (z. B. Redis, MongoDB) mit Stand nennen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "datenbanken-uebungen"
   },
@@ -1131,7 +1131,7 @@
     "themen": "Sicherungsarten (logisch, physisch, inkrementell); Wiederherstellungsmodelle und Transaktionsprotokolle; Point-in-Time-Recovery; Sicherungsstrategie mit RPO und RTO; Automatisierung und Aufbewahrung; Wiederherstellungstests; Verschlüsselung der Sicherungen; Replikation als Ergänzung; Fehlerfälle und Notfallübungen",
     "abgrenzung": "Backup-Konzept, Notfallplanung und Datenbankadministration sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM mit MariaDB und PostgreSQL; 1x Windows-Server-VM mit SQL Server (Evaluation oder Developer); 1x Backup-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "datenbanken-uebungen"
   },
