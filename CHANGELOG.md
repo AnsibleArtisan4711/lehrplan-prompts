@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P62 bis P68 gepusht)
+
+- P62 bis P68 stehen auf `gepusht`: `it-sicherheit-uebungen/ids-und-ips-mit-suricata`, `.../passwort-und-secrets-verwaltung` und `.../penetrationstest-grundlagen` (Commit 2fc429f), `automatisierung-uebungen/cicd-mit-gitlab-und-jenkins` (fe0a4b8), `monitoring-logging-uebungen/windows-ereignisweiterleitung-und-ereignisprotokolle` (401d388, neues Repository) sowie `datenbanken-uebungen/nosql-datenbanken-und-redis` und `.../datenbank-backup-und-wiederherstellung` (aeb4493). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. Suricata im IPS-Betrieb, OpenBao und Vault, GitLab, Jenkins, Windows Event Forwarding, MongoDB, Sentinel, Cluster, Offsite-Speicher und `cron` wurden nicht ausgeführt.
+
 ## 2026-11-20 (P62 bis P68 ausgearbeitet)
 
 - Neu: `lehrplaene/P62-ids-und-ips-mit-suricata.md` (8 Module, 100 UE), `lehrplaene/P63-passwort-und-secrets-verwaltung.md` (8 Module, 90 UE), `lehrplaene/P64-penetrationstest-grundlagen.md` (8 Module, 100 UE), `lehrplaene/P65-ci-cd-mit-gitlab-und-jenkins.md` (8 Module, 100 UE), `lehrplaene/P66-windows-event-forwarding-und-ereignisprotokolle.md` (8 Module, 45 UE), `lehrplaene/P67-nosql-datenbanken-und-redis.md` (8 Module, 45 UE) und `lehrplaene/P68-datenbank-backup-und-wiederherstellung.md` (8 Module, 45 UE) nach der Grundanweisung. Alle sieben stehen auf `Lehrplan erstellt`.
