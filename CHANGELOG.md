@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P17 bis P20 gepusht)
+
+- P17 bis P20 stehen auf `gepusht`: `monitoring-logging-uebungen/monitoring-mit-zabbix`, `.../monitoring-mit-prometheus-und-grafana`, `.../zentrales-logging-mit-graylog-und-elastic-stack` und `.../monitoring-mit-prtg` (Commit d2f2bc7). Lehrpläne mit Commit 32bad64. README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. Grafana, `windows_exporter`, Graylog, Elasticsearch, Logstash, Beats und PRTG wurden nicht ausgeführt (Python-Modelle bzw. Text); Zabbix wurde aus dem Quelltext gebaut, nicht aus Paketen; Lizenzen, Versionen und Menünamen sind nicht geprüft.
+
 ## 2026-11-20 (P17 bis P20 ausgearbeitet)
 
 - Neu: `lehrplaene/P17-monitoring-mit-zabbix.md` (8 Module, 100 UE), `lehrplaene/P18-monitoring-mit-prometheus-und-grafana.md` (8 Module, 100 UE), `lehrplaene/P19-zentrales-logging-mit-graylog-und-elastic-stack.md` (8 Module, 100 UE) und `lehrplaene/P20-monitoring-mit-prtg.md` (8 Module, 96 UE) nach der Grundanweisung. Alle vier stehen auf `Lehrplan erstellt`.
