@@ -1,5 +1,13 @@
 # Änderungen
 
+## 2026-11-20 (P53 bis P58 und P60 ausgearbeitet)
+
+- Neu: `lehrplaene/P53-podman-und-container-sicherheit.md` (8 Module, 100 UE), `lehrplaene/P54-lvm-und-dateisysteme-unter-linux.md` (8 Module, 104 UE), `lehrplaene/P55-dateidienste-unter-linux-mit-samba-und-nfs.md` (8 Module, 98 UE), `lehrplaene/P56-aws-administration-sysops.md` (8 Module, 100 UE), `lehrplaene/P57-azure-netzwerk-und-azure-sicherheit.md` (8 Module, 100 UE), `lehrplaene/P58-google-cloud-grundlagen.md` (8 Module, 45 UE) und `lehrplaene/P60-failover-clustering-und-hochverfuegbarkeit.md` (8 Module, 100 UE) nach der Grundanweisung. Alle sieben stehen auf `Lehrplan erstellt`.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; Summen der Unterrichtseinheiten, Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfstand ehrlich: P53 wurde mit Podman 4.9.3, Buildah und Skopeo in einem Cloud-Container ausgeführt (auch Rootless, dort ohne Netzwerk); Registries, Signaturen, SELinux/AppArmor, systemd und Compose nicht. P54 wurde mit Loop-Geräten, Partitionen, Physical Volumes und Volume Groups, ext4 und XFS ausgeführt; Logical Volumes, Snapshots, `mdadm` und Quotas waren im Container nicht möglich. P55 wurde mit Samba 4.19.5 über Loopback ausgeführt; NFS, Windows-Clients und der Domänenbeitritt nicht. P56, P57, P58 und P60 sind Python-Modelle mit erfundenen Werten; weder AWS noch Azure noch Google Cloud noch Windows Server (Failover-Cluster, Hyper-V) wurden verwendet. Die Dokumentation aller beteiligten Produkte wurde nicht gelesen; Preise und Kontingente der Cloud-Anbieter wurden nicht recherchiert.
+- Neues Repository `container-uebungen` (P53); P56, P57 und P58 liegen im bestehenden Repository `cloud-identitaet-uebungen`.
+- Priorität 2 (Vertiefung): P53 Modul 6, P54 Modul 6, P55 Modul 5, P56 Modul 5, P57 Modul 5, P58 Modul 6, P60 Modul 6.
+
 ## 2026-11-20 (P31 und P34 gepusht)
 
 - P31 steht auf `gepusht`: Die Übungsreihe liegt in `datenbanken-uebungen/mariadb-und-postgresql-administration` (Commit 5ca89eb). P34 liegt in `storage-backup-uebungen/btrfs-zfs-und-snapshots` (Commit 305bc8f). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.

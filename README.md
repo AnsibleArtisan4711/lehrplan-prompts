@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 196 offen, 0 Lehrplan erstellt, 0 aufbereitet, 46 gepusht.
+Stand der 242 Kurse: 189 offen, 7 Lehrplan erstellt, 0 aufbereitet, 46 gepusht.
 
 Bedeutung der Status:
 
@@ -83,14 +83,14 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 50 | C | Zusatz | Troubleshooting-Methodik | gepusht | [P50](prompts/P50-troubleshooting-methodik.md) | [P50](lehrplaene/P50-troubleshooting-methodik.md) | [it-betrieb-uebungen/troubleshooting-methodik](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/troubleshooting-methodik) |
 | 51 | C | Zusatz | Projektmanagement für Administratoren | gepusht | [P51](prompts/P51-projektmanagement-fuer-administratoren.md) | [P51](lehrplaene/P51-projektmanagement-fuer-administratoren.md) | [it-betrieb-uebungen/projektmanagement-fuer-administratoren](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/projektmanagement-fuer-administratoren) |
 | 52 | C | Zusatz | IT-Englisch für Administratoren | gepusht | [P52](prompts/P52-it-englisch-fuer-administratoren.md) | [P52](lehrplaene/P52-it-englisch-fuer-administratoren.md) | [it-betrieb-uebungen/it-englisch-fuer-administratoren](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/it-englisch-fuer-administratoren) |
-| 53 | B | Container | Podman und Container-Sicherheit | offen | [P53](prompts/P53-podman-und-container-sicherheit.md) | – | `container-uebungen` (geplant) |
-| 54 | B | Storage | LVM und Dateisysteme unter Linux | offen | [P54](prompts/P54-lvm-und-dateisysteme-unter-linux.md) | – | `storage-backup-uebungen` (geplant) |
-| 55 | B | Storage | Dateidienste unter Linux mit Samba und NFS | offen | [P55](prompts/P55-dateidienste-unter-linux-mit-samba-und-nfs.md) | – | `storage-backup-uebungen` (geplant) |
-| 56 | B | Cloud-Plattformen | AWS Administration (SysOps) | offen | [P56](prompts/P56-aws-administration-sysops.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 57 | B | Azure und Identität | Azure-Netzwerk und Azure-Sicherheit | offen | [P57](prompts/P57-azure-netzwerk-und-azure-sicherheit.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 58 | C | Cloud-Plattformen | Google Cloud Grundlagen | offen | [P58](prompts/P58-google-cloud-grundlagen.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 53 | B | Container | Podman und Container-Sicherheit | Lehrplan erstellt | [P53](prompts/P53-podman-und-container-sicherheit.md) | [P53](lehrplaene/P53-podman-und-container-sicherheit.md) | `container-uebungen` (geplant) |
+| 54 | B | Storage | LVM und Dateisysteme unter Linux | Lehrplan erstellt | [P54](prompts/P54-lvm-und-dateisysteme-unter-linux.md) | [P54](lehrplaene/P54-lvm-und-dateisysteme-unter-linux.md) | `storage-backup-uebungen` (geplant) |
+| 55 | B | Storage | Dateidienste unter Linux mit Samba und NFS | Lehrplan erstellt | [P55](prompts/P55-dateidienste-unter-linux-mit-samba-und-nfs.md) | [P55](lehrplaene/P55-dateidienste-unter-linux-mit-samba-und-nfs.md) | `storage-backup-uebungen` (geplant) |
+| 56 | B | Cloud-Plattformen | AWS Administration (SysOps) | Lehrplan erstellt | [P56](prompts/P56-aws-administration-sysops.md) | [P56](lehrplaene/P56-aws-administration-sysops.md) | `cloud-identitaet-uebungen` (geplant) |
+| 57 | B | Azure und Identität | Azure-Netzwerk und Azure-Sicherheit | Lehrplan erstellt | [P57](prompts/P57-azure-netzwerk-und-azure-sicherheit.md) | [P57](lehrplaene/P57-azure-netzwerk-und-azure-sicherheit.md) | `cloud-identitaet-uebungen` (geplant) |
+| 58 | C | Cloud-Plattformen | Google Cloud Grundlagen | Lehrplan erstellt | [P58](prompts/P58-google-cloud-grundlagen.md) | [P58](lehrplaene/P58-google-cloud-grundlagen.md) | `cloud-identitaet-uebungen` (geplant) |
 | 59 | B | Windows-Server-Rollen | Remotedesktopdienste (RDS) | gepusht | [P59](prompts/P59-remotedesktopdienste-rds.md) | [P59](lehrplaene/P59-remotedesktopdienste-rds.md) | [windows-server-uebungen/remotedesktopdienste-rds](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/remotedesktopdienste-rds) |
-| 60 | B | Virtualisierung | Failover-Clustering und Hochverfügbarkeit | offen | [P60](prompts/P60-failover-clustering-und-hochverfuegbarkeit.md) | – | `virtualisierung-uebungen` (geplant) |
+| 60 | B | Virtualisierung | Failover-Clustering und Hochverfügbarkeit | Lehrplan erstellt | [P60](prompts/P60-failover-clustering-und-hochverfuegbarkeit.md) | [P60](lehrplaene/P60-failover-clustering-und-hochverfuegbarkeit.md) | `virtualisierung-uebungen` (geplant) |
 | 61 | C | Windows-Server-Rollen | Windows Admin Center | gepusht | [P61](prompts/P61-windows-admin-center.md) | [P61](lehrplaene/P61-windows-admin-center.md) | [windows-server-uebungen/windows-admin-center](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/windows-admin-center) |
 | 62 | B | IT-Sicherheit | IDS und IPS mit Suricata | offen | [P62](prompts/P62-ids-und-ips-mit-suricata.md) | – | `it-sicherheit-uebungen` (geplant) |
 | 63 | B | IT-Sicherheit | Passwort- und Secrets-Verwaltung | offen | [P63](prompts/P63-passwort-und-secrets-verwaltung.md) | – | `it-sicherheit-uebungen` (geplant) |
