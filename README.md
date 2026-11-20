@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 198 offen, 0 Lehrplan erstellt, 0 aufbereitet, 44 gepusht.
+Stand der 242 Kurse: 196 offen, 2 Lehrplan erstellt, 0 aufbereitet, 44 gepusht.
 
 Bedeutung der Status:
 
@@ -61,10 +61,10 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 28 | B | Azure und Identität | Entra ID und Hybrid-Identität | offen | [P28](prompts/P28-entra-id-und-hybrid-identitaet.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 29 | B | Azure und Identität | Intune und Autopilot | offen | [P29](prompts/P29-intune-und-autopilot.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 30 | B | Datenbanken | SQL-Grundlagen | gepusht | [P30](prompts/P30-sql-grundlagen.md) | [P30](lehrplaene/P30-sql-grundlagen.md) | [datenbanken-uebungen/sql-grundlagen](https://github.com/AnsibleArtisan4711/datenbanken-uebungen/tree/main/sql-grundlagen) |
-| 31 | B | Datenbanken | MariaDB und PostgreSQL Administration | offen | [P31](prompts/P31-mariadb-und-postgresql-administration.md) | – | `datenbanken-uebungen` (geplant) |
+| 31 | B | Datenbanken | MariaDB und PostgreSQL Administration | Lehrplan erstellt | [P31](prompts/P31-mariadb-und-postgresql-administration.md) | [P31](lehrplaene/P31-mariadb-und-postgresql-administration.md) | `datenbanken-uebungen` (geplant) |
 | 32 | B | Datenbanken | SQL Server Administration | gepusht | [P32](prompts/P32-sql-server-administration.md) | [P32](lehrplaene/P32-sql-server-administration.md) | [datenbanken-uebungen/sql-server-administration](https://github.com/AnsibleArtisan4711/datenbanken-uebungen/tree/main/sql-server-administration) |
 | 33 | B | Storage | NAS, SAN, iSCSI und RAID | gepusht | [P33](prompts/P33-nas-san-iscsi-und-raid.md) | [P33](lehrplaene/P33-nas-san-iscsi-und-raid.md) | [storage-backup-uebungen/nas-san-iscsi-und-raid](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/nas-san-iscsi-und-raid) |
-| 34 | B | Storage | Btrfs, ZFS und Snapshots | offen | [P34](prompts/P34-btrfs-zfs-und-snapshots.md) | – | `storage-backup-uebungen` (geplant) |
+| 34 | B | Storage | Btrfs, ZFS und Snapshots | Lehrplan erstellt | [P34](prompts/P34-btrfs-zfs-und-snapshots.md) | [P34](lehrplaene/P34-btrfs-zfs-und-snapshots.md) | `storage-backup-uebungen` (geplant) |
 | 35 | B | Backup und Notfall | Backup-Konzept (3-2-1, RPO und RTO) | gepusht | [P35](prompts/P35-backup-konzept-3-2-1-rpo-und-rto.md) | [P35](lehrplaene/P35-backup-konzept-3-2-1-rpo-und-rto.md) | [storage-backup-uebungen/backup-konzept](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/backup-konzept) |
 | 36 | B | Backup und Notfall | Notfallplanung und Disaster Recovery | gepusht | [P36](prompts/P36-notfallplanung-und-disaster-recovery.md) | [P36](lehrplaene/P36-notfallplanung-und-disaster-recovery.md) | [storage-backup-uebungen/notfallplanung-und-dr](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/notfallplanung-und-dr) |
 | 37 | B | E-Mail | Exchange Online Administration | gepusht | [P37](prompts/P37-exchange-online-administration.md) | [P37](lehrplaene/P37-exchange-online-administration.md) | [e-mail-uebungen/exchange-online-administration](https://github.com/AnsibleArtisan4711/e-mail-uebungen/tree/main/exchange-online-administration) |

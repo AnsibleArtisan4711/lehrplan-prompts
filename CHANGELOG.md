@@ -1,5 +1,12 @@
 # Änderungen
 
+## 2026-11-20 (P31 und P34 ausgearbeitet)
+
+- Neu: `lehrplaene/P31-mariadb-und-postgresql-administration.md` (10 Module, 108 UE) und `lehrplaene/P34-btrfs-zfs-und-snapshots.md` (10 Module, 108 UE) nach der Grundanweisung. Beide stehen auf `Lehrplan erstellt`.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; Summen der Unterrichtseinheiten, Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfstand ehrlich: P31 wurde mit MariaDB 10.11.14 und PostgreSQL 16.15 in einem Cloud-Container (Ubuntu 24.04, ohne systemd) ausgeführt; ein Versionssprung und die Replikation zwischen zwei VMs wurden nicht getestet. P34 wurde mit Btrfs (`btrfs-progs` v6.6.3) auf Loop-Geräten ausgeführt; **ZFS wurde nicht ausgeführt** (nur Modelle und Texte aus Fachwissen). Hyper-V wurde in keinem Fall ausgeführt, die Dokumentation von MariaDB, PostgreSQL, Btrfs und OpenZFS wurde nicht gelesen.
+- Priorität 2 (Vertiefung): P31 Modul 8, P34 Modul 7.
+
 ## 2026-11-20 (P32, P33, P37, P38 und P39 gepusht)
 
 - P32 steht auf `gepusht`: Die Übungsreihe liegt in `datenbanken-uebungen/sql-server-administration` (Commit 7e76814). P33 liegt in `storage-backup-uebungen/nas-san-iscsi-und-raid` (Commit 5468948). P37, P38 und P39 liegen im neuen Repository `e-mail-uebungen` in `exchange-online-administration`, `e-mail-authentifizierung-spf-dkim-und-dmarc` und `mailserver-mit-postfix-und-dovecot` (Commit 775f7f2). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
