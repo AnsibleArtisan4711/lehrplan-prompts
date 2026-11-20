@@ -1,5 +1,14 @@
 # Änderungen
 
+## 2026-11-20 (P21 bis P24 ausgearbeitet)
+
+- Neu: `lehrplaene/P21-konfigurationsmanagement-mit-ansible.md` (8 Module, 100 UE), `lehrplaene/P22-infrastructure-as-code-mit-terraform.md` (8 Module, 100 UE), `lehrplaene/P23-cloud-init-und-vm-vorlagen.md` (8 Module, 100 UE) und `lehrplaene/P24-powershell-desired-state-configuration-dsc.md` (8 Module, 100 UE) nach der Grundanweisung. Alle vier stehen auf `Lehrplan erstellt`.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; Summen der Unterrichtseinheiten, Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfstand ehrlich: P21 wurde mit `ansible-core` 2.22.0 (Paket `ansible` 15.0.0) und der Verbindungsart `local` ausgeführt; SSH zu anderen Hosts, Windows/WinRM, `ansible-lint` und Hyper-V nicht. P22 ist ein Python-Modell (`tfsim.py`); Terraform und OpenTofu wurden nicht ausgeführt, HCL wurde mit `python-hcl2` 8.2.0 echt eingelesen, `cloud-init schema` und `ansible-inventory` liefen in Modul 7 echt; zum Lizenz- und Forkstand (Terraform unter BUSL, OpenTofu unter MPL 2.0 bei der Linux Foundation, OpenTofu 1.12.3 vom 18.06.2026) wurde nur die Übersichtsseite von Wikipedia vom 20.11.2026 gelesen, Lizenztexte und Dokumentation nicht. P23 wurde mit `cloud-init` 26.2 (`schema`, `devel`), `cloud-localds`, `isoinfo`, `qemu-img`, `xmllint` und `python-hcl2` ausgeführt; Start einer VM, Hyper-V, Proxmox, Sysprep und Packer nicht. P24 ist ein Python-Modell (`dscsim.py`); PowerShell und DSC wurden nicht ausgeführt; der Versionsstand (vier DSC-Versionen, DSC 3.0 ohne Local Configuration Manager, 3.3.0-rc.2 auf der Installationsseite) beruht nur auf Suchauszügen von Microsoft Learn vom 20.11.2026, Zukunft und Supportende von DSC wurden nicht bestätigt. Die Dokumentation der übrigen Produkte wurde nicht gelesen; Menünamen sind nicht geprüft.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft.
+- Alle vier Reihen liegen im bestehenden Repository `automatisierung-uebungen`.
+- Priorität 2 (Vertiefung): P21 Modul 7 (Windows/WinRM; 88 UE ohne), P22 Modul 7 (Import und Zusammenspiel; 90 UE ohne), P23 Modul 7 (Sysprep und Packer; 88 UE ohne), P24 Modul 7 (Einordnung; 90 UE ohne).
+
 ## 2026-11-20 (P17 bis P20 gepusht)
 
 - P17 bis P20 stehen auf `gepusht`: `monitoring-logging-uebungen/monitoring-mit-zabbix`, `.../monitoring-mit-prometheus-und-grafana`, `.../zentrales-logging-mit-graylog-und-elastic-stack` und `.../monitoring-mit-prtg` (Commit d2f2bc7). Lehrpläne mit Commit 32bad64. README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.

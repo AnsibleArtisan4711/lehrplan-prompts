@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 178 offen, 0 Lehrplan erstellt, 0 aufbereitet, 64 gepusht.
+Stand der 242 Kurse: 174 offen, 4 Lehrplan erstellt, 0 aufbereitet, 64 gepusht.
 
 Bedeutung der Status:
 
@@ -51,10 +51,10 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 18 | A | Monitoring und Logging | Monitoring mit Prometheus und Grafana | gepusht | [P18](prompts/P18-monitoring-mit-prometheus-und-grafana.md) | [P18](lehrplaene/P18-monitoring-mit-prometheus-und-grafana.md) | [monitoring-logging-uebungen/monitoring-mit-prometheus-und-grafana](https://github.com/AnsibleArtisan4711/monitoring-logging-uebungen/tree/main/monitoring-mit-prometheus-und-grafana) |
 | 19 | A | Monitoring und Logging | Zentrales Logging mit Graylog und Elastic Stack | gepusht | [P19](prompts/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) | [P19](lehrplaene/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) | [monitoring-logging-uebungen/zentrales-logging-mit-graylog-und-elastic-stack](https://github.com/AnsibleArtisan4711/monitoring-logging-uebungen/tree/main/zentrales-logging-mit-graylog-und-elastic-stack) |
 | 20 | A | Monitoring und Logging | Monitoring mit PRTG | gepusht | [P20](prompts/P20-monitoring-mit-prtg.md) | [P20](lehrplaene/P20-monitoring-mit-prtg.md) | [monitoring-logging-uebungen/monitoring-mit-prtg](https://github.com/AnsibleArtisan4711/monitoring-logging-uebungen/tree/main/monitoring-mit-prtg) |
-| 21 | B | Automatisierung | Konfigurationsmanagement mit Ansible | offen | [P21](prompts/P21-konfigurationsmanagement-mit-ansible.md) | – | `automatisierung-uebungen` (geplant) |
-| 22 | B | Automatisierung | Infrastructure as Code mit Terraform | offen | [P22](prompts/P22-infrastructure-as-code-mit-terraform.md) | – | `automatisierung-uebungen` (geplant) |
-| 23 | B | Automatisierung | cloud-init und VM-Vorlagen | offen | [P23](prompts/P23-cloud-init-und-vm-vorlagen.md) | – | `automatisierung-uebungen` (geplant) |
-| 24 | B | Automatisierung | PowerShell Desired State Configuration (DSC) | offen | [P24](prompts/P24-powershell-desired-state-configuration-dsc.md) | – | `automatisierung-uebungen` (geplant) |
+| 21 | B | Automatisierung | Konfigurationsmanagement mit Ansible | Lehrplan erstellt | [P21](prompts/P21-konfigurationsmanagement-mit-ansible.md) | [P21](lehrplaene/P21-konfigurationsmanagement-mit-ansible.md) | `automatisierung-uebungen` (geplant) |
+| 22 | B | Automatisierung | Infrastructure as Code mit Terraform | Lehrplan erstellt | [P22](prompts/P22-infrastructure-as-code-mit-terraform.md) | [P22](lehrplaene/P22-infrastructure-as-code-mit-terraform.md) | `automatisierung-uebungen` (geplant) |
+| 23 | B | Automatisierung | cloud-init und VM-Vorlagen | Lehrplan erstellt | [P23](prompts/P23-cloud-init-und-vm-vorlagen.md) | [P23](lehrplaene/P23-cloud-init-und-vm-vorlagen.md) | `automatisierung-uebungen` (geplant) |
+| 24 | B | Automatisierung | PowerShell Desired State Configuration (DSC) | Lehrplan erstellt | [P24](prompts/P24-powershell-desired-state-configuration-dsc.md) | [P24](lehrplaene/P24-powershell-desired-state-configuration-dsc.md) | `automatisierung-uebungen` (geplant) |
 | 25 | B | Container | Docker und Docker Compose | offen | [P25](prompts/P25-docker-und-docker-compose.md) | – | `container-uebungen` (geplant) |
 | 26 | B | Container | Kubernetes-Grundlagen | offen | [P26](prompts/P26-kubernetes-grundlagen.md) | – | `container-uebungen` (geplant) |
 | 27 | B | Azure und Identität | Azure Administration | offen | [P27](prompts/P27-azure-administration.md) | – | `cloud-identitaet-uebungen` (geplant) |
