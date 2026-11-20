@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P32, P33, P37, P38 und P39 gepusht)
+
+- P32 steht auf `gepusht`: Die Übungsreihe liegt in `datenbanken-uebungen/sql-server-administration` (Commit 7e76814). P33 liegt in `storage-backup-uebungen/nas-san-iscsi-und-raid` (Commit 5468948). P37, P38 und P39 liegen im neuen Repository `e-mail-uebungen` in `exchange-online-administration`, `e-mail-authentifizierung-spf-dkim-und-dmarc` und `mailserver-mit-postfix-und-dovecot` (Commit 775f7f2). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. SQL Server, Exchange Online, PowerShell und Hyper-V wurden nicht ausgeführt.
+
 ## 2026-11-20 (P32, P33, P37, P38 und P39 ausgearbeitet)
 
 - Neu: `lehrplaene/P32-sql-server-administration.md` (10 Module, 108 UE), `lehrplaene/P33-nas-san-iscsi-und-raid.md` (11 Module, 120 UE), `lehrplaene/P37-exchange-online-administration.md` (10 Module, 110 UE), `lehrplaene/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md` (11 Module, 110 UE) und `lehrplaene/P39-mailserver-mit-postfix-und-dovecot.md` (10 Module, 110 UE) nach der Grundanweisung. Alle fünf stehen auf `Lehrplan erstellt`.
