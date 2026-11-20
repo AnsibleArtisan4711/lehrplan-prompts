@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P31 und P34 gepusht)
+
+- P31 steht auf `gepusht`: Die Übungsreihe liegt in `datenbanken-uebungen/mariadb-und-postgresql-administration` (Commit 5ca89eb). P34 liegt in `storage-backup-uebungen/btrfs-zfs-und-snapshots` (Commit 305bc8f). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. ZFS, Hyper-V, die Replikation zwischen zwei VMs und ein Versionssprung bei MariaDB und PostgreSQL wurden nicht ausgeführt.
+
 ## 2026-11-20 (P31 und P34 ausgearbeitet)
 
 - Neu: `lehrplaene/P31-mariadb-und-postgresql-administration.md` (10 Module, 108 UE) und `lehrplaene/P34-btrfs-zfs-und-snapshots.md` (10 Module, 108 UE) nach der Grundanweisung. Beide stehen auf `Lehrplan erstellt`.

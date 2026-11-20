@@ -508,9 +508,10 @@
     "themen": "Installation; Konfiguration; Benutzer und Rechte; Speicher und Wartung; Sicherung und Wiederherstellung; Replikation in Grundzügen; Leistungsanalyse; Sicherheit (TLS, Zugriffskontrolle); Updates; Überwachung",
     "abgrenzung": "SQL-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "2x Linux-Server-VMs (Replikation); 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "datenbanken-uebungen"
+    "repo": "datenbanken-uebungen",
+    "ordner": "mariadb-und-postgresql-administration"
   },
   {
     "id": "P32",
@@ -558,9 +559,10 @@
     "themen": "Copy-on-Write; Btrfs und ZFS im Vergleich; Pools, Subvolumes und Datasets; Snapshots und Klone; Replikation (send/receive); Prüfsummen und Scrub; Kompression; Speicherverwaltung und Quoten; Wiederherstellung; typische Fehler",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM mit mehreren virtuellen Platten; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "storage-backup-uebungen"
+    "repo": "storage-backup-uebungen",
+    "ordner": "btrfs-zfs-und-snapshots"
   },
   {
     "id": "P35",
