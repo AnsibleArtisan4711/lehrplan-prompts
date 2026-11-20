@@ -453,9 +453,10 @@
     "themen": "Abonnements und Verwaltungsgruppen; Ressourcengruppen; Identitäten und Rollen (RBAC); virtuelle Netzwerke; virtuelle Maschinen; Speicher; App Service und Container im Überblick; Sicherung und Wiederherstellung; Überwachung; Kosten und Richtlinien",
     "abgrenzung": "Der vorhandene Kurs „M365 Governance“ behandelt die Microsoft-365-Seite; AWS ist ein eigener Lehrplan",
     "hinweis": "Orientiere dich sinngemäß an den aktuellen Prüfungszielen von AZ-104 (Stand nennen). Keine Prüfungsfragen übernehmen; Portalmenüs nicht erfinden.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen; Kostenlimit und Budgetwarnung einrichten, Ressourcen nach jeder Übung löschen",
-    "repo": "cloud-identitaet-uebungen"
+    "repo": "cloud-identitaet-uebungen",
+    "ordner": "azure-administration"
   },
   {
     "id": "P28",
@@ -469,9 +470,10 @@
     "themen": "Entra-ID-Aufbau; Benutzer, Gruppen, Geräte; Entra Connect (Passwort-Hash-Synchronisation, Pass-through, Federation im Überblick); Hybrid Join; Mehrfaktor-Authentifizierung; Bedingter Zugriff (Lizenzabhängigkeit beachten); Privileged Identity Management im Überblick; Anwendungsregistrierungen",
     "abgrenzung": "M365 Governance und Active Directory sind vorhandene Lehrpläne",
     "hinweis": "Lizenzabhängigkeiten (Free, Business, P1/P2) mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Domain Controller; 1 Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; zusätzlich Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen",
-    "repo": "cloud-identitaet-uebungen"
+    "repo": "cloud-identitaet-uebungen",
+    "ordner": "entra-id-und-hybrid-identitaet"
   },
   {
     "id": "P29",
@@ -485,9 +487,10 @@
     "themen": "Geräteverwaltung (MDM und MAM); Registrierung; Windows Autopilot; Konfigurationsprofile; Compliance-Richtlinien; App-Bereitstellung; Updates; Zuweisungen und Filter; Fehlersuche; Einordnung gegenüber Gruppenrichtlinien",
     "abgrenzung": "",
     "hinweis": "Lizenzabhängigkeiten mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1 Windows-11-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; zusätzlich Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen",
-    "repo": "cloud-identitaet-uebungen"
+    "repo": "cloud-identitaet-uebungen",
+    "ordner": "intune-und-autopilot"
   },
   {
     "id": "P30",

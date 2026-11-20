@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P27 bis P29 gepusht)
+
+- P27, P28 und P29 stehen auf `gepusht`: `cloud-identitaet-uebungen/azure-administration`, `cloud-identitaet-uebungen/entra-id-und-hybrid-identitaet` und `cloud-identitaet-uebungen/intune-und-autopilot` (Commit 81bbfec).
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. In keinem der drei Kurse wurde etwas in Azure, Entra ID oder Intune ausgeführt; echt sind nur die Befehlsprüfung gegen die Azure CLI 2.93.0 (Hilfetexte), TOTP nach RFC 6238, RS256-Token, die Prüfung der Autopilot-CSV und SHA-256, alles Übrige sind Python-Modelle. Lizenz- und Regelaussagen beruhen nur auf Suchauszügen von Microsoft Learn (20.11.2026).
+
 ## 2026-11-20 (P27 bis P29 ausgearbeitet)
 
 - Neu: `lehrplaene/P27-azure-administration.md`, `lehrplaene/P28-entra-id-und-hybrid-identitaet.md` und `lehrplaene/P29-intune-und-autopilot.md` (je 8 Module, 100 UE) nach der Grundanweisung. Alle drei stehen auf `Lehrplan erstellt`.
