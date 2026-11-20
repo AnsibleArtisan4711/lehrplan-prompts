@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 208 offen, 0 Lehrplan erstellt, 0 aufbereitet, 34 gepusht.
+Stand der 242 Kurse: 203 offen, 5 Lehrplan erstellt, 0 aufbereitet, 34 gepusht.
 
 Bedeutung der Status:
 
@@ -36,16 +36,16 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 3 | A | Windows-Server-Rollen | WSUS und Update-Verwaltung | gepusht | [P03](prompts/P03-wsus-und-update-verwaltung.md) | [P03](lehrplaene/P03-wsus-und-update-verwaltung.md) | [windows-server-uebungen/wsus-und-update-verwaltung](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/wsus-und-update-verwaltung) |
 | 4 | A | Windows-Server-Rollen | Zertifikatsdienste und PKI (AD CS) | gepusht | [P04](prompts/P04-zertifikatsdienste-und-pki-ad-cs.md) | [P04](lehrplaene/P04-zertifikatsdienste-und-pki-ad-cs.md) | [windows-server-uebungen/zertifikatsdienste-und-pki](https://github.com/AnsibleArtisan4711/windows-server-uebungen/tree/main/zertifikatsdienste-und-pki) |
 | 5 | A | Virtualisierung | Hyper-V Administration | gepusht | [P05](prompts/P05-hyper-v-administration.md) | [P05](lehrplaene/P05-hyper-v-administration.md) | [virtualisierung-uebungen/hyper-v-administration](https://github.com/AnsibleArtisan4711/virtualisierung-uebungen/tree/main/hyper-v-administration) |
-| 6 | A | Virtualisierung | Proxmox VE | offen | [P06](prompts/P06-proxmox-ve.md) | – | `virtualisierung-uebungen` (geplant) |
-| 7 | A | Virtualisierung | VMware vSphere und ESXi | offen | [P07](prompts/P07-vmware-vsphere-und-esxi.md) | – | `virtualisierung-uebungen` (geplant) |
+| 6 | A | Virtualisierung | Proxmox VE | Lehrplan erstellt | [P06](prompts/P06-proxmox-ve.md) | [P06](lehrplaene/P06-proxmox-ve.md) | `virtualisierung-uebungen` (geplant) |
+| 7 | A | Virtualisierung | VMware vSphere und ESXi | Lehrplan erstellt | [P07](prompts/P07-vmware-vsphere-und-esxi.md) | [P07](lehrplaene/P07-vmware-vsphere-und-esxi.md) | `virtualisierung-uebungen` (geplant) |
 | 8 | A | Netzwerkdienste und Firewall | Firewall mit OPNsense | gepusht | [P08](prompts/P08-firewall-mit-opnsense.md) | [P08](lehrplaene/P08-firewall-mit-opnsense.md) | [netzwerk-und-firewall-uebungen/firewall-mit-opnsense](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/firewall-mit-opnsense) |
 | 9 | A | Netzwerkdienste und Firewall | Linux-Firewall mit nftables und iptables | gepusht | [P09](prompts/P09-linux-firewall-mit-nftables-und-iptables.md) | [P09](lehrplaene/P09-linux-firewall-mit-nftables-und-iptables.md) | [netzwerk-und-firewall-uebungen/linux-firewall-mit-nftables-und-iptables](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/linux-firewall-mit-nftables-und-iptables) |
 | 10 | A | Netzwerkdienste und Firewall | VPN mit WireGuard und OpenVPN | gepusht | [P10](prompts/P10-vpn-mit-wireguard-und-openvpn.md) | [P10](lehrplaene/P10-vpn-mit-wireguard-und-openvpn.md) | [netzwerk-und-firewall-uebungen/vpn-mit-wireguard-und-openvpn](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/vpn-mit-wireguard-und-openvpn) |
 | 11 | A | Netzwerkdienste und Firewall | Reverse Proxy, Lastverteilung und TLS | gepusht | [P11](prompts/P11-reverse-proxy-lastverteilung-und-tls.md) | [P11](lehrplaene/P11-reverse-proxy-lastverteilung-und-tls.md) | [netzwerk-und-firewall-uebungen/reverse-proxy-lastverteilung-und-tls](https://github.com/AnsibleArtisan4711/netzwerk-und-firewall-uebungen/tree/main/reverse-proxy-lastverteilung-und-tls) |
 | 12 | A | IT-Sicherheit | IT-Sicherheitsgrundlagen | gepusht | [P12](prompts/P12-it-sicherheitsgrundlagen.md) | [P12](lehrplaene/P12-it-sicherheitsgrundlagen.md) | [it-sicherheit-uebungen/it-sicherheitsgrundlagen](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen/tree/main/it-sicherheitsgrundlagen) |
-| 13 | A | IT-Sicherheit | Windows-Server-Härtung | offen | [P13](prompts/P13-windows-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 14 | A | IT-Sicherheit | Linux-Server-Härtung | offen | [P14](prompts/P14-linux-server-haertung.md) | – | `it-sicherheit-uebungen` (geplant) |
-| 15 | A | IT-Sicherheit | Schwachstellenmanagement | offen | [P15](prompts/P15-schwachstellenmanagement.md) | – | `it-sicherheit-uebungen` (geplant) |
+| 13 | A | IT-Sicherheit | Windows-Server-Härtung | Lehrplan erstellt | [P13](prompts/P13-windows-server-haertung.md) | [P13](lehrplaene/P13-windows-server-haertung.md) | `it-sicherheit-uebungen` (geplant) |
+| 14 | A | IT-Sicherheit | Linux-Server-Härtung | Lehrplan erstellt | [P14](prompts/P14-linux-server-haertung.md) | [P14](lehrplaene/P14-linux-server-haertung.md) | `it-sicherheit-uebungen` (geplant) |
+| 15 | A | IT-Sicherheit | Schwachstellenmanagement | Lehrplan erstellt | [P15](prompts/P15-schwachstellenmanagement.md) | [P15](lehrplaene/P15-schwachstellenmanagement.md) | `it-sicherheit-uebungen` (geplant) |
 | 16 | A | IT-Sicherheit | Kryptografie, Zertifikate und TLS | gepusht | [P16](prompts/P16-kryptografie-zertifikate-und-tls.md) | [P16](lehrplaene/P16-kryptografie-zertifikate-und-tls.md) | [it-sicherheit-uebungen/kryptografie-zertifikate-und-tls](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen/tree/main/kryptografie-zertifikate-und-tls) |
 | 17 | A | Monitoring und Logging | Monitoring mit Zabbix | offen | [P17](prompts/P17-monitoring-mit-zabbix.md) | – | `monitoring-logging-uebungen` (geplant) |
 | 18 | A | Monitoring und Logging | Monitoring mit Prometheus und Grafana | offen | [P18](prompts/P18-monitoring-mit-prometheus-und-grafana.md) | – | `monitoring-logging-uebungen` (geplant) |

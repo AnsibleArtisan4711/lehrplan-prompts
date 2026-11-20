@@ -1,5 +1,13 @@
 # Änderungen
 
+## 2026-11-20 (P06, P07, P13, P14 und P15 ausgearbeitet)
+
+- Neu: `lehrplaene/P06-proxmox-ve.md` (14 Module, 115 UE), `lehrplaene/P07-vmware-vsphere-und-esxi.md` (13 Module, 106 UE), `lehrplaene/P13-windows-server-haertung.md` (13 Module, 111 UE), `lehrplaene/P14-linux-server-haertung.md` (13 Module, 112 UE) und `lehrplaene/P15-schwachstellenmanagement.md` (13 Module, 113 UE) nach der Grundanweisung. Alle fünf stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen in `virtualisierung-uebungen` (P06, P07) und `it-sicherheit-uebungen` (P13 bis P15) liegen.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; die Summen der Unterrichtseinheiten wurden per Skript geprüft, die Aufgabentexte und Kontrollfragen stehen in Lehrplan und Übung wortgleich.
+- Prüfstand ehrlich: P14 und P15 wurden in einem Cloud-Container ausgeführt (Ubuntu 24.04; P15 mit Nmap 7.94SVN in Netzwerk-Namespaces), nicht unter Hyper-V; Greenbone und Nessus (P15 Modul 6) wurden **nicht** ausgeführt. **P13 (Windows) wurde nicht auf Windows ausgeführt**: die Skripte sind Python-Auswertungen mit erfundenen Daten. **P06 und P07 wurden nicht auf Proxmox VE bzw. ESXi ausgeführt**: die Skripte bilden Konzepte mit `qemu-img`, Bridges, Namespaces und Python-Modellen nach; Befehle von Proxmox und PowerCLI sowie die meisten Herstellerangaben sind „nicht bestätigt“.
+- Quellen (Abruf 20.11.2026): P06 Proxmox-VE-9.2-Ankündigung und Handbuchseiten (Storage, Netzwerk, Cluster), Proxmox-Backup-Server-Dokumentation, Microsoft-Dokumentation zu Nested-Virtualisierung; P07 Broadcom-KB 399823 (kostenloser ESXi; Seite ohne Datum, Angaben können sich ändern) und ein Techzine-Bericht; P13 Microsoft-Learn-Seiten zu Windows LAPS, Credential Guard, Security Compliance Toolkit, Administrationsmodell und Auditierung; P15 Greenbone-Community-Containers- und Nessus-Dokumentation. Alles Weitere ist Fachwissen und gekennzeichnet.
+- Priorität 2 (Vertiefung): P06 Modul 14; P07 Modul 12; P13 Modul 12; P14 und P15 siehe jeweiliger Lehrplan.
+
 ## 2026-11-19 (P08, P09 und P11 gepusht, Gruppe Netzwerk und Firewall komplett)
 
 - P08, P09 und P11 stehen auf `gepusht`: Die Übungsreihen liegen in `netzwerk-und-firewall-uebungen/firewall-mit-opnsense`, `netzwerk-und-firewall-uebungen/linux-firewall-mit-nftables-und-iptables` und `netzwerk-und-firewall-uebungen/reverse-proxy-lastverteilung-und-tls` (Commit 4b2b70b). Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
