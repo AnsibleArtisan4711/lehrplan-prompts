@@ -882,9 +882,10 @@
     "themen": "Rootless-Container; Pods; Images bauen und prüfen; Registries; Volumes und Netzwerke; systemd-Einbindung (Quadlet); Podman Compose; Sicherheit (Capabilities, SELinux/AppArmor, seccomp, Image-Signaturen, Schwachstellenscan); Ressourcenlimits; Fehlersuche",
     "abgrenzung": "Docker und Docker Compose sind ein eigener Kurs; Kubernetes nur als Ausblick",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM mit Podman; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "container-uebungen"
+    "repo": "container-uebungen",
+    "ordner": "podman-und-container-sicherheit"
   },
   {
     "id": "P54",
@@ -898,9 +899,10 @@
     "themen": "Partitionierung (MBR, GPT); Physical Volumes, Volume Groups, Logical Volumes; Vergrößern und Verkleinern; Snapshots; Dateisysteme (ext4, XFS) im Vergleich; Mount-Optionen und fstab; Software-RAID mit mdadm; Quotas; Fehlerdiagnose und Reparatur; Überwachung des Speicherplatzes",
     "abgrenzung": "Btrfs, ZFS und Snapshots sind ein eigener Kurs; NAS, SAN und iSCSI ebenfalls",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM mit mehreren virtuellen Datenträgern; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "storage-backup-uebungen"
+    "repo": "storage-backup-uebungen",
+    "ordner": "lvm-und-dateisysteme-unter-linux"
   },
   {
     "id": "P55",
@@ -914,9 +916,10 @@
     "themen": "SMB und NFS im Überblick; Samba als Standalone-Server; Freigaben und Berechtigungen (POSIX und ACL); Benutzer und Gruppen; Samba als Domänenmitglied (Grundzüge); NFS-Exporte und Mount-Optionen; Zugriff von Windows- und Linux-Clients; Sicherheit (Versionen, Signierung, Verschlüsselung); Fehlersuche; Sicherung",
     "abgrenzung": "Windows-Dateidienste und DFS sind ein eigener Kurs; Active Directory nur soweit für den Domänenbeitritt nötig",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Linux-Server-VM; 1x Windows-11-Client-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "storage-backup-uebungen"
+    "repo": "storage-backup-uebungen",
+    "ordner": "dateidienste-unter-linux-mit-samba-und-nfs"
   },
   {
     "id": "P56",
@@ -930,9 +933,10 @@
     "themen": "Konten und IAM; VPC und Netzwerkaufbau; EC2 und Auto Scaling; Load Balancing; Speicher (EBS, S3, EFS); Datenbanken im Betrieb (RDS); Überwachung mit CloudWatch; Automatisierung mit AWS CLI und CloudFormation; Sicherung und Wiederherstellung; Kostenkontrolle; Sicherheit und Fehlersuche",
     "abgrenzung": "AWS Cloud Practitioner ist ein eigener vorhandener Lehrplan; Terraform ist ein eigener Kurs",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Kosten und Gratis-Kontingente mit Stand nennen.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "kostenloses oder budgetbegrenztes AWS-Konto mit Budgetwarnung; 1x Linux-Client mit AWS CLI",
-    "repo": "cloud-identitaet-uebungen"
+    "repo": "cloud-identitaet-uebungen",
+    "ordner": "aws-administration-sysops"
   },
   {
     "id": "P57",
@@ -946,9 +950,10 @@
     "themen": "Virtuelle Netzwerke und Subnetze; Peering; NSG und ASG; Azure Firewall und Bastion; VPN Gateway und private Verbindungen; Private Endpoints; DNS in Azure; Key Vault; RBAC und Azure Policy; Defender for Cloud; Protokollierung und Überwachung; Fehlersuche",
     "abgrenzung": "Azure Administration und Entra ID sind eigene Kurse; Zertifikatsgrundlagen im Kurs „Kryptografie, Zertifikate und TLS“",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Preise und Gratis-Kontingente mit Stand nennen.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "Azure-Abonnement (Testkonto oder Visual-Studio-Guthaben) mit Budgetwarnung; 1x Windows-11-Client mit Azure CLI und PowerShell",
-    "repo": "cloud-identitaet-uebungen"
+    "repo": "cloud-identitaet-uebungen",
+    "ordner": "azure-netzwerk-und-azure-sicherheit"
   },
   {
     "id": "P58",
@@ -962,9 +967,10 @@
     "themen": "Organisation, Projekte und Abrechnung; IAM und Dienstkonten; Compute Engine; VPC und Firewall-Regeln; Cloud Storage; Cloud SQL im Überblick; Überwachung und Logging; gcloud CLI; Kosten und Budgets; Vergleich mit AWS und Azure",
     "abgrenzung": "AWS und Azure sind eigene Kurse; keine Spezialdienste (BigQuery, KI) außer als Ausblick",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Kosten und Gratis-Kontingente mit Stand nennen.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "Google-Cloud-Testkonto mit Budgetwarnung; 1x Linux-Client mit gcloud CLI",
-    "repo": "cloud-identitaet-uebungen"
+    "repo": "cloud-identitaet-uebungen",
+    "ordner": "google-cloud-grundlagen"
   },
   {
     "id": "P59",
@@ -995,9 +1001,10 @@
     "themen": "Hochverfügbarkeit und Ausfallkonzepte; Failover-Cluster aufbauen; Quorum und Zeugen; gemeinsamer Speicher und Cluster Shared Volumes; hochverfügbare VMs und Live-Migration; Hyper-V Replica; Clusteraware Updating; Überwachung; Fehlersuche; Ausfalltests; Abgrenzung zu Backup",
     "abgrenzung": "Hyper-V Administration ist ein eigener Kurs; Backup und Notfallplanung sind eigene Kurse",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Hardware- und RAM-Bedarf für geschachtelte Virtualisierung nennen.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "2x Hyper-V-Host (geschachtelt oder physisch); 1x Windows-Server-VM (DC); 1x Speicher-VM oder iSCSI-Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "virtualisierung-uebungen"
+    "repo": "virtualisierung-uebungen",
+    "ordner": "failover-clustering-und-hochverfuegbarkeit"
   },
   {
     "id": "P61",

@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P53 bis P58 und P60 gepusht)
+
+- P53 bis P58 und P60 stehen auf `gepusht`: `container-uebungen/podman-und-container-sicherheit` (Commit c75d063, neues Repository), `storage-backup-uebungen/lvm-und-dateisysteme-unter-linux` (83adc49) und `.../dateidienste-unter-linux-mit-samba-und-nfs` (319da3b), `cloud-identitaet-uebungen/aws-administration-sysops` (bd9a790), `.../azure-netzwerk-und-azure-sicherheit` (25d87b7), `.../google-cloud-grundlagen` (1fe3bd7) und `virtualisierung-uebungen/failover-clustering-und-hochverfuegbarkeit` (2990c9e). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. AWS, Azure, Google Cloud, Windows-Failover-Cluster, LV-Snapshots, `mdadm`, Quotas, NFS, Registries, systemd und Compose wurden nicht ausgeführt.
+
 ## 2026-11-20 (P53 bis P58 und P60 ausgearbeitet)
 
 - Neu: `lehrplaene/P53-podman-und-container-sicherheit.md` (8 Module, 100 UE), `lehrplaene/P54-lvm-und-dateisysteme-unter-linux.md` (8 Module, 104 UE), `lehrplaene/P55-dateidienste-unter-linux-mit-samba-und-nfs.md` (8 Module, 98 UE), `lehrplaene/P56-aws-administration-sysops.md` (8 Module, 100 UE), `lehrplaene/P57-azure-netzwerk-und-azure-sicherheit.md` (8 Module, 100 UE), `lehrplaene/P58-google-cloud-grundlagen.md` (8 Module, 45 UE) und `lehrplaene/P60-failover-clustering-und-hochverfuegbarkeit.md` (8 Module, 100 UE) nach der Grundanweisung. Alle sieben stehen auf `Lehrplan erstellt`.
