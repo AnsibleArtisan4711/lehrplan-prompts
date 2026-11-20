@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 203 offen, 0 Lehrplan erstellt, 0 aufbereitet, 39 gepusht.
+Stand der 242 Kurse: 198 offen, 5 Lehrplan erstellt, 0 aufbereitet, 39 gepusht.
 
 Bedeutung der Status:
 
@@ -62,14 +62,14 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 29 | B | Azure und Identität | Intune und Autopilot | offen | [P29](prompts/P29-intune-und-autopilot.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 30 | B | Datenbanken | SQL-Grundlagen | gepusht | [P30](prompts/P30-sql-grundlagen.md) | [P30](lehrplaene/P30-sql-grundlagen.md) | [datenbanken-uebungen/sql-grundlagen](https://github.com/AnsibleArtisan4711/datenbanken-uebungen/tree/main/sql-grundlagen) |
 | 31 | B | Datenbanken | MariaDB und PostgreSQL Administration | offen | [P31](prompts/P31-mariadb-und-postgresql-administration.md) | – | `datenbanken-uebungen` (geplant) |
-| 32 | B | Datenbanken | SQL Server Administration | offen | [P32](prompts/P32-sql-server-administration.md) | – | `datenbanken-uebungen` (geplant) |
-| 33 | B | Storage | NAS, SAN, iSCSI und RAID | offen | [P33](prompts/P33-nas-san-iscsi-und-raid.md) | – | `storage-backup-uebungen` (geplant) |
+| 32 | B | Datenbanken | SQL Server Administration | Lehrplan erstellt | [P32](prompts/P32-sql-server-administration.md) | [P32](lehrplaene/P32-sql-server-administration.md) | `datenbanken-uebungen` (geplant) |
+| 33 | B | Storage | NAS, SAN, iSCSI und RAID | Lehrplan erstellt | [P33](prompts/P33-nas-san-iscsi-und-raid.md) | [P33](lehrplaene/P33-nas-san-iscsi-und-raid.md) | `storage-backup-uebungen` (geplant) |
 | 34 | B | Storage | Btrfs, ZFS und Snapshots | offen | [P34](prompts/P34-btrfs-zfs-und-snapshots.md) | – | `storage-backup-uebungen` (geplant) |
 | 35 | B | Backup und Notfall | Backup-Konzept (3-2-1, RPO und RTO) | gepusht | [P35](prompts/P35-backup-konzept-3-2-1-rpo-und-rto.md) | [P35](lehrplaene/P35-backup-konzept-3-2-1-rpo-und-rto.md) | [storage-backup-uebungen/backup-konzept](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/backup-konzept) |
 | 36 | B | Backup und Notfall | Notfallplanung und Disaster Recovery | gepusht | [P36](prompts/P36-notfallplanung-und-disaster-recovery.md) | [P36](lehrplaene/P36-notfallplanung-und-disaster-recovery.md) | [storage-backup-uebungen/notfallplanung-und-dr](https://github.com/AnsibleArtisan4711/storage-backup-uebungen/tree/main/notfallplanung-und-dr) |
-| 37 | B | E-Mail | Exchange Online Administration | offen | [P37](prompts/P37-exchange-online-administration.md) | – | `e-mail-uebungen` (geplant) |
-| 38 | B | E-Mail | E-Mail-Authentifizierung: SPF, DKIM und DMARC | offen | [P38](prompts/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) | – | `e-mail-uebungen` (geplant) |
-| 39 | B | E-Mail | Mailserver mit Postfix und Dovecot | offen | [P39](prompts/P39-mailserver-mit-postfix-und-dovecot.md) | – | `e-mail-uebungen` (geplant) |
+| 37 | B | E-Mail | Exchange Online Administration | Lehrplan erstellt | [P37](prompts/P37-exchange-online-administration.md) | [P37](lehrplaene/P37-exchange-online-administration.md) | `e-mail-uebungen` (geplant) |
+| 38 | B | E-Mail | E-Mail-Authentifizierung: SPF, DKIM und DMARC | Lehrplan erstellt | [P38](prompts/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) | [P38](lehrplaene/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md) | `e-mail-uebungen` (geplant) |
+| 39 | B | E-Mail | Mailserver mit Postfix und Dovecot | Lehrplan erstellt | [P39](prompts/P39-mailserver-mit-postfix-und-dovecot.md) | [P39](lehrplaene/P39-mailserver-mit-postfix-und-dovecot.md) | `e-mail-uebungen` (geplant) |
 | 40 | C | IT-Betrieb und Prozesse | ITIL 4 Grundlagen | gepusht | [P40](prompts/P40-itil-4-grundlagen.md) | [P40](lehrplaene/P40-itil-4-grundlagen.md) | [it-betrieb-uebungen/itil-4-grundlagen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/itil-4-grundlagen) |
 | 41 | C | IT-Betrieb und Prozesse | Incident-, Problem- und Change-Management | gepusht | [P41](prompts/P41-incident-problem-und-change-management.md) | [P41](lehrplaene/P41-incident-problem-und-change-management.md) | [it-betrieb-uebungen/incident-problem-und-change-management](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/incident-problem-und-change-management) |
 | 42 | C | IT-Betrieb und Prozesse | Ticketsysteme in der Praxis | gepusht | [P42](prompts/P42-ticketsysteme-in-der-praxis.md) | [P42](lehrplaene/P42-ticketsysteme-in-der-praxis.md) | [it-betrieb-uebungen/ticketsysteme-in-der-praxis](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen/tree/main/ticketsysteme-in-der-praxis) |

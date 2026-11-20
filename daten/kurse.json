@@ -524,7 +524,7 @@
     "themen": "Installation und Editionen; Instanzen und Datenbanken; Anmeldungen und Rechte; Sicherungsmodelle und Wiederherstellung; Wartungspläne; SQL Server Agent; Leistungsanalyse; Hochverfügbarkeit im Überblick; Sicherheit",
     "abgrenzung": "SQL-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "Lizenz- und Editionsstand (Express, Developer, Evaluation) mit Stand nennen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Windows-Server-VM mit SQL Server; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "datenbanken-uebungen"
   },
@@ -540,7 +540,7 @@
     "themen": "Speicherarten (DAS, NAS, SAN); RAID-Stufen und Wahl; Dateisysteme; NFS und SMB; iSCSI (Target und Initiator); Multipath im Überblick; Kapazitätsplanung; SMART und Überwachung; Ausfall und Wiederherstellung; Schreib-Cache und USV",
     "abgrenzung": "Das Homelab nutzt ein NAS; hier die allgemeine Theorie und Praxis",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM mit mehreren virtuellen Platten; 1x Initiator-VM (Linux oder Windows); privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "storage-backup-uebungen"
   },
@@ -606,7 +606,7 @@
     "themen": "Postfachtypen; Empfänger und Verteilerlisten; Mailfluss und Connectoren; Transportregeln; Schutz vor Spam und Schadsoftware (Exchange Online Protection); Migration und Hybrid im Überblick; Aufbewahrung; Verwaltung per PowerShell; Fehlersuche",
     "abgrenzung": "M365 Governance und Entra ID sind eigene Kurse; hier Exchange",
     "hinweis": "Lizenzabhängigkeiten mit Stand nennen; Portalmenüs als „nicht bestätigt“ kennzeichnen, wenn nicht geprüft.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "Test-Tenant (Microsoft-365-Entwickler- oder Testzugang), kein produktiver Tenant, Laufzeit und mögliche Kosten vorab prüfen",
     "repo": "e-mail-uebungen"
   },
@@ -622,7 +622,7 @@
     "themen": "Funktionsweise von E-Mail (SMTP, MX); SPF, DKIM, DMARC; DNS-Einträge; Berichte auswerten; schrittweise Einführung; ARC und BIMI im Überblick; typische Fehler; Prüfwerkzeuge",
     "abgrenzung": "DNS-Grundlagen werden vorausgesetzt (eigener Kurs)",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-VM mit DNS; 1x Mailserver-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Übungsdomains nur mit example.com und Testdaten",
     "repo": "e-mail-uebungen"
   },
@@ -638,7 +638,7 @@
     "themen": "Mail-Architektur (MTA, MDA, MUA); Postfix-Konfiguration; Dovecot (IMAP); Benutzer und Postfächer; TLS; Spam- und Virenschutz im Überblick; Relay und Warteschlange; Authentifizierung; Fehlersuche und Logs; Sicherung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Mailserver-VM; 1x DNS-VM; 1x Windows-11-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "e-mail-uebungen"
   },

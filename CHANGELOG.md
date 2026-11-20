@@ -1,5 +1,13 @@
 # Änderungen
 
+## 2026-11-20 (P32, P33, P37, P38 und P39 ausgearbeitet)
+
+- Neu: `lehrplaene/P32-sql-server-administration.md` (10 Module, 108 UE), `lehrplaene/P33-nas-san-iscsi-und-raid.md` (11 Module, 120 UE), `lehrplaene/P37-exchange-online-administration.md` (10 Module, 110 UE), `lehrplaene/P38-e-mail-authentifizierung-spf-dkim-und-dmarc.md` (11 Module, 110 UE) und `lehrplaene/P39-mailserver-mit-postfix-und-dovecot.md` (10 Module, 110 UE) nach der Grundanweisung. Alle fünf stehen auf `Lehrplan erstellt`.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; Summen der Unterrichtseinheiten, Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfstand ehrlich: P38 und P39 wurden mit Postfix, Dovecot, dnsmasq und Python-Bibliotheken in einem Cloud-Container ausgeführt; P33 mit Loop-Geräten, ext4, XFS, tgt und libiscsi (ein echtes md-RAID war nicht möglich). P32 und P37 sind Python-Modelle mit erfundenen Daten; weder SQL Server noch Exchange Online noch PowerShell wurden verwendet. Hyper-V wurde in keinem Fall ausgeführt.
+- Neues Repository `e-mail-uebungen` (P37, P38, P39).
+- Priorität 2 (Vertiefung): P32 Modul 9, P33 Modul 8, P37 Modul 8, P38 Modul 10, P39 Modul 9.
+
 ## 2026-11-20 (P06, P07, P13, P14 und P15 gepusht)
 
 - P06 und P07 stehen auf `gepusht`: Die Übungsreihen liegen in `virtualisierung-uebungen/proxmox-ve` und `virtualisierung-uebungen/vmware-vsphere-esxi` (Commit 4393edc). P13, P14 und P15 stehen auf `gepusht`: Sie liegen in `it-sicherheit-uebungen/windows-server-haertung`, `it-sicherheit-uebungen/linux-server-haertung` und `it-sicherheit-uebungen/schwachstellenmanagement` (Commit cdd7514). Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
