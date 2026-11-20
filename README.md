@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 182 offen, 0 Lehrplan erstellt, 0 aufbereitet, 60 gepusht.
+Stand der 242 Kurse: 178 offen, 4 Lehrplan erstellt, 0 aufbereitet, 60 gepusht.
 
 Bedeutung der Status:
 
@@ -47,10 +47,10 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 14 | A | IT-Sicherheit | Linux-Server-Härtung | gepusht | [P14](prompts/P14-linux-server-haertung.md) | [P14](lehrplaene/P14-linux-server-haertung.md) | [it-sicherheit-uebungen/linux-server-haertung](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen/tree/main/linux-server-haertung) |
 | 15 | A | IT-Sicherheit | Schwachstellenmanagement | gepusht | [P15](prompts/P15-schwachstellenmanagement.md) | [P15](lehrplaene/P15-schwachstellenmanagement.md) | [it-sicherheit-uebungen/schwachstellenmanagement](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen/tree/main/schwachstellenmanagement) |
 | 16 | A | IT-Sicherheit | Kryptografie, Zertifikate und TLS | gepusht | [P16](prompts/P16-kryptografie-zertifikate-und-tls.md) | [P16](lehrplaene/P16-kryptografie-zertifikate-und-tls.md) | [it-sicherheit-uebungen/kryptografie-zertifikate-und-tls](https://github.com/AnsibleArtisan4711/it-sicherheit-uebungen/tree/main/kryptografie-zertifikate-und-tls) |
-| 17 | A | Monitoring und Logging | Monitoring mit Zabbix | offen | [P17](prompts/P17-monitoring-mit-zabbix.md) | – | `monitoring-logging-uebungen` (geplant) |
-| 18 | A | Monitoring und Logging | Monitoring mit Prometheus und Grafana | offen | [P18](prompts/P18-monitoring-mit-prometheus-und-grafana.md) | – | `monitoring-logging-uebungen` (geplant) |
-| 19 | A | Monitoring und Logging | Zentrales Logging mit Graylog und Elastic Stack | offen | [P19](prompts/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) | – | `monitoring-logging-uebungen` (geplant) |
-| 20 | A | Monitoring und Logging | Monitoring mit PRTG | offen | [P20](prompts/P20-monitoring-mit-prtg.md) | – | `monitoring-logging-uebungen` (geplant) |
+| 17 | A | Monitoring und Logging | Monitoring mit Zabbix | Lehrplan erstellt | [P17](prompts/P17-monitoring-mit-zabbix.md) | [P17](lehrplaene/P17-monitoring-mit-zabbix.md) | `monitoring-logging-uebungen` (geplant) |
+| 18 | A | Monitoring und Logging | Monitoring mit Prometheus und Grafana | Lehrplan erstellt | [P18](prompts/P18-monitoring-mit-prometheus-und-grafana.md) | [P18](lehrplaene/P18-monitoring-mit-prometheus-und-grafana.md) | `monitoring-logging-uebungen` (geplant) |
+| 19 | A | Monitoring und Logging | Zentrales Logging mit Graylog und Elastic Stack | Lehrplan erstellt | [P19](prompts/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) | [P19](lehrplaene/P19-zentrales-logging-mit-graylog-und-elastic-stack.md) | `monitoring-logging-uebungen` (geplant) |
+| 20 | A | Monitoring und Logging | Monitoring mit PRTG | Lehrplan erstellt | [P20](prompts/P20-monitoring-mit-prtg.md) | [P20](lehrplaene/P20-monitoring-mit-prtg.md) | `monitoring-logging-uebungen` (geplant) |
 | 21 | B | Automatisierung | Konfigurationsmanagement mit Ansible | offen | [P21](prompts/P21-konfigurationsmanagement-mit-ansible.md) | – | `automatisierung-uebungen` (geplant) |
 | 22 | B | Automatisierung | Infrastructure as Code mit Terraform | offen | [P22](prompts/P22-infrastructure-as-code-mit-terraform.md) | – | `automatisierung-uebungen` (geplant) |
 | 23 | B | Automatisierung | cloud-init und VM-Vorlagen | offen | [P23](prompts/P23-cloud-init-und-vm-vorlagen.md) | – | `automatisierung-uebungen` (geplant) |

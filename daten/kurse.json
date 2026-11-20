@@ -283,7 +283,7 @@
     "themen": "Architektur (Server, Proxy, Agent); Installation; Hosts, Items, Trigger; Vorlagen; SNMP und Agent; Auto-Discovery; Benachrichtigungen; Dashboards; Wartungsfenster; Leistung und Betrieb; Sicherung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Zabbix-Server-VM; 1x Windows-VM; 1x Linux-VM als überwachte Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "monitoring-logging-uebungen"
   },
@@ -299,7 +299,7 @@
     "themen": "Metriken und Zeitreihen; Prometheus (Scraping, Exporter, PromQL); node_exporter und windows_exporter; Alertmanager; Grafana-Dashboards; Aufbewahrung und Speicher; Betrieb und Sicherung",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Monitoring-VM; 1x Linux-VM; 1x Windows-VM als überwachte Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "monitoring-logging-uebungen"
   },
@@ -315,7 +315,7 @@
     "themen": "Logquellen (syslog, Windows-Ereignisprotokoll); Erfassung und Weiterleitung; Graylog (Inputs, Streams, Pipelines); Elastic Stack im Überblick; Suchen und Auswertungen; Warnungen; Aufbewahrung und Datenschutz; Betrieb",
     "abgrenzung": "",
     "hinweis": "Lizenzmodelle und Versionsstände mit Stand nennen; kennzeichne Unsicherheit.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Log-Server-VM (ausreichend RAM); 1x Linux-VM; 1x Windows-VM als Logquellen; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "monitoring-logging-uebungen"
   },
@@ -331,7 +331,7 @@
     "themen": "Aufbau und Installation; Sensoren und Geräte; WMI, SNMP, SSH; Benachrichtigungen; Karten und Berichte; Abhängigkeiten; eigene Sensoren (Skripte); Lizenzmodell der Gratisstufe; Betrieb",
     "abgrenzung": "Die Übung 02.1 im Repository „veeam-backup-uebung“ nutzt PRTG im Backup-Kontext; hier die Grundlagen",
     "hinweis": "Lizenzgrenzen der kostenlosen Stufe mit Stand nennen; Menünamen nicht erfinden, sondern als „nicht bestätigt“ kennzeichnen.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Windows-Server-VM mit PRTG; 1x Windows-VM; 1x Linux-VM als überwachte Geräte; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "monitoring-logging-uebungen"
   },

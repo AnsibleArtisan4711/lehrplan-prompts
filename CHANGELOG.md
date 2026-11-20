@@ -1,5 +1,14 @@
 # Änderungen
 
+## 2026-11-20 (P17 bis P20 ausgearbeitet)
+
+- Neu: `lehrplaene/P17-monitoring-mit-zabbix.md` (8 Module, 100 UE), `lehrplaene/P18-monitoring-mit-prometheus-und-grafana.md` (8 Module, 100 UE), `lehrplaene/P19-zentrales-logging-mit-graylog-und-elastic-stack.md` (8 Module, 100 UE) und `lehrplaene/P20-monitoring-mit-prtg.md` (8 Module, 96 UE) nach der Grundanweisung. Alle vier stehen auf `Lehrplan erstellt`.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; Summen der Unterrichtseinheiten, Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfstand ehrlich: P17 wurde mit Zabbix 7.0.32 ausgeführt, das **aus dem Quellcode gebaut** wurde (Ubuntu hat keine Zabbix-Pakete), dazu PostgreSQL 16 und `snmpd`; Pakete von zabbix.com, Windows-Agent, Proxy, Browser-Frontend, SNMPv3, Traps und E-Mail nicht. P18 wurde mit Prometheus 2.45.3, Alertmanager 0.26.0 und `node_exporter` 1.7.0 ausgeführt (Messreihen erfunden); Grafana und `windows_exporter` nicht. P19 wurde mit `rsyslog` 8.2312, `logrotate` und `jq` ausgeführt; Graylog, Elasticsearch/OpenSearch, Logstash und Beats nicht (Modelle in Python, Lizenzmodelle und Versionsstände nicht geprüft). P20 wurde mit `snmpd`, Skripten und Auswertungen ausgeführt; PRTG selbst nicht (Modell in Python); Lizenz-, Ablage- und Formatangaben nach den Herstellerseiten vom 20.11.2026 (nur teilweise gelesen), Menünamen nicht bestätigt. Die Dokumentation der übrigen Produkte wurde nicht gelesen.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft.
+- Alle vier Reihen liegen im Repository `monitoring-logging-uebungen`.
+- Priorität 2 (Vertiefung): P17 Modul 6, P18 Modul 7, P19 Modul 7, P20 Modul 5.
+
 ## 2026-11-20 (P62 bis P68 gepusht)
 
 - P62 bis P68 stehen auf `gepusht`: `it-sicherheit-uebungen/ids-und-ips-mit-suricata`, `.../passwort-und-secrets-verwaltung` und `.../penetrationstest-grundlagen` (Commit 2fc429f), `automatisierung-uebungen/cicd-mit-gitlab-und-jenkins` (fe0a4b8), `monitoring-logging-uebungen/windows-ereignisweiterleitung-und-ereignisprotokolle` (401d388, neues Repository) sowie `datenbanken-uebungen/nosql-datenbanken-und-redis` und `.../datenbank-backup-und-wiederherstellung` (aeb4493). README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
