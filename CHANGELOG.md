@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P25 und P26 gepusht)
+
+- P25 und P26 stehen auf `gepusht`: `container-uebungen/docker-und-docker-compose` und `container-uebungen/kubernetes-grundlagen` (Commit 7ae3c37).
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. Docker lief echt (Docker Engine 29.9.2, Compose 5.7.0, Registry, Podman) mit einem Basis-Image aus `busybox-static`; Docker Desktop, Rootless-Docker und Image-Scanner nicht. Kubernetes wurde nicht ausgeführt (Python-Modell, Manifeste mit `kubernetes-validate` geprüft); Hyper-V nicht.
+
 ## 2026-11-20 (P25 und P26 ausgearbeitet)
 
 - Neu: `lehrplaene/P25-docker-und-docker-compose.md` (8 Module, 100 UE) und `lehrplaene/P26-kubernetes-grundlagen.md` (8 Module, 100 UE) nach der Grundanweisung. Beide stehen auf `Lehrplan erstellt`.
