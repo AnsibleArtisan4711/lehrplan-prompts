@@ -1,5 +1,14 @@
 # Änderungen
 
+## 2026-11-20 (P27 bis P29 ausgearbeitet)
+
+- Neu: `lehrplaene/P27-azure-administration.md`, `lehrplaene/P28-entra-id-und-hybrid-identitaet.md` und `lehrplaene/P29-intune-und-autopilot.md` (je 8 Module, 100 UE) nach der Grundanweisung. Alle drei stehen auf `Lehrplan erstellt`.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; Summen der Unterrichtseinheiten, Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfstand ehrlich: In keinem der drei Kurse wurde etwas in Azure, Entra ID oder Intune ausgeführt (kein Mandant, kein Gerät, kein `az login`). P27 und P28: Azure CLI 2.93.0 nur für die Prüfung von Befehlen und Parametern gegen die Hilfetexte; P28 zusätzlich TOTP nach RFC 6238 (gegen die sechs Testwerte geprüft) und RS256-Token (PyJWT 2.15.0, cryptography 50.0.1). P29: Prüfung der Autopilot-CSV nach den Regeln aus einem Suchauszug von Microsoft Learn, SHA-256 und JSON. Alles Übrige sind Python-Modelle (`azsim.py`, `entrasim.py`, `intunesim.py`). Bicep, Windows, Hyper-V, PowerShell, Entra Connect und `Get-WindowsAutopilotInfo` wurden nicht ausgeführt.
+- Lizenz- und Regelaussagen (Entra P1/P2, Autopilot, Compliance-Aktionen, Zuweisungsfilter) stützen sich nur auf Suchauszüge von Microsoft Learn vom 20.11.2026, nicht auf ganze Seiten. Der Auszug zum AZ-104-Studienleitfaden nennt den Stand 26.10.2023; ein neuerer wurde nicht geprüft. Portalmenüs sind nicht bestätigt und werden nicht beschrieben.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft.
+- Alle drei Reihen liegen im bestehenden Repository `cloud-identitaet-uebungen`.
+
 ## 2026-11-20 (P25 und P26 gepusht)
 
 - P25 und P26 stehen auf `gepusht`: `container-uebungen/docker-und-docker-compose` und `container-uebungen/kubernetes-grundlagen` (Commit 7ae3c37).

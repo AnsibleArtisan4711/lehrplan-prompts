@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 172 offen, 0 Lehrplan erstellt, 0 aufbereitet, 70 gepusht.
+Stand der 242 Kurse: 169 offen, 3 Lehrplan erstellt, 0 aufbereitet, 70 gepusht.
 
 Bedeutung der Status:
 
@@ -57,9 +57,9 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 24 | B | Automatisierung | PowerShell Desired State Configuration (DSC) | gepusht | [P24](prompts/P24-powershell-desired-state-configuration-dsc.md) | [P24](lehrplaene/P24-powershell-desired-state-configuration-dsc.md) | [automatisierung-uebungen/powershell-desired-state-configuration-dsc](https://github.com/AnsibleArtisan4711/automatisierung-uebungen/tree/main/powershell-desired-state-configuration-dsc) |
 | 25 | B | Container | Docker und Docker Compose | gepusht | [P25](prompts/P25-docker-und-docker-compose.md) | [P25](lehrplaene/P25-docker-und-docker-compose.md) | [container-uebungen/docker-und-docker-compose](https://github.com/AnsibleArtisan4711/container-uebungen/tree/main/docker-und-docker-compose) |
 | 26 | B | Container | Kubernetes-Grundlagen | gepusht | [P26](prompts/P26-kubernetes-grundlagen.md) | [P26](lehrplaene/P26-kubernetes-grundlagen.md) | [container-uebungen/kubernetes-grundlagen](https://github.com/AnsibleArtisan4711/container-uebungen/tree/main/kubernetes-grundlagen) |
-| 27 | B | Azure und Identität | Azure Administration | offen | [P27](prompts/P27-azure-administration.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 28 | B | Azure und Identität | Entra ID und Hybrid-Identität | offen | [P28](prompts/P28-entra-id-und-hybrid-identitaet.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 29 | B | Azure und Identität | Intune und Autopilot | offen | [P29](prompts/P29-intune-und-autopilot.md) | – | `cloud-identitaet-uebungen` (geplant) |
+| 27 | B | Azure und Identität | Azure Administration | Lehrplan erstellt | [P27](prompts/P27-azure-administration.md) | [P27](lehrplaene/P27-azure-administration.md) | `cloud-identitaet-uebungen` (geplant) |
+| 28 | B | Azure und Identität | Entra ID und Hybrid-Identität | Lehrplan erstellt | [P28](prompts/P28-entra-id-und-hybrid-identitaet.md) | [P28](lehrplaene/P28-entra-id-und-hybrid-identitaet.md) | `cloud-identitaet-uebungen` (geplant) |
+| 29 | B | Azure und Identität | Intune und Autopilot | Lehrplan erstellt | [P29](prompts/P29-intune-und-autopilot.md) | [P29](lehrplaene/P29-intune-und-autopilot.md) | `cloud-identitaet-uebungen` (geplant) |
 | 30 | B | Datenbanken | SQL-Grundlagen | gepusht | [P30](prompts/P30-sql-grundlagen.md) | [P30](lehrplaene/P30-sql-grundlagen.md) | [datenbanken-uebungen/sql-grundlagen](https://github.com/AnsibleArtisan4711/datenbanken-uebungen/tree/main/sql-grundlagen) |
 | 31 | B | Datenbanken | MariaDB und PostgreSQL Administration | gepusht | [P31](prompts/P31-mariadb-und-postgresql-administration.md) | [P31](lehrplaene/P31-mariadb-und-postgresql-administration.md) | [datenbanken-uebungen/mariadb-und-postgresql-administration](https://github.com/AnsibleArtisan4711/datenbanken-uebungen/tree/main/mariadb-und-postgresql-administration) |
 | 32 | B | Datenbanken | SQL Server Administration | gepusht | [P32](prompts/P32-sql-server-administration.md) | [P32](lehrplaene/P32-sql-server-administration.md) | [datenbanken-uebungen/sql-server-administration](https://github.com/AnsibleArtisan4711/datenbanken-uebungen/tree/main/sql-server-administration) |
