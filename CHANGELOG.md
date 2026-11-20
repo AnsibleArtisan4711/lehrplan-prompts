@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-20 (P21 bis P24 gepusht)
+
+- P21 bis P24 stehen auf `gepusht`: `automatisierung-uebungen/konfigurationsmanagement-mit-ansible`, `.../infrastructure-as-code-mit-terraform`, `.../cloud-init-und-vm-vorlagen` und `.../powershell-desired-state-configuration-dsc` (Commit fae17b5). Lehrpläne mit Commit 4e65bd8. README-Tabellen mit `python tools/build_prompts.py` neu erzeugt.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. Terraform, OpenTofu, PowerShell und DSC wurden nicht ausgeführt (Python-Modelle); Ansible lief nur mit der Verbindungsart `local`; SSH zu anderen Hosts, WinRM, VM-Start, Hyper-V, Proxmox, Sysprep und Packer nicht; Lizenzen, Versionen und Menünamen sind nicht geprüft.
+
 ## 2026-11-20 (P21 bis P24 ausgearbeitet)
 
 - Neu: `lehrplaene/P21-konfigurationsmanagement-mit-ansible.md` (8 Module, 100 UE), `lehrplaene/P22-infrastructure-as-code-mit-terraform.md` (8 Module, 100 UE), `lehrplaene/P23-cloud-init-und-vm-vorlagen.md` (8 Module, 100 UE) und `lehrplaene/P24-powershell-desired-state-configuration-dsc.md` (8 Module, 100 UE) nach der Grundanweisung. Alle vier stehen auf `Lehrplan erstellt`.

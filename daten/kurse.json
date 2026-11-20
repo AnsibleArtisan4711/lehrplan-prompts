@@ -351,9 +351,10 @@
     "themen": "Konzept (agentenlos, idempotent); Inventare; Ad-hoc-Befehle; Playbooks; Variablen, Schleifen, Bedingungen; Rollen; Vorlagen (Jinja2); Handler; Ansible Vault; Windows-Hosts per WinRM; Tests und Fehlersuche",
     "abgrenzung": "Linux- und Bash-Grundlagen sind in vorhandenen Lehrplänen",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Control-Node-VM; 2x Linux-VMs; 1x Windows-VM als verwaltete Hosts; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "automatisierung-uebungen"
+    "repo": "automatisierung-uebungen",
+    "ordner": "konfigurationsmanagement-mit-ansible"
   },
   {
     "id": "P22",
@@ -367,9 +368,10 @@
     "themen": "Konzept; Provider; Ressourcen und Datenquellen; Variablen und Ausgaben; State und Remote State; Module; Pläne prüfen und anwenden; Importieren; Zusammenspiel mit Ansible und cloud-init; Sicherheit der Zugangsdaten",
     "abgrenzung": "",
     "hinweis": "Prüfe Lizenzstand und Fork-Situation (Terraform und OpenTofu) mit Stand.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1 Arbeitsplatz-VM mit Terraform; 1 lokaler Virtualisierungshost als Ziel; privater Hyper-V-Switch ohne Verbindung zum Heimnetz; Cloud-Provider nur optional mit Test-Konto",
-    "repo": "automatisierung-uebungen"
+    "repo": "automatisierung-uebungen",
+    "ordner": "infrastructure-as-code-mit-terraform"
   },
   {
     "id": "P23",
@@ -383,9 +385,10 @@
     "themen": "Konzept von Vorlagen (Golden Image); cloud-init (Benutzerdaten, Netzwerk, Pakete, Skripte); Vorlagen für Hyper-V, Proxmox und Cloud; Sysprep für Windows; Image-Bau mit Packer in Grundzügen; Wartung und Aktualisierung von Vorlagen",
     "abgrenzung": "",
     "hinweis": "",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1 Virtualisierungshost; 1 Linux-Cloud-Image; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "automatisierung-uebungen"
+    "repo": "automatisierung-uebungen",
+    "ordner": "cloud-init-und-vm-vorlagen"
   },
   {
     "id": "P24",
@@ -399,9 +402,10 @@
     "themen": "Konzept deklarativer Konfiguration; DSC-Konfigurationen und Ressourcen; Local Configuration Manager; Push und Pull; eigene Ressourcen; Prüfen auf Abweichungen; Einordnung gegenüber Ansible und Gruppenrichtlinien",
     "abgrenzung": "Die PowerShell-Grundlagen stehen im vorhandenen Kurs „PowerShell“",
     "hinweis": "Prüfe den aktuellen Stand der DSC-Versionen und ihre Zukunft mit Stand; kennzeichne Unsicherheit.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "1x Windows-Server-VM (Pull-Server und Ziel); 1 weiterer Windows-Zielserver; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "automatisierung-uebungen"
+    "repo": "automatisierung-uebungen",
+    "ordner": "powershell-desired-state-configuration-dsc"
   },
   {
     "id": "P25",
