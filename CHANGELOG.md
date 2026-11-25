@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-25 (A15 bis A17 gepusht)
+
+- A15, A16 und A17 stehen auf `gepusht`: Die Übungsreihen liegen in `linux-uebungen/lpic-1`, `linux-uebungen/lpic-2` und `linux-uebungen/lpic-3`. Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft. Ausgeführt wurde nur im Cloud-Container, nicht in Hyper-V-VMs; Nichtausführbares ist in den Kursen gekennzeichnet.
+
 ## 2026-11-25 (A15 bis A17 ausgearbeitet)
 
 - Neu: `lehrplaene/A15-lpic-1.md` (12 Module, 112 UE), `lehrplaene/A16-lpic-2.md` (12 Module, 110 UE) und `lehrplaene/A17-lpic-3.md` (12 Module, 114 UE) nach der Grundanweisung. Alle drei stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen im Repository `linux-uebungen` liegen.

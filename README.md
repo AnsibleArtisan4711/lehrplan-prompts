@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 166 offen, 3 Lehrplan erstellt, 0 aufbereitet, 73 gepusht.
+Stand der 242 Kurse: 166 offen, 0 Lehrplan erstellt, 0 aufbereitet, 76 gepusht.
 
 Bedeutung der Status:
 
@@ -118,9 +118,9 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 85 | C | Identität, Zugriff & Microsoft 365 | Microsoft MS-102 | offen | [A12](prompts/A12-microsoft-ms-102.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 86 | C | Identität, Zugriff & Microsoft 365 | Microsoft SC-300 | offen | [A13](prompts/A13-microsoft-sc-300.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 87 | C | Identität, Zugriff & Microsoft 365 | Privileged Identity Management | offen | [A14](prompts/A14-privileged-identity-management.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 88 | C | Linux & Open Source | LPIC-1 | Lehrplan erstellt | [A15](prompts/A15-lpic-1.md) | [A15](lehrplaene/A15-lpic-1.md) | `linux-uebungen` (geplant) |
-| 89 | C | Linux & Open Source | LPIC-2 | Lehrplan erstellt | [A16](prompts/A16-lpic-2.md) | [A16](lehrplaene/A16-lpic-2.md) | `linux-uebungen` (geplant) |
-| 90 | C | Linux & Open Source | LPIC-3 | Lehrplan erstellt | [A17](prompts/A17-lpic-3.md) | [A17](lehrplaene/A17-lpic-3.md) | `linux-uebungen` (geplant) |
+| 88 | C | Linux & Open Source | LPIC-1 | gepusht | [A15](prompts/A15-lpic-1.md) | [A15](lehrplaene/A15-lpic-1.md) | [linux-uebungen/lpic-1](https://github.com/AnsibleArtisan4711/linux-uebungen/tree/main/lpic-1) |
+| 89 | C | Linux & Open Source | LPIC-2 | gepusht | [A16](prompts/A16-lpic-2.md) | [A16](lehrplaene/A16-lpic-2.md) | [linux-uebungen/lpic-2](https://github.com/AnsibleArtisan4711/linux-uebungen/tree/main/lpic-2) |
+| 90 | C | Linux & Open Source | LPIC-3 | gepusht | [A17](prompts/A17-lpic-3.md) | [A17](lehrplaene/A17-lpic-3.md) | [linux-uebungen/lpic-3](https://github.com/AnsibleArtisan4711/linux-uebungen/tree/main/lpic-3) |
 | 91 | C | Linux & Open Source | RHEL-Familie (Red Hat Enterprise Linux und AlmaLinux) | offen | [A18](prompts/A18-rhel-familie.md) | – | `linux-uebungen` (geplant) |
 | 92 | C | Netzwerk & Netzwerkdienste | Cisco CCNA | offen | [A19](prompts/A19-cisco-ccna.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
 | 93 | C | Netzwerk & Netzwerkdienste | DNS Security (DNSSEC) | offen | [A20](prompts/A20-dns-security.md) | – | `netzwerkdienste-uebungen` (geplant) |
@@ -348,7 +348,7 @@ Die Zuordnung ist ein Vorschlag. Offen sind vor allem Randfälle: Recht und Comp
 | [e-mail-uebungen](https://github.com/AnsibleArtisan4711/e-mail-uebungen) | P37 Exchange Online Administration (gepusht); P38 E-Mail-Authentifizierung: SPF, DKIM und DMARC (gepusht); P39 Mailserver mit Postfix und Dovecot (gepusht); A21 E-Mail-Routing, SMTP und Mail Security |
 | [it-betrieb-uebungen](https://github.com/AnsibleArtisan4711/it-betrieb-uebungen) | P40 ITIL 4 Grundlagen (gepusht); P41 Incident-, Problem- und Change-Management (gepusht); P42 Ticketsysteme in der Praxis (gepusht); P43 SLA und Betriebshandbuch (gepusht); P47 Datenschutz (DSGVO) in der IT (gepusht); P48 NIS2 für Administratoren (gepusht); P49 ISO 27001 Grundlagen (gepusht); P50 Troubleshooting-Methodik (gepusht); P51 Projektmanagement für Administratoren (gepusht); P52 IT-Englisch für Administratoren (gepusht); P69 Asset-Verwaltung und CMDB (gepusht); P70 Lizenzmanagement (gepusht); P72 Weiterbildung IT-Systemtechnik (Querschnitt nach der Lehre) (gepusht); P73 Bewerbungstraining für IT-Berufe (gepusht); A05 Weiterbildung IT Systemtechnik; A28 DSGVO; A53 Troubleshooting; A54 CMDB und Asset Management; N12 Compliance in Unternehmen; N13 IT-Risikomanagement; N32 Anwendungssupport; N33 Jira Service Management; N34 ServiceNow; N35 Vendor Management und Lizenzmanagement; N41 Confluence; N49 Anforderungsmanagement; N50 Kanban; N51 Projekt-Risikoregister und Issue Tracking; N52 Projektmanagement; N53 Scrum; F01 Open Source; F02 Stakeholder Management und Moderation |
 | [client-hardware-uebungen](https://github.com/AnsibleArtisan4711/client-hardware-uebungen) | P44 PC-Hardware und Fehlersuche (gepusht); P45 Windows-11-Client-Administration (gepusht); P46 Betriebssystem-Rollout (MDT, MECM und Alternativen) (gepusht); A01 Betriebssysteme; A02 CompTIA A+; A03 Microsoft MD-102; A06 Windows Autopilot; N01 Registry und Treiber; N36 Arduino; N37 Elektrotechnik, Strom und Sicherheit; N38 Gerätetechnik; N39 Kabel und Stecker; N40 Raspberry Pi und Einplatinencomputer |
-| [linux-uebungen](https://github.com/AnsibleArtisan4711/linux-uebungen) | A15 LPIC-1; A16 LPIC-2; A17 LPIC-3; A18 RHEL-Familie (Red Hat Enterprise Linux und AlmaLinux) |
+| [linux-uebungen](https://github.com/AnsibleArtisan4711/linux-uebungen) | A15 LPIC-1 (gepusht); A16 LPIC-2 (gepusht); A17 LPIC-3 (gepusht); A18 RHEL-Familie (Red Hat Enterprise Linux und AlmaLinux) |
 | [office-uebungen](https://github.com/AnsibleArtisan4711/office-uebungen) | N42 LaTeX (inkl. MiKTeX, TeXstudio und Overleaf); N43 Microsoft Access Expert; N44 Microsoft Outlook Associate; N45 Microsoft PL-900 (Power Platform Fundamentals); N46 Microsoft PowerPoint Associate; N47 Microsoft Word Expert; N48 Power Platform Governance |
 | [web-uebungen](https://github.com/AnsibleArtisan4711/web-uebungen) | N54 Apache Tomcat; F04 Adobe XD; F07 Angular; F08 Bootstrap; F11 GraphQL; F13 JavaScript; F15 Material 3; F17 PHP; F18 RESTful API; F19 React.js; F21 Vue.js; F22 XML; F46 E-Commerce: Zahlungsabwicklung; F50 Magento; F55 Search Engine Optimization; F56 Shopify |
 | `programmierung-uebungen` (noch nicht angelegt) | F03 AWS Certified Developer Associate; F05 Algorithmen und Datenstrukturen; F06 Android; F09 C# und .NET; F10 C++; F12 Java; F14 Logik und diskrete Mathematik; F16 Mathematik (Grundlagen und Anwendung); F20 Visual Basic |
