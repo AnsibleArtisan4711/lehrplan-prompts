@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 169 offen, 0 Lehrplan erstellt, 0 aufbereitet, 73 gepusht.
+Stand der 242 Kurse: 166 offen, 3 Lehrplan erstellt, 0 aufbereitet, 73 gepusht.
 
 Bedeutung der Status:
 
@@ -118,9 +118,9 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 85 | C | Identität, Zugriff & Microsoft 365 | Microsoft MS-102 | offen | [A12](prompts/A12-microsoft-ms-102.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 86 | C | Identität, Zugriff & Microsoft 365 | Microsoft SC-300 | offen | [A13](prompts/A13-microsoft-sc-300.md) | – | `cloud-identitaet-uebungen` (geplant) |
 | 87 | C | Identität, Zugriff & Microsoft 365 | Privileged Identity Management | offen | [A14](prompts/A14-privileged-identity-management.md) | – | `cloud-identitaet-uebungen` (geplant) |
-| 88 | C | Linux & Open Source | LPIC-1 | offen | [A15](prompts/A15-lpic-1.md) | – | `linux-uebungen` (geplant) |
-| 89 | C | Linux & Open Source | LPIC-2 | offen | [A16](prompts/A16-lpic-2.md) | – | `linux-uebungen` (geplant) |
-| 90 | C | Linux & Open Source | LPIC-3 | offen | [A17](prompts/A17-lpic-3.md) | – | `linux-uebungen` (geplant) |
+| 88 | C | Linux & Open Source | LPIC-1 | Lehrplan erstellt | [A15](prompts/A15-lpic-1.md) | [A15](lehrplaene/A15-lpic-1.md) | `linux-uebungen` (geplant) |
+| 89 | C | Linux & Open Source | LPIC-2 | Lehrplan erstellt | [A16](prompts/A16-lpic-2.md) | [A16](lehrplaene/A16-lpic-2.md) | `linux-uebungen` (geplant) |
+| 90 | C | Linux & Open Source | LPIC-3 | Lehrplan erstellt | [A17](prompts/A17-lpic-3.md) | [A17](lehrplaene/A17-lpic-3.md) | `linux-uebungen` (geplant) |
 | 91 | C | Linux & Open Source | RHEL-Familie (Red Hat Enterprise Linux und AlmaLinux) | offen | [A18](prompts/A18-rhel-familie.md) | – | `linux-uebungen` (geplant) |
 | 92 | C | Netzwerk & Netzwerkdienste | Cisco CCNA | offen | [A19](prompts/A19-cisco-ccna.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
 | 93 | C | Netzwerk & Netzwerkdienste | DNS Security (DNSSEC) | offen | [A20](prompts/A20-dns-security.md) | – | `netzwerkdienste-uebungen` (geplant) |

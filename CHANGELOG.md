@@ -1,5 +1,15 @@
 # Änderungen
 
+## 2026-11-25 (A15 bis A17 ausgearbeitet)
+
+- Neu: `lehrplaene/A15-lpic-1.md` (12 Module, 112 UE), `lehrplaene/A16-lpic-2.md` (12 Module, 110 UE) und `lehrplaene/A17-lpic-3.md` (12 Module, 114 UE) nach der Grundanweisung. Alle drei stehen auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) werden sie gesetzt, wenn die Übungsreihen im Repository `linux-uebungen` liegen.
+- Die Lehrpläne wurden zusammen mit den Übungsreihen aus denselben Daten erzeugt; die Summen der Unterrichtseinheiten, die Zahl der Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfungsstand mit Datum: lpi.org am 25.11.2026 gelesen. LPIC-1: Prüfungen 101-500 und 102-500, Version 5.0 der Prüfungsziele. LPIC-2: 201-450 und 202-450, Version 4.5. LPIC-3: Version 3.0 mit den Spezialisierungen 300, 303, 305 und 306. Von den Einzelzielen wurde nur die Gliederung von 300-300 gelesen; Gewichtungen und das Prüfungsformat nicht. Prüfungsfragen werden nicht wiedergegeben.
+- Abweichung vom Excel-Lehrplan auf Vorgabe: A17 Modul 2 und 3 folgen 300-300 Version 3.0 statt dem Excel-Blatt. Der Excel-Lehrplan nennt OpenLDAP, 300-300 enthält kein OpenLDAP (Samba, Active Directory, FreeIPA, NFS). Die Titel der beiden Module und das Feld `themen` von A17 wurden angepasst, die UE blieben gleich (je 10). Die Einteilung der Lerneinheiten ist eigene Zuordnung. Der Befund steht in `lehrplan-korrekturen.md` im Kursordner.
+- Prüfstand ehrlich: Die Skripte aller drei Reihen liefen in einem Cloud-Container (Ubuntu 24.04.5, root, ohne systemd als init, ohne Kernelmodule), nicht in Hyper-V-VMs; das Labor wurde nicht aufgebaut. Nicht ausführbare Teile sind gekennzeichnet, bei A17 u. a. FreeIPA, Kerberos-Tickets, Windows-Clients, LUKS-Öffnen, ACME, WireGuard-Tunnel, Xen, KVM-VMs, Docker-Dienst und der Betrieb von Pacemaker, DRBD und iSCSI.
+- Priorität 2 (Vertiefung): A15 Modul 8. Priorität 3 (nur bei Zeit): Modul 12 von A16 und A17.
+- Die Lehrpläne wurden von AnsibleArtisan4711 noch nicht fachlich geprüft.
+
 ## 2026-11-20 (P27 bis P29 gepusht)
 
 - P27, P28 und P29 stehen auf `gepusht`: `cloud-identitaet-uebungen/azure-administration`, `cloud-identitaet-uebungen/entra-id-und-hybrid-identitaet` und `cloud-identitaet-uebungen/intune-und-autopilot` (Commit 81bbfec).

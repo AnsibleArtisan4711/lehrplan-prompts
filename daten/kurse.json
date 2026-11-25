@@ -1476,7 +1476,7 @@
     "themen": "LPIC-1 Grundlagen und Linux System Architecture; Linux Installation, Partitionierung und Boot Management; Package Management Debian und RPM/YUM; GNU/Unix Command Line Essentials; Processes, Text Processing und Regular Expressions; Filesystems, Permissions und FHS; Shells, Bash Environment und Scripting; User Interfaces, X11 und Accessibility; Administrative Tasks und Localisation; Essential System Services; Networking Fundamentals und Client DNS; Security und LPIC-1 Exam Readiness",
     "abgrenzung": "",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Prüfungsinhalte nach der aktuellen Prüfungsbeschreibung des Herstellers mit Stand nennen; keine Prüfungsfragen oder Prüfungsdumps wiedergeben.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "linux-uebungen"
   },
@@ -1492,7 +1492,7 @@
     "themen": "LPIC-2 Grundlagen und Linux Engineer Operating Model; Capacity Planning and Performance Analysis; Linux Kernel and System Startup; Filesystems, Devices and Advanced Storage; Advanced Networking Configuration; System Maintenance, Source Builds and Backup; DNS Services with BIND; Web and Proxy Services; File Sharing with Samba and NFS; Network Client Management and Authentication; E-Mail Services and System Security; LPIC-2 Exam Readiness und Abschluss-Lab",
     "abgrenzung": "",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Prüfungsinhalte nach der aktuellen Prüfungsbeschreibung des Herstellers mit Stand nennen; keine Prüfungsfragen oder Prüfungsdumps wiedergeben.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "linux-uebungen"
   },
@@ -1505,10 +1505,10 @@
     "umfang": "gross",
     "fokus": "Linux-Spezialisierung (Prüfungsvorbereitung LPIC-3), Sicherheit, Virtualisierung und Containerplattformen",
     "vorkenntnisse": "IT-Grundlagen; Linux-Administration auf LPIC-2-Niveau",
-    "themen": "LPIC-3 Grundlagen und Enterprise Linux Professional Roadmap; LPIC-3 Mixed Environment – OpenLDAP Foundations; LPIC-3 Mixed Environment – Samba and Windows Integration; LPIC-3 Security – Cryptography and PKI; LPIC-3 Security – Host Security and Access Control; LPIC-3 Security – Network Security and Vulnerability Assessment; LPIC-3 Virtualization – Full Virtualization; LPIC-3 Containerization and VM Provisioning; LPIC-3 High Availability – Cluster Architecture; LPIC-3 High Availability – Storage and Load Balancing; Enterprise Operations, Troubleshooting and Documentation; LPIC-3 Exam Readiness und Abschluss-Lab",
+    "themen": "LPIC-3 Grundlagen und Enterprise Linux Professional Roadmap; LPIC-3 Mixed Environment – Samba Basics und Active Directory Domains; LPIC-3 Mixed Environment – Samba-Freigaben, Clients und Identity Management (FreeIPA, NFS); LPIC-3 Security – Cryptography and PKI; LPIC-3 Security – Host Security and Access Control; LPIC-3 Security – Network Security and Vulnerability Assessment; LPIC-3 Virtualization – Full Virtualization; LPIC-3 Containerization and VM Provisioning; LPIC-3 High Availability – Cluster Architecture; LPIC-3 High Availability – Storage and Load Balancing; Enterprise Operations, Troubleshooting and Documentation; LPIC-3 Exam Readiness und Abschluss-Lab",
     "abgrenzung": "",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden. Prüfungsinhalte nach der aktuellen Prüfungsbeschreibung des Herstellers mit Stand nennen; keine Prüfungsfragen oder Prüfungsdumps wiedergeben.",
-    "status": "offen",
+    "status": "Lehrplan erstellt",
     "labor": "1x Linux-Server-VM; 1x Linux-Client-VM; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
     "repo": "linux-uebungen"
   },
