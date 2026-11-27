@@ -1,5 +1,10 @@
 # Änderungen
 
+## 2026-11-27 (A19 gepusht)
+
+- A19 steht auf `gepusht`: Die Übungsreihe liegt in `netzwerk-und-firewall-uebungen/cisco-ccna`. Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.
+- Der Lehrplan wurde von AnsibleArtisan4711 noch nicht fachlich geprüft. Ausgeführt wurde nur im Cloud-Container, nicht auf Cisco-Geräten und nicht im Packet Tracer; Nichtausführbares ist im Kurs gekennzeichnet.
+
 ## 2026-11-27 (A19 ausgearbeitet)
 
 - Neu: `lehrplaene/A19-cisco-ccna.md` (12 Module, 106 UE zu 45 Minuten) nach der Grundanweisung. A19 steht auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) wird er gesetzt, wenn die Übungsreihe im Repository `netzwerk-und-firewall-uebungen` liegt.

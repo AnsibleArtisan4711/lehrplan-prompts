@@ -1543,9 +1543,10 @@
     "themen": "Netzwerkgrundlagen und Cisco-Architektur; Ethernet, Verkabelung und Switching-Grundlagen; VLANs, Trunks und Inter-VLAN Routing; STP, EtherChannel und Layer-2-Redundanz; IPv4/IPv6-Adressierung und Subnetting; Routing-Grundlagen, Statische Routen und OSPF; IP-Services und Netzwerkdienste; Wireless LAN und Netzwerkintegration; Security, Hardening und Zugriffskontrolle; Betrieb, Monitoring, Logging und Troubleshooting; WAN, Virtualisierung, Cloud und SDN-Grundlagen; Automation, Programmability, Migration und BCDR",
     "abgrenzung": "Teilweise abgedeckt durch bestehende Kurse oder Übungen: E02 Netzwerktechnik mit Cisco Packet Tracer; dort behandelte Inhalte nur kurz verweisen.",
     "hinweis": "Versions-, Lizenz- und Supportstände mit Stand nennen; kennzeichne Unsicherheit; Menünamen und Befehle nicht erfinden.",
-    "status": "Lehrplan erstellt",
+    "status": "gepusht",
     "labor": "mehrere virtuelle Router, Switches und Linux-VMs oder ein Netzwerksimulator; privater Hyper-V-Switch ohne Verbindung zum Heimnetz",
-    "repo": "netzwerk-und-firewall-uebungen"
+    "repo": "netzwerk-und-firewall-uebungen",
+    "ordner": "cisco-ccna"
   },
   {
     "id": "A20",
