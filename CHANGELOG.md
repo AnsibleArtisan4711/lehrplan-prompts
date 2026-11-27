@@ -1,5 +1,15 @@
 # Änderungen
 
+## 2026-11-27 (A19 ausgearbeitet)
+
+- Neu: `lehrplaene/A19-cisco-ccna.md` (12 Module, 106 UE zu 45 Minuten) nach der Grundanweisung. A19 steht auf `Lehrplan erstellt`; auf `gepusht` (mit `ordner`) wird er gesetzt, wenn die Übungsreihe im Repository `netzwerk-und-firewall-uebungen` liegt.
+- Der Lehrplan wurde zusammen mit der Übungsreihe aus denselben Daten erzeugt; die Summen der Unterrichtseinheiten, die Zahl der Kontrollfragen und die wortgleichen Aufgabentexte wurden per Skript geprüft.
+- Prüfungsstand mit Datum: Das Dokument „200-301 CCNA v2.0 Exam Topics“ (cisco.com) wurde am 27.11.2026 gelesen. Es nennt kein Gültigkeitsdatum; gelesen wurden nur die Themen und ihre Gewichtung, nicht das Prüfungsformat. Prüfungsfragen werden nicht wiedergegeben.
+- Abweichung vom Excel-Lehrplan auf Vorgabe: Die Lerneinheiten folgen den Prüfungsthemen Version 2.0 statt dem Excel-Blatt. Modulrahmen, Titel, UE und Prioritäten blieben aus dem Excel. Offen: Das Blatt „Lehrplan in Modulen“ summiert sich auf 106 UE, das Blatt „Lehrplan in Details“ listet 96 Einheiten; die Differenz von 10 wurde nicht aufgelöst. QoS und NetFlow gehören nicht zu Version 2.0 und werden nicht behandelt. Die Zuordnung der Themen zu den Modulen ist eigene Annahme. Der Befund steht in `lehrplan-korrekturen.md` im Kursordner.
+- Prüfstand ehrlich: Die Skripte liefen in einem Cloud-Container (Ubuntu 24.04.5, root) mit Linux-Namensräumen, FRR, nftables, Net-SNMP, rsyslog und Ansible, nicht auf Cisco-Geräten und nicht im Packet Tracer. Alle IOS-Befehle sind Fachwissen und nicht ausgeführt; Rapid PVST+, EtherChannel (LACP), HSRP, IPsec, GRE, WLAN-Hardware, Cloud, Controller und generative KI sind nicht ausgeführt, die KI-Teile sind Spielzeugmodelle.
+- Priorität 2 (Vertiefung): Module 4, 7, 8 und 11. Priorität 3 (nur bei Zeit): Modul 12.
+- Der Lehrplan wurde von AnsibleArtisan4711 noch nicht fachlich geprüft.
+
 ## 2026-11-25 (A15 bis A17 gepusht)
 
 - A15, A16 und A17 stehen auf `gepusht`: Die Übungsreihen liegen in `linux-uebungen/lpic-1`, `linux-uebungen/lpic-2` und `linux-uebungen/lpic-3`. Das Feld `ordner` ist gesetzt, die README-Tabellen wurden mit `python tools/build_prompts.py` neu erzeugt.

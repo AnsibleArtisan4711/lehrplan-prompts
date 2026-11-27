@@ -16,7 +16,7 @@ Jeder Prompt füllt nur die Variablen des Kurses aus: Fokus-Technologien, Vorken
 Priorität A: zuerst, größte Lücke. Priorität B: wichtig. Priorität C: Vertiefung, optional. Die Tabelle wird vom Skript erzeugt; nicht von Hand ändern.
 
 <!-- TABELLE-START -->
-Stand der 242 Kurse: 166 offen, 0 Lehrplan erstellt, 0 aufbereitet, 76 gepusht.
+Stand der 242 Kurse: 165 offen, 1 Lehrplan erstellt, 0 aufbereitet, 76 gepusht.
 
 Bedeutung der Status:
 
@@ -122,7 +122,7 @@ Spalte „Repository“: bei vorhandenem Kursordner (Feld `ordner`) der Link dar
 | 89 | C | Linux & Open Source | LPIC-2 | gepusht | [A16](prompts/A16-lpic-2.md) | [A16](lehrplaene/A16-lpic-2.md) | [linux-uebungen/lpic-2](https://github.com/AnsibleArtisan4711/linux-uebungen/tree/main/lpic-2) |
 | 90 | C | Linux & Open Source | LPIC-3 | gepusht | [A17](prompts/A17-lpic-3.md) | [A17](lehrplaene/A17-lpic-3.md) | [linux-uebungen/lpic-3](https://github.com/AnsibleArtisan4711/linux-uebungen/tree/main/lpic-3) |
 | 91 | C | Linux & Open Source | RHEL-Familie (Red Hat Enterprise Linux und AlmaLinux) | offen | [A18](prompts/A18-rhel-familie.md) | – | `linux-uebungen` (geplant) |
-| 92 | C | Netzwerk & Netzwerkdienste | Cisco CCNA | offen | [A19](prompts/A19-cisco-ccna.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
+| 92 | C | Netzwerk & Netzwerkdienste | Cisco CCNA | Lehrplan erstellt | [A19](prompts/A19-cisco-ccna.md) | [A19](lehrplaene/A19-cisco-ccna.md) | `netzwerk-und-firewall-uebungen` (geplant) |
 | 93 | C | Netzwerk & Netzwerkdienste | DNS Security (DNSSEC) | offen | [A20](prompts/A20-dns-security.md) | – | `netzwerkdienste-uebungen` (geplant) |
 | 94 | C | Netzwerk & Netzwerkdienste | E-Mail-Routing, SMTP und Mail Security | offen | [A21](prompts/A21-e-mail-routing-smtp-und-mail-security.md) | – | `e-mail-uebungen` (geplant) |
 | 95 | C | Netzwerk & Netzwerkdienste | Firewall, Netzwerkdesign und DMZ | offen | [A22](prompts/A22-firewall-netzwerkdesign-und-dmz.md) | – | `netzwerk-und-firewall-uebungen` (geplant) |
